@@ -19,25 +19,67 @@
             padding: 12px;
             text-decoration: none;
             font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
+            line-height: 25px;
+            border-radius: 4px;
+        }
+        .header-right {
+            float: right;
+            height: 75px;
+            margin: auto; 
+            display: flex; 
+            align-items: center;
+        }
+        .logo {
+            float: left;
+            height: 75px;
+            margin: auto; 
+            display: flex; 
+            align-items: center;
+            flex-direction: row;
+            font-size: 56px;
+            padding-right: 16px;
+            font-weight: bold;
+            margin: 0px-1px;
+            text-align:left;
+            padding-left: 0px;
+        }
+        .logo-title {
+            float: left;
+            height: 75px;
+            margin: auto; 
+            display: flex; 
+            align-items: center;
+        }
     </style>
     <body>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./browsers.html">Browsers</a>
-            <a href="./music.html">Music</a>
-            <a href="./searchengines.html">Search Engines</a>
-            <a href="./youtubefrontends.html">Youtube Frontends</a>
-        </nav>
         <div class="header">
-            <a href="#default" class="logo">CompanyLogo</a>
+            <div  class="logo"> 
+                <a href="./index.html">
+                <img src="./Images/SoftwareCompare128px.jpg" alt="SoftwareCompareLogo"
+                    style="width:64px;height:64px;"></a>
+                <div class="logo-title">
+                    <a href="./index.html">SoftwareCompare</a>
+                    </div>
+                    
+                </div>
             <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a class="link-header"
+                    href="./about.html">About</a>
+                <div class="link-header">
+                    <a href="./Charts.html">Charts</a>
+                    </div>
+            </div>
+        </div>
+        <h1>
+            Welcome to SoftwareCompare!
+        </h1>
+        <p>
+            This website was made for people who want to quickly find out the features of 
+            different software and compare them against each other. You can find Comparison
+            Charts <a href="./Charts.html">here</a>
+        </p>
+        <div class="footer"
+            
         </div>
     </body>
 </html>
