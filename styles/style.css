@@ -70,7 +70,7 @@
                 z-index: 1;
               }
               
-              .tooltip:hover .tooltiptext {
+              .tooltip:hover .tooltiptext .tooltip:active {
                 visibility: visible;
               }
               .Chart-link {
@@ -85,4 +85,5 @@
               }
               .greyrow {
                 background-color: #f1f1f1;
+                border: 2px #f1f1f1
               }
