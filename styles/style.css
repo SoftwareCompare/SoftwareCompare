@@ -2,7 +2,7 @@
         .header {
             overflow: hidden;
             background-color: #f1f1f1;
-            padding: 20px 10px;
+            padding: 4px 2px;
         }
         .header a {
             float: left;
@@ -40,5 +40,10 @@
             height: 75px;
             margin: auto; 
             display: flex; 
-            align-items: center;
+            align-items: center;   
+        }
+        .service-title {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: normal;
         }
