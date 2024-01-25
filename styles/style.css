@@ -87,3 +87,6 @@
                 background-color: #f1f1f1;
                 border: 2px #f1f1f1
               }
+              table {
+              border-collapse: collapse;
+              }
