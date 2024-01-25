@@ -3,6 +3,7 @@
             overflow: hidden;
             background-color: #f1f1f1;
             padding: 4px 2px;
+            min-width: 700px;
         }
         .header a {
             float: left;
@@ -70,7 +71,10 @@
                 z-index: 1;
               }
               
-              .tooltip:hover .tooltiptext .tooltip:active {
+              .tooltip:hover .tooltiptext {
+                visibility: visible;
+              }
+              .tooltip:active {
                 visibility: visible;
               }
               .Chart-link {
@@ -85,8 +89,24 @@
               }
               .greyrow {
                 background-color: #f1f1f1;
-                border: 2px #f1f1f1
               }
               table {
-              border-collapse: collapse;
+                border-collapse: collapse;
+                max-width: 200px; 
+                margin: 0 auto; 
               }
+              body { 
+	              max-width: 1080px; 
+                min-width: 700px;
+                width: 100%;
+	              margin: 0 auto !important; 
+	              float: none !important; 
+
+              }
+              td {
+                min-width: 200px;
+              }
+              th {
+                min-width: 80px;
+              }
+              
