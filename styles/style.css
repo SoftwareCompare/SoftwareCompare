@@ -74,12 +74,10 @@
                 z-index: 1;
               }
               
-              .tooltip:hover .tooltiptext {
+              .tooltip:hover .tooltip:active .tooltiptext {
                 visibility: visible;
               }
-              .tooltip:active .tooltiptext{
-                visibility: visible;
-              }
+              
               .Chart-link {
                 text-decoration: none;
                 padding-left: 10px;
