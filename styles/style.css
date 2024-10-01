@@ -1,4 +1,7 @@
 
+        body{
+          zoom: 0.9;
+        }
         .header {
           overflow: hidden;
             background-color: #f1f1f1;
@@ -74,10 +77,12 @@
                 z-index: 1;
               }
               
-              .tooltip:hover .tooltip:active .tooltiptext {
+            
+              
+              .tooltip:active {
                 visibility: visible;
               }
-              
+
               .Chart-link {
                 text-decoration: none;
                 padding-left: 10px;
