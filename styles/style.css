@@ -1,86 +1,146 @@
 
         body{
-          zoom: 0.9;
+          zoom: 0.85;
         }
-        .header {
-          overflow: hidden;
+        .nav.open {
+          display: block;
+        }
+          .header {
+            overflow: hidden;
             background-color: #f1f1f1;
             padding: 4px 2px;
-            min-width: 375px;
-            max-height:100px;
-        }
-        .header a {
-            float: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+          }
+          
+          .logo {
+            display: flex;
+            align-items: center;
+            z-index: 2;
+          }
+          
+          .logo-img {
+            width: 64px;
+            height: 64px;
+            margin-right: 10px;
+            z-index: 2;
+          }
+          
+          .logo-title{
+            margin: 0;
+            z-index: 2;
+            text-decoration: none;
+            color: black;
+          }
+          
+          .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 29px;
+            cursor: pointer;
+            z-index: 2;
+            padding-right: 15px;
+          }
+          
+          .nav {
+            display: flex;
+            justify-content: space-between;
+          }
+          
+          .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          
+          .nav li {
+            margin-right: 20px;
+          }
+          
+          .link-header {
             color: rgb(0, 0, 0);
-            padding: 12px;
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
             border-radius: 4px;
-            flex-shrink: 1;
-        }
-        .header-right {
-            float: right;
-            height: 75px;
-            margin: auto; 
-            display: flex; 
-            align-items: center;
-            flex-shrink: 1;
-        }
-        .logo {
-            float: left;
-            height: 75px;
-            margin: auto; 
-            display: flex; 
-            align-items: center;
-            flex-direction: row;
-            font-size: 56px;
-            padding-right: 16px;
-            font-weight: bold;
-            margin: 0px-1px;
-            text-align:left;
-            padding-left: 0px;
-            flex-shrink: 1;
-            
-        }
-        .logo-title {
-            float: left;
-            height: 75px;
-            margin: auto; 
-            display: flex; 
-            align-items: center;   
-            flex-shrink: 1;
+          }
+          
+          /* Mobile styles */
+          @media only screen and (max-width: 468px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav {
+              position: absolute;
+              width: 100vw;
+              height:0px;
+              top: 60px;
+              justify-content: center;
+              background-color: #f1f1f1;
+              visibility: collapse;
+              transition: all 0.4s;
+              z-index: 1;
+              left: -4px;
+              overflow: hidden;
+            }
+            .nav-inner {
+              width: 100vw;
+            }
+            .open {
+              top:60px;
+              visibility: visible;
+              height: 35vh;
+            }
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav li {
+                margin: 20px 0;
+            }
+            .link-header {
+                font-size: 24px;
+            }
         }
         .service-title {
             text-decoration: none;
             color: rgb(0, 0, 0);
             font-weight: normal;
             vertical-align: top;
+            position: sticky;
+            top: 0px;
+            background-color: #fff;
         }
             .tooltip {
                 position: relative;
                 display: inline-block;
-                border-bottom: 1px dotted black;
+                border-bottom: 1px dotted rgb(68, 68, 68);
+                color: white;
               }
               
               .tooltip .tooltiptext {
-                visibility: hidden;
-                width: 120px;
-                background-color: black;
+                visibility: collapse;
+                min-width: 50px;
+                background-color: rgb(56, 56, 56);
                 color: #fff;
                 text-align: center;
                 border-radius: 6px;
-                padding: 5px 0;
-              
+                padding: 5px;
                 /* Position the tooltip */
                 position: absolute;
                 z-index: 1;
+                flex-direction: column
               }
-              
-            
               
               .tooltip:active {
                 visibility: visible;
+                flex-direction: column;
+                color: white;
+                padding: 5px;
               }
 
               .Chart-link {
@@ -96,10 +156,12 @@
               .greyrow {
                 background-color: #f1f1f1;
               }
-              table {
+              .Comparison_Chart {
                 border-collapse: collapse;
-                max-width: 200px; 
+                max-width: 100vw; 
+                width: 100vw;
                 margin: 0 auto; 
+                overflow: hidden;
               }
               body { 
 	              max-width: 1080px; 
@@ -116,8 +178,23 @@
                 height: 25px;
               }
               th {
-                min-width: 70px;
-                width: 60px;
+                min-width: 5px;
+
+                width: 10%;
                 height: 25px;
               }
+              h1 {
+                padding-left: 10px;
+              }
+              p {
+                padding-left: 10px;
+              }
+              h2 {
+                padding-left: 10px;
+              }
+              h3 {
+                padding-left: 10px;
+              }
+
+
               

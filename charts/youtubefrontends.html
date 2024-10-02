@@ -9,29 +9,24 @@
         <link href="../styles/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="header">
-            <div  class="logo"> 
-                <a href="../">
-                <img src="../images/SoftwareCompare128px.jpg" alt="SoftwareCompareLogo"
-                    style="width:64px;height:64px;"></a>
-                <div class="logo-title">
-                    <a href="../"><h2>SoftwareCompare</h2></a>
-                    </div>
-                    
-                </div>
-            <div class="header-right">
-                <a class="link-header"
-                    href="../about.html">About</a>
-            </div>
-            <div class="header-right">
-              <a class="link-header"
-                  href="../donate.html">Donate</a>
-              </div>
-          <div class="header-right">
-              <a class="link-header"
-                  href="../contact.html">Contact</a>
-              </div>
+      <div class="header">
+        <div class="logo">
+          <a href="../">
+            <img src="../images/SoftwareCompare128px.jpg" alt="SoftwareCompareLogo" class="logo-img">
+          </a>
+          <div>
+            <a class="logo-title" href="../"><h2>SoftwareCompare</h2></a>
+          </div>
         </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+          <ul>
+              <li><a href="../about.html" class="link-header">About</a></li>
+              <li><a href="../donate.html" class="link-header">Donate</a></li>
+              <li><a href="../contact.html" class="link-header">Contact</a></li>
+          </ul>
+          </ul>
+      </div>
         <div class="Chart-list">
             <a class="Chart-link"
                 href="./browsers.html">Browsers</a>
@@ -70,7 +65,7 @@
             </div></th>
             <th>✅</th>
             <th><div class="tooltip">✅
-              <span class="tooltiptext"><a href="https://github.com/ViewTube/viewtube-vue/issues/2#issuecomment-1057513500">Not every <br />feature</a></span>
+              <a class="tooltiptext" href="https://github.com/ViewTube/viewtube-vue/issues/2#issuecomment-1057513500">Not every <br />feature</a>
             </div></th>
           </tr>
           <tr>
@@ -112,10 +107,10 @@
             <td>Built in <a class ="HiddenLink" href="https://github.com/ajayyy/SponsorBlock">Sponsorblock</a></td>
             <th>✅</th>
             <th><div class="tooltip">❌
-              <span class="tooltiptext">with <br /><a href="https://github.com/ajayyy/SponsorBlock">extension</a></span>
+              <a class="tooltiptext" href="https://github.com/ajayyy/SponsorBlock">with<br />extension</a></span>
             </div></th>
             <th><div class="tooltip">❌
-              <span class="tooltiptext">with <br /><a href="https://github.com/ajayyy/SponsorBlock">extension</a></span>
+              <a class="tooltiptext" href="https://github.com/ajayyy/SponsorBlock">with<br />extension</a>
             </div></th>
             <th>✅</th>
           </tr>
@@ -197,7 +192,7 @@
             <th>❌</th>
           </tr>
           <tr class="greyrow">
-            <td>Watch on LBRY</td>
+            <td>Watch on <a class ="HiddenLink" href="https://odysee.com">Odysee</a></td>
             <th>✅</th>
             <th>❌</th>
             <th>❌</th>
@@ -209,7 +204,7 @@
           <tr>
             <td>Supports ancient browsers</td>
             <th><div class="tooltip">✅
-              <span class="tooltiptext"><a href="https://github.com/IronMaltese/YouTube-Frontend-Comparison/pull/4#issuecomment-1279854489">not abandoned <br /> browsers </a></span>
+              <a class="tooltiptext" href="https://github.com/IronMaltese/YouTube-Frontend-Comparison/pull/4#issuecomment-1279854489">not abandoned <br /> browsers </a>
             </div></th>
             <th>✅</th>
             <th>✅</th>
@@ -322,12 +317,13 @@
             <th>✅</th>
           </tr>
           <tr class="greyrow">
-            <td>Watch on LBRY</td>
+            <td>Watch on <a class ="HiddenLink" href="https://odysee.com">Odysee</a></td>
             <th>❌</th>
             <th>❌</th>
             <th>❌</th>
             <th>❌</th>
           </tr>
         </table>
+        <script src="../script.js"></script>
     </body>
 </html>
