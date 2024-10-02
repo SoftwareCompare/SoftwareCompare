@@ -4,7 +4,6 @@
           .header {
             overflow: hidden;
             background-color: #f1f1f1;
-            padding: 4px 2px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,7 +75,7 @@
               position:absolute;
               width: 100vw;
               height:0px;
-              top: 60px;
+              top: 50px;
               justify-content: center;
               background-color: #f1f1f1;
               visibility: collapse;
