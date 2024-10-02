@@ -73,6 +73,7 @@
           @media only screen and (max-width: 468px) {
             .menu-toggle {
                 display: block;
+                color: black;
             }
             .nav {
               position: absolute;
