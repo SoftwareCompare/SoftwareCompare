@@ -23,6 +23,5 @@ for (let i=0; i<checkboxes.length; i++){
 if(window.location.hostname!=127.0.0.1){
     if (window.location.pathname.endsWith(".html")){
         console.log("html found", 'sigma' )
-      //  window.location.replace(window.location.href.substring(0,-5));        
     }
 }
