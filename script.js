@@ -20,8 +20,9 @@ for (let i=0; i<checkboxes.length; i++){
         
         })
 }
-if(window.location.hostname!="localhost"){
+if(window.location.hostname!=127.0.0.1){
     if (window.location.pathname.endsWith(".html")){
-        window.location.replace(window.location.href.substring(0,-5));        
+        console.log("html found",window.location.href.substring(0,-5) )
+      //  window.location.replace(window.location.href.substring(0,-5));        
     }
 }

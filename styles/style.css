@@ -180,7 +180,6 @@
               body { 
 	              max-width: 1080px; 
                 min-width: 360px;
-                min-height:667;
                 width: 100%;
 	              margin: 0 auto !important; 
 	              float: none !important; 
