@@ -138,23 +138,22 @@
               }
               
               .tooltip .tooltiptext {
-                visibility: collapse;
-                min-width: 50px;
                 background-color: rgb(56, 56, 56);
-                color: #fff;
-                text-align: center;
                 border-radius: 6px;
+                color: #fff;
+                flex-direction: column;
+                min-width: 50px;
                 padding: 5px;
-                /* Position the tooltip */
                 position: absolute;
+                visibility: collapse;
+                text-align: start;
+                transform: translate(0px, -12px);
+                width: max-content;
                 z-index: 1;
-                flex-direction: column
               }
               
               .tooltip:active {
                 visibility: visible;
-                flex-direction: column;
-                color: white;
               }
 
               .Chart-link {
