@@ -65,6 +65,10 @@
             border-radius: 4px;
           }
           
+          .edge {
+            overflow-wrap: anywhere !important;
+            transform: translate(-5em, -12px) !important;
+          }
           /* Mobile styles */
           @media only screen and (max-width: 525px) {
             .menu-toggle {
@@ -112,11 +116,7 @@
               font-size: 10px;
               min-width: 40px;
             }
-            .checkmark {
-              height: 15px;
-              width: 15px
-            }
-            .X-icon {
+            .checker {
               height: 15px;
               width: 15px
             }
@@ -212,5 +212,6 @@
                 overflow-wrap: anywhere;
                 overflow: auto;
               }
+             
 
 
