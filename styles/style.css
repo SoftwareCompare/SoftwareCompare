@@ -7,7 +7,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            z-index: 2;
+            z-index: 5;
           }
           
           .logo {
@@ -71,7 +71,7 @@
           }
           .checkerlink{
               display: inline-block;
-              border-bottom: 1px solid rgb(149, 149, 149);
+              border-bottom: 1px solid rgb(174, 174, 174);
           }
           /* Mobile styles */
           @media only screen and (max-width: 525px) {
@@ -88,7 +88,7 @@
               background-color: #f1f1f1;
               visibility: collapse;
               transition: all 0.4s;
-              z-index: 1;
+              z-index: 5;
               overflow: hidden;
               padding: 0px;
             }
@@ -100,6 +100,7 @@
                 flex-direction: column;
                 align-items: center;
                 width: 100vw;
+                z-index: 5;
             }
             .nav li {
                 margin: 20px 0;
