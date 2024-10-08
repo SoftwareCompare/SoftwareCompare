@@ -129,10 +129,13 @@
             text-decoration: none;
             color: rgb(0, 0, 0);
             font-weight: normal;
-            vertical-align: top;
-            position: sticky;
-            top: 0px;
             background-color: #fff;
+        }
+        .service-row {
+          position: sticky;
+          top: 0;
+          background-color: white;
+          z-index: 2;
         }
             .tooltip {
                 position: relative;
@@ -178,7 +181,6 @@
                 max-width: 1080px; 
                 width: 100vw;
                 margin: 0 auto; 
-                overflow: hidden;
               }
               body { 
 	              max-width: 1080px; 
