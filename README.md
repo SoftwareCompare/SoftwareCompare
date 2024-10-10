@@ -1,2 +1,2 @@
 # SoftwareCompare
- Quickly compare features of different software
+Comparisons of different software
