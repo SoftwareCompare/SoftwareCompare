@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: softwarecompare.org
+Token: 482f5a7b6cb06eb1fb083042373fa098dc688230082f63ed0a55a62801e39bdd
