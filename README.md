@@ -30,7 +30,5 @@ Ethereum
 Bitcoin via Silent Payment
 - sp1qqt58z382yytymjtwtp5rpcsvl24em5lwgrfx5t8nextew32czmtj5ql6c3cq33kzuhjedc745wv2tg2nkrq462sm4yukd20tjemlx9tumuu8a75x
 
-(Other ways to donate coming soon)
-
 ## Project Inspirations
 This website was inspired mainly by [PrivacyTests.org](https://privacytests.org), [Secure Messaging Apps](https://www.securemessagingapps.com), [Eylenburg's Site](https://eylenburg.github.io) and [Techlore's Vpn Toolkit](https://www.techlore.tech/vpn). Thank you for all your amazing work on these projects!
