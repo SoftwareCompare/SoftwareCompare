@@ -12,6 +12,9 @@ An open-source project hosted on softwarecompare.org that compares application f
 Brave Creators
 - [Support Here](https://publishers.basicattentiontoken.org/en/c/xQ6QUepSXc)
 
+Buy Me a Coffee
+- [Support Here](https://buymeacoffee.com/davidcollini)
+
 Monero
 - 4A8xBr1jMhV84wdVRHCwCs1293quJrwC8jAtJkrqKzDKJZhw33V2g26YDe7wbiuQy7KkaEY8B6YYoBdB3auTfXZiUwLLj5q
 
