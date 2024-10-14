@@ -12,6 +12,9 @@ An open-source project hosted on softwarecompare.org that compares application f
 Brave Creators
 - [Support Here](https://publishers.basicattentiontoken.org/en/c/xQ6QUepSXc)
 
+Github Sponsors
+- [Support Here](https://github.com/sponsors/davidcollini)
+
 Buy Me a Coffee
 - [Support Here](https://buymeacoffee.com/davidcollini)
 
