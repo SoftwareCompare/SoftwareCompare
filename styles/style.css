@@ -76,8 +76,8 @@
           /* Mobile styles */
           @media only screen and (max-width: 525px) {
             .menu-toggle {
-                display: block;
-                color: black;
+              display: block;
+              color: black;
             }
             .nav {
               position:absolute;
@@ -97,19 +97,19 @@
               height: 35vh;
             }
             .nav ul {
-                flex-direction: column;
-                align-items: center;
-                width: 100vw;
-                z-index: 5;
+              flex-direction: column;
+              align-items: center;
+              width: 100vw;
+              z-index: 5;
             }
             .nav li {
-                margin: 20px 0;
+              margin: 20px 0;
             }
             .link-header {
-                font-size: 24px;
+              font-size: 24px;
             }
             .Comparison_Chart {
-            font-size: 12px;
+              font-size: 12px;
             }
             .service-title {
               font-size: 10px;
