@@ -125,6 +125,12 @@
               height: 15px;
               width: 15px
             }
+            .engine{
+              font-size: 9px;
+            }
+        }
+        .service-logo {
+          border-radius: 16%;
         }
         .service-title {
             text-decoration: none;
