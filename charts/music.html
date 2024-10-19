@@ -1,431 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Software Compare</title>
-  <link rel='icon' href='../images/SoftwareCompare128px.webp' type='image/x-icon' />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../styles/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="header">
-    <div>
-      <a href="../">
-        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompareLogo" height="36px">
-      </a>
-      <div>
-        <a class="logo-title" href="../">
-          <h2>SoftwareCompare</h2>
-        </a>
+    <head>
+        <title>Software Compare</title>
+        <link rel='icon' href='../images/SoftwareCompare128px.webp' type='image/x-icon'/>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../styles/style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="header">
+        <div class="logo">
+          <a href="../">
+            <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompareLogo" class="logo-img">
+          </a>
+          <div>
+            <a class="logo-title" href="../"><h2>SoftwareCompare</h2></a>
+          </div>
+        </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+          <ul>
+              <li><a href="../about.html" class="link-header">About</a></li>
+              <li><a href="../donate.html" class="link-header">Donate</a></li>
+              <li><a href="../contact.html" class="link-header">Contact</a></li>
+          </ul>
+          </ul>
       </div>
-    </div>
-    <button class="menu-toggle">≡</button>
-    <ul class="nav">
-      <ul>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../donate.html">Donate</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </ul>
-  </div>
-  <div class="Chart-list">
-    <a href="./browsers.html">Browsers</a>
-    <a href="./music.html">Music</a>
-    <a href="./searchengines.html">Search Engines</a>
-    <a href="./youtubefrontends.html">YoutubeFrontends</a>
-  </div>
-  <h1>Music Services Comparison</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          <h2>Free Services</h2>
-        </th>
-        <th><a href="https://brave.com/playlist"><img class="service-Logo" height="36px" src="../images/logos/Brave_logo.webp"
-              alt="Brave Playlist Logo" height="36px"> <br /> Brave Playlist</a></th>
-        <th><a href="https://hyperpipe.surge.sh"><img class="service-Logo" height="36px" src="../images/logos/Hyperpipe_logo.webp"
-              alt="Hyperpipe Logo" height="36px"> <br /> Hyperpipe</a></th>
-        <th><a href="https://feelthemusi.com"><img class="service-Logo" height="36px" src="../images/logos/Musi_logo.webp"
-              alt="Musi Logo" height="36px"> <br /> Musi</a></th>
-        <th><a href="https://open.spotify.com"><img class="service-Logo" height="36px" src="../images/logos/Spotify_logo.webp"
-              alt="Spotify Logo" height="36px"> <br /> Spotify</a></th>
-        <th><a href="https://music.youtube.com"><img class="service-Logo" height="36px" src="../images/logos/Youtube_Music_logo.webp"
-              alt="Youtube Music Logo" height="36px"> <br /> Youtube Music</a></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Platform</td>
-        <th>iOS</th>
-        <th>Web</th>
-        <th>iOS</th>
-        <th>Desktop<br />Web<br />Mobile</th>
-        <th>Desktop<br />Web<br />Mobile</th>
-      </tr>
-      <tr>
+        <div class="Chart-list">
+            <a class="Chart-link"
+                href="./browsers.html">Browsers</a>
+                <a class="Chart-link"
+                    href="./music.html">Music</a>
+                <a class="Chart-link"
+                    href="./searchengines.html">Search Engines</a>
+                <a class="Chart-link"
+                    href="./youtubefrontends.html">YoutubeFrontends</a>
+                </div>
+        <h1>Music Services Comparison</h1>
+<table class="Comparison_Chart">
+<tr class="service-row">
+    <th><h2>Free Services</h2></th>
+    <th><a class = "service-title" href="https://brave.com/playlist"><img class = "service-logo" src="../images/logos/Brave_logo.webp" alt="Brave Playlist Logo" height="36"> <br /> Brave Playlist</a></th>
+    <th><a class = "service-title" href="https://hyperpipe.surge.sh"><img class = "service-logo" src="../images/logos/Hyperpipe_logo.webp" alt="Hyperpipe Logo" height="36"> <br /> Hyperpipe</a></th>
+    <th><a class = "service-title" href="https://feelthemusi.com"><img class = "service-logo" src="../images/logos/Musi_logo.webp" alt="Musi Logo" height="36"> <br /> Musi</a></th>
+    <th><a class = "service-title" href="https://open.spotify.com"><img class = "service-logo" src="../images/logos/Spotify_logo.webp" alt="Spotify Logo" height="36"> <br /> Spotify</a></th>
+    <th><a class = "service-title" href="https://music.youtube.com"><img class = "service-logo" src="../images/logos/Youtube_Music_logo.webp" alt="Youtube Music Logo" height="36"> <br /> Youtube Music</a></th>
+    </tr>
+  <tr>
+    <td>Platform</td>
+    <th>iOS</th>
+    <th>Web</th>
+    <th>iOS</th>
+    <th>Desktop<br />Web<br />Mobile</th>
+    <th>Desktop<br />Web<br />Mobile</th>
+  </tr>
+  <tr>
 
-      </tr>
-      <tr>
-        <th>Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Open Source</td>
-        <th><a class="checkerlink" href="https://github.com/brave/brave-core"><img class="checker"
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a class="checkerlink" href="https://hyperpipe.surge.sh"><img class="checker"
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>No account required</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre class="tooltiptext edge">Only on<br />web</pre>
-          </div>
-        </th>
-      </tr>
-      <tr>
-        <th>
-          <br />Conveinence
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Ad-Free</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>No Audio Ads</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Lossless Audio</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X-icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X-icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X-icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X-icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X-icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Background play (mobile)</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Choose Song</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Search songs</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Artist pages</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Freedom</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Download Songs</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a class="HiddenLink" href="https://www.eff.org/issues/drm">DRM</a> Free</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="X icon" height="20px">
-            <pre class="tooltiptext">no income</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a class="checkerlink"
-            href="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Artists</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
+  </tr>
+  <tr>
+    <th>Privacy</th>
+  </tr>
+  <tr>
+    <td>Open Source</td>
+    <th><a class="checkerlink" href="https://github.com/brave/brave-core"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+    <th><a class="checkerlink" href="https://hyperpipe.surge.sh"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    </tr>
+  <tr class="greyrow">
+    <td>No account required</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+      <pre class="tooltiptext edge">Only on<br />web</pre>
+    </div></th>
+  </tr>
+  <tr>
+    <th>
+      <br />Conveinence</th>
+  </tr>
+  <tr>
+    <td>Ad-Free</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td>No Audio Ads</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr>
+    <td>Lossless Audio</td>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X-icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X-icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X-icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X-icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X-icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td>Background play (mobile)</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr>
+    <td>Choose Song</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td>Search songs</td>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr>
+    <td>Artist pages</td>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr>
+    <th><br />Freedom</th>
+  </tr>
+  <tr>
+    <td>Download Songs</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td><a class="HiddenLink" href="https://www.eff.org/issues/drm">DRM</a> Free</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr>
+    <th><br />Ethics</th>
+</tr>
+<tr>
+  <td>Donates to Charity</td>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="X icon" height="20">
+      <pre class="tooltiptext">no income</pre>
+    </div></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><a class="checkerlink" href="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+    <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+</tr>
+<tr class="greyrow">
+  <td>Pays Artists</td>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+      <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+</tr>
+<tr>
+  <td>Carbon Neutral</td>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
 
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre
-              class="tooltiptext"><a href="https://www.lifeatspotify.com/diversity-equity-impact/climate-action">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre
-              class="tooltiptext edge"><a href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-    </tbody>
-  </table>
-  <h1> <br /></h1>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          <h2>Paid Services</h2>
-        </th>
-        <th><a href="https://music.amazon.com"><img class="service-Logo" height="36px" src="../images/logos/amazon_music_logo.webp"
-              alt="Amazon Music Logo" height="36px"> <br />Amazon Music</a></th>
-        <th><a href="https://www.apple.com/apple-music/"><img class="service-Logo" height="36px"
-              src="../images/logos/Apple_Music_logo.svg" alt="Apple Music Logo" height="36px"> <br />Apple Music</a></th>
-        <th><a href="https://open.spotify.com"><img class="service-Logo" height="36px" src="../images/logos/Spotify_logo.webp"
-              alt="Spotify Logo" height="36px"> <br /> Spotify</a></th>
-        <th><a href="https://tidal.com/"><img class="service-Logo" height="36px" src="../images/logos/Tidal_logo.webp"
-              alt="Tidal Logo" height="36px"> <br /> Tidal</a></th>
-        <th><a href="https://music.youtube.com"><img class="service-Logo" height="36px" src="../images/logos/Youtube_Music_logo.webp"
-              alt="Youtube Music Logo" height="36px"> <br /> Youtube Music</a></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Platform</td>
-        <th>Desktop<br />Web<br />Mobile</th>
-        <th>Desktop<br />Web<br />Mobile</th>
-        <th>Desktop<br />Web<br />Mobile</th>
-        <th>Desktop<br />Web<br />Mobile</th>
-        <th>Desktop<br />Web<br />Mobile</th>
-      </tr>
-      <tr>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+        <pre class="tooltiptext"><a style="color: white;" href="https://www.lifeatspotify.com/diversity-equity-impact/climate-action">plans to<br />by 2030</a></pre>
+      </div></th>
+      <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+        <pre class="tooltiptext edge"><a style="color: white;" href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
+      </div></th>
+</tr>
+<tr class="greyrow">
+  <td>Carbon Negative</td>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    </tr>
+ </table class="Comparison_Chart">
+ <h1> <br /></h1>
+ <table class="Comparison_Chart">
+  <tr class="service-row">
+    <th><h2>Paid Services</h2></th>
+    <th><a class = "service-title" href="https://music.amazon.com"><img class = "service-logo" src="../images/logos/amazon_music_logo.webp" alt="Amazon Music Logo" height="36"> <br />Amazon Music</a></th>
+    <th><a class = "service-title" href="https://www.apple.com/apple-music/"><img class = "service-logo" src="../images/logos/Apple_Music_logo.svg" alt="Apple Music Logo" height="36"> <br />Apple Music</a></th>
+    <th><a class = "service-title" href="https://open.spotify.com"><img class = "service-logo" src="../images/logos/Spotify_logo.webp" alt="Spotify Logo" height="36"> <br /> Spotify</a></th>
+    <th><a class = "service-title" href="https://tidal.com/"><img class = "service-logo" src="../images/logos/Tidal_logo.webp" alt="Tidal Logo" height="36"> <br /> Tidal</a></th>
+    <th><a class = "service-title" href="https://music.youtube.com"><img class = "service-logo" src="../images/logos/Youtube_Music_logo.webp" alt="Youtube Music Logo" height="36"> <br /> Youtube Music</a></th>
+  </tr>
+  <tr>
+    <td>Platform</td>
+    <th>Desktop<br />Web<br />Mobile</th>
+    <th>Desktop<br />Web<br />Mobile</th>
+    <th>Desktop<br />Web<br />Mobile</th>
+    <th>Desktop<br />Web<br />Mobile</th>
+    <th>Desktop<br />Web<br />Mobile</th>
+  </tr>
+  <tr>
 
-      </tr>
-      <tr>
-        <th>Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Open Source</td>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th>
-          <br />Conveinence
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Ad-Free</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>No Audio Ads</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Lossless Audio</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Background play (mobile)</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Choose Song</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Search songs</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Artist pages</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Freedom</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Download Songs</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a class="HiddenLink" href="https://www.eff.org/issues/drm">DRM</a> Free</td>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        <th>
-          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20px"
-             >
-            <pre
-              class="tooltiptext"><a href="https://www.npr.org/2023/01/19/1149993013/amazon-amazonsmile-charity-donation-program">stopped in 2023</a></pre>
-          </div>
-        </th>
-        <th><a class="checkerlink"
-            href="https://appleinsider.com/articles/22/12/08/apple-staff-have-raised-over-880-million-for-charities-since-2011"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a class="checkerlink"
-            href="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="X icon" height="20px">
-            <pre
-              class="tooltiptext"><a href="https://www.vulture.com/2016/02/tidal-to-donate-15-million-to-charities.html">in 2016</a></pre>
-          </div>
-        </th>
-        <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Artists</td>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        <th>
-          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre
-              class="tooltiptext"><a href="https://www.aboutamazon.com/planet/climate-pledge">plans to by 2040</a></pre>
-          </div>
-        </th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre class="tooltiptext"><a href="https://www.apple.com/environment">plans to by 2030</a></pre>
-          </div>
-        </th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre
-              class="tooltiptext"><a href="https://www.lifeatspotify.com/diversity-equity-impact/climate-action">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre
-              class="tooltiptext edge"><a href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr style="height: 50px;">
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <script src="../script.js"></script>
-</body>
-
+  </tr>
+  <tr>
+    <th>Privacy</th>
+  </tr>
+  <tr>
+    <td>Open Source</td>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr>
+    <th>
+      <br />Conveinence</th>
+  </tr>
+  <tr>
+    <td>Ad-Free</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td>No Audio Ads</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr>
+    <td>Lossless Audio</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td>Background play (mobile)</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr>
+    <td>Choose Song</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td>Search songs</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr>
+    <td>Artist pages</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+  </tr>
+  <tr>
+    <th><br />Freedom</th>
+  </tr>
+  <tr>
+    <td>Download Songs</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr class="greyrow">
+    <td><a class="HiddenLink" href="https://www.eff.org/issues/drm">DRM</a> Free</td>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="checkmark" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+  </tr>
+  <tr>
+    <th><br />Ethics</th>
+</tr>
+<tr>
+  <td>Donates to Charity</td>
+  <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20">
+    <pre class="tooltiptext"><a style="color: white" href="https://www.npr.org/2023/01/19/1149993013/amazon-amazonsmile-charity-donation-program">stopped in 2023</a></pre>
+  </div></th>
+  <th><a class="checkerlink" href="https://appleinsider.com/articles/22/12/08/apple-staff-have-raised-over-880-million-for-charities-since-2011"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+  <th><a class="checkerlink" href="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+  <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="X icon" height="20">
+    <pre class="tooltiptext"><a style="color: white" href="https://www.vulture.com/2016/02/tidal-to-donate-15-million-to-charities.html">in 2016</a></pre>
+  </div></th>
+  <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th> 
+</tr>
+<tr class="greyrow">
+  <td>Pays Artists</td>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="X icon" height="20"></th>
+    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+</tr>
+<tr>
+    <td>Carbon Neutral</td>
+    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+      <pre class="tooltiptext"><a style="color: white;" href="https://www.aboutamazon.com/planet/climate-pledge">plans to by 2040</a></pre>
+    </div></th>
+    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+      <pre class="tooltiptext"><a style="color: white;" href="https://www.apple.com/environment">plans to by 2030</a></pre>
+    </div></th>
+    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+      <pre class="tooltiptext"><a style="color: white;" href="https://www.lifeatspotify.com/diversity-equity-impact/climate-action">plans to<br />by 2030</a></pre>
+    </div></th>
+    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+      <pre class="tooltiptext edge"><a style="color: white;" href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
+    </div></th>
+</tr>
+<tr class="greyrow">
+  <td>Carbon Negative</td>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+</tr>
+<tr  style="height: 50px;">
+  <td></td>
+</tr>
+   </table>
+   <script src="../script.js"></script>
+    </body>
 </html>

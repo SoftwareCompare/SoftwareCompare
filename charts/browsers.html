@@ -1,994 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Software Compare</title>
-  <link rel='icon' href='../images/SoftwareCompare128px.webp' type='image/x-icon' />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../styles/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="header">
-    <div>
-      <a href="../">
-        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompareLogo" height="36px">
-      </a>
-      <div>
-        <a class="logo-title" href="../">
-          <h2>SoftwareCompare</h2>
-        </a>
+  <head>
+    <title>Software Compare</title>
+    <link rel='icon' href='../images/SoftwareCompare128px.webp' type='image/x-icon'/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+      <div class="header">
+        <div class="logo">
+          <a href="../">
+            <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompareLogo" class="logo-img">
+          </a>
+          <div>
+            <a class="logo-title" href="../"><h2>SoftwareCompare</h2></a>
+          </div>
+        </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+          <ul>
+            <li><a href="../about.html" class="link-header">About</a></li>
+            <li><a href="../donate.html" class="link-header">Donate</a></li>
+            <li><a href="../contact.html" class="link-header">Contact</a></li>
+          </ul>
+        </ul>
       </div>
-    </div>
-    <button class="menu-toggle">≡</button>
-    <ul class="nav">
-      <ul>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../donate.html">Donate</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </ul>
-  </div>
-  <div class="Chart-list">
-    <a href="./browsers.html">Browsers</a>
-    <a href="./music.html">Music</a>
-    <a href="./searchengines.html">Search Engines</a>
-    <a href="./youtubefrontends.html">YoutubeFrontends</a>
-  </div>
-  <h1> Browsers</h1>
-  <p>These charts do not include features that require installing an extension.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          <h2>Desktop</h2>
-        </th>
-        <th><a href="https://brave.com"><img src="../images/logos/Brave_logo.webp" alt="Brave Logo" height="36px" height="36px"> <br />Brave</a>
-        </th>
-        <th><a href="https://google.com/chrome"><img src="../images/logos/Chromelogo.webp" alt="Chrome Logo" height="36px">
-            <br />Chrome</a>
-        </th>
-        <th><a href="https://duckduckgo.com"><img src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo" height="36px">
-            <br />Duckduckgo</a>
-        </th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/new"><img src="../images/logos/Firefox_logo.webp"
-              alt="Firefox Logo" height="36px"> <br />Firefox</a>
-        </th>
-        <th><a href="https://librewolf.net"><img src="../images/logos/Librewolflogo.webp" alt="Librewolf Logo" height="36px">
-            <br />Librewolf</a>
-        </th>
-        <th><a href="https://github.com/ungoogled-software/ungoogled-chromium"><img
-              src="../images/logos/Ungoogled_Chromium_logo.webp" alt="Ungoogled Chromium Logo" height="36px"> <br />Ungoogled
-            Chromium</a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <h3 style="text-align: center;">Engine</h3>
-        </td>
-        <th class="engine">Chromium</th>
-        <th class="engine">Chromium</th>
-        <th class="engine">Webkit <br />Blink</th>
-        <th class="engine">Gecko</th>
-        <th class="engine">Gecko</th>
-        <th class="engine">Chromium</th>
-      </tr>
-      <tr>
-        <td>Privacy</td>
-      </tr>
-      <tr class="checker_row">
-        <td>Open Source</td>
-        <th><a href="https://github.com/brave/brave-core"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://github.com/duckduckgo/macos-browser"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><a href="https://searchfox.org/mozilla-central/source"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><a href="https://codeberg.org/librewolf/source"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><a href="https://github.com/ungoogled-software/ungoogled-chromium"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        <th><a href="https://brave.com/shields"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Per-Site blocking configurations</td>
-        <th><a href="https://brave.com/shields"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Adblocking by default</td>
-        <th><a href="https://brave.com/shields"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Containers</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20px">
-            <pre>only with<br />extension</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Profiles</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20px">
-            <pre><a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager">complicated</a></pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20px">
-            <pre><a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager">complicated</a></pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Https Upgrading</td>
-        <th><a href="https://brave.com/privacy-updates/22-https-by-default"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Always Upgrade HTTPS</td>
-        <th><a href="https://brave.com/privacy-updates/22-https-by-default"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Proxied Google Safe Browsing</td>
-        <th><a href="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Not proxied</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Disabled<br />Completely</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Disabled<br />Completely</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled">Disabled<br />Completely</a></pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Global Privacy Control</td>
-        <th><a href="https://brave.com/web-standards-at-brave/4-global-privacy-control"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default anonymous iP protection</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Tor Mode</td>
-        <th><a
-            href="https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-Connectivity"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Private Search Engine</td>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Brave Search</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Duckduckgo</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Duckduckgo</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>No default<br />search<br />engine</pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>On-device website translation</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/features/translate"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/features/translate"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Private website translation</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/features/translate"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/features/translate"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://blog.cloudflare.com/announcing-encrypted-client-hello">ECH</a> enabled</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Supports <a
-            href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS
-            over HTTPS</a></td>
-        <th><img src="../images/icons/check-mark.webp" alt="check mark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="check mark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="check mark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="check mark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a
-            href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS
-            over HTTPS</a> enabled</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Conveinence</th>
-      </tr>
-      <tr class="checker_row">
+      <div class="Chart-list">
+        <a class="Chart-link"
+          href="./browsers.html">Browsers</a>
+        <a class="Chart-link"
+          href="./music.html">Music</a>
+        <a class="Chart-link"
+          href="./searchengines.html">Search Engines</a>
+        <a class="Chart-link"
+          href="./youtubefrontends.html">YoutubeFrontends</a>
+      </div>
+      <h1> Browsers</h1>
+      <p>These charts do not include features that require installing an extension.</p>
+      <table class="Comparison_Chart">
+        <thead>
+          <tr class="service-row">
+            <th>
+              <h2>Desktop</h2>
+            </th>
+            <th><a class="service-title"
+              href="https://brave.com"><img class = "service-logo" src="../images/logos/Brave_logo.webp" alt="Brave Logo" height="36"> <br />Brave</a>
+            </th>
+            <th><a class="service-title"
+              href="https://google.com/chrome"><img class = "service-logo" src="../images/logos/Chromelogo.webp" alt="Chrome Logo" height="36"> <br />Chrome</a>
+            </th>
+            <th><a class="service-title"
+              href="https://duckduckgo.com"><img class = "service-logo" src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo" height="36"> <br />Duckduckgo</a>
+            </th>
+            <th><a class="service-title"
+              href="https://www.mozilla.org/en-US/firefox/new"><img class = "service-logo" src="../images/logos/Firefox_logo.webp" alt="Firefox Logo" height="36"> <br />Firefox</a>
+            </th>
+            <th><a class="service-title"
+              href="https://librewolf.net"><img class = "service-logo" src="../images/logos/Librewolflogo.webp" alt="Librewolf Logo" height="36"> <br />Librewolf</a>
+            </th>
+            <th><a class="service-title"
+              href="https://github.com/ungoogled-software/ungoogled-chromium"><img class = "service-logo" src="../images/logos/Ungoogled_Chromium_logo.webp" alt="Ungoogled Chromium Logo" height="36"> <br />Ungoogled Chromium</a>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><h3 style="text-align: center;">Engine</h3></td>
+            <th class="engine">Chromium</th>
+            <th class="engine">Chromium</th>
+            <th class="engine">Webkit <br />Blink</th>
+            <th class="engine">Gecko</th>
+            <th class="engine">Gecko</th>
+            <th class="engine">Chromium</th>
+          </tr>
+          <tr>
+              <th><br />Privacy</th>
+          </tr>
+            <tr>
+              <td>Open Source</td>
+              <th><a class="checkerlink" href="https://github.com/brave/brave-core"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+              <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              <th><a class="checkerlink" href="https://github.com/duckduckgo/macos-browser"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+              <th><a class="checkerlink" href="https://searchfox.org/mozilla-central/source"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+              <th><a class="checkerlink" href="https://codeberg.org/librewolf/source"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+              <th><a class="checkerlink" href="https://github.com/ungoogled-software/ungoogled-chromium"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            </tr>
+            <tr class="greyrow">
+              <td>Default Tracker Blocker</td>
+              <th><a class="checkerlink" href="https://brave.com/shields"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+              <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+              <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            </tr>
+          <tr>
+            <td>Per-Site blocking configurations</td>
+            <th><a class="checkerlink" href="https://brave.com/shields"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr class="greyrow">
+            <td>Adblocking by default</td>
+            <th><a class="checkerlink" href="https://brave.com/shields"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr>
+            <td>Containers</td>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20">
+              <pre class="tooltiptext edge">only with<br />extension</pre>
+            </div></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr class="greyrow">
+            <td>Profiles</td>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20">
+              <pre class="tooltiptext edge"><a style="color: white;" href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager">complicated</a></pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20">
+              <pre class="tooltiptext edge"><a style="color: white;" href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager">complicated</a></pre>
+            </div></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          </tr>
+          <tr>
+            <td>Https Upgrading</td>
+            <th><a class="checkerlink" href="https://brave.com/privacy-updates/22-https-by-default"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          </tr>
+          <tr class="greyrow">
+            <td>Always Upgrade HTTPS</td>
+            <th><a class="checkerlink" href="https://brave.com/privacy-updates/22-https-by-default"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr>
+            <td>Proxied Google Safe Browsing</td>
+            <th><a class="checkerlink" href="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext">Not proxied</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext">Disabled<br />Completely</pre>
+            </div></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext edge">Disabled<br />Completely</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext edge"><a style="color: white;" href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled">Disabled<br />Completely</a></pre>
+            </div></th>
+          </tr>
+          <tr class="greyrow">
+            <td>Default Global Privacy Control</td>
+            <th><a class="checkerlink" href="https://brave.com/web-standards-at-brave/4-global-privacy-control"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr>
+            <td>Default anonymous iP protection</td>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr class="greyrow">
+            <td>Tor Mode</td>
+            <th><a class="checkerlink" href="https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-Connectivity"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr>
+            <td>Default Private Search Engine</td>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+              <pre class="tooltiptext">Brave Search</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext">Google</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+              <pre class="tooltiptext">Duckduckgo</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext edge">Google</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+              <pre class="tooltiptext edge">Duckduckgo</pre>
+            </div></th>
+            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+              <pre class="tooltiptext edge">No default<br />search<br />engine</pre>
+            </div></th>
+          </tr>
+          <tr class="greyrow">
+            <td>On-device website translation</td>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><a class="checkerlink" href="https://www.mozilla.org/en-US/firefox/features/translate"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><a class="checkerlink" href="https://www.mozilla.org/en-US/firefox/features/translate"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr>
+            <td>Private website translation</td>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><a class="checkerlink" href="https://www.mozilla.org/en-US/firefox/features/translate"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><a class="checkerlink" href="https://www.mozilla.org/en-US/firefox/features/translate"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr class="greyrow">
+            <td><a class="HiddenLink" href="https://blog.cloudflare.com/announcing-encrypted-client-hello">ECH</a> enabled</td>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          </tr>
+          <tr>
+            <td>Supports <a class="HiddenLink" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS over HTTPS</a></td>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20"></th>
+              <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20"></th>
+              <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+            </tr>
+          <tr class="greyrow">
+            <td><a class="HiddenLink" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS over HTTPS</a> enabled</td>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          </tr>
+          <tr>
+            <th><br />Conveinence</th>
+        </tr>
+        <tr>
         <td>Cookie Banner Blocking</td>
-        <th><a href="https://brave.com/privacy-updates/21-blocking-cookie-notices"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Autoplay Blocking</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Vertical Tabs</td>
-        <th><a href="https://brave.com/blog/vertical-tabs/"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Users</td>
-        <th><a href="https://brave.com/brave-rewards"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a href="https://duckduckgo.com/donations"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a>
-        </th>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="X icon" height="20px">
-            <pre>no income</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="X icon" height="20px">
-            <pre>no income</pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre
-              class="edge">Duckduckgo is<br /><a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a></pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre
-              class="edge">Duckduckgo is<br /><a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr style="height: 50px;">
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h1> <br /></h1>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          <h1>iOS</h1>
-        </th>
-        <th><a href="https://brave.com"><img src="../images/logos/Brave_logo.webp" alt="Brave Logo" height="36px"> <br />Brave</a>
-        </th>
-        <th><a href="https://google.com/chrome"><img src="../images/logos/Chromelogo.webp" alt="Chrome Logo" height="36px">
-            <br />Chrome</a>
-        </th>
-        <th><a href="https://duckduckgo.com"><img src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo" height="36px">
-            <br />Duckduckgo</a>
-        </th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/new"><img src="../images/logos/Firefox_logo.webp"
-              alt="Firefox Logo" height="36px"> <br />Firefox</a>
-        </th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus/"><img
-              src="../images/logos/Firefox_Focus_logo.webp" alt="Firefox Focus Logo" height="36px"> <br />Firefox Focus</a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <h3 style="text-align: center;">Engine</h3>
-        </td>
-        <th>WebKit</th>
-        <th>Webkit</th>
-        <th>WebKit</th>
-        <th>WebKit</th>
-        <th>WebKit</th>
-      </tr>
-      <tr>
-        <th><br />Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Open Source</td>
-        <th><a href="https://github.com/brave/brave-core"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://github.com/duckduckgo/iOS"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a>
-        </th>
-        <th><a href="https://github.com/mozilla-mobile/firefox-ios"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><a href="https://github.com/mozilla-mobile/firefox-ios"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        <th><a href="https://brave.com/shields"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Per-Site blocking configurations</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Https Upgrading</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Always Upgrade HTTPS</td>
-        <th><a href="https://brave.com/privacy-updates/29-https-by-default-ios"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Proxied Google Safe Browsing</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Not proxied</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Disabled<br />Completely</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Global Privacy Control</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default anonymous iP protection</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Private Search Engine</td>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Brave Search</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Duckduckgo</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://blog.cloudflare.com/announcing-encrypted-client-hello">ECH</a> enabled</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Supports <a
-            href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS
-            over HTTPS</a></td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a
-            href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS
-            over HTTPS</a> enabled</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Conveinence</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Cookie Banner Blocking</td>
-        <th><a href="https://brave.com/privacy-updates/21-blocking-cookie-notices"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Autoplay Blocking</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Bottom Bar</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Users</td>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="X icon" height="20px">
-            <pre><a href="https://brave.com/blog/rewards-ios">Prevented by<br />Apple</a></pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a href="https://duckduckgo.com/donations"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre
-              class="edge">Duckduckgo is<br /><a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre
-              class="edge">Duckduckgo is<br /><a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-    </tbody>
-  </table>
-  <h1> <br /></h1>
-  <table>
-    <thead>
-      <tr>
-        <th>
-          <h1>Android</h1>
-        </th>
-        <th><a href="https://brave.com"><img src="../images/logos/Brave_logo.webp" alt="Brave Logo" height="36px"> <br />Brave</a>
-        </th>
-        <th><a href="https://google.com/chrome"><img src="../images/logos/Chromelogo.webp" alt="Chrome Logo" height="36px">
-            <br />Chrome</a>
-        </th>
-        <th><a href="https://duckduckgo.com"><img src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo" height="36px">
-            <br />Duckduckgo</a>
-        </th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/new"><img src="../images/logos/Firefox_logo.webp"
-              alt="Firefox Logo" height="36px"> <br />Firefox</a>
-        </th>
-        <th><a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus/"><img
-              src="../images/logos/Firefox_Focus_logo.webp" alt="Firefox Focus Logo" height="36px"> <br />Firefox Focus</a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <h3 style="text-align: center;">Engine</h3>
-        </td>
-        <th class="engine">Chromium</th>
-        <th class="engine">Chromium</th>
-        <th>Blink</th>
-        <th>Gecko</th>
-        <th>Gecko</th>
-      </tr>
-      <tr>
-        <th><br />Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Open Source</td>
-        <th><a href="https://github.com/brave/brave-core"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://github.com/duckduckgo/android"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><a href="https://hg.mozilla.org/mozilla-central"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><a href="https://hg.mozilla.org/mozilla-central"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        <th><a href="https://brave.com/shields"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Per-Site blocking configurations</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Https Upgrading</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Always Upgrade HTTPS</td>
-        <th><a href="https://brave.com/privacy-updates/22-https-by-default"><img src="../images/icons/check-mark.webp"
-              alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Proxied Google Safe Browsing</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Not proxied</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Disabled<br />Completely</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Global Privacy Control</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default anonymous iP protection</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Private Search Engine</td>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Brave Search</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="check mark" height="20px">
-            <pre>Duckduckgo</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre>Google</pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://blog.cloudflare.com/announcing-encrypted-client-hello">ECH</a> enabled</td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/yellow-dash.webp" alt="X icon" height="20px">
-            <pre>if <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS<br />over HTTPS</a><br />is enabled</pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Supports <a
-            href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS
-            over HTTPS</a></td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a
-            href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS
-            over HTTPS</a> enabled</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://www.chromium.org/Home/chromium-security/site-isolation">Site Isolation</a></td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://madaidans-insecurities.github.io/firefox-chromium.html#sandboxing">Internal Sandboxing</a>
-        </td>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Conveinence</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Cookie Banner Blocking</td>
-        <th><a href="https://brave.com/privacy-updates/21-blocking-cookie-notices"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a
-            href="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cookie-pop-up-protection"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Autoplay Blocking</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Bottom Bar</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr>
-        <th><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Users</td>
-        <th><a href="https://brave.com/brave-rewards"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><a href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img
-              src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a></th>
-        <th><a href="https://duckduckgo.com/donations"><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px"></a>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre
-              class="edge">Duckduckgo is<br /><a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/icons/X-icon.webp" alt="X icon" height="20px">
-            <pre><a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th>
-          <div><img src="../images/icons/check-mark.webp" alt="checkmark" height="20px">
-            <pre
-              class="edge">Duckduckgo is<br /><a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
-          </div>
-        </th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-        <th><img src="../images/icons/X-icon.webp" alt="X icon" height="20px"></th>
-      </tr>
-      <tr style="height: 50px;">
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+          <th><a class="checkerlink" href="https://brave.com/privacy-updates/21-blocking-cookie-notices"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>  
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+        </tr>
+        <tr class="greyrow">
+          <td>Autoplay Blocking</td>
+          <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+          <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+          <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+        </tr>
+              <tr>
+                <td>Vertical Tabs</td>
+                <th><a class="checkerlink" href="https://brave.com/blog/vertical-tabs/"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr>
+                <th><br />Ethics</th>
+              </tr>
+              <tr>
+                <td>Pays Users</td>
+                <th><a class="checkerlink" href="https://brave.com/brave-rewards"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr class="greyrow">
+                <td>Donates to Charity</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                <th><a class="checkerlink" href="https://duckduckgo.com/donations"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext edge">no income</pre>
+                </div></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext edge">no income</pre>
+                </div></th>
+              </tr>
+              <tr>
+                <td>Carbon Neutral</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext"><a style="color: white;" href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
+                </div></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+                  <pre class="tooltiptext edge">Duckduckgo is<br /><a style="color: white;" href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
+                </div></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext edge"><a style="color: white;" href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a></pre>
+                </div></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr class="greyrow">
+                <td>Carbon Negative</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+                  <pre class="tooltiptext edge">Duckduckgo is<br /><a style="color: white;" href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
+                </div></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+                <tr  style="height: 50px;">
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <h1> <br /></h1>
+            <table class="Comparison_Chart">
+              <thead>
+                <tr class="service-row">
+                  <th>
+                      <h1>iOS</h1>  
+                  </th>
+                  <th><a class="service-title"
+                      href="https://brave.com"><img class = "service-logo" src="../images/logos/Brave_logo.webp" alt="Brave Logo" height="36"> <br />Brave</a>
+                  </th>
+                  <th><a class="service-title"
+                    href="https://google.com/chrome"><img class = "service-logo" src="../images/logos/Chromelogo.webp" alt="Chrome Logo" height="36"> <br />Chrome</a>
+                  </th>
+                  <th><a class="service-title"
+                      href="https://duckduckgo.com"><img class = "service-logo" src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo" height="36"> <br />Duckduckgo</a>
+                  </th>
+                  <th><a class="service-title"
+                      href="https://www.mozilla.org/en-US/firefox/new"><img class = "service-logo" src="../images/logos/Firefox_logo.webp" alt="Firefox Logo" height="36"> <br />Firefox</a>
+                  </th>
+                  <th><a class="service-title"
+                    href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus/"><img class = "service-logo" src="../images/logos/Firefox_Focus_logo.webp" alt="Firefox Focus Logo" height="36"> <br />Firefox Focus</a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><h3 style="text-align: center;">Engine</h3></td>
+                  <th>WebKit</th>
+                  <th>Webkit</th>
+                  <th>WebKit</th>
+                  <th>WebKit</th>
+                  <th>WebKit</th>
+                </tr>
+                <tr>
+                  <th><br />Privacy</th>
+                </tr>
+                <tr>
+                  <td>Open Source</td>
+                  <th><a class="checkerlink" href="https://github.com/brave/brave-core"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><a class="checkerlink" href="https://github.com/duckduckgo/iOS"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><a class="checkerlink" href="https://github.com/mozilla-mobile/firefox-ios"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><a class="checkerlink" href="https://github.com/mozilla-mobile/firefox-ios"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Tracker Blocker</td>
+                  <th><a class="checkerlink" href="https://brave.com/shields"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Per-Site blocking configurations</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Adblock</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Https Upgrading</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Always Upgrade HTTPS</td>
+                  <th><a class="checkerlink" href="https://brave.com/privacy-updates/29-https-by-default-ios"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Proxied Google Safe Browsing</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext">Not proxied</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext">Disabled<br />Completely</pre>
+                  </div></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Global Privacy Control</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Default anonymous iP protection</td>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Private Search Engine</td>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+                    <pre class="tooltiptext">Brave Search</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext edge">Google</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+                    <pre class="tooltiptext">Duckduckgo</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext edge">Google</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext edge">Google</pre>
+                  </div></th>
+                </tr>
+                <tr>
+                  <td><a class="HiddenLink" href="https://blog.cloudflare.com/announcing-encrypted-client-hello">ECH</a> enabled</td>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Supports <a class="HiddenLink" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS over HTTPS</a></td>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td><a class="HiddenLink" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS over HTTPS</a> enabled</td>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <th><br />Conveinence</th>
+              </tr>
+              <tr>
+              <td>Cookie Banner Blocking</td>
+                  <th><a class="checkerlink" href="https://brave.com/privacy-updates/21-blocking-cookie-notices"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                  <tr class="greyrow">
+              <td>Autoplay Blocking</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+                <tr>
+                  <td>Bottom Bar</td>
+                    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  </tr>
+                  <tr>
+                      <th><br />Ethics</th>
+                  </tr>
+                  <tr>
+                    <td>Pays Users</td>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="X icon" height="20">
+                      <pre class="tooltiptext"><a style="color: white" href="https://brave.com/blog/rewards-ios">Prevented by<br />Apple</a></pre>
+                    </div></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  </tr>
+                  <tr class="greyrow">
+                    <td>Donates to Charity</td>
+                      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                      <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                      <th><a class="checkerlink" href="https://duckduckgo.com/donations"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    </tr>
+                  <tr>
+                    <td>Carbon Neutral</td>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                      <pre class="tooltiptext"><a style="color: white;" href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
+                    </div></th>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+                      <pre class="tooltiptext edge">Duckduckgo is<br /><a style="color: white;" href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
+                    </div></th>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                      <pre class="tooltiptext edge"><a style="color: white;" href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
+                    </div></th>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                      <pre class="tooltiptext edge"><a style="color: white;" href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
+                    </div></th>
+                  </tr>
+                  <tr class="greyrow">
+                    <td>Carbon Negative</td>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+                      <pre class="tooltiptext edge">Duckduckgo is<br /><a style="color: white;" href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
+                    </div></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  </tr>
+              </tbody>
+            </table>
+            <h1> <br /></h1>
+            <table class="Comparison_Chart">
+              <thead>
+                  <tr class="service-row">
+                      <th>
+                          <h1>Android</h1>  
+                      </th>
+                      <th><a class="service-title"
+                          href="https://brave.com"><img class = "service-logo" src="../images/logos/Brave_logo.webp" alt="Brave Logo" height="36"> <br />Brave</a>
+                      </th>
+                      <th><a class="service-title"
+                        href="https://google.com/chrome"><img class = "service-logo" src="../images/logos/Chromelogo.webp" alt="Chrome Logo" height="36"> <br />Chrome</a>
+                      </th>
+                      <th><a class="service-title"
+                          href="https://duckduckgo.com"><img class = "service-logo" src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo" height="36"> <br />Duckduckgo</a>
+                      </th>
+                      <th><a class="service-title"
+                          href="https://www.mozilla.org/en-US/firefox/new"><img class = "service-logo" src="../images/logos/Firefox_logo.webp" alt="Firefox Logo" height="36"> <br />Firefox</a>
+                      </th>
+                      <th><a class="service-title"
+                        href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus/"><img class = "service-logo" src="../images/logos/Firefox_Focus_logo.webp" alt="Firefox Focus Logo" height="36"> <br />Firefox Focus</a>
+                    </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><h3 style="text-align: center;">Engine</h3></td>
+                      <th class="engine">Chromium</th>
+                      <th class="engine">Chromium</th>
+                      <th>Blink</th>
+                      <th>Gecko</th>
+                      <th>Gecko</th>
+                  </tr>
+                  <tr>
+                      <th><br />Privacy</th>
+                  </tr>
+                  <tr>
+                      <td>Open Source</td>
+                      <th><a class="checkerlink" href="https://github.com/brave/brave-core"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                      <th><a class="checkerlink" href="https://github.com/duckduckgo/android"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                      <th><a class="checkerlink" href="https://hg.mozilla.org/mozilla-central"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                      <th><a class="checkerlink" href="https://hg.mozilla.org/mozilla-central"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  </tr>
+                  <tr class="greyrow">
+                      <td>Default Tracker Blocker</td>
+                      <th><a class="checkerlink" href="https://brave.com/shields"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                      <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                      <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                      <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                      <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    </tr>
+                <tr>
+                  <td>Per-Site blocking configurations</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Adblock</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Https Upgrading</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Always Upgrade HTTPS</td>
+                  <th><a class="checkerlink" href="https://brave.com/privacy-updates/22-https-by-default"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Proxied Google Safe Browsing</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext">Not proxied</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext">Disabled<br />Completely</pre>
+                  </div></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Global Privacy Control</td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td>Default anonymous iP protection</td>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td>Default Private Search Engine</td>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+                    <pre class="tooltiptext">Brave Search</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext edge">Google</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="check mark" height="20">
+                    <pre class="tooltiptext">Duckduckgo</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext edge">Google</pre>
+                  </div></th>
+                  <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                    <pre class="tooltiptext edge">Google</pre>
+                  </div></th>
+                </tr>
+                <tr>
+                  <td><a class="HiddenLink" href="https://blog.cloudflare.com/announcing-encrypted-client-hello">ECH</a> enabled</td>
+                    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                    <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="X icon" height="20">
+                      <pre class="tooltiptext edge">if <a style="color: white;" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS<br />over HTTPS</a><br />is enabled</pre>
+                    </div></th>
+                  </tr>
+                <tr class="greyrow">
+                  <td>Supports <a class="HiddenLink" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS over HTTPS</a></td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td><a class="HiddenLink" href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups">DNS over HTTPS</a> enabled</td>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr class="greyrow">
+                  <td><a class="HiddenLink" href="https://www.chromium.org/Home/chromium-security/site-isolation">Site Isolation</a></td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <td><a class="HiddenLink" href="https://madaidans-insecurities.github.io/firefox-chromium.html#sandboxing">Internal Sandboxing</a></td>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                </tr>
+                <tr>
+                  <th><br />Conveinence</th>
+              </tr>
+              <tr>
+              <td>Cookie Banner Blocking</td>
+                  <th><a class="checkerlink" href="https://brave.com/privacy-updates/21-blocking-cookie-notices"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><a class="checkerlink" href="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cookie-pop-up-protection"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                  <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>    
+              </tr>
+                  <tr class="greyrow">
+              <td>Autoplay Blocking</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr>
+                <td>Bottom Bar</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr>
+                  <th><br />Ethics</th>
+              </tr>
+              <tr>
+                <td>Pays Users</td>
+                <th><a class="checkerlink" href="https://brave.com/brave-rewards"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr class="greyrow">
+                <td>Donates to Charity</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><a class="checkerlink" href="https://www.google.org/billion-commitment-to-create-more-opportunity"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                <th><a class="checkerlink" href="https://duckduckgo.com/donations"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+              <tr>
+                <td>Carbon Neutral</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext"><a style="color: white;" href="https://sustainability.google/operating-sustainably/net-zero-carbon">plans to<br />by 2030</a></pre>
+                </div></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+                  <pre class="tooltiptext edge">Duckduckgo is<br /><a style="color: white;" href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
+                </div></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext edge"><a style="color: white;" href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
+                </div></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
+                  <pre class="tooltiptext edge"><a style="color: white;" href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments">commited to<br />reducing<br />emissions</a> </pre>
+                </div></th>
+              </tr>
+              <tr class="greyrow">
+                <td>Carbon Negative</td>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
+                  <pre class="tooltiptext edge">Duckduckgo is<br /><a style="color: white;" href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative/">carbon negative</pre>
+                </div></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+                <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
+              </tr>
+            <tr  style="height: 50px;">
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
 
-  <p><br />Find more comparisons at <a href="https://privacytests.org">privacytests.org</a></p>
-
-
+            <p><br />Find more comparisons at <a href="https://privacytests.org">privacytests.org</a></p>
+              
+            
   </div>
-  <script src="../script.js"></script>
-</body>
-
+    <script src="../script.js"></script>
+  </body>
 </html>
