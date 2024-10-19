@@ -1,231 +1,229 @@
-        .nav.open {
-          display: block;
-        }
-          .header {
-            overflow: hidden;
-            background-color: #f1f1f1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 5;
-          }
-          
-          .logo {
-            display: flex;
-            align-items: center;
-            z-index: 2;
-          }
-          
-          .logo-img {
-            width: 64px;
-            height: 64px;
-            margin-right: 10px;
-            z-index: 2;
-          }
-          
-          .logo-title{
-            margin: 0;
-            z-index: 2;
-            text-decoration: none;
-            color: black;
-          }
-          
-          .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 29px;
-            cursor: pointer;
-            z-index: 2;
-            padding-left: 15px;
-            padding-right: 15px;
-          }
-          
-          .nav {
-            display: flex;
-            justify-content: space-between;
-          }
-          
-          .nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-          }
-          
-          .nav li {
-            margin-right: 20px;
-          }
-          
-          .link-header {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-          }
-          
-          .edge {
-            overflow-wrap: anywhere !important;
-            transform: translate(-5em, -12px) !important;
-          }
-          .checkerlink{
-              display: inline-block;
-              border-bottom: 1px solid rgb(174, 174, 174);
-          }
-          /* Mobile styles */
-          @media only screen and (max-width: 525px) {
-            .menu-toggle {
-              display: block;
-              color: black;
-            }
-            .nav {
-              position:absolute;
-              width: 100vw;
-              height:0px;
-              top: 50px;
-              justify-content: center;
-              background-color: #f1f1f1;
-              visibility: collapse;
-              transition: all 0.4s;
-              z-index: 5;
-              overflow: hidden;
-              padding: 0px;
-            }
-            .open {
-              visibility: visible;
-              height: 35vh;
-            }
-            .nav ul {
-              flex-direction: column;
-              align-items: center;
-              width: 100vw;
-              z-index: 5;
-            }
-            .nav li {
-              margin: 20px 0;
-            }
-            .link-header {
-              font-size: 24px;
-            }
-            .Comparison_Chart {
-              font-size: 12px;
-            }
-            .service-title {
-              font-size: 10px;
-            }
-            .service-logo {
-              height: 25px;
-            }
-            td {
-              font-size: 10px;
-              min-width: 40px;
-            }
-            .checker {
-              height: 15px;
-              width: 15px
-            }
-            .engine{
-              font-size: 9px;
-            }
-        }
-        .service-logo {
-          border-radius: 16%;
-        }
-        .service-title {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-weight: normal;
-            background-color: #fff;
-        }
-        .service-row {
-          position: sticky;
-          top: 0;
-          background-color: white;
-          z-index: 2;
-        }
-            .tooltip {
-                position: relative;
-                display: inline-block;
-                border-bottom: 1px dotted rgb(68, 68, 68);
-                color: white;
-              }
-              
-              .tooltip .tooltiptext {
-                background-color: rgb(56, 56, 56);
-                border-radius: 6px;
-                color: #fff;
-                flex-direction: column;
-                min-width: 50px;
-                padding: 5px;
-                position: absolute;
-                visibility: collapse;
-                text-align: start;
-                transform: translate(0px, -12px);
-                width: max-content;
-                z-index: 1;
-              }
-              
-              .tooltip:active {
-                visibility: visible;
-              }
+.nav.open {
+  display: block;
+}
+  .header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .logo-img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    z-index: 2;
+  }
+  
+  .logo-title{
+    margin: 0;
+    z-index: 2;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 29px;
+    cursor: pointer;
+    z-index: 2;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .link-header {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .edge {
+    overflow-wrap: anywhere !important;
+    transform: translate(-5em, -12px) !important;
+  }
+  .checkerlink{
+      display: inline-block;
+      border-bottom: 1px solid rgb(174, 174, 174);
+  }
+  /* Mobile styles */
+  @media only screen and (max-width: 525px) {
+    .menu-toggle {
+      display: block;
+      color: black;
+    }
+    .nav {
+      position:absolute;
+      width: 100vw;
+      height:0px;
+      top: 50px;
+      justify-content: center;
+      background-color: #f1f1f1;
+      visibility: collapse;
+      transition: all 0.4s;
+      z-index: 5;
+      overflow: hidden;
+      padding: 0px;
+    }
+    .open {
+      visibility: visible;
+      height: 35vh;
+    }
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      z-index: 5;
+    }
+    .nav li {
+      margin: 20px 0;
+    }
+    .link-header {
+      font-size: 24px;
+    }
+    .Comparison_Chart {
+      font-size: 12px;
+    }
+    .service-title {
+      font-size: 10px;
+    }
+    .service-logo {
+      height: 25px;
+    }
+    td {
+      font-size: 10px;
+      min-width: 40px;
+    }
+    .checker {
+      height: 15px;
+      width: 15px
+    }
+    .engine{
+      font-size: 9px;
+    }
+}
+.service-logo {
+  border-radius: 16%;
+}
+.service-title {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    background-color: #fff;
+}
+.service-row {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted rgb(68, 68, 68);
+        color: white;
+      }
+      
+      .tooltip .tooltiptext {
+        background-color: rgb(56, 56, 56);
+        border-radius: 6px;
+        color: #fff;
+        flex-direction: column;
+        min-width: 50px;
+        padding: 5px;
+        position: absolute;
+        visibility: collapse;
+        text-align: start;
+        transform: translate(0px, -12px);
+        width: max-content;
+        z-index: 1;
+      }
+      
+      .tooltip:active {
+        visibility: visible;
+      }
 
-              .Chart-link {
-                text-decoration: none;
-                padding-left: 10px;
-              }
-              .HiddenLink {
-                color: rgb(0, 0, 0);
-              }
-              .homepagelink {
-                text-decoration: none;
-              }
-              .greyrow {
-                background-color: #f1f1f1;
-              }
-              .Comparison_Chart {
-                border-collapse: collapse;
-                max-width: 1080px; 
-                width: 100vw;
-                margin: 0 auto; 
-              }
-              body { 
-	              max-width: 1080px; 
-                min-width: 360px;
-                width: 100%;
-	              margin: 0 auto !important; 
-	              float: none !important; 
+      .Chart-link {
+        text-decoration: none;
+        padding-left: 10px;
+      }
+      .HiddenLink {
+        color: rgb(0, 0, 0);
+      }
+      .homepagelink {
+        text-decoration: none;
+      }
+      .greyrow {
+        background-color: #f1f1f1;
+      }
+      .Comparison_Chart {
+        border-collapse: collapse;
+        max-width: 1080px; 
+        width: 100vw;
+        margin: 0 auto; 
+      }
+      body { 
+        max-width: 1080px; 
+        min-width: 360px;
+        width: 100%;
+        margin: 0 auto !important; 
+        float: none !important; 
 
-              }
-              td {
-                min-width: 100px;
-                width: 60px;
-                height: 25px;
-              }
-              th {
-                min-width: 5px;
+      }
+      td {
+        min-width: 100px;
+        width: 60px;
+        height: 25px;
+      }
+      th {
+        min-width: 5px;
 
-                width: 10%;
-                height: 25px;
-              }
-              h1 {
-                padding-left: 10px;
-              }
-              p {
-                padding-left: 10px;
-              }
-              h2 {
-                padding-left: 10px;
-              }
-              h3 {
-                padding-left: 10px;
-                
-              }
-              .code {
-                max-width: 80vw;
-                overflow-wrap: anywhere;
-                overflow: auto;
-              }
-             
-
-
+        width: 10%;
+        height: 25px;
+      }
+      h1 {
+        padding-left: 10px;
+      }
+      p {
+        padding-left: 10px;
+      }
+      h2 {
+        padding-left: 10px;
+      }
+      h3 {
+        padding-left: 10px;
+        
+      }
+      .code {
+        max-width: 80vw;
+        overflow-wrap: anywhere;
+        overflow: auto;
+      }
+     
