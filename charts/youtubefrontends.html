@@ -1,290 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Software Compare</title>
-        <link rel='icon' href='../images/SoftwareCompare128px.webp' type='image/x-icon'/>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="../styles/style.css" rel="stylesheet" />
-    </head>
-    <body>
-      <div class="header">
-        <div class="logo">
-          <a href="../">
-            <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompareLogo" class="logo-img">
-          </a>
-          <div>
-            <a class="logo-title" href="../"><h2>SoftwareCompare</h2></a>
-          </div>
-        </div>
-        <button class="menu-toggle">≡</button>
-        <ul class="nav">
-          <ul>
-              <li><a href="../about.html" class="link-header">About</a></li>
-              <li><a href="../donate.html" class="link-header">Donate</a></li>
-              <li><a href="../contact.html" class="link-header">Contact</a></li>
-          </ul>
-          </ul>
+
+<head>
+  <title>Software Compare</title>
+  <link rel='icon' href='../images/SoftwareCompare128px.webp' type='image/x-icon' />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="header">
+    <div>
+      <a href="../">
+        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompareLogo">
+      </a>
+      <div>
+        <a class="logo-title" href="../">
+          <h2>SoftwareCompare</h2>
+        </a>
       </div>
-        <div class="Chart-list">
-            <a class="Chart-link"
-                href="./browsers.html">Browsers</a>
-                <a class="Chart-link"
-                    href="./music.html">Music</a>
-                <a class="Chart-link"
-                    href="./searchengines.html">Search Engines</a>
-                <a class="Chart-link"
-                    href="./youtubefrontends.html">YoutubeFrontends</a>
-                </div>
-            <h1>YouTube Frontend Comparison</h1>
-                <p>YouTube Frontends are applications that can be run on-device or on a server. Frontends mimic Youtube's native app or site with more privacy, no ads, and sometimes new features.</p>
-        <table class="Comparison_Chart">
-          <tr class="service-row">
-            <th><h2>Web Based</h2></th>
-            <th><a class="service-title" href="https://tube.cadence.moe/"><img class = "service-logo" src="../images/logos/Cloudtube-logo.webp" alt="Cloudtube Logo" height="36"> <br /> Cloudtube</a></th>
-            <th><a class="service-title" href="https://invidious.io"><img class = "service-logo" src="../images/logos/Invidious-logo.webp" alt="Invidious Logo" height="36"> <br /> Invidious</a></th>
-            <th><a class="service-title" href="https://github.com/TeamPiped/Piped"><img class = "service-logo" src="../images/logos/Piped_logo.svg" alt="Piped Logo" height="36"> <br /> Piped</a></th>
-            
-          </tr>
-          <tr>
-            <th><br />Privacy</th>
-          </tr>
-          <tr>
-            <td>Open Source</td>
-            <th><a class="checkerlink" href="https://git.sr.ht/~cadence/cloudtube"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/iv-org/invidious"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/TeamPiped/Piped"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            
-          </tr>
-          <tr class="greyrow">
-            <td>Javascript Optional</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20">
-              <pre class="tooltiptext">no comments</pre>
-            </div></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-          </tr>
-          <tr>
-            <td>No ip leak to Youtube</td>
-            <th><a class="checkerlink" href="https://tube.cadence.moe/privacy"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></a></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="checkmark" height="20">
-              <pre class="tooltiptext">depends on<br />server: usually<br />disabled by<br />default</pre>
-            </div></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>  
-          </tr>
-          <tr>
-            <th><br />Conveinence</th>
-          </tr>
-          <tr>
-            <td>Subscriptions</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
-              <pre class="tooltiptext">requires<br />account</pre>
-            </div></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>Comments</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            </tr>
-          <tr>
-            <td>Built in <a class ="HiddenLink" href="https://github.com/ajayyy/SponsorBlock">Sponsorblock</a></td>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
-              <pre class="tooltiptext" href="https://github.com/ajayyy/SponsorBlock">with<br />extension</a></pre>
-            </div></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20">
-              <pre class="tooltiptext" href="https://github.com/ajayyy/SponsorBlock">with<br />extension</pre>
-            </div></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>Subscriptions RSS</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr>
-            <td>Per Channel RSS</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>Account Sync</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr>
-            <td>Import/Export</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>DeArrow</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr>
-            <td>Custom playlists</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>Watch History</td>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="checkmark" height="20">
-              <pre class="tooltiptext">requires account</pre>
-            </div></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
-              <pre class="tooltiptext edge">stored<br />locally</pre>
-            </div></th>
-          </tr>
-          <tr>
-            <td><a class ="HiddenLink" href="https://github.com/Anarios/return-youtube-dislike">Return Dislikes</a></td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>Block Channels</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-          </tr>
-          <tr>
-            <th><br />Freedom</th>
-          </tr>
-          <tr class="greyrow">
-            <td>Watch on <a class ="HiddenLink" href="https://odysee.com">Odysee</a> button</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/yellow-dash.webp" alt="yellow dash" height="20">
-              <pre class="tooltiptext edge"><a style="color: white;" href="https://github.com/TeamPiped/Piped/issues/3059">currently<br />broken</pre>
-            </div></th>
-          </tr>
-          <tr>
-            <th><br />Usability</th>
-          </tr>
-          <tr class="greyrow">
-            <td>Supports ancient browsers</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><div class="tooltip"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20">
-              <pre class="tooltiptext edge" href="https://github.com/IronMaltese/YouTube-Frontend-Comparison/pull/4#issuecomment-1279854489">not<br />abandoned <br /> browsers </pre>
-            </div></th>
-          </tr>
-          <tr  style="height: 40px;">
-            <td></td>
-          </tr>
-         </table>
-        
-         <h1> <br /></h1>
-        <table class="Comparison_Chart">
-          <tr class="service-row">
-            <td><h2>Applications</h2></td>
-            <th><a class = "service-title" href="https://FreeTubeApp.io"><img class = "service-logo" src="../images/logos/Freetube_logo.webp" alt="Freetube Logo" height="36"> <br /> Freetube </a></th>
-            <th><a class = "service-title" href="https://libretube.dev"><img class = "service-logo" src="../images/logos/Libretube_logo.webp" alt="Libretube Logo" height="36"><br /> Libretube</a></th>
-            <th><a class = "service-title" href="https://newpipe.net"><img class = "service-logo" src="../images/logos/Newpipe_logo.webp" alt="Newpipe Logo" height="36"><br /> NewPipe</a></th>
-            <th><a class = "service-title" href="https://smarttubeapp.github.io/"><img class = "service-logo" src="../images/logos/SmartTube_logo.webp" alt="SmartTube Logo" height="36"><br /> SmartTube</a></th>
-          </tr>
-          <tr>
-            <td>Platforms</td>
-            <th>Desktop</th>
-            <th>Android</th>
-            <th>Android</th>
-            <th>TV</th>
-          </tr>
-          <tr>
-            <th><br />Privacy</th>
-          </tr>
-          <tr>
-            <td>Open Source</td>
-            <th><a class="checkerlink" href="https://github.com/FreeTubeApp/FreeTube"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/libre-tube/LibreTube"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/TeamNewPipe/NewPipe"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/yuliskov/SmartTube"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-          </tr>
-          <tr class="greyrow">
-            <td>No ip leak to Youtube</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-          </tr>
-          <tr>
-            <th><br />Conveinence</th>
-          </tr>
-          <tr>
-            <td>Subscriptions</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td><a class ="HiddenLink" href="https://github.com/ajayyy/SponsorBlock">Sponsorblock</a></td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr>
-            <td>Import/Export</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td>DeArrow</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-          </tr>
-          <tr>
-            <td>Multi-Account</td>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr class="greyrow">
-            <td><a class ="HiddenLink" href="https://github.com/Anarios/return-youtube-dislike">Return Dislikes</a></td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></th>
-          </tr>
-          <tr>
-            <td>Block Channels</td>
-            <th><a class="checkerlink" href="https://github.com/FreeTubeApp/FreeTube/pull/4202"><img class="checker" src="../images/icons/check-mark.webp" alt="checkmark" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/libre-tube/LibreTube/issues/1173#issuecomment-1235741040"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/TeamNewPipe/NewPipe/issues/1815"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></a></th>
-            <th><a class="checkerlink" href="https://github.com/yuliskov/SmartTube/issues/3978"><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></a></th>
-            
-          </tr>
-          <tr>
-            <th><br />Freedom</th>
-          </tr>
-          <tr class="greyrow">
-            <td>Watch on <a class ="HiddenLink" href="https://odysee.com">Odysee</a> button</td>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-            <th><img class="checker" src="../images/icons/X-icon.webp" alt="X icon" height="20"></th>
-          </tr>
-          <tr  style="height: 50px;">
-            <td></td>
-          </tr>
-        </table>
-        <script src="../script.js"></script>
-    </body>
+    </div>
+    <button class="menu-toggle">≡</button>
+    <ul class="nav">
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../donate.html">Donate</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </ul>
+  </div>
+  <div class="Chart-list">
+    <a href="./browsers.html">Browsers</a>
+    <a href="./music.html">Music</a>
+    <a href="./searchengines.html">Search Engines</a>
+    <a href="./youtubefrontends.html">YoutubeFrontends</a>
+  </div>
+  <h1>YouTube Frontend Comparison</h1>
+  <p>YouTube Frontends are applications that can be run on-device or on a server. Frontends mimic Youtube's native app
+    or site with more privacy, no ads, and sometimes new features.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          <h2>Web Based</h2>
+        </th>
+        <th><a class="service-title" href="https://tube.cadence.moe/"><img class="service-logo"
+              src="../images/logos/Cloudtube-logo.webp" alt="Cloudtube Logo"> <br /> Cloudtube</a></th>
+        <th><a class="service-title" href="https://invidious.io"><img class="service-logo"
+              src="../images/logos/Invidious-logo.webp" alt="Invidious Logo"> <br /> Invidious</a></th>
+        <th><a class="service-title" href="https://github.com/TeamPiped/Piped"><img class="service-logo"
+              src="../images/logos/Piped_logo.svg" alt="Piped Logo"> <br /> Piped</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><br />Privacy</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Open Source</td>
+        <th><a href="https://git.sr.ht/~cadence/cloudtube"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+        <th><a href="https://github.com/iv-org/invidious"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+        <th><a href="https://github.com/TeamPiped/Piped"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+
+      </tr>
+      <tr class="checker_row">
+        <td>Javascript Optional</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="yellow dash"
+             >
+            <pre class="tooltiptext">no comments</pre>
+          </div>
+        </th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>No ip leak to Youtube</td>
+        <th><a href="https://tube.cadence.moe/privacy"><img src="../images/icons/X-icon.webp"
+              alt="X icon"></a></th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="checkmark">
+            <pre class="tooltiptext">depends on<br />server: usually<br />disabled by<br />default</pre>
+          </div>
+        </th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr>
+        <th><br />Conveinence</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Subscriptions</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/check-mark.webp" alt="checkmark">
+            <pre class="tooltiptext">requires<br />account</pre>
+          </div>
+        </th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Comments</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Built in <a href="https://github.com/ajayyy/SponsorBlock">Sponsorblock</a></td>
+        <th>
+          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon">
+            <pre class="tooltiptext" href="https://github.com/ajayyy/SponsorBlock">with<br />extension</a></pre>
+          </div>
+        </th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/X-icon.webp" alt="X icon">
+            <pre class="tooltiptext" href="https://github.com/ajayyy/SponsorBlock">with<br />extension</pre>
+          </div>
+        </th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Subscriptions RSS</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Per Channel RSS</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Account Sync</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Import/Export</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>DeArrow</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Custom playlists</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Watch History</td>
+        <th>
+          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="checkmark">
+            <pre class="tooltiptext">requires account</pre>
+          </div>
+        </th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/check-mark.webp" alt="checkmark">
+            <pre class="tooltiptext edge">stored<br />locally</pre>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://github.com/Anarios/return-youtube-dislike">Return Dislikes</a></td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Block Channels</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+      </tr>
+      <tr>
+        <th><br />Freedom</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Watch on <a href="https://odysee.com">Odysee</a> button</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/yellow-dash.webp" alt="yellow dash"
+             >
+            <pre
+              class="tooltiptext edge"><a href="https://github.com/TeamPiped/Piped/issues/3059">currently<br />broken</pre>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th><br />Usability</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Supports ancient browsers</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th>
+          <div class="tooltip"><img src="../images/icons/check-mark.webp" alt="checkmark">
+            <pre class="tooltiptext edge"
+              href="https://github.com/IronMaltese/YouTube-Frontend-Comparison/pull/4#issuecomment-1279854489">not<br />abandoned <br /> browsers </pre>
+          </div>
+        </th>
+      </tr>
+      <tr style="height: 40px;">
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1> <br /></h1>
+  <table>
+    <thead>
+      <tr>
+        <td>
+          <h2>Applications</h2>
+        </td>
+        <th><a href="https://FreeTubeApp.io"><img class="service-logo" src="../images/logos/Freetube_logo.webp"
+              alt="Freetube Logo"> <br /> Freetube </a></th>
+        <th><a href="https://libretube.dev"><img class="service-logo" src="../images/logos/Libretube_logo.webp"
+              alt="Libretube Logo"><br /> Libretube</a></th>
+        <th><a href="https://newpipe.net"><img class="service-logo" src="../images/logos/Newpipe_logo.webp"
+              alt="Newpipe Logo"><br /> NewPipe</a></th>
+        <th><a href="https://smarttubeapp.github.io/"><img class="service-logo"
+              src="../images/logos/SmartTube_logo.webp" alt="SmartTube Logo"><br /> SmartTube</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Platforms</td>
+        <th>Desktop</th>
+        <th>Android</th>
+        <th>Android</th>
+        <th>TV</th>
+      </tr>
+      <tr>
+        <th><br />Privacy</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Open Source</td>
+        <th><a href="https://github.com/FreeTubeApp/FreeTube"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+        <th><a href="https://github.com/libre-tube/LibreTube"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+        <th><a href="https://github.com/TeamNewPipe/NewPipe"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+        <th><a href="https://github.com/yuliskov/SmartTube"><img src="../images/icons/check-mark.webp"
+              alt="checkmark"></a></th>
+      </tr>
+      <tr class="checker_row">
+        <td>No ip leak to Youtube</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+      </tr>
+      <tr>
+        <th><br />Conveinence</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Subscriptions</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://github.com/ajayyy/SponsorBlock">Sponsorblock</a></td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Import/Export</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>DeArrow</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Multi-Account</td>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://github.com/Anarios/return-youtube-dislike">Return Dislikes</a></td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/check-mark.webp" alt="checkmark"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Block Channels</td>
+        <th><a href="https://github.com/FreeTubeApp/FreeTube/pull/4202"><img class="checker"
+              src="../images/icons/check-mark.webp" alt="checkmark"></a></th>
+        <th><a href="https://github.com/libre-tube/LibreTube/issues/1173#issuecomment-1235741040"><img class="checker"
+              src="../images/icons/X-icon.webp" alt="X icon"></a></th>
+        <th><a href="https://github.com/TeamNewPipe/NewPipe/issues/1815"><img class="checker"
+              src="../images/icons/X-icon.webp" alt="X icon"></a></th>
+        <th><a href="https://github.com/yuliskov/SmartTube/issues/3978"><img class="checker"
+              src="../images/icons/X-icon.webp" alt="X icon"></a></th>
+
+      </tr>
+      <tr>
+        <th><br />Freedom</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Watch on <a href="https://odysee.com">Odysee</a> button</td>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+        <th><img src="../images/icons/X-icon.webp" alt="X icon"></th>
+      </tr>
+      <tr style="height: 50px;">
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="../script.js"></script>
+</body>
+
 </html>
