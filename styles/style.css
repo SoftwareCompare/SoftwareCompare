@@ -1,3 +1,11 @@
+body {
+  max-width: 1080px;
+  min-width: 100px;
+  width: 100%;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
 .nav.open {
   display: block;
 }
@@ -16,25 +24,29 @@
   display: flex;
   align-items: center;
   z-index: 2;
+  transition: all 0.4s;
+}
+
+.header h2 {
+  font-size: 25px;
+  padding: 5px;
+  margin: auto;
 }
 
 .header img {
   /* logo image */
-  width: 64px;
   height: 64px;
-  margin-right: 10px;
   z-index: 2;
+  transition: all 0.4s;
 }
-
+h1 {
+  transition: all 0.4s;
+}
 .logo-title {
   margin: 0;
   z-index: 2;
   text-decoration: none;
   color: black;
-}
-
-tbody .checker_row:nth-child(even) {
-  background-color: #f1f1f1;
 }
 
 .header button {
@@ -45,8 +57,11 @@ tbody .checker_row:nth-child(even) {
   font-size: 29px;
   cursor: pointer;
   z-index: 2;
-  padding-left: 15px;
   padding-right: 15px;
+}
+
+tbody .checker_row:nth-child(even) {
+  background-color: #f1f1f1;
 }
 
 .nav {
@@ -99,6 +114,7 @@ thead img {
 }
 .checker_row img {
   height: 20px;
+  transition: all 0.4s;
 }
 thead a {
   text-decoration: none;
@@ -118,7 +134,7 @@ thead a {
 
   .nav {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 0px;
     top: 50px;
     justify-content: center;
@@ -175,12 +191,16 @@ thead a {
 
   .engine {
     font-size: 14px;
+    transition: all 0.4s;
   }
   h1 {
     font-size: 30px;
   }
   .Chart-list a {
     font-size: 15px;
+  }
+  .header img {
+    height: 62px;
   }
 
   @media only screen and (max-width: 480px) {
@@ -203,7 +223,16 @@ thead a {
     }
     td {
       font-size: 14px;
-      min-width: 40px;
+      min-width: 37px;
+    }
+    .header img {
+      height: 59px;
+    }
+    .logo-title h2 {
+      font-size: 22px;
+    }
+    .nav {
+      top: 47px;
     }
 
     @media only screen and (max-width: 450px) {
@@ -229,9 +258,17 @@ thead a {
       }
       td {
         font-size: 13px;
-        min-width: 40px;
+        min-width: 34px;
       }
-
+      .header img {
+        height: 56px;
+      }
+      .logo-title h2 {
+        font-size: 22px;
+      }
+      .nav {
+        top: 44px;
+      }
       @media only screen and (max-width: 420px) {
         thead a {
           /* Service Title */
@@ -252,9 +289,37 @@ thead a {
         }
         td {
           font-size: 12px;
-          min-width: 40px;
+          min-width: 31px;
         }
-        
+        .header img {
+          height: 53px;
+        }
+        .logo-title h2 {
+          font-size: 22px;
+        }
+        .nav {
+          top: 40px;
+        }
+        @media only screen and (max-width: 300px) {
+          .logo-title h2 {
+            font-size: 19px;
+          }
+          .header img {
+            height: 45px;
+          }
+          .nav {
+            top: 33px;
+          }
+          @media only screen and (max-width: 240px) {
+            .logo-title h2 {
+              display: none;
+            }
+            .header img {
+              height: 45px;
+            }
+            
+          }
+        }
       }
     }
   }
@@ -289,11 +354,11 @@ thead {
   border-radius: 6px;
   color: #fff;
   flex-direction: column;
-  min-width: 50px;
+  min-width: 60px;
   padding: 5px;
   position: absolute;
   visibility: collapse;
-  text-align: start;
+  text-align: center;
   transform: translate(0px, -12px);
   width: fit;
   z-index: 1;
@@ -308,6 +373,7 @@ thead {
   /* Links under header at top of page */
   text-decoration: none;
   padding-left: 10px;
+  transition: all 0.4s;
 }
 
 .checker_row td a {
@@ -327,15 +393,6 @@ table {
   max-width: 1080px;
   width: 100vw;
   margin: 0 auto;
-}
-
-body {
-  max-width: 1080px;
-  min-width: 360px;
-  width: 100%;
-  margin: 0 auto !important;
-  float: none !important;
-
 }
 
 td {
