@@ -93,7 +93,25 @@ thead img {
   height: 30px;
   border-radius: 16%;
 }
-
+.Chart-list a {
+  /* Links under header at top of page */
+  color: black;
+  padding-left: 10px;
+  transition: all 0.4s;
+}
+.Chart-list {
+  max-width: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Chart-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 .edge {
   overflow-wrap: anywhere !important;
   transform: translate(-5em, -12px) !important;
@@ -116,14 +134,27 @@ thead img {
   height: 20px;
   transition: all 0.4s;
 }
-thead a {
+thead td {
+  text-align: center;
+}
+thead td a {
+  /* Service Title */
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+thead th a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: normal;
   background-color: #fff;
   font-size: 12px;
 }
-
+.engine {
+  font-size: 13px;
+  transition: all 0.4s;
+}
 /* Mobile styles */
 @media only screen and (max-width: 525px) {
   .header button {
@@ -131,7 +162,10 @@ thead a {
     display: block;
     color: black;
   }
-
+  thead td a {
+    /* Service Title */
+    font-size: 19px;
+  }
   .nav {
     position: absolute;
     width: 100%;
@@ -169,10 +203,12 @@ thead a {
   table {
     font-size: 12px;
   }
-
-  thead a {
+  
+  thead th a {
     /* Service Title */
     font-size: 10px;
+    height: 10px;
+    line-height: 0px !important; 
   }
 
   thead img {
@@ -181,7 +217,7 @@ thead a {
   }
 
   td {
-    font-size: 15px;
+    font-size: 14px;
     min-width: 40px;
   }
 
@@ -190,8 +226,7 @@ thead a {
   }
 
   .engine {
-    font-size: 14px;
-    transition: all 0.4s;
+    font-size: 11px;
   }
   h1 {
     font-size: 30px;
@@ -202,11 +237,16 @@ thead a {
   .header img {
     height: 62px;
   }
-
   @media only screen and (max-width: 480px) {
-    thead a {
+    thead th a {
       /* Service Title */
       font-size: 8px;
+      height: 8px;
+      line-height: 0.4px;
+    }
+    thead td a {
+      /* Service Title */
+      font-size: 18px;
     }
     thead img {
       /* Service Logo */
@@ -216,13 +256,14 @@ thead a {
       font-size: 28px;
     }
     .engine {
-      font-size: 12px;
+      font-size: 9px;
     }
     .checker_row img {
       height: 16px;
     }
+    
     td {
-      font-size: 14px;
+      font-size: 13px;
       min-width: 37px;
     }
     .header img {
@@ -234,11 +275,19 @@ thead a {
     .nav {
       top: 47px;
     }
-
+    .checker_row pre {
+      font-size: 11px;
+    }
     @media only screen and (max-width: 450px) {
-      thead a {
+      thead th a {
         /* Service Title */
         font-size: 7px;
+        height: 7px;
+        line-height: 0.4px;
+      }
+      thead td a {
+        /* Service Title */
+        font-size: 17px;
       }
       thead img {
         /* Service Logo */
@@ -251,13 +300,13 @@ thead a {
         font-size: 14px;
       }
       .engine {
-        font-size: 10px;
+        font-size: 8px;
       }
       .checker_row img {
         height: 14px;
       }
       td {
-        font-size: 13px;
+        font-size: 12px;
         min-width: 34px;
       }
       .header img {
@@ -269,26 +318,35 @@ thead a {
       .nav {
         top: 44px;
       }
+      .checker_row pre {
+        font-size: 10px;
+      }
       @media only screen and (max-width: 420px) {
-        thead a {
+        thead th a {
           /* Service Title */
-          font-size: 7px;
+          font-size: 6px;
+          height: 6px;
+          line-height: 0.3px;
+        }
+        thead td a {
+          /* Service Title */
+          font-size: 16px;
         }
         thead img {
           /* Service Logo */
-          height: 21px;
+          height: 19px;
         }
         h1 {
           font-size: 24px;
         }
         .engine {
-          font-size: 8px;
+          font-size: 7px;
         }
         .checker_row img {
           height: 12px;
         }
         td {
-          font-size: 12px;
+          font-size: 11px;
           min-width: 31px;
         }
         .header img {
@@ -300,22 +358,57 @@ thead a {
         .nav {
           top: 40px;
         }
+        .checker_row pre {
+          font-size: 9px;
+        }
         @media only screen and (max-width: 300px) {
+          thead th a {
+            /* Service Title */
+            font-size: 5px;
+            height: 5px;
+            line-height: 0.3px;
+          }
+          thead td a {
+            /* Service Title */
+            font-size: 15px;
+          }
           .logo-title h2 {
             font-size: 19px;
           }
+          thead img {
+            /* Service Logo */
+            height: 17px;
+          }
           .header img {
             height: 45px;
+          }
+          td {
+            font-size: 10px;
+            min-width: 29px;
           }
           .nav {
             top: 33px;
           }
           @media only screen and (max-width: 240px) {
+            thead th a {
+              /* Service Title */
+              font-size: 4px;
+              height: 4px;
+              line-height: 0.2px;
+            }
+            thead td a {
+              /* Service Title */
+              font-size: 14px;
+            }
             .logo-title h2 {
               display: none;
             }
             .header img {
               height: 45px;
+            }
+            td {
+              font-size: 9px;
+              min-width: 27px;
             }
             
           }
@@ -369,13 +462,6 @@ thead {
   visibility: visible;
 }
 
-.Chart-list a {
-  /* Links under header at top of page */
-  text-decoration: none;
-  padding-left: 10px;
-  transition: all 0.4s;
-}
-
 .checker_row td a {
   color: rgb(0, 0, 0);
 }
@@ -405,7 +491,7 @@ th {
   min-width: 5px;
 
   width: 10%;
-  height: 25px;
+  height: 15px;
 }
 
 h1 {
