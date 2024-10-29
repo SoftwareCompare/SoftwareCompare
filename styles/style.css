@@ -128,7 +128,7 @@ thead img {
 }
 
 .checker_row th a {
-  border-bottom: 1px solid rgb(174, 174, 174);
+  border-bottom: 1px solid rgba(0, 46, 232, 0.542);
 }
 .checker_row img {
   height: 20px;

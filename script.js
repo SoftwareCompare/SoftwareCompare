@@ -20,3 +20,17 @@ for (let i=0; i<checkboxes.length; i++){
         
         })
 }
+for (let i = 0; i < checkboxes.length; i++) {
+    let currentTooltip = checkboxes[i];
+    let tooltipText = tooltipTexts[i];
+  
+    currentTooltip.addEventListener("touchstart", function() {
+      tooltipText.style.visibility = "visible";
+    });
+  
+    document.addEventListener("touchstart", function(event) {
+      if (!currentTooltip.contains(event.target)) {
+        tooltipText.style.visibility = "collapse";
+      }
+    });
+  }
