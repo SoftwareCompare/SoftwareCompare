@@ -6,14 +6,16 @@ body {
   float: none !important;
   font-family: sans-serif;
 }
-
+a {
+  color: #112e97;
+}
 .nav.open {
   display: block;
 }
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +91,59 @@ tbody .checker_row:nth-child(even) {
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+}
+.boxes-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comparison-box {
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  min-width: 290px;
+  min-height: 110px;
+}
+
+.comparison-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+
+.comparison-box {
+  color: #000;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #efefff, #ffffff);
+  transition: all 0.4s;
+
+}
+
+.comparison-box:hover {
+  background-image: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
+  font-size:large;
+  h2 {
+    font-size: 21px;
+  }
+}
+.comparison-boxes {
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 960px) {
+.comparison-boxes {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+}
+}
+@media (max-width: 650px) {
+  .comparison-boxes {
+      grid-template-columns: 1fr;
+  
+  }
 }
 
 thead img {
