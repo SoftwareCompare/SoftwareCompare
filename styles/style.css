@@ -1,11 +1,16 @@
 body {
-  max-width: 1080px;
   min-width: 100px;
   width: 100%;
   margin: 0 auto !important;
   float: none !important;
-  font-family: sans-serif;
 }
+.content-wrap {
+  max-width: 1080px;
+  font-family: sans-serif;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
 a {
   color: #112e97;
 }
@@ -16,14 +21,22 @@ a {
 .header {
   overflow: hidden;
   background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  text-align: center;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+.inner-header {
+  width: 100%;
+  max-width: 1080px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
   font-family: auto;
 }
-
-.header div {
+.inner-header div {
   /* logo */
   display: flex;
   align-items: center;
@@ -31,13 +44,13 @@ a {
   transition: all 0.4s;
 }
 
-.header h2 {
+.inner-header h2 {
   font-size: 25px;
   padding: 5px;
   margin: auto;
 }
 
-.header img {
+.inner-header img {
   /* logo image */
   height: 64px;
   z-index: 2;
@@ -53,7 +66,7 @@ h1 {
   color: black;
 }
 
-.header button {
+.inner-header button {
   /* mobile dropdown */
   display: none;
   background: none;
@@ -142,7 +155,6 @@ grid-template-columns: repeat(3, 1fr);
 @media (max-width: 700px) {
   .comparison-boxes {
       grid-template-columns: 1fr;
-  
   }
 }
 
@@ -572,4 +584,8 @@ h3 {
   max-width: 80vw;
   overflow-wrap: anywhere;
   overflow: auto;
+}
+footer {
+  color: white;
+  background-color: black;
 }
