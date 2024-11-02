@@ -3,9 +3,13 @@ body {
   width: 100%;
   margin: 0 auto !important;
   float: none !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .content-wrap {
   max-width: 1080px;
+  width: 100%;
   font-family: sans-serif;
   margin: 0 auto !important;
   float: none !important;
@@ -586,6 +590,37 @@ h3 {
   overflow: auto;
 }
 footer {
+  margin-top: auto;
   color: white;
   background-color: black;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.inner-footer {
+  color: white;
+  width: 100%;
+  max-width: 1080px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  z-index: 5;
+}
+.inner-footer ul {
+  list-style: none;
+  display: flex;
+}
+.inner-footer img {
+  height: 20px;
+}
+.inner-footer ul a{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
