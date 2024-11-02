@@ -228,6 +228,10 @@ thead th a {
   font-size: 13px;
   transition: all 0.4s;
 }
+.engine a {
+  text-decoration: none;
+  color: black;
+}
 /* Mobile styles */
 @media only screen and (max-width: 525px) {
   .header button {
@@ -623,4 +627,22 @@ footer {
   margin: 0;
   padding: 0;
   display: flex;
+}
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 12px;
+}
+
+.footer-nav a {
+  /* links in top right and dropdown */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
 }

@@ -60,16 +60,21 @@
     <tbody>
       <tr>
         <td style="height: 40px;">Supported Devices<br /></td>
-        <th class="engine">Other</th>
-        <th class="engine">Google Pixel </th>
-        <th class="engine">iPhone</th>
+        <th class="engine"><a href="https://www.android.com/phones">Other</a></th>
+        <th class="engine"><a href="https://store.google.com/category/phones">Google Pixel</a></th>
+        <th class="engine"><a href="https://www.apple.com/iphone">iPhone</a></th>
       </tr>
       <tr>
         <th><br />Privacy</th>
       </tr>
       <tr class="checker_row">
         <td><a href="https://opensource.org/osd">Open Source</a></td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <pre>No common<br />phone uses<br />AOSP directly</pre>
+          </div>
+        </th>
         <th><a href="https://github.com/GrapheneOS"><img src="../images/check.webp" alt="check"></a></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -111,14 +116,14 @@
       </tr>
       <tr class="checker_row">
         <td>Automatic Security Updates</a></td>
-        <th><img src="../images/dash.webp" alt="dash"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
       </tr>
       <tr class="checker_row">
         <td>Hardware-Based Attestation</a></td>
         <th><img src="../images/dash.webp" alt="dash"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
+        <th><a href="https://github.com/GrapheneOS/Auditor"><img src="../images/check.webp" alt="check"></a></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
@@ -158,6 +163,18 @@
       <tr class="checker_row">
         <td>Contact Scopes</a></td>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><a href="https://grapheneos.org/usage#contact-scopes"><img src="../images/check.webp" alt="check"></a></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://grapheneos.org/usage#storage-scopes">Storage Scopes</a></td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><a href="https://grapheneos.org/usage#storage-scopes"><img src="../images/check.webp" alt="check"></a></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Backup with Another Device</a></td>
+        <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
       </tr>
@@ -219,14 +236,21 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
-        <td>Encrypted Backups</a></td>
+        <td>Encrypted Local Backups</a></td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <pre>Seedvault</pre>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>OS Integrity Monitoring</a></td>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check"></th>
-        <th>
-            <div><img src="../images/dash.webp" alt="dash">
-                <pre><a href="https://support.apple.com/en-us/108353">Not by default</a></pre>
-            </div>
-        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr>
         <th><br />Tracking/Analytics</th>
@@ -354,7 +378,7 @@
                     <p>SoftwareCompare</p>
                 </div>
             </div>
-            <ul class="nav">
+            <ul class="footer-nav">
                 <ul>
                   <li><a href="mailto:contact@softwarecompare.org"><img src="../images/Social-Media-icons/email-icon.png" alt="Email Icon"></a></li>  
                   <li><a href="https://github.com/SoftwareCompare/SoftwareCompare"><img src="../images/Social-Media-icons/github-logo.webp" alt="Github Logo"></a></li>
