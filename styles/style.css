@@ -232,6 +232,9 @@ thead th a {
   text-decoration: none;
   color: black;
 }
+.inner-footer img {
+  height: 20px;
+}
 /* Mobile styles */
 @media only screen and (max-width: 525px) {
   .header button {
@@ -313,6 +316,12 @@ thead th a {
   }
   .header img {
     height: 62px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  .inner-footer img {
+    height: 16px;
   }
   @media only screen and (max-width: 480px) {
     thead th a {
@@ -616,9 +625,6 @@ footer {
 .inner-footer ul {
   list-style: none;
   display: flex;
-}
-.inner-footer img {
-  height: 20px;
 }
 .inner-footer ul a{
   list-style: none;
