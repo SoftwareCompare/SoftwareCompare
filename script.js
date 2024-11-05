@@ -22,7 +22,7 @@ for (let i=0; i<checkboxes.length; i++){
 }
 for (let i = 0; i < checkboxes.length; i++) {
     let currentTooltip = checkboxes[i];
-    let tooltipText = currenttooltip.querySelector(".checker_row pre")
+    let tooltipText = currentTooltip.querySelector(".checker_row pre")
   
     currentTooltip.addEventListener("touchstart", function() {
       tooltipText.style.visibility = "visible";
