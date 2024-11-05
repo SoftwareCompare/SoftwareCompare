@@ -30,7 +30,7 @@ for (let i = 0; i < checkboxes.length; i++) {
   
     document.addEventListener("touchstart", function(event) {
       if (!currentTooltip.contains(event.target)) {
-        tooltipText.style.visibility = "collapse";
+        tooltipText.style.visibility = "hidden";
       }
     });
   }
