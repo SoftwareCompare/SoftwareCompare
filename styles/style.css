@@ -566,7 +566,6 @@ thead {
 table {
   border-collapse: collapse;
   max-width: 1080px;
-  width: 100vw;
   margin: 0 auto;
 }
 
