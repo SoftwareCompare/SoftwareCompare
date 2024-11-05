@@ -517,8 +517,11 @@ thead {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted rgb(68, 68, 68);
-  color: white;
   text-align: center;
+}
+
+.checker_row td div a {
+  color: white;
 }
 
 .checker_row div a {
