@@ -9,7 +9,7 @@ let checkboxes = document.querySelectorAll(".checker_row div")
 
 for (let i=0; i<checkboxes.length; i++){
     let currenttooltip = checkboxes[i];
-    let tooltiptext = currenttooltip.querySelector(".checker_row pre")
+    let tooltiptext = currenttooltip.querySelector(".checker_row pre");
 
     currenttooltip.addEventListener("mouseenter", function(){
     tooltiptext.style.visibility = "visible";
@@ -22,7 +22,7 @@ for (let i=0; i<checkboxes.length; i++){
 }
 for (let i = 0; i < checkboxes.length; i++) {
     let currentTooltip = checkboxes[i];
-    let tooltipText = tooltipTexts[i];
+    let tooltipText = currentTooltip.querySelector(".checker_row pre");
   
     currentTooltip.addEventListener("touchstart", function() {
       tooltipText.style.visibility = "visible";
@@ -30,7 +30,7 @@ for (let i = 0; i < checkboxes.length; i++) {
   
     document.addEventListener("touchstart", function(event) {
       if (!currentTooltip.contains(event.target)) {
-        tooltipText.style.visibility = "collapse";
+        tooltipText.style.visibility = "hidden";
       }
     });
   }
