@@ -549,6 +549,11 @@ thead {
   visibility: visible;
 }
 
+body:active pre {
+  /* when tooltip is hovered */
+  visibility: collapse;
+}
+
 .checker_row td a {
   color: rgb(0, 0, 0);
 }
