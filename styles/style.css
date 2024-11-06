@@ -276,10 +276,6 @@ thead th a {
     margin: 20px 0;
   }
 
-  .link-header {
-    font-size: 24px;
-  }
-
   table {
     font-size: 12px;
   }
@@ -546,21 +542,15 @@ thead {
   z-index: 1;
 }
 
-.checker_row div:active {
+.checker_row div:focus-within pre,
+.checker_row div:active pre,
+.checker_row div:hover pre{
   /* when tooltip is hovered */
   visibility: visible;
 }
 
 .checker_row td a {
   color: rgb(0, 0, 0);
-}
-
-.homepagelink {
-  text-decoration: none;
-}
-
-.greyrow {
-  background-color: #f1f1f1;
 }
 
 table {
