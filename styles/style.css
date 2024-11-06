@@ -543,7 +543,9 @@ thead {
 }
 
 .checker_row div:hover pre,
-.checker_row div:active pre {
+.checker_row div:active pre,
+.checker_row div:focus pre, 
+.checker_row div:focus-within pre {
   /* when tooltip is hovered */
   visibility: visible;
 }
