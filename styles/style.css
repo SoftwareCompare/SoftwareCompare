@@ -542,12 +542,6 @@ thead {
   z-index: 1;
 }
 
-body:focus-within table pre,
-body:active table pre {
-  /* when tooltip is not in focus */
-  visibility: hidden;
-}
-
 .checker_row div:focus-within pre,
 .checker_row div:active pre,
 .checker_row div:hover pre{
