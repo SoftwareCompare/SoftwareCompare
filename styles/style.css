@@ -535,11 +535,17 @@ thead {
   min-width: 60px;
   padding: 5px;
   position: absolute;
-  visibility: collapse;
+  visibility: hidden;
   text-align: center;
   transform: translate(0px, -12px);
-  width: fit;
+  width: fit-content;
   z-index: 1;
+}
+
+body:focus-within table pre,
+body:active table pre {
+  /* when tooltip is not in focus */
+  visibility: hidden;
 }
 
 .checker_row div:focus-within pre,
@@ -547,11 +553,6 @@ thead {
 .checker_row div:hover pre{
   /* when tooltip is hovered */
   visibility: visible;
-}
-.content-wrap:focus-within pre,
-.content-wrap:active pre {
-  /* when tooltip is not in focus */
-  visibility: collapse;
 }
 
 .checker_row td a {
