@@ -548,9 +548,9 @@ thead {
   /* when tooltip is hovered */
   visibility: visible;
 }
-
-body:active pre {
-  /* when tooltip is hovered */
+.content-wrap:focus-within pre,
+.content-wrap:active pre {
+  /* when tooltip is not in focus */
   visibility: collapse;
 }
 
