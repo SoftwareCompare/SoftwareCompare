@@ -6,7 +6,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* background: hsla(0, 0%, 0%, 0.923) !important;
+  color: white !important; */
 }
+
 .content-wrap {
   max-width: 1080px;
   width: 100%;
