@@ -218,8 +218,67 @@ thead th a {
   text-decoration: none;
   color: black;
 }
+.checker_row div {
+  border-bottom: 1px dotted rgb(68, 68, 68);
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+}
+
+.checker_row td div a {
+  color: white;
+}
+
+.checker_row div a {
+  /* links in tooltip */
+  color: white;
+  border-bottom: 0px;
+}
+
+.checker_row span {
+  /* tooltip box */
+  top: 100%;
+  background-color: rgb(56, 56, 56);
+  border-radius: 6px;
+  color: #fff;
+  min-width: 90px;
+  max-width: 115px;
+  padding: 5px;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  left: 0;
+  z-index: 1;
+  white-space: normal;
+  overflow-wrap: normal;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.283);
+}
+
+.checker_row td span {
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.checker_row div:hover span,
+.checker_row div:active span,
+.checker_row div:focus span, 
+.checker_row div:focus-within span {
+  /* when tooltip is hovered */
+  visibility: visible;
+}
 .inner-footer img {
   height: 20px;
+}
+.edge {
+  transform: translateX(-75px);
+}
+
+.checker_row th:last-child span {
+  transform: translateX(-75px);
+}
+
+.checker_row th:nth-last-child(2) span{
+  transform: translateX(-75px);
 }
 /* Mobile styles */
 @media only screen and (max-width: 525px) {
@@ -345,6 +404,25 @@ thead th a {
     }
     .checker_row span {
       font-size: 11px;
+    }
+    .checker_row th span {
+      min-width: 60px;
+      max-width: 70px;
+    }
+    .checker_row td span {
+      min-width: 150px;
+      max-width: 160px;
+    }
+    .edge {
+      transform: translateX(-55px);
+    }
+    
+    .checker_row th:last-child span {
+      transform: translateX(-55px);
+    }
+    
+    .checker_row th:nth-last-child(2) span{
+      transform: translateX(-55px);
     }
     @media only screen and (max-width: 450px) {
       thead th a {
@@ -488,67 +566,6 @@ thead th a {
 
 .checker_row {
   position: relative;
-}
-
-.edge {
-  transform: translateX(-75px);
-}
-
-.checker_row th:last-child span {
-  transform: translateX(-75px);
-}
-
-.checker_row th:nth-last-child(2) span{
-  transform: translateX(-75px);
-}
-
-.checker_row div {
-  border-bottom: 1px dotted rgb(68, 68, 68);
-  position: relative;
-  display: inline-block;
-  max-width: 200px;
-}
-
-.checker_row td div a {
-  color: white;
-}
-
-.checker_row div a {
-  /* links in tooltip */
-  color: white;
-  border-bottom: 0px;
-}
-
-.checker_row span {
-  /* tooltip box */
-  top: 100%;
-  background-color: rgb(56, 56, 56);
-  border-radius: 6px;
-  color: #fff;
-  min-width: 90px;
-  max-width: 115px;
-  padding: 5px;
-  position: absolute;
-  visibility: hidden;
-  text-align: center;
-  left: 0;
-  z-index: 1;
-  white-space: normal;
-  overflow-wrap: normal;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.283);
-}
-
-.checker_row td span {
-  min-width: 250px;
-  max-width: 400px;
-}
-
-.checker_row div:hover span,
-.checker_row div:active span,
-.checker_row div:focus span, 
-.checker_row div:focus-within span {
-  /* when tooltip is hovered */
-  visibility: visible;
 }
 
 .checker_row td a {
