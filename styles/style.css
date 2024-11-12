@@ -45,7 +45,7 @@ body {
 
 .inner-header img {
   /* logo image */
-  height: clamp(50px, 3vw, 64px);
+  height: clamp(40px, 10vw, 45px);
 }
 .logo-title {
   margin: 0;
@@ -64,7 +64,7 @@ body {
   padding-right: 15px;
 }
 .nav {
-  top: clamp(33px, .1vw, 50px);
+  top: clamp(25px, 3vw, 50px);
   display: flex;
   justify-content: space-between;
 }
@@ -214,8 +214,7 @@ tr th {
 }
 
 .engine {
-  font-size: clamp(6px, 2vw, 13px);
-  transition: all 0.4s;
+  font-size: clamp(5px, 1.8vw, 13px);
 }
 .engine a {
   text-decoration: none;
@@ -270,6 +269,13 @@ tr th {
   /* when tooltip is hovered */
   visibility: visible;
 }
+.checker_row div:hover span,
+.checker_row div:active span,
+.checker_row div:focus span, 
+.checker_row div:focus-within span {
+  /* when tooltip is hovered */
+  visibility: visible;
+}
 .inner-footer img {
   height: 20px;
 }
@@ -283,9 +289,6 @@ tr th {
 
 .checker_row th:nth-last-child(2) span{
   transform: translateX(-75px);
-}
-.header img {
-  height: clamp(40px, 4vw, 62px);
 }
 .logo-title h2 {
   font-size: clamp(19px, 2vw, 22px);
@@ -301,7 +304,6 @@ tr th {
     position: absolute;
     width: 100%;
     height: 0px;
-    top: 50px;
     justify-content: center;
     background-color: #f1f1f1;
     visibility: collapse;
@@ -313,7 +315,7 @@ tr th {
 
   .open {
     visibility: visible;
-    height: 35vh;
+    height: clamp(200px, 3vh, 35vh);
   }
 
   .nav ul {
@@ -370,10 +372,9 @@ tr th {
 }
 
 td {
-  min-width: clamp(27px, 2vw, 40px);
-  width: 60px;
+  width: clamp(10px, 1.2vw, 40px);
   height: 25px;
-  font-size: clamp(8px, 3vw, 12px);
+  font-size: clamp(8px, 2.2vw, 12px);
 }
 
 th {
