@@ -153,6 +153,7 @@ table {
   border-collapse: collapse;
   max-width: 1080px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 thead {
   /*top bar on table */
