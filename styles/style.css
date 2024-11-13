@@ -186,7 +186,8 @@ thead th a {
 .Chart-list a {
   /* Links under header at top of page */
   color: black;
-  padding-left: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
   transition: all 0.4s;
   font-size: clamp(14px, 2vw, 18px);
 }
@@ -269,10 +270,10 @@ tr th {
   /* when tooltip is hovered */
   visibility: visible;
 }
-.checker_row div:hover span,
-.checker_row div:active span,
-.checker_row div:focus span, 
-.checker_row div:focus-within span {
+.checker_row div:hover td span,
+.checker_row div:active td span,
+.checker_row div:focus td span, 
+.checker_row div:focus-within td span {
   /* when tooltip is hovered */
   visibility: visible;
 }
@@ -375,6 +376,7 @@ td {
   width: clamp(10px, 1.2vw, 40px);
   height: 25px;
   font-size: clamp(8px, 2.2vw, 12px);
+  padding-left: 5px;
 }
 
 th {
