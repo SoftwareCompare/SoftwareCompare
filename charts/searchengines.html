@@ -15,29 +15,29 @@
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="inner-header">
-    <div>
-      <a href="../">
-        <img src="../images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
-      </a>
       <div>
-        <a class="logo-title" href="../">
-          <h2>SoftwareCompare</h2>
+        <a href="../">
+          <img src="../images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
         </a>
+        <div>
+          <a class="logo-title" href="../">
+            <h2>SoftwareCompare</h2>
+          </a>
+        </div>
       </div>
-    </div>
-    <button class="menu-toggle">≡</button>
-    <ul class="nav">
-      <ul>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../donate.html">Donate</a></li>
-        <li><a href="../contact.html">Contact</a></li>
+      <button class="menu-toggle">≡</button>
+      <ul class="nav">
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../donate.html">Donate</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
       </ul>
-    </ul>
-  </div>
-  </div>
-  <div class="content-wrap">
+    </div>
+  </header>
+  <main>
   <div class="Chart-list">
     <a href="./browsers.html">Browsers</a>
     <a href="./music.html">Music</a>
@@ -46,9 +46,7 @@
     <a href="./searchengines.html">Search Engines</a>
     <a href="./youtubefrontends.html">YoutubeFrontends</a>
   </div>
-  <header>
-    <h1>Search Engine Comparisons<br /><br /></h1>
-  </header>
+  <h1>Search Engine Comparisons<br /><br /></h1>
   <table>
     <thead>
       <tr>
@@ -990,12 +988,14 @@
       </tr>
     </tbody>
   </table>
-</div>
+</main>
 <footer>
   <div class="inner-footer">
       <div>
           <div>
-              <p>SoftwareCompare</p>
+              <p>SoftwareCompare
+                <button id="dark-mode-toggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+              </p>
           </div>
       </div>
       <ul class="footer-nav">

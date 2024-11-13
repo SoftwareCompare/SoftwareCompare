@@ -8,13 +8,13 @@ body {
   font-family: sans-serif;
 }
 
-.content-wrap {
+main {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
 }
 
-.header {
+header {
   background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
   text-align: center;
   z-index: 5;
@@ -180,7 +180,6 @@ thead th a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: normal;
-  background-color: #fff;
   font-size: clamp(6px, 1.8vw, 12px);
 }
 .Chart-list a {
@@ -296,7 +295,7 @@ tr th {
 }
 /* Mobile styles */
 @media only screen and (max-width: 525px) {
-  .header button {
+  .inner-header button {
     /* mobile dropdown toggle */
     display: block;
     color: black;
@@ -335,6 +334,18 @@ tr th {
   }
   .inner-footer img {
     height: 16px;
+  }
+  .inner-footer button {
+    background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
   }
   @media only screen and (max-width: 480px) {
     .checker_row th span {

@@ -10,13 +10,22 @@
   <meta property="og:image" content="../images/link-previews/browser-comparison-photo.webp">
   <meta property="og:title" content="Find a browser that's best for you">
   
-
   <title>Browser Comparisons - SoftwareCompare</title>
+  
+
+  <script>
+    // Check for saved theme immediately to prevent flash
+    if (localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.style.backgroundColor = '#181a1b';
+      document.documentElement.style.color = 'rgb(208, 208, 208)';
+    }
+  </script>
   <link href="../styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="inner-header">
     <div>
       <a href="../">
@@ -37,8 +46,8 @@
       </ul>
     </ul>
   </div>
-  </div>
-  <div class="content-wrap">
+</header>
+  <main>
   <div class="Chart-list">
     <a href="./browsers.html">Browsers</a>
     <a href="./music.html">Music</a>
@@ -1854,13 +1863,14 @@
       </tr>
     </tbody>
   </table>
-  </div>
-</div>
+</main>
 <footer>
   <div class="inner-footer">
       <div>
           <div>
-              <p>SoftwareCompare</p>
+              <p>SoftwareCompare
+                <button id="dark-mode-toggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+              </p>
           </div>
       </div>
       <ul class="footer-nav">
