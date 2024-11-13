@@ -12,10 +12,11 @@
   <title>Donate - Software Compare</title>
   <link href="./styles/style.css" rel="stylesheet">
   <script>
-    // Immediately check if dark mode should be enabled
-    if (localStorage.getItem('theme') === 'dark' || 
-        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.body.classList.add('dark-mode');
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
     }
   </script>
 </head>

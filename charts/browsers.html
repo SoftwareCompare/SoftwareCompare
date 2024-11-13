@@ -11,16 +11,16 @@
   <meta property="og:title" content="Find a browser that's best for you">
   
   <title>Browser Comparisons - SoftwareCompare</title>
-  <link href="../styles/style.css" rel="stylesheet">
-
+  
   <script>
-    // Check for saved theme immediately to prevent flash
-    if (localStorage.getItem('theme') === 'dark' || 
-        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.style.backgroundColor = '#181a1b';
-      document.documentElement.style.color = 'rgb(208, 208, 208)';
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
     }
   </script>
+  <link href="../styles/style.css" rel="stylesheet">
 </head>
 
 <body>

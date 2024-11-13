@@ -21,40 +21,31 @@ for (let i = 0; i < checkboxes.length; i++) {
       }
     });
   }
-
   document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Function to get the preferred theme
-    const getPreferredTheme = () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            return savedTheme;
-        }
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
+    const root = document.documentElement;
 
     // Function to set theme
     const setTheme = (theme) => {
         if (theme === 'dark') {
-            body.classList.add('dark-mode');
+            root.classList.add('dark-mode');
             themeToggle.textContent = 'Switch to Light Mode';
         } else {
-            body.classList.remove('dark-mode');
+            root.classList.remove('dark-mode');
             themeToggle.textContent = 'Switch to Dark Mode';
         }
         localStorage.setItem('theme', theme);
     };
 
-    // Initialize theme
-    setTheme(getPreferredTheme());
+    // Initialize button text based on current theme
+    const currentTheme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(currentTheme);
 
     // Toggle theme on button click
     themeToggle.addEventListener('click', () => {
-        const currentTheme = localStorage.getItem('theme') || 
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        const newTheme = root.classList.contains('dark-mode') ? 'light' : 'dark';
+        setTheme(newTheme);
     });
 
     // Listen for system theme changes

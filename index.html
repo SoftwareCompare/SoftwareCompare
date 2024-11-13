@@ -12,10 +12,15 @@
   <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
 
   <title>Software Compare</title>
-  <link href="./styles/style.css" rel="stylesheet">
   <script>
-    document.documentElement.classList.remove('no-js');
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    }
   </script>
+  <link href="./styles/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -84,7 +89,7 @@
             <div>
                 <div>
                     <p>SoftwareCompare
-                        <button id="theme-toggle">Toggle Theme</button>
+                        <button id="theme-toggle"><img src="./images/dark-mode-icon.svg" alt="Theme Toggle"></button>
                     </p>
                 </div>
             </div>

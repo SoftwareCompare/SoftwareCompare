@@ -1,3 +1,116 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #000000;
+  --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  --checker-even-bg: #f1f1f1;
+  --checker-border: #000000;
+  --link-border: #0000ff;
+  --comparison-gradient: linear-gradient(to bottom, #efefff, #ffffff);
+  --comparison-hover-gradient: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
+  --img-filter: none;
+}
+
+:root.dark-mode {
+  --background-color: #181a1b;
+  --text-color: rgb(208, 208, 208);
+  --link-color: rgb(208, 208, 208);
+  --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
+  --checker-even-bg: #323536;
+  --checker-border: rgb(255, 255, 255);
+  --link-border: rgb(45, 87, 255);
+  --comparison-gradient: linear-gradient(to bottom, #666c6f, #3b3c3d);
+  --comparison-hover-gradient: linear-gradient(to bottom, #727678, #4a4a4a);
+  --img-filter: invert(100%) grayscale(50%) sepia(25%);
+}
+
+/* Base theme styles using variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+.inner-header button {
+  /* mobile dropdown toggle */
+  display: block;
+  color: var(--text-color);
+}
+a {
+  color: var(--link-color);
+  transition: color 0.3s;
+}
+table a {
+  color: var(--text-color);
+}
+.checker_row div {
+  border-bottom: 1px dotted var(--checker-border);
+}
+.Chart-list a {
+  color: var(--text-color);
+}
+.engine a {
+  color: var(--text-color);
+}
+header {
+  background-image: var(--header-gradient);
+  transition: background-image 0.3s;
+}
+.inner-header a {
+  color: var(--text-color);
+}
+thead {
+  background-color: var(--background-color);
+  transition: background-color 0.3s;
+}
+
+tbody .checker_row:nth-child(even) {
+  background-color: var(--checker-even-bg);
+  transition: background-color 0.3s;
+}
+
+.checker_row div {
+  border-bottom: 1px dotted var(--checker-border);
+  transition: border-color 0.3s;
+}
+
+.checker_row th a {
+  border-bottom: 1px solid var(--link-border);
+  transition: border-color 0.3s;
+}
+
+.inner-header img,
+.invert {
+  filter: var(--img-filter);
+  transition: filter 0.3s;
+}
+
+.comparison-box {
+  background-image: var(--comparison-gradient);
+  transition: background-image 0.3s;
+}
+
+.comparison-box:hover {
+  background-image: var(--comparison-hover-gradient);
+}
+
+/* Button styles */
+#theme-toggle {
+  padding: 8px 16px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+}
+
+#theme-toggle {
+  padding: 8px 16px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+}
 body {
   min-width: 100px;
   width: 100%;
@@ -15,7 +128,6 @@ main {
 }
 
 header {
-  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
   text-align: center;
   z-index: 5;
   display: flex;
@@ -50,7 +162,6 @@ header {
 .logo-title {
   margin: 0;
   text-decoration: none;
-  color: black;
 }
 
 .inner-header button {
@@ -64,7 +175,7 @@ header {
   padding-right: 15px;
 }
 .nav {
-  top: clamp(25px, 3vw, 50px);
+  top: clamp(28px, 6vw, 33px);
   display: flex;
   justify-content: space-between;
 }
@@ -77,14 +188,10 @@ header {
 }
 .nav a {
   /* links in top right and dropdown */
-  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
-}
-tbody .checker_row:nth-child(even) {
-  background-color: #f1f1f1;
 }
 
 h1 {
@@ -129,7 +236,6 @@ a {
   text-align: center;
   min-width: 290px;
   min-height: 110px;
-  background-image: linear-gradient(to bottom, #efefff, #ffffff);
   transition: 0.4s;
   text-decoration: none;
   color: #000;
@@ -142,7 +248,6 @@ a {
 }
 
 .comparison-box:hover {
-  background-image: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
   font-size:large;
   h2 {
     font-size: 21px;
@@ -159,7 +264,6 @@ thead {
   /*top bar on table */
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 2;
 }
 thead img {
@@ -174,17 +278,14 @@ thead td a {
   font-size: clamp(14px, 3vw, 20px);
   font-weight: bold;
   text-decoration: none;
-  color: black;
 }
 thead th a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
   font-weight: normal;
   font-size: clamp(6px, 1.8vw, 12px);
 }
 .Chart-list a {
   /* Links under header at top of page */
-  color: black;
   padding-left: 4px;
   padding-right: 4px;
   transition: all 0.4s;
@@ -218,10 +319,8 @@ tr th {
 }
 .engine a {
   text-decoration: none;
-  color: black;
 }
 .checker_row div {
-  border-bottom: 1px dotted rgb(68, 68, 68);
   position: relative;
   display: inline-block;
   max-width: 200px;
@@ -298,14 +397,12 @@ tr th {
   .inner-header button {
     /* mobile dropdown toggle */
     display: block;
-    color: black;
   }
   .nav {
     position: absolute;
     width: 100%;
     height: 0px;
     justify-content: center;
-    background-color: #f1f1f1;
     visibility: collapse;
     transition: all 0.4s;
     z-index: 5;
@@ -319,6 +416,7 @@ tr th {
   }
 
   .nav ul {
+    background-color: var(--checker-even-bg);
     flex-direction: column;
     align-items: center;
     width: 100vw;
@@ -367,9 +465,6 @@ tr th {
   position: relative;
 }
 
-.checker_row td a {
-  color: rgb(0, 0, 0);
-}
 
 td {
   width: clamp(10px, 1.2vw, 40px);
@@ -455,45 +550,4 @@ footer {
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-}
-body.dark-mode  {
-  background-color: #181a1b;
-  color: rgb(208, 208, 208);
-}
-body.dark-mode a {
-  color: rgb(208, 208, 208) !important;
-}
-body.dark-mode header {
-  background-image: linear-gradient(to bottom, #181a1b, #222526);
-  bottom: 5px rgb(255, 255, 255);
-}
-body.dark-mode thead {
-  background-color: #181a1b;
-}
-body.dark-mode tbody .checker_row:nth-child(even) {
-  background-color: #323536;
-}
-body.dark-mode .checker_row div {
-  border-bottom: 1px dotted rgb(255, 255, 255);
-}
-body.dark-mode .checker_row th a {
-  border-bottom: 1px solid rgb(45, 87, 255);
-}
-body.dark-mode .inner-header img,
-body.dark-mode .invert {
-  filter: invert(100%) grayscale(50%) sepia(25%);
-}
-body.dark-mode .comparison-box {
-  background-image: linear-gradient(to bottom, #666c6f, #3b3c3d);
-}
-body.dark-mode .comparison-box:hover {
-  background-image: linear-gradient(to bottom, #727678, #4a4a4a);
-}
-#theme-toggle {
-  padding: 8px 16px;
-  border: 2px solid currentColor;
-  border-radius: 4px;
-  cursor: pointer;
-  background: none;
-  color: inherit;
 }
