@@ -11,6 +11,13 @@
 
   <title>About - Software Compare</title>
   <link href="./styles/style.css" rel="stylesheet" />
+  <script>
+    // Immediately check if dark mode should be enabled
+    if (localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.body.classList.add('dark-mode');
+    }
+  </script>
 </head>
 
 <body>
@@ -114,7 +121,7 @@
         <div>
             <div>
                 <p>SoftwareCompare
-                    <button id="dark-mode-toggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+                    <button id="theme-toggle">Toggle Theme</button>
                 </p>
             </div>
         </div>

@@ -335,18 +335,6 @@ tr th {
   .inner-footer img {
     height: 16px;
   }
-  .inner-footer button {
-    background: none;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  padding: 0;
-  }
   @media only screen and (max-width: 480px) {
     .checker_row th span {
       min-width: 60px;
@@ -467,4 +455,45 @@ footer {
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
+}
+body.dark-mode  {
+  background-color: #181a1b;
+  color: rgb(208, 208, 208);
+}
+body.dark-mode a {
+  color: rgb(208, 208, 208) !important;
+}
+body.dark-mode header {
+  background-image: linear-gradient(to bottom, #181a1b, #222526);
+  bottom: 5px rgb(255, 255, 255);
+}
+body.dark-mode thead {
+  background-color: #181a1b;
+}
+body.dark-mode tbody .checker_row:nth-child(even) {
+  background-color: #323536;
+}
+body.dark-mode .checker_row div {
+  border-bottom: 1px dotted rgb(255, 255, 255);
+}
+body.dark-mode .checker_row th a {
+  border-bottom: 1px solid rgb(45, 87, 255);
+}
+body.dark-mode .inner-header img,
+body.dark-mode .invert {
+  filter: invert(100%) grayscale(50%) sepia(25%);
+}
+body.dark-mode .comparison-box {
+  background-image: linear-gradient(to bottom, #666c6f, #3b3c3d);
+}
+body.dark-mode .comparison-box:hover {
+  background-image: linear-gradient(to bottom, #727678, #4a4a4a);
+}
+#theme-toggle {
+  padding: 8px 16px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  color: inherit;
 }
