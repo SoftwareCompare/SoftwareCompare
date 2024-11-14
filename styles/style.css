@@ -1,7 +1,7 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
-  --link-color: #000000;
+  --border-color: #000000;
   --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
   --checker-even-bg: #f1f1f1;
   --checker-border: #000000;
@@ -14,13 +14,13 @@
 :root.dark-mode {
   --background-color: #181a1b;
   --text-color: rgb(208, 208, 208);
-  --link-color: rgb(208, 208, 208);
+  --border-color: rgb(122, 122, 122);
   --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
   --link-border: rgb(45, 87, 255);
-  --comparison-gradient: linear-gradient(to bottom, #666c6f, #3b3c3d);
-  --comparison-hover-gradient: linear-gradient(to bottom, #727678, #4a4a4a);
+  --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
+  --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
   --img-filter: invert(100%) grayscale(50%) sepia(25%);
 }
 
@@ -36,7 +36,7 @@ body {
   color: var(--text-color);
 }
 a {
-  color: var(--link-color);
+  color: var(--text-color);
   transition: color 0.4s;
 }
 table a {
@@ -60,33 +60,37 @@ header {
 }
 thead {
   background-color: var(--background-color);
-  transition: background-color 0.4s;
+  transition: background-color 0.3s;
 }
 
 tbody .checker_row:nth-child(even) {
   background-color: var(--checker-even-bg);
-  transition: background-color 0.4s;
+  transition: background-color 0.3s;
 }
 
 .checker_row div {
   border-bottom: 1px dotted var(--checker-border);
-  transition: border-color 0.4s;
+  transition: border-color 0.3s;
 }
 
 .checker_row th a {
   border-bottom: 1px solid var(--link-border);
-  transition: border-color 0.4s;
+  transition: border-color 0.3s;
 }
 
 .inner-header img,
 .invert {
   filter: var(--img-filter);
-  transition: filter 0.4s;
+  transition: filter 0.3s;
 }
 
 .comparison-box {
   background-image: var(--comparison-gradient);
   transition: background-image 0.4s;
+}
+.comparison-box h2,
+.comparison-box p {
+  color: var(--text-color);
 }
 
 .comparison-box:hover {
@@ -226,7 +230,7 @@ a {
     }
   }
 .comparison-box {
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 1rem;
   padding: 20px;
   text-align: center;
