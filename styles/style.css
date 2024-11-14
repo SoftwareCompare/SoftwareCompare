@@ -18,7 +18,7 @@
   --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
-  --link-border: rgb(45, 87, 255);
+  --link-border: rgb(12, 60, 255);
   --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
   --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
   --img-filter: invert(100%) grayscale(50%) sepia(25%);
@@ -308,7 +308,7 @@ tr th {
   font-size: clamp(8px, 2.7vw, 12px);
 }
 .checker_row th a {
-  border-bottom: 1px solid rgba(0, 46, 232, 0.542);
+  border-bottom: 1px solid var(--link-border);
 }
 .checker_row img {
   height: clamp(12px, 3vw, 17px);
