@@ -29,10 +29,8 @@ for (let i = 0; i < checkboxes.length; i++) {
     const setTheme = (theme) => {
         if (theme === 'dark') {
             root.classList.add('dark-mode');
-            themeToggle.textContent = 'Switch to Light Mode';
         } else {
             root.classList.remove('dark-mode');
-            themeToggle.textContent = 'Switch to Dark Mode';
         }
         localStorage.setItem('theme', theme);
     };

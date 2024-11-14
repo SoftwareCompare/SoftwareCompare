@@ -95,22 +95,16 @@ tbody .checker_row:nth-child(even) {
 
 /* Button styles */
 #theme-toggle {
-  padding: 8px 16px;
-  border: 2px solid currentColor;
-  border-radius: 4px;
-  cursor: pointer;
   background: none;
-  color: inherit;
+  color: none;
+  all: unset;
+  
 }
 
-#theme-toggle {
-  padding: 8px 16px;
-  border: 2px solid currentColor;
-  border-radius: 4px;
-  cursor: pointer;
-  background: none;
-  color: inherit;
+#theme-toggle img {
+  filter: invert(100%) grayscale(50%) sepia(25%);
 }
+
 body {
   min-width: 100px;
   width: 100%;
