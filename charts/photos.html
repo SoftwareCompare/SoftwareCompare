@@ -5,21 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="../images/swc-logos/software-compare-128px.webp" type="image/webp">
   <meta name="description" content="Objective comparisons of photo apps to help you find the best one for you">
-  <meta property="og:image" content="../images/Link Previews/photo_comparison_photo.webp">
+  <meta property="og:image" content="../images/link-previews/photo-comparison-photo.webp">
   <meta property="og:title" content="Find a photo app that's best for you">
 
-  <title>Photo App Comparisons | SoftwareCompare</title>
-  <link rel='icon' href="../images/SoftwareCompare128px.webp" type="image/webp">
+  <title>Photo App Comparisons - SoftwareCompare</title>
   <link href="../styles/style.css" rel="stylesheet">
+  <script>
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    }
+  </script>
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="inner-header">
     <div>
       <a href="../">
-        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompare Logo">
+        <img src="../images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
       </a>
       <div>
         <a class="logo-title" href="../">
@@ -36,8 +44,8 @@
       </ul>
     </ul>
     </div>
-  </div>
-  <div class="content-wrap">
+  </header>
+  <main>
   <div class="Chart-list">
     <a href="./browsers.html">Browsers</a>
     <a href="./music.html">Music</a>
@@ -54,19 +62,19 @@
         </td>
         <th>
           <a class="service-title" href="https://www.icloud.com/photos" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/apple_photos_logo.webp" alt="Apple Photos Logo"><br />
+            <img src="../images/logos/apple-photos-logo.webp" alt="Apple Photos Logo"><br />
             Apple Photos
           </a>
         </th>
         <th>
           <a class="service-title" href="https://ente.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/ente_logo.webp" alt="ente Logo"><br />
+            <img src="../images/logos/ente-logo.webp" alt="ente Logo"><br />
             ente
           </a>
         </th>
         <th>
           <a class="service-title" href="https://www.google.com/photos/about" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/google_photos_logo.png" alt="Invidious Logo"><br />
+            <img src="../images/logos/google-photos-logo.png" alt="Google Photos Logo"><br />
             Google Photos
           </a>
         </th>
@@ -289,26 +297,24 @@
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
-      <tr style="height: 100px;">
-        <td></td>
     </tbody>
         </table>
-      </div>
+      </main>
       <footer>
         <div class="inner-footer">
-            <div>
-                <div>
-                    <p>SoftwareCompare</p>
-                </div>
+            <div class="footer-left">
+              <p>SoftwareCompare
+                <button id="theme-toggle"><img src="../images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+              </p>
             </div>
             <ul class="footer-nav">
               <ul>
-                <li><a href="mailto:contact@softwarecompare.org"><img src="../images/Social-Media-icons/email-icon.png" alt="Email Icon"></a></li>
-                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/github-logo.png" alt="Github Logo"></a></li>
-                <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/X-logo.png" alt="Twitter logo"></a></li>
-                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
-                <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/discord-logo.png" alt="Discord Logo"></a></li>
-                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="../images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
             </ul>
             </ul>
         </div>

@@ -5,22 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="./images/swc-logos/software-compare-128px.webp" type="image/webp">
   <meta name="description" content="Objective comparisons of software to help you find the best applications for you">
-  <meta property="og:image" content="../images/Link Previews/browser_comparison_photo.webp">
+  <meta property="og:image" content="../images/link-previews/browser-comparison-photo.webp">
   <meta property="og:title" content="Find software that's best for you">
   <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
 
   <title>Software Compare</title>
-  <link rel='icon' href='./images/SoftwareCompare128px.webp' type='image/x-icon'>
+  <script>
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    }
+  </script>
   <link href="./styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <div class="inner-header">
         <div>
             <a href="./">
-                <img src="./images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompare Logo">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
             </a>
             <div>
                 <a class="logo-title" href="./">
@@ -37,8 +45,8 @@
             </ul>
         </ul>
     </div>
-    </div>
-    <div class="content-wrap">
+</header>
+    <main>
     <h1>
         Find software that you love
     </h1>
@@ -75,22 +83,22 @@
             <br /><br />
         </div>
     </div>
-    </div>
+</main>
     <footer>
         <div class="inner-footer">
-            <div>
-                <div>
-                    <p>SoftwareCompare</p>
-                </div>
+            <div class="footer-left">
+                <p>SoftwareCompare
+                    <button id="theme-toggle"><img src="./images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+                </p>
             </div>
             <ul class="footer-nav">
                 <ul>
-                    <li><a href="mailto:contact@softwarecompare.org"><img src="./images/Social-Media-icons/email-icon.png" alt="Email Icon"></a></li>
-                    <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="./images/Social-Media-icons/github-logo.png" alt="Github Logo"></a></li>
-                    <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="./images/Social-Media-icons/X-logo.png" alt="Twitter logo"></a></li>
-                    <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="./images/Social-Media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
-                    <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="./images/Social-Media-icons/discord-logo.png" alt="Discord Logo"></a></li>
-                    <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="./images/Social-Media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+                    <li><a href="mailto:contact@softwarecompare.org"><img src="./images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                    <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="./images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                    <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="./images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+                    <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="./images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                    <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="./images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+                    <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="./images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
                 </ul>
             </ul>
         </div>

@@ -1,5 +1,5 @@
 # SoftwareCompare
-<img align="right" src="images/SWClogo_white_back.webp" width="128px" height="128px" />
+<img align="right" src="images/swc-logos/SWClogo_white_back.webp" width="128px" height="128px" />
 An open-source project hosted on softwarecompare.org that compares application features under the category of privacy, conveinence, ethics, etc. This project is licensed under the AGPLv3, so feel free to fork and improve this project yourself.
 
 ## Features
@@ -23,6 +23,9 @@ Monero
 
 ZCash
 - t1U6ktoAEw3KzkgqC49YmHyLhVfH7t6BCfX
+
+Litecoin MWEB
+- ltcmweb1qq09xjylkspy5yx034ktr5r7fu7axkjha295r4tuk7ffxzqxkrk09cq6q6hyeve46954h540rxdwuufnpjrsun7jj452rqalgdme4wsjdnqm2h4wz
 
 Solana
 - H6YUBzk26tskjs1CtbirtNVzKAjygpFYmKdpBV2k3s6y

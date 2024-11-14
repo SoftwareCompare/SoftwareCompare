@@ -1,3 +1,116 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #000000;
+  --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  --checker-even-bg: #f1f1f1;
+  --checker-border: #000000;
+  --default-link: #0000ff;
+  --comparison-gradient: linear-gradient(to bottom, #efefff, #ffffff);
+  --comparison-hover-gradient: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
+  --img-filter: none;
+}
+
+:root.dark-mode {
+  --background-color: #181a1b;
+  --text-color: rgb(239, 239, 239);
+  --border-color: rgb(122, 122, 122);
+  --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
+  --checker-even-bg: #323536;
+  --checker-border: rgb(255, 255, 255);
+  --default-link: rgb(63, 101, 255);
+  --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
+  --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
+  --img-filter: invert(100%) grayscale(50%) sepia(25%);
+}
+
+/* Base theme styles using variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: color 0.4s;
+}
+.inner-header button {
+  /* mobile dropdown toggle */
+  display: block;
+  color: var(--text-color);
+}
+a {
+  color: var(--text-color);
+  transition: color 0.4s;
+}
+table a {
+  color: var(--text-color);
+}
+.checker_row div {
+  border-bottom: 1px dotted var(--checker-border);
+}
+.Chart-list a {
+  color: var(--text-color);
+}
+.engine a {
+  color: var(--text-color);
+}
+header {
+  background-image: var(--header-gradient);
+  transition: all 0.4s;
+}
+.inner-header a {
+  color: var(--text-color);
+}
+thead {
+  background-color: var(--background-color);
+  transition: background-color 0.3s;
+}
+
+tbody .checker_row:nth-child(even) {
+  background-color: var(--checker-even-bg);
+  transition: background-color 0.3s;
+}
+
+.checker_row div {
+  border-bottom: 1px dotted var(--checker-border);
+  transition: border-color 0.3s;
+}
+
+.checker_row th a {
+  border-bottom: 1px solid var(--default-link);
+  transition: border-color 0.3s;
+}
+
+.inner-header img,
+.invert {
+  filter: var(--img-filter);
+  transition: filter 0.3s;
+}
+
+.comparison-box {
+  background-image: var(--comparison-gradient);
+  transition: background-image 0.4s;
+}
+.comparison-box h2,
+.comparison-box p {
+  color: var(--text-color);
+}
+
+.comparison-box:hover {
+  background-image: var(--comparison-hover-gradient);
+}
+
+/* Button styles */
+#theme-toggle {
+  background: none;
+  color: none;
+  all: unset;
+  cursor: pointer;
+  
+}
+
+#theme-toggle img {
+  filter: invert(100%) grayscale(50%) sepia(25%);
+  vertical-align: middle;
+}
+
 body {
   min-width: 100px;
   width: 100%;
@@ -8,14 +121,13 @@ body {
   font-family: sans-serif;
 }
 
-.content-wrap {
+main {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
 }
 
-.header {
-  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+header {
   text-align: center;
   z-index: 5;
   display: flex;
@@ -35,7 +147,6 @@ body {
   display: flex;
   align-items: center;
   z-index: 2;
-  transition: all 0.4s;
 }
 
 .inner-header h2 {
@@ -46,13 +157,11 @@ body {
 
 .inner-header img {
   /* logo image */
-  height: 64px;
-  transition: 0.4s;
+  height: clamp(40px, 10vw, 45px);
 }
 .logo-title {
   margin: 0;
   text-decoration: none;
-  color: black;
 }
 
 .inner-header button {
@@ -66,6 +175,7 @@ body {
   padding-right: 15px;
 }
 .nav {
+  top: clamp(28px, 6vw, 33px);
   display: flex;
   justify-content: space-between;
 }
@@ -78,21 +188,17 @@ body {
 }
 .nav a {
   /* links in top right and dropdown */
-  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
-tbody .checker_row:nth-child(even) {
-  background-color: #f1f1f1;
-}
 
 h1 {
-  transition: all 0.4s;
+  font-size: clamp(20px, 5vw, 30px);
 }
 a {
-  color: #112e97;
+  color: var(--default-link);
 }
 .nav.open {
   display: block;
@@ -124,13 +230,12 @@ a {
     }
   }
 .comparison-box {
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 1rem;
   padding: 20px;
   text-align: center;
   min-width: 290px;
   min-height: 110px;
-  background-image: linear-gradient(to bottom, #efefff, #ffffff);
   transition: 0.4s;
   text-decoration: none;
   color: #000;
@@ -143,7 +248,6 @@ a {
 }
 
 .comparison-box:hover {
-  background-image: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
   font-size:large;
   h2 {
     font-size: 21px;
@@ -152,6 +256,7 @@ a {
 table {
   border-collapse: collapse;
   max-width: 1080px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -159,11 +264,10 @@ thead {
   /*top bar on table */
   position: sticky;
   top: 0;
-  background-color: white;
   z-index: 2;
 }
 thead img {
-  height: 30px;
+  height: clamp(20px, 4.2vw, 30px);
   border-radius: 16%;
 }
 thead td {
@@ -171,23 +275,21 @@ thead td {
 }
 thead td a {
   /* Service Title */
-  font-size: 20px;
+  font-size: clamp(14px, 3vw, 20px);
   font-weight: bold;
   text-decoration: none;
-  color: black;
 }
 thead th a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
   font-weight: normal;
-  background-color: #fff;
-  font-size: 12px;
+  font-size: clamp(6px, 1.8vw, 12px);
 }
 .Chart-list a {
   /* Links under header at top of page */
-  color: black;
-  padding-left: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
   transition: all 0.4s;
+  font-size: clamp(14px, 2vw, 18px);
 }
 .Chart-list {
   max-width: 100%;
@@ -202,25 +304,23 @@ thead th a {
   width: 0;
   height: 0;
 }
-
+tr th {
+  font-size: clamp(8px, 2.7vw, 12px);
+}
 .checker_row th a {
-  border-bottom: 1px solid rgba(0, 46, 232, 0.542);
+  border-bottom: 1px solid var(--default-link);
 }
 .checker_row img {
-  height: 20px;
-  transition: all 0.4s;
+  height: clamp(12px, 3vw, 17px);
 }
 
 .engine {
-  font-size: 13px;
-  transition: all 0.4s;
+  font-size: clamp(5px, 1.8vw, 13px);
 }
 .engine a {
   text-decoration: none;
-  color: black;
 }
 .checker_row div {
-  border-bottom: 1px dotted rgb(68, 68, 68);
   position: relative;
   display: inline-block;
   max-width: 200px;
@@ -253,6 +353,7 @@ thead th a {
   white-space: normal;
   overflow-wrap: normal;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.283);
+  font-size: clamp(9px, 2vw, 12px);
 }
 
 .checker_row td span {
@@ -264,6 +365,13 @@ thead th a {
 .checker_row div:active span,
 .checker_row div:focus span, 
 .checker_row div:focus-within span {
+  /* when tooltip is hovered */
+  visibility: visible;
+}
+.checker_row div:hover td span,
+.checker_row div:active td span,
+.checker_row div:focus td span, 
+.checker_row div:focus-within td span {
   /* when tooltip is hovered */
   visibility: visible;
 }
@@ -281,24 +389,20 @@ thead th a {
 .checker_row th:nth-last-child(2) span{
   transform: translateX(-75px);
 }
+.logo-title h2 {
+  font-size: clamp(19px, 2vw, 22px);
+}
 /* Mobile styles */
 @media only screen and (max-width: 525px) {
-  .header button {
+  .inner-header button {
     /* mobile dropdown toggle */
     display: block;
-    color: black;
-  }
-  thead td a {
-    /* Service Title */
-    font-size: 19px;
   }
   .nav {
     position: absolute;
     width: 100%;
     height: 0px;
-    top: 50px;
     justify-content: center;
-    background-color: #f1f1f1;
     visibility: collapse;
     transition: all 0.4s;
     z-index: 5;
@@ -308,10 +412,11 @@ thead th a {
 
   .open {
     visibility: visible;
-    height: 35vh;
+    height: clamp(200px, 3vh, 35vh);
   }
 
   .nav ul {
+    background-color: var(--checker-even-bg);
     flex-direction: column;
     align-items: center;
     width: 100vw;
@@ -322,43 +427,6 @@ thead th a {
     margin: 20px 0;
   }
 
-  table {
-    font-size: 12px;
-  }
-  
-  thead th a {
-    /* Service Title */
-    font-size: 10px;
-    height: 10px;
-    line-height: 0px !important; 
-  }
-
-  thead img {
-    /* Service Logo */
-    height: 25px;
-  }
-
-  td {
-    font-size: 14px;
-    min-width: 40px;
-  }
-
-  .checker_row img {
-    height: 18px;
-  }
-
-  .engine {
-    font-size: 11px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  .Chart-list a {
-    font-size: 15px;
-  }
-  .header img {
-    height: 62px;
-  }
   footer {
     font-size: 12px;
   }
@@ -366,46 +434,6 @@ thead th a {
     height: 16px;
   }
   @media only screen and (max-width: 480px) {
-    thead th a {
-      /* Service Title */
-      font-size: 8px;
-      height: 8px;
-      line-height: 0.4px;
-    }
-    thead td a {
-      /* Service Title */
-      font-size: 18px;
-    }
-    thead img {
-      /* Service Logo */
-      height: 23px;
-    }
-    h1 {
-      font-size: 28px;
-    }
-    .engine {
-      font-size: 9px;
-    }
-    .checker_row img {
-      height: 16px;
-    }
-    
-    td {
-      font-size: 13px;
-      min-width: 37px;
-    }
-    .header img {
-      height: 59px;
-    }
-    .logo-title h2 {
-      font-size: 22px;
-    }
-    .nav {
-      top: 47px;
-    }
-    .checker_row span {
-      font-size: 11px;
-    }
     .checker_row th span {
       min-width: 60px;
       max-width: 70px;
@@ -425,143 +453,11 @@ thead th a {
     .checker_row th:nth-last-child(2) span{
       transform: translateX(-55px);
     }
-    @media only screen and (max-width: 450px) {
-      thead th a {
-        /* Service Title */
-        font-size: 7px;
-        height: 7px;
-        line-height: 0.4px;
-      }
-      thead td a {
-        /* Service Title */
-        font-size: 17px;
-      }
-      thead img {
-        /* Service Logo */
-        height: 21px;
-      }
-      h1 {
-        font-size: 26px;
-      }
-      .Chart-list a {
-        font-size: 14px;
-      }
-      .engine {
-        font-size: 8px;
-      }
-      .checker_row img {
-        height: 14px;
-      }
-      td {
-        font-size: 12px;
-        min-width: 34px;
-      }
-      .header img {
-        height: 56px;
-      }
-      .logo-title h2 {
-        font-size: 22px;
-      }
-      .nav {
-        top: 44px;
-      }
-      .checker_row span {
-        font-size: 10px;
-      }
-      @media only screen and (max-width: 420px) {
-        thead th a {
-          /* Service Title */
-          font-size: 6px;
-          height: 6px;
-          line-height: 0.3px;
-        }
-        thead td a {
-          /* Service Title */
-          font-size: 16px;
-        }
-        thead img {
-          /* Service Logo */
-          height: 19px;
-        }
-        h1 {
-          font-size: 24px;
-        }
-        .engine {
-          font-size: 7px;
-        }
-        .checker_row img {
-          height: 12px;
-        }
-        td {
-          font-size: 11px;
-          min-width: 31px;
-        }
-        .header img {
-          height: 53px;
-        }
-        .logo-title h2 {
-          font-size: 22px;
-        }
-        .nav {
-          top: 40px;
-        }
-        .checker_row span {
-          font-size: 9px;
-        }
-        @media only screen and (max-width: 300px) {
-          thead th a {
-            /* Service Title */
-            font-size: 5px;
-            height: 5px;
-            line-height: 0.3px;
-          }
-          thead td a {
-            /* Service Title */
-            font-size: 15px;
-          }
-          .logo-title h2 {
-            font-size: 19px;
-          }
-          thead img {
-            /* Service Logo */
-            height: 17px;
-          }
-          .header img {
-            height: 45px;
-          }
-          td {
-            font-size: 10px;
-            min-width: 29px;
-          }
-          .nav {
-            top: 33px;
-          }
-          @media only screen and (max-width: 240px) {
-            thead th a {
-              /* Service Title */
-              font-size: 4px;
-              height: 4px;
-              line-height: 0.2px;
-            }
-            thead td a {
-              /* Service Title */
-              font-size: 14px;
-            }
-            .logo-title h2 {
-              display: none;
-            }
-            .header img {
-              height: 45px;
-            }
-            td {
-              font-size: 9px;
-              min-width: 27px;
-            }
-            
-          }
-        }
-      }
-    }
+  }
+}
+@media only screen and (max-width: 240px) {
+  .logo-title h2 {
+    display: none;
   }
 }
 
@@ -569,19 +465,16 @@ thead th a {
   position: relative;
 }
 
-.checker_row td a {
-  color: rgb(0, 0, 0);
-}
 
 td {
-  min-width: 100px;
-  width: 60px;
+  width: clamp(10px, 1.2vw, 40px);
   height: 25px;
+  font-size: clamp(8px, 2.2vw, 12px);
+  padding-left: 5px;
 }
 
 th {
   min-width: 5px;
-
   width: 10%;
   height: 15px;
 }
@@ -627,6 +520,14 @@ footer {
   align-items: center;
   font-family: sans-serif;
   z-index: 5;
+}
+.footer-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left p {
+  margin: 0;
 }
 .inner-footer ul {
   list-style: none;

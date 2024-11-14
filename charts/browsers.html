@@ -5,21 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="../images/swc-logos/software-compare-128px.webp" type="image/webp">
   <meta name="description" content="Objective comparisons of browsers to help you find the best one for you">
-  <meta property="og:image" content="../images/Link Previews/browser_comparison_photo.webp">
+  <meta property="og:image" content="../images/link-previews/browser-comparison-photo.webp">
   <meta property="og:title" content="Find a browser that's best for you">
-
-  <title>Browser Comparisons | SoftwareCompare</title>
-  <link rel='icon' href='../images/SoftwareCompare128px.webp' type="image/webp">
+  
+  <title>Browser Comparisons - SoftwareCompare</title>
+  
+  <script>
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    }
+  </script>
   <link href="../styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="inner-header">
     <div>
       <a href="../">
-        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompare Logo">
+        <img src="../images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
       </a>
       <div>
         <a class="logo-title" href="../">
@@ -36,8 +45,8 @@
       </ul>
     </ul>
   </div>
-  </div>
-  <div class="content-wrap">
+</header>
+  <main>
   <div class="Chart-list">
     <a href="./browsers.html">Browsers</a>
     <a href="./music.html">Music</a>
@@ -56,31 +65,37 @@
         </td>
         <th>
           <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Brave_logo.webp" alt="Brave Logo"><br />
+            <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
             Brave
           </a>
         </th>
         <th>
           <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Chromelogo.webp" alt="Chrome Logo"><br />
+            <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
             Chrome
           </a>
         </th>
         <th>
           <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo"><br />
+            <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
             Duckduckgo
           </a>
         </th>
         <th>
+          <a href="https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
+            Edge
+          </a>
+        </th>
+        <th>
           <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Firefox_logo.webp" alt="Firefox Logo"><br />
+            <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
             Firefox
           </a>
         </th>
         <th>
           <a href="https://librewolf.net" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Librewolflogo.webp" alt="Librewolf Logo"><br />
+            <img src="../images/logos/librewolf-logo.webp" alt="Librewolf Logo"><br />
             Librewolf
           </a>
         </th>
@@ -91,14 +106,20 @@
           </a>
         </th>
         <th>
+          <a href="https://www.apple.com/safari" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/safari-logo.png" alt="Safari Logo"><br />
+            Safari
+          </a>
+        </th>
+        <th>
           <a href="https://www.torproject.org" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/tor_browser_logo.png" alt="Tor Browser Logo"><br />
+            <img src="../images/logos/tor-browser-logo.png" alt="Tor Browser Logo"><br />
             Tor
           </a>
         </th>
         <th>
           <a href="https://ungoogled-software.github.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Ungoogled_Chromium_logo.webp" alt="Ungoogled Chromium Logo"><br />
+            <img src="../images/logos/ungoogled-chromium-logo.webp" alt="Ungoogled Chromium Logo"><br />
             Ungoogled
           </a>
         </th>
@@ -110,9 +131,11 @@
         <th class="engine">Chromium</th>
         <th class="engine">Chromium</th>
         <th class="engine">Webkit <br />Blink</th>
+        <th class="engine">Chromium</th>
         <th class="engine">Gecko</th>
         <th class="engine">Gecko</th>
         <th class="engine">Gecko</th>
+        <th class="engine">Webkit</th>
         <th class="engine">Gecko</th>
         <th class="engine">Chromium</th>
       </tr>
@@ -136,6 +159,7 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <a href="https://searchfox.org/mozilla-central/source" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -151,6 +175,7 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <a href="https://gitlab.torproject.org/tpo/applications/tor-browser" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -176,12 +201,22 @@
           </a>
         </th>
         <th>
+          <a href="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
           <a href="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
         <th>
           <a href="https://librewolf.net/docs/features/#privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
@@ -207,6 +242,7 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <a href="https://librewolf.net/docs/features/#privacy" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -219,9 +255,11 @@
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
         <td>Containers</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -236,6 +274,7 @@
             <span>only with<br />extension</span>
           </div>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <div><img src="../images/dash.webp" alt="yellow dash">
             <span>only with<br />extension</span>
@@ -257,13 +296,9 @@
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>
-              <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager" target="_blank" rel="noopener noreferrer">
-                Complicated to set up
-              </a>
-            </span>
-          </div>
+          <a href="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
         </th>
         <th>
           <div><img src="../images/dash.webp" alt="yellow dash">
@@ -283,6 +318,16 @@
             </span>
           </div>
         </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager" target="_blank" rel="noopener noreferrer">
+                Complicated to set up
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
         <th>
           <div><img src="../images/dash.webp" alt="yellow dash">
             <span>
@@ -302,6 +347,12 @@
           </a>
         </th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
@@ -335,7 +386,7 @@
           </div>
         </th>
         <th>
-          <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
@@ -346,6 +397,16 @@
         </th>
         <th>
           <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://developer.apple.com/documentation/safari-release-notes/safari-18_2-release-notes#Security" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
@@ -370,17 +431,21 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <a href="https://codeberg.org/librewolf/issues/issues/1840" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
         <td>Default anonymous iP protection</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -397,6 +462,8 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -425,6 +492,11 @@
         </th>
         <th>
           <div><img src="../images/cross.webp" alt="cross">
+            <span>Bing</span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
             <span>Google</span>
           </div>
         </th>
@@ -443,6 +515,11 @@
           </div>
         </th>
         <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>Google</span>
+          </div>
+        </th>
+        <th>
           <div><img src="../images/check.webp" alt="check mark">
             <span>Duckduckgo</span>
           </div>
@@ -458,6 +535,7 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <a href="https://www.mozilla.org/en-US/firefox/features/translate" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -468,6 +546,7 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -477,6 +556,7 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <a href="https://www.mozilla.org/en-US/firefox/features/translate" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -488,17 +568,23 @@
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
         <td>
           <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
-            ECH</a> 
-            enabled
+            ECH</a> enabled
         </td>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://winaero.com/enable-encrypted-client-hello-in-microsoft-edge-to-secure-connections" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -514,9 +600,15 @@
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/check.webp" alt="check mark"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/check.webp" alt="check"></th>
       </tr>
@@ -528,9 +620,15 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="cross">
+          </a>
+        </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check mark"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -547,12 +645,14 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
-          <div><img src="../images/dash.webp" alt="yellow dash"><span>With Ublock<br />Origin</span></div>
+          <div><img src="../images/check.webp" alt="check"><span>With Ublock Origin</span></div>
         </th>
         <th>
-          <div><img src="../images/dash.webp" alt="yellow dash"><span>With Ublock<br />Origin</span></div>
+          <div><img src="../images/check.webp" alt="check"><span>With Ublock Origin</span></div>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -573,6 +673,11 @@
             <span>Disabled<br />Completely</span>
           </div>
         </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>Uses their own service</span>
+          </div>
+        </th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th>
           <div><img src="../images/cross.webp" alt="cross">
@@ -584,6 +689,11 @@
           </div>
         </th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://www.apple.com/legal/privacy/data/en/safari" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th>
           <div><img src="../images/cross.webp" alt="cross">
@@ -626,6 +736,7 @@
             </span>
           </div>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <div><img src="../images/dash.webp" alt="dash">
             <span>
@@ -653,6 +764,7 @@
             </span>
           </div>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
           <div><img src="../images/dash.webp" alt="dash">
             <span>
@@ -685,7 +797,9 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -694,9 +808,19 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://sigmaos.com/tips/browsers/how-to-disable-autoplay-on-safari" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -708,6 +832,12 @@
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -722,7 +852,9 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -737,6 +869,16 @@
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              <a href="https://rewards.bing.com/welcome" target="_blank" rel="noopener noreferrer">
+                Earn cashback through PayPal on select purchases
+              </a>
+            </span>
+          </div>
+        </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -757,6 +899,10 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th>
+          <a href="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th>
@@ -767,6 +913,11 @@
         </th>
         <th>
           <a href="https://mullvad.net/en/blog/mullvad-is-now-continuously-donating-to-qubes-os" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
@@ -811,6 +962,18 @@
         <th>
           <div><img src="../images/cross.webp" alt="cross">
             <span>
+              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
               <a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" target="_blank" rel="noopener noreferrer">
                 Committed to reducing emissions
               </a>
@@ -819,6 +982,14 @@
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030</a>
+            </span>
+          </div>
+        </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
@@ -836,6 +1007,19 @@
             </span>
           </div>
         </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -852,32 +1036,38 @@
         </td>
         <th>
           <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Brave_logo.webp" alt="Brave Logo"><br />
+            <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
             Brave
           </a>
         </th>
         <th>
           <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Chromelogo.webp" alt="Chrome Logo"><br />
+            <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
             Chrome
           </a>
         </th>
         <th>
           <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo"><br />
+            <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
             Duckduckgo
           </a>
         </th>
         <th>
           <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Firefox_logo.webp" alt="Firefox Logo"><br />
+            <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
               Firefox
             </a>
         </th>
         <th>
           <a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Firefox_Focus_logo.webp" alt="Firefox Focus Logo"><br />
+            <img src="../images/logos/firefox-focus-logo.webp" alt="Firefox Focus Logo"><br />
             Firefox Focus
+          </a>
+        </th>
+        <th>
+          <a href="https://www.apple.com/safari" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/safari-logo.png" alt="Safari Logo"><br />
+            Safari
           </a>
         </th>
       </tr>
@@ -887,6 +1077,7 @@
         <td style="height: 40px;">Engine</td>
         <th class="engine">WebKit</th>
         <th class="engine">Webkit</th>
+        <th class="engine">WebKit</th>
         <th class="engine">WebKit</th>
         <th class="engine">WebKit</th>
         <th class="engine">WebKit</th>
@@ -921,6 +1112,7 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
         <td>Default Tracker Blocker</td>
@@ -933,10 +1125,16 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://www.intego.com/mac-security-blog/understanding-safaris-new-privacy-report" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>Per-Site blocking configurations</td>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -949,14 +1147,20 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
-        <td>Https Upgrading</td>
+        <td>HTTPS Upgrading</td>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://forums.macrumors.com/threads/safari-on-ios-15-and-macos-monterey-automatically-upgrades-web-connections-to-https-on-compatible-sites-for-improved-security.2299847" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>Always Upgrade HTTPS</td>
@@ -965,6 +1169,7 @@
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -980,11 +1185,16 @@
         </th>
         <th>
           <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled<br />Completely</span>
+            <span>Disabled completely</span>
           </div>
         </th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>Default Global Privacy Control</td>
@@ -993,9 +1203,11 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
         <td>Default anonymous iP protection</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -1029,6 +1241,11 @@
             <span>Google</span>
           </div>
         </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>Google</span>
+          </div>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>
@@ -1036,6 +1253,7 @@
             ECH</a> 
           enabled
         </td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -1049,11 +1267,54 @@
             DNS over HTTPS
           </a>
         </td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
+              Must be enabled system-wide</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
+              Must be enabled system-wide</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
+              Must be enabled system-wide</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
+              Must be enabled system-wide</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
+              Must be enabled system-wide</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
+              Must be enabled system-wide</a>
+            </span>
+          </div>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>
@@ -1061,6 +1322,7 @@
             DNS over HTTPS</a> 
           enabled
         </td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -1081,9 +1343,11 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr class="checker_row">
         <td>Autoplay Blocking</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -1097,6 +1361,7 @@
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/check.webp" alt="check"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
       </tr>
       <tr>
         <th><br />Ethics</th>
@@ -1112,6 +1377,7 @@
             </span>
           </div>
         </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -1132,6 +1398,11 @@
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
@@ -1173,6 +1444,14 @@
             </span>
           </div>
         </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030</a>
+            </span>
+          </div>
+        </th>
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>
@@ -1189,6 +1468,7 @@
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
     </tbody>
   </table>
@@ -1200,31 +1480,31 @@
         </td>
         <th>
           <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Brave_logo.webp" alt="Brave Logo"><br />
+            <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
             Brave
           </a>
         </th>
         <th>
           <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Chromelogo.webp" alt="Chrome Logo"><br />
+            <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
             Chrome
           </a>
         </th>
         <th>
           <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/DuckduckgoLogo.webp" alt="Duckduckgo Logo"><br />
+            <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
             Duckduckgo
           </a>
         </th>
         <th>
           <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Firefox_logo.webp" alt="Firefox Logo"><br />
+            <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
             Firefox
           </a>
         </th>
         <th>
           <a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Firefox_Focus_logo.webp" alt="Firefox Focus Logo"><br />
+            <img src="../images/logos/firefox-focus-logo.webp" alt="Firefox Focus Logo"><br />
             Firefox Focus
           </a>
         </th>
@@ -1450,7 +1730,7 @@
         </th>
         <th>
           <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled<br />Completely</span>
+            <span>Disabled completely</span>
           </div>
         </th>
         <th><img src="../images/check.webp" alt="check"></th>
@@ -1582,23 +1862,22 @@
       </tr>
     </tbody>
   </table>
-  </div>
-</div>
+</main>
 <footer>
   <div class="inner-footer">
-      <div>
-          <div>
-              <p>SoftwareCompare</p>
-          </div>
+      <div class="footer-left">
+        <p>SoftwareCompare
+          <button id="theme-toggle"><img src="../images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+        </p>
       </div>
       <ul class="footer-nav">
         <ul>
-          <li><a href="mailto:contact@softwarecompare.org"><img src="../images/Social-Media-icons/email-icon.png" alt="Email Icon"></a></li>
-          <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/github-logo.png" alt="Github Logo"></a></li>
-          <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/X-logo.png" alt="Twitter logo"></a></li>
-          <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
-          <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/discord-logo.png" alt="Discord Logo"></a></li>
-          <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+          <li><a href="mailto:contact@softwarecompare.org"><img src="../images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+          <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+          <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+          <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+          <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+          <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
       </ul>
       </ul>
   </div>

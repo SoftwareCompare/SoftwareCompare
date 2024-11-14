@@ -5,21 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="../images/swc-logos/software-compare-128px.webp" type="image/webp">
   <meta name="description" content="Objective comparisons of music services to help you find the best one for you">
-  <meta property="og:image" content="../images/Link Previews/music_comparison_photo.webp">
+  <meta property="og:image" content="../images/link-previews/music-comparison-photo.webp">
   <meta property="og:title" content="Find a music service that's best for you">
 
-  <title>Music Comparisons | SoftwareCompare</title>
-  <link rel='icon' href='../images/SoftwareCompare128px.webp' type="image/webp">
-  <link href="../styles/style.css" rel="stylesheet">
+  <title>Music Comparisons - SoftwareCompare</title>
+  
+  <script>
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    }
+</script>
+<link href="../styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="inner-header">
     <div>
       <a href="../">
-        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompare Logo">
+        <img src="../images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
       </a>
       <div>
         <a class="logo-title" href="../">
@@ -36,8 +45,8 @@
       </ul>
     </ul>
   </div>
-  </div>
-  <div class="content-wrap">
+</header>
+  <main>
   <div class="Chart-list">
     <a href="./browsers.html">Browsers</a>
     <a href="./music.html">Music</a>
@@ -55,31 +64,31 @@
         </td>
         <th>
           <a href="https://brave.com/playlist" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Brave_logo.webp" alt="Brave Playlist Logo"><br />
+            <img src="../images/logos/brave-logo.webp" alt="Brave Playlist Logo"><br />
             Brave Playlist
           </a>
         </th>
         <th>
           <a href="https://hyperpipe.surge.sh" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Hyperpipe_logo.webp" alt="Hyperpipe Logo"><br />
+            <img src="../images/logos/hyperpipe-logo.webp" alt="Hyperpipe Logo"><br />
             Hyperpipe
           </a>
         </th>
         <th>
           <a href="https://feelthemusi.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Musi_logo.webp" alt="Musi Logo"><br />
+            <img src="../images/logos/musi-logo.webp" alt="Musi Logo"><br />
             Musi
           </a>
         </th>
         <th>
           <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Spotify_logo.png" alt="Spotify Logo"><br />
+            <img src="../images/logos/spotify-logo.png" alt="Spotify Logo"><br />
             Spotify
           </a>
         </th>
         <th>
           <a href="https://music.youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Youtube_Music_logo.webp" alt="Youtube Music Logo"><br />
+            <img src="../images/logos/youtube-music-logo.webp" alt="Youtube Music Logo"><br />
             Youtube Music
           </a>
         </th>
@@ -280,8 +289,6 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
-      <tr style="height: 80px;">
-      </tr>
     </tbody>
   </table>
   <table>
@@ -292,31 +299,31 @@
         </td>
         <th>
           <a href="https://music.amazon.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/amazon_music_logo.webp" alt="Amazon Music Logo"><br />
+            <img src="../images/logos/amazon-music-logo.webp" alt="Amazon Music Logo"><br />
             Amazon Music
           </a>
         </th>
         <th>
           <a href="https://www.apple.com/apple-music" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Apple_Music_logo.svg" alt="Apple Music Logo"><br />
+            <img src="../images/logos/apple-music-logo.svg" alt="Apple Music Logo"><br />
             Apple Music
           </a>
         </th>
         <th>
           <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Spotify_logo.png" alt="Spotify Logo"><br />
+            <img src="../images/logos/spotify-logo.png" alt="Spotify Logo"><br />
             Spotify
           </a>
         </th>
         <th>
           <a href="https://tidal.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Tidal_logo.webp" alt="Tidal Logo"><br />
+            <img src="../images/logos/tidal-logo.png" alt="Tidal Logo"><br />
             Tidal
           </a>
         </th>
         <th>
           <a href="https://music.youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Youtube_Music_logo.webp" alt="Youtube Music Logo"><br />
+            <img src="../images/logos/youtube-music-logo.webp" alt="Youtube Music Logo"><br />
             Youtube Music
           </a>
         </th>
@@ -529,27 +536,24 @@
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
-      <tr style="height: 100px;">
-        <td></td>
-      </tr>
     </tbody>
   </table>
-</div>
+</main>
 <footer>
   <div class="inner-footer">
-      <div>
-          <div>
-              <p>SoftwareCompare</p>
-          </div>
+      <div class="footer-left">
+        <p>SoftwareCompare
+          <button id="theme-toggle"><img src="../images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+        </p>
       </div>
       <ul class="footer-nav">
         <ul>
-          <li><a href="mailto:contact@softwarecompare.org"><img src="../images/Social-Media-icons/email-icon.png" alt="Email Icon"></a></li>
-          <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/github-logo.png" alt="Github Logo"></a></li>
-          <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/X-logo.png" alt="Twitter logo"></a></li>
-          <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
-          <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/discord-logo.png" alt="Discord Logo"></a></li>
-          <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+          <li><a href="mailto:contact@softwarecompare.org"><img src="../images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+          <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+          <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+          <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+          <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+          <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
       </ul>
       </ul>
   </div>

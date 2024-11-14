@@ -5,21 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='icon' href="../images/swc-logos/software-compare-128px.webp" type="image/webp">
   <meta name="description" content="Objective comparisons of YouTube frontends to help you find the best one for you">
-  <meta property="og:image" content="../images/Link Previews/youtube_frontend_comparison_photo.webp">
+  <meta property="og:image" content="../images/link-previews/youtube-frontend-comparison.webp">
   <meta property="og:title" content="Find a Youtube frontend that's best for you">
 
-  <title>YouTube Frontend Comparisons | SoftwareCompare</title>
-  <link rel='icon' href='../images/SoftwareCompare128px.webp' type="image/webp">
+  <title>YouTube Frontend Comparisons - SoftwareCompare</title>
   <link href="../styles/style.css" rel="stylesheet">
+  <script>
+    // Get and set theme immediately
+    const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+    }
+  </script>
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="inner-header">
     <div>
       <a href="../">
-        <img src="../images/SoftwareCompare_logo_transparent_back.webp" alt="SoftwareCompare Logo">
+        <img src="../images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
       </a>
       <div>
         <a class="logo-title" href="../">
@@ -35,9 +43,9 @@
         <li><a href="../contact.html">Contact</a></li>
       </ul>
     </ul>
-  </div>
-  </div>
-  <div class="content-wrap">
+    </div>
+  </header>
+  <main>
   <div class="Chart-list">
     <a href="./browsers.html">Browsers</a>
     <a href="./music.html">Music</a>
@@ -47,13 +55,184 @@
     <a href="./youtubefrontends.html">YoutubeFrontends</a>
   </div>
   <h1>YouTube Frontend Comparisons</h1>
-  <p>YouTube Frontends are applications that can be run on-device 
+  <p>
+    YouTube Frontends are applications that can be run on-device 
     or on a server. Frontends mimic Youtube's native app or site with 
-    more privacy, no ads, and sometimes new features.<br /><strong>
-    *Web frontends on popular instances are prone to breakage, so I 
-    recommend using a less popular instance, self hosting or using 
-    an application.<br /><br />
-  </strong>
+    more privacy, no ads, and sometimes new features.<br /><br />
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <td>
+          <h2 id="Applications"><a href="#Applications">Applications</a></h2>
+        </td>
+        <th>
+          <a href="https://FreeTubeApp.io" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/freetube-logo.png" alt="Freetube Logo"><br /> Freetube 
+          </a>
+        </th>
+        <th>
+          <a href="https://libretube.dev" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/libretube-logo.webp" alt="Libretube Logo"><br /> Libretube
+          </a>
+        </th>
+        <th>
+          <a href="https://newpipe.net" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/newpipe-logo.webp" alt="Newpipe Logo"><br /> NewPipe
+          </a>
+        </th>
+        <th>
+          <a href="https://smarttubeapp.github.io" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/smarttube-logo.webp" alt="SmartTube Logo"><br /> SmartTube
+          </a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Platforms</td>
+        <th class="engine">Desktop</th>
+        <th class="engine">Android</th>
+        <th class="engine">Android</th>
+        <th>TV</th>
+      </tr>
+      <tr>
+        <th><br />Privacy</th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">Open Source</a></td>
+        <th><a href="https://github.com/FreeTubeApp/FreeTube" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
+              alt="check"></a></th>
+        <th><a href="https://github.com/libre-tube/LibreTube" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
+              alt="check"></a></th>
+        <th><a href="https://github.com/TeamNewPipe/NewPipe" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
+              alt="check"></a></th>
+        <th><a href="https://github.com/yuliskov/SmartTube" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
+              alt="check"></a></th>
+      </tr>
+      <tr class="checker_row">
+        <td>No ip leak to Youtube</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr>
+        <th><br />Convenience</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Subscriptions</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener noreferrer">Sponsorblock</a></td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Import/Export</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>DeArrow</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Multi-Account</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td><a href="https://github.com/Anarios/return-youtube-dislike" target="_blank" rel="noopener noreferrer">Return Dislikes</a></td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Block Channels</td>
+        <th><a href="https://github.com/FreeTubeApp/FreeTube/pull/4202" target="_blank" rel="noopener noreferrer"><img
+              src="../images/check.webp" alt="check"></a></th>
+        <th><a href="https://github.com/libre-tube/LibreTube/issues/1173#issuecomment-1235741040" target="_blank" rel="noopener noreferrer"><img
+              src="../images/cross.webp" alt="cross"></a></th>
+        <th><a href="https://github.com/TeamNewPipe/NewPipe/issues/1815" target="_blank" rel="noopener noreferrer"><img
+              src="../images/cross.webp" alt="cross"></a></th>
+        <th><a href="https://github.com/yuliskov/SmartTube/issues/3978" target="_blank" rel="noopener noreferrer"><img
+              src="../images/cross.webp" alt="cross"></a></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Mute words</td>
+        <th><a href="https://github.com/FreeTubeApp/FreeTube/pull/4202" target="_blank" rel="noopener noreferrer"><img
+              src="../images/check.webp" alt="check"></a></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><a href="https://github.com/TeamNewPipe/NewPipe/issues/1815" target="_blank" rel="noopener noreferrer"><img
+              src="../images/cross.webp" alt="cross"></a></th>
+        <th><a href="https://github.com/yuliskov/SmartTube/issues/3978" target="_blank" rel="noopener noreferrer"><img
+              src="../images/cross.webp" alt="cross"></a></th>
+
+      </tr>
+      <tr>
+        <th><br />Independence/Trust</th>
+      </tr>
+      <tr class="checker_row">
+        <td>
+          <div>
+          Copyleft License
+          <span><a href="https://www.gnu.org/licenses/copyleft.en.html" target="_blank" rel="noopener noreferrer">Copyleft licenses</a> are a type of<br />open-source license that aim<br />to ensure software remains free<br />and open through requiring any<br />derivative works to use the same license.</span>
+          </div>
+        </td>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span><a href="https://github.com/FreeTubeApp/FreeTube/blob/development/LICENSE" target="_blank" rel="noopener noreferrer">AGPLv3</a></span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span><a href="https://github.com/libre-tube/LibreTube/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span><a href="https://github.com/TeamNewPipe/NewPipe/blob/dev/LICENSE" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span><a href="https://github.com/yuliskov/SmartTube/blob/master/LICENSE.md" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th><br />Freedom</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Watch on <a href="https://odysee.com" target="_blank" rel="noopener noreferrer">Odysee</a> button</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>
+      *Web frontends on popular instances are prone to breakage, so I 
+      recommend using a less popular instance, self hosting or using 
+      an application.<br /><br />
+    </strong>
   </p>
   <table>
     <thead>
@@ -63,17 +242,20 @@
         </td>
         <th>
           <a class="service-title" href="https://tube.cadence.moe" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Cloudtube-logo.png" alt="Cloudtube Logo"><br />Cloudtube
+            <img src="../images/logos/cloudtube-logo.webp" alt="Cloudtube Logo"><br />
+            Cloudtube
           </a>
         </th>
         <th>
           <a class="service-title" href="https://invidious.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Invidious-logo.webp" alt="Invidious Logo"><br />Invidious
+            <img src="../images/logos/invidious-logo.webp" alt="Invidious Logo"><br />
+            Invidious
           </a>
         </th>
         <th>
           <a class="service-title" href="https://github.com/TeamPiped/Piped" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Piped_logo.svg" alt="Piped Logo"><br />Piped
+            <img src="../images/logos/piped-logo.svg" alt="Piped Logo"><br />
+            Piped
           </a>
         </th>
       </tr>
@@ -286,6 +468,12 @@
           </div>
         </th>
       </tr>
+      <tr class="checker_row">
+        <td>Self Hostable</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
       <tr>
         <th><br />Freedom</th>
       </tr>
@@ -325,189 +513,22 @@
       </tr>
     </tbody>
   </table>
-  <table>
-    <thead>
-      <tr>
-        <td>
-          <h2 id="Applications"><a href="#Applications">Applications</a></h2>
-        </td>
-        <th>
-          <a href="https://FreeTubeApp.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Freetube_logo.png" alt="Freetube Logo"><br /> Freetube 
-          </a>
-        </th>
-        <th>
-          <a href="https://libretube.dev" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Libretube_logo.webp" alt="Libretube Logo"><br /> Libretube
-          </a>
-        </th>
-        <th>
-          <a href="https://newpipe.net" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/Newpipe_logo.webp" alt="Newpipe Logo"><br /> NewPipe
-          </a>
-        </th>
-        <th>
-          <a href="https://smarttubeapp.github.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/SmartTube_logo.webp" alt="SmartTube Logo"><br /> SmartTube
-          </a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Platforms</td>
-        <th class="engine">Desktop</th>
-        <th class="engine">Android</th>
-        <th class="engine">Android</th>
-        <th>TV</th>
-      </tr>
-      <tr>
-        <th><br />Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">Open Source</a></td>
-        <th><a href="https://github.com/FreeTubeApp/FreeTube" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
-              alt="check"></a></th>
-        <th><a href="https://github.com/libre-tube/LibreTube" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
-              alt="check"></a></th>
-        <th><a href="https://github.com/TeamNewPipe/NewPipe" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
-              alt="check"></a></th>
-        <th><a href="https://github.com/yuliskov/SmartTube" target="_blank" rel="noopener noreferrer"><img src="../images/check.webp"
-              alt="check"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>No ip leak to Youtube</td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-      </tr>
-      <tr>
-        <th><br />Convenience</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Subscriptions</td>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener noreferrer">Sponsorblock</a></td>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Import/Export</td>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>DeArrow</td>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Multi-Account</td>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://github.com/Anarios/return-youtube-dislike" target="_blank" rel="noopener noreferrer">Return Dislikes</a></td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Block Channels</td>
-        <th><a href="https://github.com/FreeTubeApp/FreeTube/pull/4202" target="_blank" rel="noopener noreferrer"><img
-              src="../images/check.webp" alt="check"></a></th>
-        <th><a href="https://github.com/libre-tube/LibreTube/issues/1173#issuecomment-1235741040" target="_blank" rel="noopener noreferrer"><img
-              src="../images/cross.webp" alt="cross"></a></th>
-        <th><a href="https://github.com/TeamNewPipe/NewPipe/issues/1815" target="_blank" rel="noopener noreferrer"><img
-              src="../images/cross.webp" alt="cross"></a></th>
-        <th><a href="https://github.com/yuliskov/SmartTube/issues/3978" target="_blank" rel="noopener noreferrer"><img
-              src="../images/cross.webp" alt="cross"></a></th>
-      </tr>
-      <tr class="checker_row">
-        <td>Mute words</td>
-        <th><a href="https://github.com/FreeTubeApp/FreeTube/pull/4202" target="_blank" rel="noopener noreferrer"><img
-              src="../images/check.webp" alt="check"></a></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><a href="https://github.com/TeamNewPipe/NewPipe/issues/1815" target="_blank" rel="noopener noreferrer"><img
-              src="../images/cross.webp" alt="cross"></a></th>
-        <th><a href="https://github.com/yuliskov/SmartTube/issues/3978" target="_blank" rel="noopener noreferrer"><img
-              src="../images/cross.webp" alt="cross"></a></th>
-
-      </tr>
-      <tr>
-        <th><br />Independence/Trust</th>
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <div>
-          Copyleft License
-          <span><a href="https://www.gnu.org/licenses/copyleft.en.html" target="_blank" rel="noopener noreferrer">Copyleft licenses</a> are a type of<br />open-source license that aim<br />to ensure software remains free<br />and open through requiring any<br />derivative works to use the same license.</span>
-          </div>
-        </td>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/FreeTubeApp/FreeTube/blob/development/LICENSE" target="_blank" rel="noopener noreferrer">AGPLv3</a></span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/libre-tube/LibreTube/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/TeamNewPipe/NewPipe/blob/dev/LICENSE" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/yuliskov/SmartTube/blob/master/LICENSE.md" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
-          </div>
-        </th>
-      </tr>
-      <tr>
-        <th><br />Freedom</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Watch on <a href="https://odysee.com" target="_blank" rel="noopener noreferrer">Odysee</a> button</td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-      </tr>
-    </tbody>
-  </table>
-</div>
+</main>
 <footer>
   <div class="inner-footer">
-      <div>
-          <div>
-              <p>SoftwareCompare</p>
-          </div>
+      <div class="footer-left">
+        <p>Software Compare
+          <button id="theme-toggle"><img src="../images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+        </p>
       </div>
       <ul class="footer-nav">
         <ul>
-          <li><a href="mailto:contact@softwarecompare.org"><img src="../images/Social-Media-icons/email-icon.png" alt="Email Icon"></a></li>
-          <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/github-logo.png" alt="Github Logo"></a></li>
-          <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/X-logo.png" alt="Twitter logo"></a></li>
-          <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
-          <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/discord-logo.png" alt="Discord Logo"></a></li>
-          <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/Social-Media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+          <li><a href="mailto:contact@softwarecompare.org"><img src="../images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+          <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+          <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+          <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+          <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+          <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="../images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
       </ul>
       </ul>
   </div>

@@ -21,3 +21,35 @@ for (let i = 0; i < checkboxes.length; i++) {
       }
     });
   }
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+
+    // Function to set theme
+    const setTheme = (theme) => {
+        if (theme === 'dark') {
+            root.classList.add('dark-mode');
+        } else {
+            root.classList.remove('dark-mode');
+        }
+        localStorage.setItem('theme', theme);
+    };
+
+    // Initialize button text based on current theme
+    const currentTheme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    setTheme(currentTheme);
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        const newTheme = root.classList.contains('dark-mode') ? 'light' : 'dark';
+        setTheme(newTheme);
+    });
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+});
