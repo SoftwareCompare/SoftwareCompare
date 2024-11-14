@@ -5,7 +5,7 @@
   --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
   --checker-even-bg: #f1f1f1;
   --checker-border: #000000;
-  --link-border: #0000ff;
+  --default-link: #0000ff;
   --comparison-gradient: linear-gradient(to bottom, #efefff, #ffffff);
   --comparison-hover-gradient: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
   --img-filter: none;
@@ -13,12 +13,12 @@
 
 :root.dark-mode {
   --background-color: #181a1b;
-  --text-color: rgb(208, 208, 208);
+  --text-color: rgb(239, 239, 239);
   --border-color: rgb(122, 122, 122);
   --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
-  --link-border: rgb(12, 60, 255);
+  --default-link: rgb(63, 101, 255);
   --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
   --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
   --img-filter: invert(100%) grayscale(50%) sepia(25%);
@@ -74,7 +74,7 @@ tbody .checker_row:nth-child(even) {
 }
 
 .checker_row th a {
-  border-bottom: 1px solid var(--link-border);
+  border-bottom: 1px solid var(--default-link);
   transition: border-color 0.3s;
 }
 
@@ -198,7 +198,7 @@ h1 {
   font-size: clamp(20px, 5vw, 30px);
 }
 a {
-  color: #112e97;
+  color: var(--default-link);
 }
 .nav.open {
   display: block;
@@ -308,7 +308,7 @@ tr th {
   font-size: clamp(8px, 2.7vw, 12px);
 }
 .checker_row th a {
-  border-bottom: 1px solid var(--link-border);
+  border-bottom: 1px solid var(--default-link);
 }
 .checker_row img {
   height: clamp(12px, 3vw, 17px);
