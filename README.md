@@ -1,5 +1,5 @@
 # SoftwareCompare
-<img align="right" src="images/swc-logos/SWClogo_white_back.webp" width="128px" height="128px" />
+<img align="right" src="images/swc-logos/software-compare-logo-white-back.webp" width="128px" height="128px" />
 An open-source project hosted on softwarecompare.org that compares application features under the category of privacy, conveinence, ethics, etc. This project is licensed under the AGPLv3, so feel free to fork and improve this project yourself.
 
 ## Features
