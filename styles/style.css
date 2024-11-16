@@ -58,10 +58,6 @@ header {
 .inner-header a {
   color: var(--text-color);
 }
-thead {
-  background-color: var(--background-color);
-  transition: background-color 0.3s;
-}
 
 tbody .checker_row:nth-child(even) {
   background-color: var(--checker-even-bg);
@@ -265,6 +261,18 @@ thead {
   position: sticky;
   top: 0;
   z-index: 2;
+  background-color: var(--background-color);
+  transition: background-color 0.3s;
+}
+thead td h2::before {
+  content: "#";
+  font-size: clamp(14px, 3vw, 20px);
+  color:#646a6d;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+thead td h2:hover::before {
+  opacity: 1;
 }
 thead img {
   height: clamp(20px, 4.2vw, 30px);
@@ -273,7 +281,10 @@ thead img {
 thead td {
   text-align: center;
 }
-thead td a {
+thead td a{
+  text-decoration: none;
+}
+thead td h2 {
   /* Service Title */
   font-size: clamp(14px, 3vw, 20px);
   font-weight: bold;
@@ -466,7 +477,7 @@ tr th {
 }
 
 
-td {
+tbody td {
   width: clamp(10px, 1.2vw, 40px);
   height: 25px;
   font-size: clamp(8px, 2.2vw, 12px);
@@ -484,10 +495,6 @@ h1 {
 }
 
 p {
-  padding-left: 10px;
-}
-
-h2 {
   padding-left: 10px;
 }
 
@@ -547,7 +554,9 @@ footer {
   padding: 0;
   display: flex;
 }
-
+h2 {
+  padding-left: 5px;
+}
 .footer-nav li {
   margin-right: 12px;
 }
