@@ -15,8 +15,11 @@ Brave Creators
 Github Sponsors
 - [Support Here](https://github.com/sponsors/davidcollini)
 
-Buy Me a Coffee
-- [Support Here](https://buymeacoffee.com/davidcollini)
+Liberapay
+- [Support Here](https://liberapay.com/davidcollini)
+
+XMRchat
+- [Send Monero and a Message](https://xmrchat.com/softwarecompare)
 
 Monero
 - 4A8xBr1jMhV84wdVRHCwCs1293quJrwC8jAtJkrqKzDKJZhw33V2g26YDe7wbiuQy7KkaEY8B6YYoBdB3auTfXZiUwLLj5q

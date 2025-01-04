@@ -9,6 +9,7 @@
   --comparison-gradient: linear-gradient(to bottom, #efefff, #ffffff);
   --comparison-hover-gradient: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
   --img-filter: none;
+  --dull-text: #262626;
 }
 
 :root.dark-mode {
@@ -18,57 +19,70 @@
   --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
-  --default-link: rgb(63, 101, 255);
+  --default-link: rgb(95, 63, 255);
   --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
   --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
   --img-filter: invert(100%) grayscale(50%) sepia(25%);
+  --dull-text: #d9d9d9;
 }
 
-/* Base theme styles using variables */
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: color 0.4s;
-}
 .inner-header button {
   /* mobile dropdown toggle */
-  display: block;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 29px;
+  cursor: pointer;
+  z-index: 2;
+  padding-right: 15px;
   color: var(--text-color);
 }
 a {
-  color: var(--text-color);
   transition: color 0.4s;
+  text-decoration: none;
+  color: var(--default-link);
+}
+a:hover {
+  text-decoration: underline;
 }
 table a {
   color: var(--text-color);
-}
-.checker_row div {
-  border-bottom: 1px dotted var(--checker-border);
-}
-.Chart-list a {
-  color: var(--text-color);
+  text-decoration: underline;
 }
 .engine a {
   color: var(--text-color);
+  text-decoration: none;
 }
-header {
-  background-image: var(--header-gradient);
-  transition: all 0.4s;
+header a:hover {
+  text-decoration: none;
 }
 .inner-header a {
   color: var(--text-color);
 }
 
+tbody .checker_row:nth-child(even) td,
 tbody .checker_row:nth-child(even) {
   background-color: var(--checker-even-bg);
   transition: background-color 0.3s;
 }
-
+tbody .checker_row:nth-child(odd) td {
+  background-color: var(--background-color);
+}
+.grayrow {
+  td {
+    background-color: var(--checker-even-bg) !important;
+    transition: background-color 0.3s;
+  }
+  background-color: var(--checker-even-bg);
+  transition: background-color 0.3s;
+}
 .checker_row div {
   border-bottom: 1px dotted var(--checker-border);
   transition: border-color 0.3s;
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
 }
-
 .checker_row th a {
   border-bottom: 1px solid var(--default-link);
   transition: border-color 0.3s;
@@ -91,6 +105,7 @@ tbody .checker_row:nth-child(even) {
 
 .comparison-box:hover {
   background-image: var(--comparison-hover-gradient);
+  text-decoration: none;
 }
 
 /* Button styles */
@@ -115,6 +130,9 @@ body {
   margin: 0;
   flex-direction: column;
   font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: color 0.4s;
 }
 
 main {
@@ -125,9 +143,11 @@ main {
 
 header {
   text-align: center;
-  z-index: 5;
+  z-index: 14;
   display: flex;
   justify-content: center;
+  background-image: var(--header-gradient);
+  transition: all 0.4s;
 }
 .inner-header {
   width: 100%;
@@ -160,16 +180,6 @@ header {
   text-decoration: none;
 }
 
-.inner-header button {
-  /* mobile dropdown */
-  display: none;
-  background: none;
-  border: none;
-  font-size: 29px;
-  cursor: pointer;
-  z-index: 2;
-  padding-right: 15px;
-}
 .nav {
   top: clamp(28px, 6vw, 33px);
   display: flex;
@@ -193,11 +203,9 @@ header {
 h1 {
   font-size: clamp(20px, 5vw, 30px);
 }
-a {
-  color: var(--default-link);
-}
 .nav.open {
   display: block;
+
 }
 
 .nav li {
@@ -250,19 +258,17 @@ a {
   }
 }
 table {
-  border-collapse: collapse;
-  max-width: 1080px;
   width: 100%;
-  margin: 0 auto;
+  height: 100%;
+  border-collapse: collapse;
   margin-bottom: 80px;
 }
 thead {
   /*top bar on table */
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 13;
   background-color: var(--background-color);
-  transition: background-color 0.3s;
 }
 thead td h2::before {
   content: "#";
@@ -271,15 +277,20 @@ thead td h2::before {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+thead td h2:hover {
+  text-decoration: none;
+}
 thead td h2:hover::before {
   opacity: 1;
 }
 thead img {
-  height: clamp(20px, 4.2vw, 30px);
+  height: clamp(18px, 4.2vw, 30px);
   border-radius: 16%;
 }
 thead td {
   text-align: center;
+  background-color: var(--background-color);
+  z-index: 10;
 }
 thead td a{
   text-decoration: none;
@@ -301,6 +312,10 @@ thead th a {
   padding-right: 4px;
   transition: all 0.4s;
   font-size: clamp(14px, 2vw, 18px);
+  color: var(--dull-text);
+}
+.Chart-list a:focus {
+  color: var(--text-color);
 }
 .Chart-list {
   max-width: 100%;
@@ -318,25 +333,17 @@ thead th a {
 tr th {
   font-size: clamp(8px, 2.7vw, 12px);
 }
-.checker_row th a {
-  border-bottom: 1px solid var(--default-link);
-}
 .checker_row img {
   height: clamp(12px, 3vw, 17px);
 }
 
 .engine {
-  font-size: clamp(5px, 1.8vw, 13px);
+  font-size: clamp(4px, 1.8vw, 13px);
+  background-color: var(--background-color);
 }
-.engine a {
-  text-decoration: none;
+.checker_row td {
+  z-index: 2;
 }
-.checker_row div {
-  position: relative;
-  display: inline-block;
-  max-width: 200px;
-}
-
 .checker_row td div a {
   color: white;
 }
@@ -353,14 +360,14 @@ tr th {
   background-color: rgb(56, 56, 56);
   border-radius: 6px;
   color: #fff;
-  min-width: 90px;
+  min-width: 87px;
   max-width: 115px;
   padding: 5px;
   position: absolute;
   visibility: hidden;
   text-align: center;
+  z-index: 10;
   left: 0;
-  z-index: 1;
   white-space: normal;
   overflow-wrap: normal;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.283);
@@ -389,17 +396,12 @@ tr th {
 .inner-footer img {
   height: 20px;
 }
-.edge {
-  transform: translateX(-75px);
+.edge,
+.checker_row th:last-child span,
+.checker_row th:nth-last-child(2) span {
+  transform: translateX(-55px);
 }
 
-.checker_row th:last-child span {
-  transform: translateX(-75px);
-}
-
-.checker_row th:nth-last-child(2) span{
-  transform: translateX(-75px);
-}
 .logo-title h2 {
   font-size: clamp(19px, 2vw, 22px);
 }
@@ -482,8 +484,19 @@ tbody td {
   height: 25px;
   font-size: clamp(8px, 2.2vw, 12px);
   padding-left: 5px;
+  z-index: 5;
 }
-
+td,
+.left-col {
+  background-color: var(--background-color);
+  position: sticky;
+  left: 0;
+  z-index: 0;
+}
+.left-col {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 th {
   min-width: 5px;
   width: 10%;
@@ -506,13 +519,11 @@ h3 {
 .code {
   max-width: 80vw;
   overflow-wrap: anywhere;
-  overflow: auto;
 }
 footer {
   margin-top: auto;
   color: white;
   background-color: black;
-  overflow: hidden;
   text-align: center;
   display: flex;
   justify-content: center;
