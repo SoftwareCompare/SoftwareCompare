@@ -1,2 +1,8 @@
-User-agent: * 
-Disallow: 
+User-agent: *
+Disallow: /script.js nm
+Disallow: /.github/
+Disallow: /.well-known/
+Disallow: /styles/
+Disallow: /images/
+Disallow: /LICENSE
+Disallow: /README.md

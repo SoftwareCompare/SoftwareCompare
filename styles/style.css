@@ -374,6 +374,7 @@ tr th {
   font-size: clamp(9px, 2vw, 12px);
 }
 
+
 .checker_row td span {
   min-width: 250px;
   max-width: 400px;
@@ -519,6 +520,9 @@ h3 {
 .code {
   max-width: 80vw;
   overflow-wrap: anywhere;
+}
+td:has(div) {
+  z-index: 8 !important;
 }
 footer {
   margin-top: auto;

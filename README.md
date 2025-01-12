@@ -7,6 +7,11 @@ An open-source project hosted on softwarecompare.org that compares application f
 - Many checkmarks have links to verify the source where the information originated
 - No tracking
 
+## Development
+If you would like to view the most current updates, visit the test site [here](https://softwarecompare-test.pages.dev/). 
+
+If you're interested in future plans for the site, check out the [To-do List](https://drive.proton.me/urls/8S7NTED71G#KKdAaXViJkpQ).
+
 ## Donations
 
 Brave Creators
