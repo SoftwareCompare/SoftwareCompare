@@ -3,7 +3,7 @@
   --background-color: #ebebeb;
   --text-color: #000000;
   --border-color: #000000;
-  --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  --header-gradient: #f1f1f1;
   --checker-even-bg: #f1f1f1;
   --checker-border: #000000;
   --default-link: #0000ff;
@@ -18,7 +18,7 @@
   --background-color: #181a1b;
   --text-color: rgb(204, 204, 204);
   --border-color: rgb(122, 122, 122);
-  --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
+  --header-gradient: #101111;
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
   --default-link: rgb(74, 77, 255);
@@ -61,6 +61,7 @@ a:hover {
 }
 .inner-header a {
   color: var(--text-color);
+  font-size: 15px !important;
 }
 
 tbody .checker_row:nth-child(even) td,
@@ -108,6 +109,12 @@ tbody .checker_row:nth-child(odd) td {
 .homepage-banner div {
   width: 100%;
   max-width: 1080px;
+}
+.homepage-title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 .comparison-box {
   background-image: var(--comparison-gradient);
@@ -179,7 +186,7 @@ header {
   z-index: 14;
   display: flex;
   justify-content: center;
-  background-image: var(--header-gradient);
+  background-color: var(--header-gradient);
 }
 .inner-header {
   width: 100%;
@@ -188,7 +195,6 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  font-family: auto;
 }
 .inner-header div {
   /* logo */
@@ -199,6 +205,7 @@ header {
 
 .inner-header h2 {
   color: var(--stark);
+  font-family: auto;
   font-size: 25px;
   padding: 5px;
   margin: auto;
@@ -443,7 +450,7 @@ tr th {
   font-size: clamp(19px, 2vw, 22px);
 }
 /* Mobile styles */
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width: 550px) {
   .inner-header button {
     /* mobile dropdown toggle */
     display: block;
