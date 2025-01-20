@@ -1,6 +1,5 @@
 :root {
-  --stark: #000000;
-  --background-color: #ebebeb;
+  --background-color: #ffffff;
   --text-color: #000000;
   --border-color: #000000;
   --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
@@ -14,14 +13,13 @@
 }
 
 :root.dark-mode {
-  --stark: #ffffff;
   --background-color: #181a1b;
-  --text-color: rgb(204, 204, 204);
+  --text-color: rgb(239, 239, 239);
   --border-color: rgb(122, 122, 122);
   --header-gradient: linear-gradient(to bottom, #181a1b, #323536);
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
-  --default-link: rgb(74, 77, 255);
+  --default-link: rgb(95, 63, 255);
   --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
   --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
   --img-filter: invert(100%) grayscale(50%) sepia(25%);
@@ -40,8 +38,12 @@
   color: var(--text-color);
 }
 a {
+  transition: color 0.4s;
   text-decoration: none;
   color: var(--default-link);
+}
+a:hover {
+  text-decoration: underline;
 }
 table a {
   color: var(--text-color);
@@ -53,11 +55,6 @@ table a {
 }
 header a:hover {
   text-decoration: none;
-  color: var(--stark);
-}
-a:hover {
-  text-decoration: underline;
-  color: var(--stark);
 }
 .inner-header a {
   color: var(--text-color);
@@ -94,21 +91,9 @@ tbody .checker_row:nth-child(odd) td {
 .inner-header img,
 .invert {
   filter: var(--img-filter);
+  transition: filter 0.3s;
 }
 
-.homepage-banner {
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  width: 100%;
-  background-color: #0d0d0d;
-  align-items: center;
-}
-
-.homepage-banner div {
-  width: 100%;
-  max-width: 1080px;
-}
 .comparison-box {
   background-image: var(--comparison-gradient);
   transition: background-image 0.4s;
@@ -122,25 +107,7 @@ tbody .checker_row:nth-child(odd) td {
   background-image: var(--comparison-hover-gradient);
   text-decoration: none;
 }
-.privacy-counseling {
-  height: 300px;
-  width: 100%;
-  
-}
-.privacy-counseling div {
 
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.counseling-form {
-
-  height: 40px !important;
-  width: 100px !important;
-  background-color: orange !important;
-
-}
 /* Button styles */
 #theme-toggle {
   background: none;
@@ -180,6 +147,7 @@ header {
   display: flex;
   justify-content: center;
   background-image: var(--header-gradient);
+  transition: all 0.4s;
 }
 .inner-header {
   width: 100%;
@@ -198,7 +166,6 @@ header {
 }
 
 .inner-header h2 {
-  color: var(--stark);
   font-size: 25px;
   padding: 5px;
   margin: auto;

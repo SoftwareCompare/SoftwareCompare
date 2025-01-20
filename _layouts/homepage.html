@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div class="homepage-banner">
+            <div>
+                <h1>
+                    Open Source Comparisons of Software Applications.
+                </h1>
+                <p>
+                    Compare features of different programs to find software that works for you.
+                </p>
+                <div class="homepage button">Comparison Charts</div>
+                <div class="homepage button">Privacy Counseling</div>
+            </div>
+        </div>
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %}
+        <script src="script.js"></script>
+    </body>
+</html>

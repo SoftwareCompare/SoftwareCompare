@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="Objective comparisons of software to help you find the best applications for you">
+    <meta property="og:image" content="../images/link-previews/browser-comparison-photo.webp">
+    <meta property="og:title" content="Find software that's best for you">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title>Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+    <body>
+        <header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about.html"
+                    
+                    >About</a></li>
+                <li><a href="./donate.html"
+                    
+                    >Donate</a></li>
+                <li><a href="./contact.html"
+                    
+                    >Contact</a></li>
+            </ul>
+        </ul>
+    </div>
+</header>
+        <main>
+            <div class="Chart-list">
+    <a href="./browsers.html" 
+    
+    >Browsers</a>
+    <a href="./music.html"
+    
+    >Music</a>
+    <a href="./operating-systems.html"
+    
+    >Operating Systems</a>
+    <a href="./photos.html"
+    
+    style="text-decoration: underline; color: var(--stark);"
+    
+    >Photos</a>
+    <a href="./searchengines.html"
+    
+    >Search Engines</a>
+    <a href="./vpns.html"
+    
+    >VPNs</a>
+    <a href="./youtubefrontends.html"
+    
+    >YoutubeFrontends</a>
+</div>
+              <h1>Photo App Comparisons<br /><br /></h1>
+  <table>
+    <thead>
+      <tr>
+        <td>
+        </td>
+        <th>
+          <a class="service-title" href="https://www.icloud.com/photos" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/apple-photos-logo.webp" alt="Apple Photos Logo"><br />
+            Apple Photos
+          </a>
+        </th>
+        <th>
+          <a class="service-title" href="https://ente.io" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/ente-logo.webp" alt="ente Logo"><br />
+            ente
+          </a>
+        </th>
+        <th>
+          <a class="service-title" href="https://www.google.com/photos/about" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/google-photos-logo.png" alt="Google Photos Logo"><br />
+            Google Photos
+          </a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Platform</td>
+            <th class="engine">Apple<br />Devices<br />& Web</th>
+            <th class="engine">Desktop<br />Web<br />Mobile</th>
+            <th class="engine">Desktop<br />Web<br />Mobile</th>
+        </tr>
+      <tr>
+        <th class="left-col"><br />Privacy</th>
+      </tr>
+      <tr class="checker_row">
+        <td>
+          <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
+            Open Source
+          </a>
+        </td>
+        <th><img src="../images/cross.webp" alt="check"></th>
+        <th>
+          <a href="https://github.com/ente-io/ente" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Default 
+          <a href="https://www.techtarget.com/searchsecurity/definition/end-to-end-encryption-E2EE" target="_blank" rel="noopener noreferrer">
+            End-to-end encryption
+          </a>
+        </td>
+        <th><img src="../images/cross.webp" alt="check"></th>
+        <th>
+          <a href="https://ente.io/architecture" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Supports 
+          <a href="https://www.techtarget.com/searchsecurity/definition/end-to-end-encryption-E2EE" target="_blank" rel="noopener noreferrer">
+            End-to-end encryption
+          </a>
+        </td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://ente.io/architecture" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>On-Device Machine Learning</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://ente.io/ml" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr>
+        <th class="left-col"><br />Tracking/Analytics</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Doesn't log iP addresses</td>
+        <th>
+          <a href="https://www.apple.com/legal/privacy/data/en/apple-id" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://ente.io/architecture" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="check"></th>
+        </tr>
+    <th class="left-col"><br />Independence/Trust</th>
+      <tr class="checker_row">
+        <td>
+          <div>
+            Copyleft License
+            <span>
+              <a href="https://www.gnu.org/licenses/copyleft.en.html" target="_blank" rel="noopener noreferrer">
+                Copyleft licenses</a> are a type of open-source license that aim to ensure software remains free and open through requiring any derivative works to use the same license.
+            </span>
+          </div>
+        </td>
+        <th><img src="../images/cross.webp" alt="check"></th>
+        <th>
+            <div><img src="../images/check.webp" alt="check">
+              <span>
+                <a href="https://github.com/ente-io/ente?tab=AGPL-3.0-1-ov-file#readme" target="_blank" rel="noopener noreferrer">
+                  AGPLv3
+                </a>
+              </span>
+            </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Self Hostable</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://help.ente.io/self-hosting" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr>
+        <th class="left-col"><br />Convenience</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Dark Mode</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://ente.io/features" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Easy Data Export</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Facial Recognition</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://ente.io/ml" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Search with Descriptions</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <a href="https://ente.io/ml" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr>
+        <th class="left-col"><br />Ethics</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Donates to Charity</td>
+        <th>
+          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              <a href="https://ente.io/blog/update-march-2022" target="_blank" rel="noopener noreferrer">
+                Donates 1% to<br />stripe climate
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Carbon Neutral</td>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span><a href="https://ente.io/reliability" target="_blank" rel="noopener noreferrer">
+              Hosted on Scaleway</a> with <a href="https://www.scaleway.com/en/environmental-leadership" target="_blank" rel="noopener noreferrer">
+                renewable energy
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Carbon Negative</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://ente.io/blog/update-march-2022" target="_blank" rel="noopener noreferrer">
+                Donates 1% to stripe climate
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+    </tbody>
+        </table>
+        </main>
+        
+        <footer>
+    <div class="inner-footer">
+        <div class="footer-left">
+            <p>SoftwareCompare
+                <button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+            </p>
+        </div>
+        <ul class="footer-nav">
+            <ul>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="/images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+            </ul>
+        </ul>
+    </div>
+</footer>
+        <script src="script.js"></script>
+    </body>
+</html>

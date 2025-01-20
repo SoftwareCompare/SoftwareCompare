@@ -1,0 +1,34 @@
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about.html"
+                    {% if page.title contains "About" %}
+                    style="color: var(--stark);"
+                    {% endif %}
+                    >About</a></li>
+                <li><a href="./donate.html"
+                    {% if page.title contains "Donate" %}
+                    style="color: var(--stark);"
+                    {% endif %}
+                    >Donate</a></li>
+                <li><a href="./contact.html"
+                    {% if page.title contains "Contact" %}
+                    style="color: var(--stark);"
+                    {% endif %}
+                    >Contact</a></li>
+            </ul>
+        </ul>
+    </div>
+</header>

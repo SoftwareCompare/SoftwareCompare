@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="Objective comparisons of software to help you find the best applications for you">
+    <meta property="og:image" content="../images/link-previews/browser-comparison-photo.webp">
+    <meta property="og:title" content="Find software that's best for you">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title>Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+    <body>
+        <header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about.html"
+                    
+                    >About</a></li>
+                <li><a href="./donate.html"
+                    
+                    >Donate</a></li>
+                <li><a href="./contact.html"
+                    
+                    >Contact</a></li>
+            </ul>
+        </ul>
+    </div>
+</header>
+        <div class="homepage-banner">
+            <div>
+                <h1>
+                    Open Source Comparisons of Software Applications.
+                </h1>
+                <p>
+                    Compare features of different programs to find software that works for you.
+                </p>
+                <div class="homepage button">Comparison Charts</div>
+                <div class="homepage button">Privacy Counseling</div>
+            </div>
+        </div>
+        <main>
+            <h2>Comparison Charts</h2>
+<div class="boxes-wrapper">
+    <div class="comparison-boxes">
+        <a class="comparison-box" href="./browsers.html">
+            <h2>Browsers</h2>
+            <p>Chart of features for web browsers</p>
+        </a>
+        <a class="comparison-box" href="./music.html">
+            <h2>Music</h2>
+            <p>Chart of Music Streaming Services</p>
+        </a>
+        <a class="comparison-box" href="./operating-systems.html">
+            <h2>Operating Systems</h2>
+            <p>Comparison of Operating Systems</p>
+        </a>
+        <a class="comparison-box" href="./photos.html">
+            <h2>Photo Apps</h2>
+            <p>Comparison of Photo Apps</p>
+        </a>
+        <a class="comparison-box" href="./searchengines.html">
+            <h2>Search Engines</h2>
+            <p>Comparison of Search Engines</p>
+        </a>
+        <a class="comparison-box" href="./vpns.html">
+            <h2>VPNs</h2>
+            <p>Comparison of VPNs</p>
+        </a>
+        <a class="comparison-box" href="./youtubefrontends.html">
+            <h2>Youtube Frontends</h2>
+            <p>Comparison of Youtube frontends</p>
+        </a>
+        <br /><br />
+    </div>
+
+    
+</div>
+<h2>Book a privacy Counseling Appointment</h2>
+<div class="privacy-counseling">
+    <p>If you are interested in scheduling a one-on-one session for advice on increasing your privacy or
+        changing the software you use, you can fill out this form here:
+        <a href="https://blocksurvey.io/software-compare-privacy-counseling-cxhQpggiR9a0QVEsboXpwg?v=o" target="_blank" rel="noopener noreferrer">
+            <div class="counseling-form" style="height: 40px !important; width: 100px !important; background-color: orange !important; border-radius: 10px;">
+                Form
+            </div>
+        </a>
+    </p>
+</div>
+        </main>
+        <footer>
+    <div class="inner-footer">
+        <div class="footer-left">
+            <p>SoftwareCompare
+                <button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button>
+            </p>
+        </div>
+        <ul class="footer-nav">
+            <ul>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="/images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://discord.gg/SvZXsWaT2w" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/discord-logo.png" alt="Discord Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+            </ul>
+        </ul>
+    </div>
+</footer>
+        <script src="script.js"></script>
+    </body>
+</html>
