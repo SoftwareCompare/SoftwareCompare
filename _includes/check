@@ -1,0 +1,26 @@
+{% comment %}
+    Parameters:
+    - link
+    - tooltip
+    - alt
+{% endcomment %}
+{% if include.link %}
+<th>
+    <a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">
+        <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
+    </a>
+</th>
+
+{% elsif include.tooltip %}
+<th>
+    <div>
+        <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
+        <span>{{ include.tooltip }}</span>
+    </div>
+</th>
+
+{% else %}
+<th>
+    <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
+</th>
+{% endif %}

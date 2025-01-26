@@ -2,6 +2,7 @@
 layout: comparison
 title: YouTube Frontend
 permalink: youtubefrontends
+description: Comparisons of YouTube frontends to find one that works for you
 ---
 
   <h1>{{ page.title }} Comparisons</h1>
@@ -33,7 +34,7 @@ permalink: youtubefrontends
         </th>
         <th>
           <a href="https://smarttubeapp.github.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/smarttube-logo.webp" alt="SmartTube Logo"><br /> SmartTube
+            <img src="../images/logos/smarttube-logo.png" alt="SmartTube Logo"><br /> SmartTube
           </a>
         </th>
       </tr>
@@ -41,10 +42,10 @@ permalink: youtubefrontends
     <tbody>
       <tr>
         <td>Platforms</td>
-        <th class="engine">Desktop</th>
-        <th class="engine">Android</th>
-        <th class="engine">Android</th>
-        <th>TV</th>
+        <th class="engine">{% include link text='Desktop' link='https://freetubeapp.io/#download' %}</th>
+        <th class="engine">{% include link text='Android' link='https://f-droid.org/en/packages/com.github.libretube' %}</th>
+        <th class="engine">{% include link text='Android' link='https://newpipe.net/#download' %}</th>
+        <th>{% include link text='TV' link='https://smarttubeapp.github.io' %}</th>
       </tr>
       <tr>
         <th class="left-col"><br />Privacy</th>

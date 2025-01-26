@@ -2,6 +2,7 @@
 layout: comparison
 title: Photo App
 permalink: photos
+description: Comparisons of photo apps to find an application that works for you
 ---
 
   <h1>{{ page.title }} Comparisons<br /><br /></h1>
@@ -33,9 +34,17 @@ permalink: photos
     <tbody>
         <tr>
             <td>Platform</td>
-            <th class="engine">Apple<br />Devices<br />& Web</th>
-            <th class="engine">Desktop<br />Web<br />Mobile</th>
-            <th class="engine">Desktop<br />Web<br />Mobile</th>
+            <th class="engine">Apple<br />Devices<br />& 
+              {% include link text='Web' link='https://www.icloud.com/photos' %}
+            </th>
+            <th class="engine">{% include link text='Desktop' link='https://ente.io/download' %}<br />
+              {% include link text='Web' link='https://web.ente.io' %}<br />
+              {% include link text='Mobile' link='https://ente.io/download' %}
+            </th>
+            <th class="engine">{% include link text='Desktop' link='https://photos.google.com/apps' %}<br />
+              {% include link text='Web' link='https://photos.google.com/login' %}<br />
+              {% include link text='Mobile' link='https://photos.google.com/apps' %}
+            </th>
         </tr>
       <tr>
         <th class="left-col"><br />Privacy</th>

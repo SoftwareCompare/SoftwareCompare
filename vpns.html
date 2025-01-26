@@ -2,6 +2,7 @@
 layout: comparison
 title: VPN
 permalink: vpns
+description: 
 ---
 
   <h1>{{ page.title }} Comparisons<br /><br /></h1>
@@ -31,13 +32,13 @@ permalink: vpns
         </th>
         <th>
           <a class="service-title" href="https://nordvpn.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/nord-vpn-logo.webp" alt="NordVPN Logo"><br />
+            <img src="../images/logos/nord-vpn-logo.png" alt="NordVPN Logo"><br />
             NordVPN
           </a>
         </th>
         <th>
           <a class="service-title" href="https://support.apple.com/en-us/102602" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/apple-private-relay-logo.webp" alt="iCloud Private Relay Logo"><br />
+            <img src="../images/logos/apple-private-relay-logo.png" alt="iCloud Private Relay Logo"><br />
             Private Relay
           </a>
         </th>
@@ -48,7 +49,7 @@ permalink: vpns
           </a>
         </th>
         <th>
-          <a class="service-title" href="https://www.ivpn.net" target="_blank" rel="noopener noreferrer">
+          <a class="service-title" href="https://safing.io/spn" target="_blank" rel="noopener noreferrer">
             <img src="../images/logos/safing-logo.png" alt="IVPN Logo"><br />
             SPN
           </a>
@@ -72,12 +73,27 @@ permalink: vpns
               & <a href="https://mullvad.net/en/download/vpn/ios" target="_blank" rel="noopener noreferrer">
                 Mobile</a>
             </th>
-            <th class="engine">MacOS<br />Windows<br />& Mobile</th>
-            <th class="engine">Desktop<br />& Mobile</th>
+            <th class="engine">{% include link text='MacOS' link='https://www.mysteriumvpn.com/downloads' %}<br />
+              {% include link text='Windows' link='https://www.mysteriumvpn.com/downloads' %}<br />& 
+              {% include link text='Mobile' link='https://www.mysteriumvpn.com/downloads' %}
+            </th>
+            <th class="engine">{% include link text='Desktop' link='https://nordvpn.com/download' %}<br />
+              {% include link text='Mobile' link='https://nordvpn.com/download' %}<br />
+              {% include link text='TV' link='https://nordvpn.com/download' %} &<br />
+              {% include link text='Console' link='https://nordvpn.com/download/other' %}
+            </th>
             <th class="engine">Safari</th>
-            <th class="engine">Desktop<br />& Mobile</th>
-            <th class="engine">Desktop<br />& Mobile</th>
-            <th class="engine">Desktop<br />& Mobile</th>
+            <th class="engine">{% include link text='Desktop' link='https://protonvpn.com/download' %}<br />
+              {% include link text='TV' link='https://protonvpn.com/download' %} &<br />
+              {% include link text='Mobile' link='https://protonvpn.com/download' %}
+            </th>
+            <th class="engine">{% include link text='Windows' link='https://safing.io/download' %}<br />& 
+              {% include link text='Linux' link='https://safing.io/download' %}
+            </th>
+            <th class="engine">{% include link text='Desktop' link='https://surfshark.com/download' %}<br />
+              {% include link text='TV' link='https://surfshark.com/download' %} &<br />
+              {% include link text='Mobile' link='https://surfshark.com/download' %}
+            </th>
         </tr>
       <tr>
         <th class="left-col"><br />Privacy</th>
@@ -129,14 +145,15 @@ permalink: vpns
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th>-</th>
-        <th>-</th>
+        {% include check link="https://nordvpn.com/features/vpn-kill-switch" %}
+        {% include cross %}
         <th>
           <a href="https://protonvpn.com/support/advanced-kill-switch" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
-        <th>-</th>
+        {% capture inner %}{% include link text='blocks all local internet traffic to avoid leaks' link='https://wiki.safing.io/en/FAQ/KillSwitch' %}{% endcapture %}
+          {% include check tooltip=inner %}
         <th>
           <a href="https://surfshark.com/features/kill-switch" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -156,14 +173,15 @@ permalink: vpns
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th>-</th>
+        {% include check link='https://nordvpn.com/features/double-vpn' %}
         <th>
           <a href="https://support.apple.com/en-us/102602" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
+        
+        {% capture inner %}{% include link text='Available with Tor over VPN' link='https://protonvpn.com/features/tor-over-vpn' %}{% endcapture %}
+          {% include check tooltip=inner %}
         <th>-</th>
       </tr>
       <tr class="checker_row">
@@ -179,13 +197,15 @@ permalink: vpns
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th>-</th>
+        {% capture inner %}{% include link text='Available with Tor over VPN' link='https://nordvpn.com/features/onion-over-vpn' %}{% endcapture %}
+          {% include check tooltip=inner %}
         <th>
           <a href="https://support.apple.com/en-us/102602" target="_blank" rel="noopener noreferrer">
             <img src="../images/cross.webp" alt="cross">
           </a>
         </th>
-        <th>-</th>
+        {% capture inner %}{% include link text='Available with Tor over VPN' link='https://protonvpn.com/features/tor-over-vpn' %}{% endcapture %}
+          {% include check tooltip=inner %}
         <th>-</th>
         <th>-</th>
       </tr>
@@ -207,11 +227,11 @@ permalink: vpns
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
       </tr>
       <tr class="checker_row">
         <td>Pay with Monero</td>
@@ -230,15 +250,15 @@ permalink: vpns
             <img src="../images/cross.webp" alt="cross">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
+        {% include cross link="https://nordvpn.com/pricing" %}
+        {% include cross %}
         <th>
           <a href="https://account.protonvpn.com/signup" target="_blank" rel="noopener noreferrer">
             <img src="../images/cross.webp" alt="cross">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
+        {% include check link="https://safing.io/spn" %}
+        {% include cross link="https://surfshark.com/pricing" %}
       </tr>
       <tr class="checker_row">
         <td>Pay with Cash</td>
@@ -257,15 +277,15 @@ permalink: vpns
             <img src="../images/cross.webp" alt="cross">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
+        {% include cross link="https://nordvpn.com/pricing" %}
+        {% include cross %}
         <th>
           <a href="https://account.protonvpn.com/signup" target="_blank" rel="noopener noreferrer">
             <img src="../images/cross.webp" alt="cross">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
+        {% include cross %}
+        {% include cross link="https://surfshark.com/pricing" %}
       </tr>
       <tr class="checker_row">
         <td>Ad and Tracker Blocker</td>
@@ -280,7 +300,7 @@ permalink: vpns
           </a>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th>-</th>
+        {% include check link="https://nordvpn.com/features/threat-protection/tracker-blocker" %}
         <th>-</th>
         <th>
           <a href="https://protonvpn.com/support/netshield" target="_blank" rel="noopener noreferrer">
@@ -309,7 +329,7 @@ permalink: vpns
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th>-</th>
         <th>-</th>
-        <th>-</th>
+        {% include check link="https://protonvpn.com/features/forward-secrecy" %}
         <th>-</th>
         <th>-</th>
       </tr>
@@ -361,11 +381,11 @@ permalink: vpns
             <img src="../images/cross.webp" alt="cross">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
+        {% include cross link='https://nordaccount.com/signup' %}
+        {% include cross link='https://support.apple.com/en-us/108647' %}
+        {% include check link='https://account.proton.me/vpn/signup' %}
+        {% include check link='https://account.safing.io/account/sign_up' %}
+        {% include cross link='https://order.surfshark.com/?frequency=24&slug=vpn' %}
       </tr>
       <tr class="checker_row">
         <td>No Phone Number Required</td>
@@ -384,11 +404,11 @@ permalink: vpns
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
+        {% include check link='https://nordaccount.com/signup' %}
+        {% include cross link='https://support.apple.com/en-us/108647' %}
+        {% include check link='https://account.proton.me/vpn/signup' %}
+        {% include check link='https://account.safing.io/account/sign_up' %}
+        {% include check link='https://order.surfshark.com/?frequency=24&slug=vpn' %}
       </tr>
       <tr>
         <th class="left-col"><br />Tracking/Analytics</th>
@@ -486,7 +506,7 @@ permalink: vpns
         </th>
         <th>-</th>
         <th>-</th>
-        <th>-</th>
+        {% include check link="https://protonvpn.com/blog/open-source" %}
         <th>-</th>
         <th>-</th>
       </tr>
@@ -696,7 +716,8 @@ permalink: vpns
         <th>-</th>
         <th>-</th>
         <th>-</th>
-        <th>-</th>
+        {% capture inner %}{% include link text='Only on Windows and Android' link="https://protonvpn.com/support/protonvpn-split-tunneling" %}{% endcapture %}
+          {% include check tooltip=inner %}
         <th>-</th>
         <th>-</th>
       </tr>
@@ -913,7 +934,7 @@ permalink: vpns
               </td>
               <th>
                 <a class="service-title" href="https://orbot.app" target="_blank" rel="noopener noreferrer">
-                  <img src="../images/logos/orbot-logo.webp" alt="Orbot Logo"><br />
+                  <img src="../images/logos/orbot-logo.png" alt="Orbot Logo"><br />
                   Orbot
                 </a>
               </th>
@@ -934,9 +955,18 @@ permalink: vpns
           <tbody>
               <tr>
                   <td>Platform</td>
-                  <th class="engine">iOS &<br />Android</th>
-                  <th class="engine">Desktop<br />& Mobile</th>
-                  <th class="engine">Desktop<br />& Mobile</th>
+                  <th class="engine">{% include link text='MacOS' link='https://apps.apple.com/us/app/orbot/id1609461599?platform=mac' %}<br />
+                    {% include link text='iOS' link='https://apps.apple.com/us/app/orbot/id1609461599?platform=iphone' %} &<br />
+                    {% include link text='Android' link='https://play.google.com/store/apps/details?id=org.torproject.android&hl=en_US' %}
+                  </th>
+                  <th class="engine">{% include link text='Desktop' link='https://protonvpn.com/download' %}<br />
+                    {% include link text='TV' link='https://protonvpn.com/download' %} &<br />
+                    {% include link text='Mobile' link='https://protonvpn.com/download' %}
+                  </th>
+                  <th class="engine">{% include link text='Desktop' link='https://windscribe.com/download' %}<br />
+                    {% include link text='TV' link='https://windscribe.com/download' %} &<br />
+                    {% include link text='Mobile' link='https://windscribe.com/download' %}
+                  </th>
               </tr>
             <tr>
               <th class="left-col"><br />Privacy</th>

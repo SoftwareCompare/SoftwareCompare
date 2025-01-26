@@ -2,6 +2,7 @@
 layout: comparison
 title: Music App
 permalink: music
+description: Comparisons of music services to find one that works for you
 ---
 
 
@@ -26,7 +27,7 @@ permalink: music
         </th>
         <th>
           <a href="https://feelthemusi.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/musi-logo.webp" alt="Musi Logo"><br />
+            <img src="../images/logos/musi-logo.png" alt="Musi Logo"><br />
             Musi
           </a>
         </th>
@@ -47,11 +48,20 @@ permalink: music
     <tbody>
       <tr>
         <td>Platform</td>
-        <th>iOS</th>
+        <th>{% include link text='iOS' link='https://apps.apple.com/us/app/brave-browser-search-engine/id1052879175' %}</th>
         <th>Web</th>
-        <th>iOS</th>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
+        <th>{% include link text='iOS' link='https://feelthemusi.com' %}</th>
+        <th class="engine">{% include link text='Desktop' link='https://www.spotify.com/de-en/download' %}<br />
+          {% include link text='Web' link='https://open.spotify.com' %}<br />
+          {% include link text='Mobile' link='https://www.spotify.com/de-en/download' %}<br />
+          {% include link text='TV' link='https://www.spotify.com/us/download' %} &<br />
+          {% include link text='Console' link='https://www.spotify.com/us/download' %}
+        </th>
+
+        <th class="engine">{% include link text='Web' link='https://music.youtube.com' %}<br />
+          {% include link text='Watches' link='https://apps.apple.com/us/app/youtube-music/id1017492454?platform=appleWatch' %}<br />
+          {% include link text='Mobile' link='https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music&hl=en_US' %}
+        </th>
       </tr>
       <tr>
 
@@ -291,7 +301,7 @@ permalink: music
         </td>
         <th>
           <a href="https://music.amazon.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/amazon-music-logo.webp" alt="Amazon Music Logo"><br />
+            <img src="../images/logos/amazon-music-logo.png" alt="Amazon Music Logo"><br />
             Amazon Music
           </a>
         </th>
@@ -324,11 +334,31 @@ permalink: music
     <tbody>
       <tr>
         <td>Platform</td>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
-        <th class="engine">Desktop<br />Web<br />Mobile</th>
+        <th class="engine">{% include link text='Web' link='https://music.amazon.com' %}<br />
+          {% include link text='Watches' link='https://apps.apple.com/us/app/amazon-music-songs-podcasts/id510855668?platform=appleWatch' %}<br />
+          {% include link text='TV' link='https://apps.apple.com/us/app/amazon-music-songs-podcasts/id510855668?platform=appleTV' %} &<br />
+          {% include link text='Mobile' link='https://play.google.com/store/apps/details?id=com.amazon.mp3&hl=en_US' %}
+        </th>
+        <th class="engine">{% include link text='MacOS' link='https://www.apple.com/apple-music' %}<br />
+          {% include link text='Windows' link='https://apps.microsoft.com/detail/9pfhdd62mxs1?hl=en-US&gl=US' %}<br />
+          {% include link text='Web' link='https://music.apple.com' %}<br />
+          {% include link text='Mobile' link='https://play.google.com/store/apps/details?id=com.apple.android.music&hl=en_US' %}</th>
+        <th class="engine">{% include link text='Desktop' link='https://www.spotify.com/de-en/download' %}<br />
+          {% include link text='Web' link='https://open.spotify.com' %}<br />
+          {% include link text='Mobile' link='https://www.spotify.com/de-en/download' %}<br />
+          {% include link text='TV' link='https://www.spotify.com/us/download' %} &<br />
+          {% include link text='Console' link='https://www.spotify.com/us/download' %}
+        </th>
+        <th class="engine">{% include link text='Desktop' link='https://tidal.com/supported-devices?category=desktop' %}<br />
+          {% include link text='Web' link='https://listen.tidal.com' %}<br />
+          {% include link text='Apple Watch' link='https://tidal.com/supported-devices?category=wearables' %}<br />
+          {% include link text='TV' link='https://tidal.com/supported-devices?category=tv' %} &<br />
+          {% include link text='Mobile' link='https://tidal.com/supported-devices?category=mobile' %}
+        </th>
+        <th class="engine">{% include link text='Web' link='https://music.youtube.com' %}<br />
+          {% include link text='Watches' link='https://apps.apple.com/us/app/youtube-music/id1017492454?platform=appleWatch' %}<br />
+          {% include link text='Mobile' link='https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music&hl=en_US' %}
+        </th>
       </tr>
       <tr>
 
