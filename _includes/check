@@ -4,7 +4,14 @@
     - tooltip
     - alt
 {% endcomment %}
-{% if include.link %}
+{% if include.tooltip and include.link %}
+<th>
+    <div>
+        <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
+        <span><a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.tooltip }}</a></span>
+    </div>
+</th>
+{% elsif include.link %}
 <th>
     <a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">
         <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
