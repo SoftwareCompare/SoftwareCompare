@@ -1,9 +1,9 @@
 :root {
   --stark: #000000;
-  --background-color: #ebebeb;
+  --background-color: #ffffff;
   --text-color: #000000;
   --border-color: #000000;
-  --header-gradient: #f1f1f1;
+  --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
   --checker-even-bg: #f1f1f1;
   --checker-border: #000000;
   --default-link: #0000ff;
@@ -16,9 +16,9 @@
 :root.dark-mode {
   --stark: #ffffff;
   --background-color: #181a1b;
-  --text-color: rgb(204, 204, 204);
+  --text-color: rgb(215, 215, 215);
   --border-color: rgb(122, 122, 122);
-  --header-gradient: #101111;
+  --header-gradient: linear-gradient(to bottom, #101111, #101111);
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
   --default-link: rgb(74, 77, 255);
@@ -186,7 +186,8 @@ header {
   z-index: 14;
   display: flex;
   justify-content: center;
-  background-color: var(--header-gradient);
+  background-image: var(--header-gradient);
+  border-bottom: 1px solid var(--header-gradient);
 }
 .inner-header {
   width: 100%;
@@ -213,7 +214,7 @@ header {
 
 .inner-header img {
   /* logo image */
-  height: clamp(40px, 10vw, 45px);
+  height: 40px;
 }
 .logo-title {
   margin: 0;
@@ -241,7 +242,7 @@ header {
 }
 
 h1 {
-  font-size: clamp(20px, 5vw, 30px);
+  font-size: 25px;
 }
 .nav.open {
   display: block;
@@ -365,6 +366,7 @@ thead th a {
   white-space: nowrap;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  margin-top: 5px;
 }
 .Chart-list::-webkit-scrollbar {
   width: 0;
@@ -570,7 +572,7 @@ td:has(div) {
 footer {
   margin-top: auto;
   color: white;
-  background-color: black;
+  background-color: #0d0d0d;
   text-align: center;
   display: flex;
   justify-content: center;
