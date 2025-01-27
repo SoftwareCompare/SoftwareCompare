@@ -165,6 +165,22 @@ description:
       </th>
     </tr>
     <tr class="checker_row">
+      <td>Auto Connect</td>
+      <th>
+        <a href="https://www.ivpn.net/knowledgebase/general/configuring-the-ivpn-app-to-autoconnect" target="_blank"
+          rel="noopener noreferrer">
+          <img src="../images/check.webp" alt="check">
+        </a>
+      </th>
+      <th><img src="../images/check.webp" alt="check"></th>
+      {% include check link="https://www.mysteriumvpn.com/blog/vpn-issues-troubleshooting#WhyDoesVPNKeepTurningOn" %}
+      {% include check link="https://nordvpn.com/blog/automatic-vpn-wifi-connect" %}
+      {% include check %}
+      {% include check link="https://protonvpn.com/support/always-on-vpn" %}
+      {% include check %}
+      {% include check link="https://surfshark.com/features" %}
+    </tr>
+    <tr class="checker_row">
       <td>Double Hop</td>
       <th>
         <a href="https://www.ivpn.net" target="_blank" rel="noopener noreferrer">
@@ -345,11 +361,11 @@ description:
       <th>-</th>
       {% include check link="https://protonvpn.com/features/forward-secrecy" %}
       <th>-</th>
-      <th>-</th>
+      {% include check link="https://surfshark.com/features/stealth-vpn" %}
     </tr>
     <tr class="checker_row">
-      <td>Invisible on Network</td>
-      <th>-</th>
+      <td>Hide VPN Use on Network</td>
+      {% include cross %}
       <th>
         <a href="https://mullvad.net/en/help/connecting-to-mullvad-vpn-from-restrictive-locations#connecting"
           target="_blank" rel="noopener noreferrer">
@@ -359,9 +375,9 @@ description:
       <th><img src="../images/cross.webp" alt="cross"></th>
       <th>-</th>
       <th>-</th>
+      {% include check link="https://protonvpn.com/blog/stealth-vpn-protocol" %}
       <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include check link="https://surfshark.com/features/stealth-vpn" %}
     </tr>
     <tr class="checker_row">
       <td>Full Device Protection</td>
@@ -547,7 +563,7 @@ description:
       <th>-</th>
       <th>-</th>
       {% include check link="https://protonvpn.com/blog/transparency-report" %}
-      <th>-</th>
+      {% include cross %}
       {% include check link="https://surfshark.com/trust-center" %}
     </tr>
     <tr class="checker_row">
@@ -571,7 +587,7 @@ description:
       <th>-</th>
       <th>-</th>
       {% include check link="https://protonvpn.com/blog/transparency-report" %}
-      <th>-</th>
+      {% include cross %}
       <th>
         <a href="https://surfshark.com/warrant-canary" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
@@ -665,7 +681,7 @@ description:
       <th>-</th>
       <th>-</th>
       <th>-</th>
-      <th>-</th>
+      {% include check link="https://www.techradar.com/pro/vpn/post-quantum-encryption-standards-are-here-a-new-era-for-vpn-security-begins" %}
     </tr>
     <tr>
       <th class="left-col"><br />Freedom</th>
@@ -685,9 +701,9 @@ description:
       <th>-</th>
       <th>-</th>
       <th>-</th>
+      {% include dash tooltip="Supports Windows and Linux with other platforms planned" link="https://protonvpn.com/support/custom-dns" %}
       <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include check link="https://support.surfshark.com/hc/en-us/articles/13560798718610-How-to-set-custom-DNS-on-any-device" %}
     </tr>
     <tr>
       <th class="left-col"><br />Convenience</th>
@@ -716,30 +732,14 @@ description:
           </span>
         </div>
       </th>
-      <th>-</th>
+      {% include cross %}
       {% include dash tooltip="Only on Windows and Android" link="https://nordvpn.com/features/split-tunneling" %}
-      <th>-</th>
+      {% include dash tooltip="Can disable per-site" link="https://support.apple.com/en-us/102022?cid=mc-ols-icloud-article_ht213548-ios_ui-05232023" %}
       {% capture inner %}{% include link text='Only on Windows and Android'
       link="https://protonvpn.com/support/protonvpn-split-tunneling" %}{% endcapture %}
       {% include dash tooltip=inner %}
       <th>-</th>
-      <th>-</th>
-    </tr>
-    <tr class="checker_row">
-      <td>Auto Connect</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/general/configuring-the-ivpn-app-to-autoconnect" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th><img src="../images/check.webp" alt="check"></th>
-      <th>-</th>
-      {% include check link="https://nordvpn.com/blog/automatic-vpn-wifi-connect" %}
-      <th>-</th>
-      {% include check link="https://protonvpn.com/support/always-on-vpn" %}
-      <th>-</th>
-      <th>-</th>
+      {% include dash tooltip="Only on Windows, Android and iOS" link="https://surfshark.com/features/split-tunneling" %}
     </tr>
     <tr class="checker_row">
       <td>Dedicated iP Support</td>
@@ -780,11 +780,11 @@ description:
           <img src="../images/check.webp" alt="check">
         </a>
       </th>
+      {% include cross tooltip="Does have dedicated iP support for avoiding iP blocks" %}
       <th>-</th>
       <th>-</th>
       <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include cross tooltip="Does have dedicated iP support for avoiding iP blocks" %}
     </tr>
     <tr class="checker_row">
       <td>Streaming Service Support</td>
@@ -808,9 +808,9 @@ description:
       </th>
       {% include check link="https://nordvpn.com/features/streaming" %}
       <th>-</th>
+      {% include check link="https://protonvpn.com/streaming" %}
       <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include check link="https://support.surfshark.com/hc/en-us/sections/4417084270994-Streaming" %}
     </tr>
     <tr class="checker_row">
       <td>Choose Location</td>
@@ -920,7 +920,7 @@ description:
       <th>-</th>
       <th>-</th>
       <th>-</th>
-      <th>-</th>
+      {% include cross tooltip="80% of emissions come from sustainable energy" link="https://surfshark.com/website/_next/public/files/impact-report-2023.pdf#page=16" %}
     </tr>
     <tr class="checker_row">
       <td>Carbon Negative</td>
@@ -935,7 +935,7 @@ description:
       <th>-</th>
       <th>-</th>
       <th>-</th>
-      <th>-</th>
+      {% include cross tooltip="<a href='https://surfshark.com/blog/surfshark-sustainable-future' target='_blank' rel='noopener noreferrer'>In the UN Global Compact</a>, and <a href='https://surfshark.com/blog/shark-awareness-day-2024' target='_blank' rel='noopener noreferrer'>supports shark conservation</a>"  %}
     </tr>
   </tbody>
 </table>
