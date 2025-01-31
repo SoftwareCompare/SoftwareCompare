@@ -995,7 +995,7 @@ description:
           Open Source</a> Apps
       </td>
       <th>
-        <a href="https://github.com/guardianproject/orbot" target="_blank" rel="noopener noreferrer">
+        <a href="https://orbot.app/en/code" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
         </a>
       </th>
@@ -1012,38 +1012,43 @@ description:
     </tr>
     <tr class="checker_row">
       <td>Kill Switch</td>
-
+      <th>-</th>
+      {% include check link="https://protonvpn.com/features/kill-switch" %}
     </tr>
     <tr class="checker_row">
-      <td>Quantum Resistant Encryption</td>
-
+      <td>Auto Connect</td>
+      <th>-</th>
+      {% include check link="https://protonvpn.com/support/always-on-vpn" %}
     </tr>
+    
     <tr class="checker_row">
       <td>Double Hop</td>
-
+      {% include check link="https://orbot.app/en/about" %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Triple Hop</td>
-
+      {% include check link="https://orbot.app/en/about" %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Ai Traffic Analysis Blocking</td>
-
-    </tr>
-    <tr class="checker_row">
-      <td>Pay with Monero</td>
-
-    </tr>
-    <tr class="checker_row">
-      <td>Pay with Cash</td>
-
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Ad and Tracker Blocker</td>
+      {% include cross %}
+      {% include cross link="https://protonvpn.com/support/netshield" %}
+      {% include check link="https://windscribe.com/features/robert" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Perfect Forward Secrecy</td>
 
     </tr>
     <tr class="checker_row">
-      <td>Invisible on LAN</td>
+      <td>Hide VPN Usage on Network</td>
 
     </tr>
     <tr class="checker_row">
@@ -1052,12 +1057,30 @@ description:
       <th><img src="../images/check.webp" alt="check"></th>
       <th><img src="../images/check.webp" alt="check"></th>
     </tr>
+    <tr class="checker_row">
+      <td>No Email Required</td>
+      {% include check %}
+      {% include check link="https://account.proton.me/vpn/signup" %}
+      {% include check link="https://windscribe.com/signup" %}
+    </tr>
+    <tr class="checker_row">
+      <td>No Phone Number Required</td>
+      {% include check %}
+      {% include check link="https://account.proton.me/vpn/signup" %}
+      {% include check link="https://windscribe.com/signup" %}
+    </tr>
+    <tr class="checker_row">
+      <td>No Account Required</td>
+      {% include check %}
+      {% include dash tooltip="Currently only on Android" link="https://news.itsfoss.com/protonvpn-no-account" %}
+      {% include cross %}
+    </tr>
     <tr>
       <th class="left-col"><br />Tracking/Analytics</th>
     </tr>
     <tr class="checker_row">
       <td>No Log Policy</td>
-
+      {% include check tooltip="Company does not log, and three hop structure mitigates logging attacks" %}
     </tr>
     <th class="left-col"><br />Independence/Trust</th>
     <tr class="checker_row">
@@ -1071,7 +1094,9 @@ description:
           </span>
         </div>
       </td>
-
+      {% include cross tooltip="BSD-3 License" link="https://github.com/guardianproject/orbot-android/blob/master/LICENSE" %}
+      {% include check tooltip="GPLv3" link="https://github.com/ProtonVPN/ios-mac-app/blob/develop/LICENSE" %}
+      {% include check tooltip="GPLv2" link="https://github.com/Windscribe/Desktop-App/blob/master/LICENSE" %}
     <tr class="checker_row">
       <td>
         Independent Third Party Audit
@@ -1080,13 +1105,13 @@ description:
     </tr>
     <tr class="checker_row">
       <td>
-        Company Owned Servers Available
+        Transparency Report
       </td>
 
     </tr>
     <tr class="checker_row">
       <td>
-        Transparency Report
+        Warrant Canary
       </td>
 
     </tr>
@@ -1100,11 +1125,11 @@ description:
       <th class="left-col"><br />Security</th>
     </tr>
     <tr class="checker_row">
-      <td>WireGuard Support</td>
+      <td>Default Secure Protocol</td>
 
     </tr>
     <tr class="checker_row">
-      <td>OpenVPN Support</td>
+      <td>Quantum Resistant Encryption</td>
 
     </tr>
     <tr>
@@ -1134,7 +1159,17 @@ description:
 
     </tr>
     <tr class="checker_row">
-      <td>Choose Server</td>
+      <td>Choose Location</td>
+
+    </tr>
+    <tr class="checker_row">
+      <td>Port Forwarding</td>
+      <th>-</th>
+      <th>-</th>
+      {% include cross link="https://windscribe.com/features/port-forwarding" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Tailscale Support</td>
 
     </tr>
     <tr>
