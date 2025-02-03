@@ -380,6 +380,17 @@ description:
       {% include check link="https://surfshark.com/features/stealth-vpn" %}
     </tr>
     <tr class="checker_row">
+      <td>New iP Every Connection</td>
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://safing.io/spn" %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
       <td>Full Device Protection</td>
       <th><img src="../images/check.webp" alt="check"></th>
       <th><img src="../images/check.webp" alt="check"></th>
@@ -659,7 +670,7 @@ description:
       </th>
       <th>-</th>
       <th>-</th>
-      <th>-</th>
+      {% include check tooltip="OpenVPN, WireGuard and Stealth" link="https://protonvpn.com/features/strong-protocols" %}
       <th>-</th>
       {% include check tooltip="WireGuard, IKEv2, and OpenVPN" link="https://surfshark.com/features/surfshark-vpn-protocols" %}
     </tr>
@@ -679,7 +690,7 @@ description:
       <th>-</th>
       <th>-</th>
       <th>-</th>
-      <th>-</th>
+      {% include cross link="https://protonmail.uservoice.com/forums/932836-proton-vpn/suggestions/47587832-use-quantum-resistant-cryptogtaphic-algorithm" %}
       <th>-</th>
       {% include check link="https://www.techradar.com/pro/vpn/post-quantum-encryption-standards-are-here-a-new-era-for-vpn-security-begins" %}
     </tr>
@@ -699,8 +710,8 @@ description:
         </a>
       </th>
       <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include check %}
+      {% include cross %}
       {% include dash tooltip="Supports Windows and Linux with other platforms planned" link="https://protonvpn.com/support/custom-dns" %}
       <th>-</th>
       {% include check link="https://support.surfshark.com/hc/en-us/articles/13560798718610-How-to-set-custom-DNS-on-any-device" %}
@@ -782,7 +793,7 @@ description:
       </th>
       {% include cross tooltip="Does have dedicated iP support for avoiding iP blocks" %}
       <th>-</th>
-      <th>-</th>
+      {% include cross %}
       <th>-</th>
       {% include cross tooltip="Does have dedicated iP support for avoiding iP blocks" %}
     </tr>
@@ -866,7 +877,7 @@ description:
     </tr>
     <tr class="checker_row">
       <td>Tailscale Support</td>
-      <th><img src="../images/cross.webp" alt="cross"></th>
+      {% include cross %}
       <th>
         <a href="https://mullvad.net/en/blog/tailscale-has-partnered-with-mullvad" target="_blank"
           rel="noopener noreferrer">
@@ -899,8 +910,8 @@ description:
       {% include cross %}
       {% include dash tooltip="Provides discounts and free vpns to nonprofits and eligible individuals" link="https://nordvpn.org" %}
       {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
-      <th>-</th>
-      <th>-</th>
+      {% include check link="https://proton.me/blog/2024-lifetime-fundraiser-results" %}
+      {% include cross %}
       <th>
         <a href="https://surfshark.com/corporate-social-responsibility" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
@@ -909,32 +920,24 @@ description:
     </tr>
     <tr class="checker_row">
       <td>Carbon Neutral</td>
-      <th>
-        <img src="../images/cross.webp" alt="cross">
-      </th>
-      <th>
-        <img src="../images/cross.webp" alt="cross">
-      </th>
+      {% include cross %}
+      {% include cross %}
       {% include cross %}
       {% include cross link="https://res.cloudinary.com/nordsec/image/upload/v1717595082/nord-security-web/corporate/reports/Impact_Report_2023_final_compressed.pdf#page=30" %}
-      <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment"  %}
+      {% include cross link="https://www.reddit.com/r/ProtonMail/comments/axoo99/comment/ehwnw92/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
+      {% include cross %}
       {% include cross tooltip="80% of emissions come from sustainable energy" link="https://surfshark.com/website/_next/public/files/impact-report-2023.pdf#page=16" %}
     </tr>
     <tr class="checker_row">
       <td>Carbon Negative</td>
-      <th>
-        <img src="../images/cross.webp" alt="cross">
-      </th>
-      <th>
-        <img src="../images/cross.webp" alt="cross">
-      </th>
+      {% include cross %}
+      {% include cross %}
       {% include cross %}
       {% include cross link="https://res.cloudinary.com/nordsec/image/upload/v1717595082/nord-security-web/corporate/reports/Impact_Report_2023_final_compressed.pdf#page=30" %}
-      <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
       {% include cross tooltip="<a href='https://surfshark.com/blog/surfshark-sustainable-future' target='_blank' rel='noopener noreferrer'>In the UN Global Compact</a>, and <a href='https://surfshark.com/blog/shark-awareness-day-2024' target='_blank' rel='noopener noreferrer'>supports shark conservation</a>"  %}
     </tr>
   </tbody>
@@ -1014,13 +1017,14 @@ description:
       <td>Kill Switch</td>
       <th>-</th>
       {% include check link="https://protonvpn.com/features/kill-switch" %}
+      {% include check %}
     </tr>
     <tr class="checker_row">
       <td>Auto Connect</td>
       <th>-</th>
       {% include check link="https://protonvpn.com/support/always-on-vpn" %}
+      {% include check %}
     </tr>
-    
     <tr class="checker_row">
       <td>Double Hop</td>
       {% include check link="https://orbot.app/en/about" %}
@@ -1045,11 +1049,20 @@ description:
     </tr>
     <tr class="checker_row">
       <td>Perfect Forward Secrecy</td>
-
+      {% include check %}
+      {% include check link="https://protonvpn.com/features/forward-secrecy" %}
     </tr>
     <tr class="checker_row">
       <td>Hide VPN Usage on Network</td>
-
+      {% include dash tooltip="Bridges supported only on Android" %}
+      {% include check tooltip="Supports stealth protocols" link="https://protonvpn.com/blog/stealth-vpn-protocol" %}
+      {% include check tooltip="Supports stealth protocols" link="https://windscribe.com/features/circumvent-censorship" %}
+    </tr>
+    <tr class="checker_row">
+      <td>New iP Every Connection</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Full Device Protection</td>
@@ -1081,6 +1094,7 @@ description:
     <tr class="checker_row">
       <td>No Log Policy</td>
       {% include check tooltip="Company does not log, and three hop structure mitigates logging attacks" %}
+      {% include check link="https://protonvpn.com/features/no-logs-policy" %}
     </tr>
     <th class="left-col"><br />Independence/Trust</th>
     <tr class="checker_row">
@@ -1101,90 +1115,117 @@ description:
       <td>
         Independent Third Party Audit
       </td>
-
+      {% include cross %}
+      {% include check link="https://protonvpn.com/blog/open-source" %}
     </tr>
     <tr class="checker_row">
       <td>
         Transparency Report
       </td>
-
+      {% include cross %}
+      {% include check link="https://protonvpn.com/blog/transparency-report" %}
     </tr>
     <tr class="checker_row">
       <td>
         Warrant Canary
       </td>
-
+      {% include cross %}
+      {% include check link="https://protonvpn.com/blog/transparency-report" %}
     </tr>
     <tr class="checker_row">
       <td>
         Diskless Servers
       </td>
-
+      {% include cross %}
+      {% include cross link="https://protonvpn.com/blog/ram-only-servers" %}
     </tr>
     <tr>
       <th class="left-col"><br />Security</th>
     </tr>
     <tr class="checker_row">
       <td>Default Secure Protocol</td>
-
+      {% include check link="https://wiki.wireshark.org/Tor" %}
+      {% include check tooltip="OpenVPN, WireGuard and Stealth" link="https://protonvpn.com/features/strong-protocols" %}
     </tr>
     <tr class="checker_row">
       <td>Quantum Resistant Encryption</td>
-
+      {% include cross %}
+      {% include cross link="https://protonmail.uservoice.com/forums/932836-proton-vpn/suggestions/47587832-use-quantum-resistant-cryptogtaphic-algorithm" %}
     </tr>
     <tr>
       <th class="left-col"><br />Freedom</th>
     </tr>
     <tr class="checker_row">
       <td>Custom DNS Support</td>
-
+      {% include cross %}
+      {% include cross link="https://protonvpn.com/support/custom-dns" %}
+      {% include check link="https://windscribe.com/knowledge-base/articles/how-to-use-custom-dns-in-the-windscribe-app" %}
     </tr>
     <tr>
       <th class="left-col"><br />Convenience</th>
     </tr>
     <tr class="checker_row">
       <td>Split Tunneling</td>
-
+      {% include dash tooltip="Supported on Android" %}
+      {% include cross link="https://protonvpn.com/support/protonvpn-split-tunneling" %}
+      {% include dash tooltip="Not on iOS and Linux" link="https://windscribe.com/features/split-tunneling" %}
     </tr>
     <tr class="checker_row">
       <td>Dedicated iP Support</td>
-
+      {% include cross %}
+      {% include cross link="https://protonvpn.com/support/dedicated-ips" %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Residential iP Addresses</td>
-
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Streaming Service Support</td>
-
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Seems to work well with streaming services" link="https://www.tomsguide.com/reviews/windscribe-vpn-review#section-how-good-is-windscribe-for-streaming" %}
     </tr>
     <tr class="checker_row">
       <td>Choose Location</td>
-
+      {% include check tooltip="Users can select exit countries in settings" %}
+      {% include cross %}
+      {% include check tooltip="https://windscribe.com/status" %}
     </tr>
     <tr class="checker_row">
       <td>Port Forwarding</td>
-      <th>-</th>
-      <th>-</th>
+      {% include cross %}
+      {% include cross link="https://protonvpn.com/support/port-forwarding" %}
       {% include cross link="https://windscribe.com/features/port-forwarding" %}
     </tr>
     <tr class="checker_row">
       <td>Tailscale Support</td>
-
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
     </tr>
     <tr>
       <th class="left-col"><br />Ethics</th>
     </tr>
     <tr class="checker_row">
       <td>Donates to Charity</td>
+      {% include dash tooltip="Funded almost entirely by grants and donations. Donate Here" link="https://orbot.app/en/donate" %}
+      {% include check link="https://proton.me/blog/2024-lifetime-fundraiser-results" %}
+      {% include dash tooltip="Provides free pro subscriptions to journalists and NGOs" link="https://windscribe.com/blog/freedom-of-the-press" %}
     </tr>
     <tr class="checker_row">
       <td>Carbon Neutral</td>
-
+      {% include cross %}
+      {% include cross link="https://www.reddit.com/r/ProtonMail/comments/axoo99/comment/ehwnw92/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
+      {% include cross %}
     </tr>
     <tr class="checker_row">
       <td>Carbon Negative</td>
-
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
     </tr>
   </tbody>
 </table>
