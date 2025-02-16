@@ -38,7 +38,8 @@
                 </a>
             </div>
         </div>
-        <button class="menu-toggle">≡</button>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+        <label for="nav-toggle" class="menu-toggle">≡</label>
         <ul class="nav">
             <ul>
                 <li><a href="./about.html"
@@ -61,7 +62,10 @@
         </ul>
     </div>
 </header>
-        <main>
+        <div class="page-title">
+            <div>
+                <h1>YouTube Frontend Comparisons</h1>
+            </div>
             <div class="Chart-list">
     <button>Other Comparisons</button>
     <div>
@@ -85,13 +89,14 @@
         >VPNs</a>
         <a href="./youtube-frontends.html"
         
-        style="text-decoration: underline; color: var(--stark);"
+        class="Chart-list-selected"
         
         >Youtube Frontends</a>
     </div>
 </div>
-              <h1>YouTube Frontend Comparisons</h1>
-  <p>
+        </div>
+        <main>
+              <p>
     YouTube Frontends are applications that can be run on-device 
     or on a server. Frontends mimic Youtube's native app or site with 
     more privacy, no ads, and sometimes new features.<br /><br />
@@ -104,7 +109,7 @@
         </td>
         <th>
           <a href="https://FreeTubeApp.io" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/freetube-logo.png" alt="Freetube Logo"><br /> Freetube 
+            <img style="border-radius: 0;" src="../images/logos/freetube-logo.png" alt="Freetube Logo"><br /> Freetube 
           </a>
         </th>
         <th>

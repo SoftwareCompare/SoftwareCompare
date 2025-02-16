@@ -3,8 +3,13 @@
     {% include head.html %}
     <body>
         {% include header.html %}
-        <main>
+        <div class="page-title">
+            <div>
+                <h1>{{ page.title }} Comparisons</h1>
+            </div>
             {% include chart-list.html %}
+        </div>
+        <main>
             {{ content }}
         </main>
         

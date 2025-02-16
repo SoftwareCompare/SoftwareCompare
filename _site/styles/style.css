@@ -154,13 +154,23 @@ header {
     padding-right: 0.9375rem;
     color: var(--text-color);
   }
-  button:focus + ul {
+  .menu-toggle:focus + .nav ul {
     display: block;
   }
   @media only screen and (max-width: 15rem) {
     .logo-title h2 {
       display: none;
     }
+  }
+}
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  & > div {
+    max-width: 67.5rem;
+    width: 100%;
   }
 }
 
@@ -211,6 +221,60 @@ header {
   li {
     margin-right: 1.25rem;
   }
+  
+}
+/* Hide the checkbox */
+.nav-toggle {
+  display: none;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--background);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  /* The checkbox hack - when checked, show the menu */
+  .nav-toggle:checked ~ .nav ul {
+    display: block;
+  }
+  
+  /* Stack nav items vertically on mobile */
+  .nav ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+/* Animation for smooth transition */
+.nav ul {
+  transition: all 0.3s ease;
 }
 
 /* banner on homepage */
@@ -343,6 +407,9 @@ header {
 
 /* List of charts under header */
 .Chart-list {
+  position: absolute;
+  right: 0;
+  margin-left: auto;
   display: flex;
   justify-content: flex-end;
   white-space: nowrap;
@@ -360,44 +427,43 @@ header {
     padding-left: 0.75rem;
   }
   div {
+    transition: ease-in-out;
     position: absolute;
     top: 7rem;
     display: none;
     z-index: 100;
     background-color: #077bd3;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     padding-right: 1rem;
     border-radius: 1rem 0 0 1rem;
   }
-  button:focus + div{
-    display: block;
-  }
-  button:focus-visible + div{
-    display: block;
-  }
-  div:hover {
-    display: block;
-  }
-  div:focus {
-    display: block;
-  }
+  button:focus + div,
+  button:focus-visible + div,
+  div:hover,
+  div:focus,
   div:focus-visible {
     display: block;
   }
   a {
-    /* Links under header at top of page */
     display: block;
-    padding: 1rem 1rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
+    padding-right: 1.2rem;
     font-size: clamp(0.875rem, 2vw, 1.125rem);
     color: #ffffff;
   }
-  a:focus {
-    color: var(--text-color);
+  a:hover {
+    background-color: #2b47b5; 
+    text-decoration: none;
+    border-radius: 0.5rem;
   }
 }
-
+.Chart-list-selected {
+  background-color: #ffffff !important; 
+  color: #000000 !important;
+  border-radius: 0.5rem;
+}
 
 /* Comparison tables */
 table {

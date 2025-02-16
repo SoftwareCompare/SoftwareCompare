@@ -38,7 +38,8 @@
                 </a>
             </div>
         </div>
-        <button class="menu-toggle">≡</button>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+        <label for="nav-toggle" class="menu-toggle">≡</label>
         <ul class="nav">
             <ul>
                 <li><a href="./about.html"
@@ -61,7 +62,10 @@
         </ul>
     </div>
 </header>
-        <main>
+        <div class="page-title">
+            <div>
+                <h1>VPN Comparisons</h1>
+            </div>
             <div class="Chart-list">
     <button>Other Comparisons</button>
     <div>
@@ -82,7 +86,7 @@
         >Search Engines</a>
         <a href="./vpns.html"
         
-        style="text-decoration: underline; color: var(--stark);"
+        class="Chart-list-selected"
         
         >VPNs</a>
         <a href="./youtube-frontends.html"
@@ -90,8 +94,9 @@
         >Youtube Frontends</a>
     </div>
 </div>
-            <h1>VPN Comparisons<br /><br /></h1>
-<table>
+        </div>
+        <main>
+            <table>
   <thead>
     <tr>
       <td id="Paid-Services"><a href="#Paid-Services">
