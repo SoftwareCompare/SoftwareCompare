@@ -1,47 +1,57 @@
 /* colors for light mode */
 :root {
   --stark: #000000;
-  --background-color: #ffffff;
+  --background-color: #f1f1f1;
   --text-color: #000000;
   --border-color: #000000;
-  --header-gradient: linear-gradient(to bottom, #ffffff, #f1f1f1);
-  --dropdown-color: #f1f1f1;
-  --checker-even-bg: #f1f1f1;
+  --header-gradient: linear-gradient(to bottom, #dddddd, #dddddd);
+  --dropdown-color: #eeeeee;
+  --checker-even-bg: #dddddd;
   --checker-border: #000000;
-  --default-link: #0000ff;
+  --default-link: #077bd3;
+  --check-hover: #0f53ba42;
   --comparison-gradient: linear-gradient(to bottom, #efefff, #ffffff);
   --comparison-hover-gradient: linear-gradient(to bottom, #c8c8ff, #e8e8ff);
   --img-filter: none;
   --dull-text: #262626;
+  --highlight: #0F52BA; /* #208DD0, #30B7D2 #38ACEC */
+  --banner-color: #BCD2E8;
+  --button-color: #73A5C6;
 }
 
 /* colors for dark mode */
 :root.dark-mode {
   --stark: #ffffff;
   --background-color: #181a1b;
-  --text-color: rgb(215, 215, 215);
+  --text-color: #dddddd;
   --border-color: rgb(122, 122, 122);
   --header-gradient: linear-gradient(to bottom, #101111, #101111);
   --dropdown-color: #101111;
   --checker-even-bg: #323536;
   --checker-border: rgb(255, 255, 255);
-  --default-link: rgb(74, 77, 255);
+  --default-link: #38ACEC;
+  --check-hover: #0f53ba9e;
   --comparison-gradient: linear-gradient(to bottom, #323333, #646a6d);
   --comparison-hover-gradient: linear-gradient(to bottom, #2b2c2c, #404648);
   --img-filter: invert(100%) grayscale(50%) sepia(25%);
+  --toggle-filter: brightness(0) invert(80%);
   --dull-text: #d9d9d9;
+  --highlight: #82CAFA;
+  --banner-color: #111111;
+  --button-color: #208DD0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* links and hover effects */
 a {
   text-decoration: none;
   color: var(--default-link);
+  &:hover {
+    text-decoration: underline;
+    color: var(--highlight);
+  }
 }
-a:hover {
-  text-decoration: underline;
-  color: var(--stark);
-}
-
 
 h1 {
   padding-left: 0.625rem;
@@ -66,20 +76,6 @@ p {
 .inner-header img {
   filter: var(--img-filter);
 }
-
-/* Dark mode toggle button */
-#theme-toggle {
-  background: none;
-  color: none;
-  all: unset;
-  cursor: pointer;
-
-  img {
-    filter: invert(100%) grayscale(50%) sepia(25%);
-    vertical-align: middle;
-  }
-}
-
 
 body {
   min-width: 6.25rem;
@@ -158,10 +154,33 @@ header {
     padding-right: 0.9375rem;
     color: var(--text-color);
   }
+  button:focus + ul {
+    display: block;
+  }
   @media only screen and (max-width: 15rem) {
     .logo-title h2 {
       display: none;
     }
+  }
+}
+
+/* Dark mode toggle button */
+#theme-toggle {
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: none;
+  all: unset;
+  cursor: pointer;
+  img {
+    filter: var(--toggle-filter);
+    vertical-align: middle;
+    height: 1.6rem !important;
   }
 }
 
@@ -200,7 +219,7 @@ header {
   justify-content: center;
   height: 25rem;
   width: 100%;
-  background-color: var(--checker-even-bg);
+  background-color: var(--banner-color);
   align-items: center;
 
   div {
@@ -212,6 +231,37 @@ header {
     text-align: center;
     padding-top: 1.5625rem;
     padding-bottom: 1.25rem;
+    margin-top: 4rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }  
+  p {
+    font-size: 1.5rem;
+  }
+  .button-container {
+    display: flex;
+    gap: 0.7rem;
+    padding-left: 0.3125rem;
+    a {
+      color: #000000;
+    }
+    a:hover {
+      text-decoration: none;
+      div {
+        background-color: #38ACEC;
+      }
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.5rem;
+      background-color: var(--button-color);
+      width: 12rem;
+      border-radius: 0.5rem;
+      font-weight: bold;
+    }
   }
 }
 
@@ -225,7 +275,7 @@ header {
   display: grid;
   gap: 1.25rem;
   grid-template-columns: repeat(3, 1fr);
-
+  margin-bottom: 3.5rem;
   .comparison-box {
     border: 0.125rem solid var(--border-color);
     border-radius: 1rem;
@@ -243,10 +293,7 @@ header {
     transition: all 0.4s;
   }
   .comparison-box:hover {
-    font-size:large;
-    h2 {
-      font-size: 1.3125rem;
-    }
+    border-color: var(--highlight);
   }
   .comparison-box {
     background-image: var(--comparison-gradient);
@@ -270,6 +317,7 @@ header {
 @media (max-width: 43.75rem) {
   .comparison-boxes {
       grid-template-columns: 1fr;
+      margin-bottom: 0;
   }
 }
 
@@ -277,6 +325,9 @@ header {
 .privacy-counseling {
   height: 18.75rem;
   width: 100%;
+  a {
+    color: var(--background-color) !important;
+  }
   div {
     border-radius: 0.3125rem;
     display: flex;
@@ -292,20 +343,47 @@ header {
 
 /* List of charts under header */
 .Chart-list {
-  max-width: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x: auto;
+  display: flex;
+  justify-content: flex-end;
   white-space: nowrap;
-  scrollbar-width: none;
   -ms-overflow-style: none;
-  margin-top: 0.3125rem;
-
+  margin-top: 0.9rem;
+  button {
+    font-weight: bold;
+    height: 3rem;
+    color: #ffffff;
+    background-color: #077bd3;
+    border-radius: 1rem 0 0 1rem;
+    border-width: 0;
+    cursor: pointer;
+    padding-right: 0.5rem;
+    padding-left: 0.75rem;
+  }
+  div {
+    position: absolute;
+    top: 7rem;
+    display: none;
+    z-index: 100;
+    background-color: #077bd3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem 0 0 1rem;
+  }
+  button:focus + div{
+    display: block;
+  }
+  div:hover {
+    display: block;
+  }
+  div:focus {
+    display: block;
+  }
   a {
     /* Links under header at top of page */
+    display: block;
+    padding: 1rem 1rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    transition: all 0.4s;
     font-size: clamp(0.875rem, 2vw, 1.125rem);
     color: var(--dull-text);
   }
@@ -313,10 +391,7 @@ header {
     color: var(--text-color);
   }
 }
-.Chart-list::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
+
 
 /* Comparison tables */
 table {
@@ -329,7 +404,9 @@ table {
     color: var(--text-color);
     text-decoration: underline;
   }
-
+  a:hover {
+    color: var(--text-color);
+  }
   td,
   .left-col {
     background-color: var(--background-color);
@@ -393,11 +470,11 @@ table {
   
   tbody {
     td {
-    width: clamp(0.625rem, 1.2vw, 2.5rem);
-    height: 1.5625rem;
-    font-size: clamp(0.5rem, 2.2vw, 0.75rem);
-    padding-left: 0.3125rem;
-    z-index: 5;
+      width: clamp(0.625rem, 1.2vw, 2.5rem);
+      height: 1.5625rem;
+      font-size: clamp(0.5rem, 2.2vw, 0.75rem);
+      padding-left: 0.3125rem;
+      z-index: 5;
     }
     .engine a {
       color: var(--text-color);
@@ -416,15 +493,18 @@ table {
       transition: background-color 0.3s;
     }
     .checker_row div {
-      border-bottom: 0.0625rem dotted var(--checker-border);
+      border-bottom: 0.1rem dotted var(--checker-border);
       transition: border-color 0.3s;
       position: relative;
       display: inline-block;
       max-width: 12.5rem;
     }
     .checker_row th a {
-      border-bottom: 0.0625rem solid var(--default-link);
+      border-bottom: 0.09rem solid var(--default-link);
       transition: border-color 0.3s;
+    }
+    .checker_row th > a:hover {
+      background-color: var(--check-hover);
     }
     .checker_row:nth-child(odd) td {
       background-color: var(--background-color);
@@ -507,7 +587,7 @@ table {
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 34.375rem) {
+@media only screen and (max-width: 36.4rem) {
   .inner-header button {
     /* mobile dropdown toggle */
     display: block !important;
@@ -627,5 +707,11 @@ footer {
   }
   img {
     height: 1.25rem;
+  }
+  a {
+    filter: brightness(0) invert(85%);
+  }
+  a:hover{
+    filter: brightness(0) invert(1);
   }
 }

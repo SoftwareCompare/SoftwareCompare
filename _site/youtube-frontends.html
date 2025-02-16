@@ -1,11 +1,96 @@
----
-layout: comparison
-title: YouTube Frontend
-permalink: youtubefrontends
-description: Comparisons of YouTube frontends to find one that works for you
----
+<!DOCTYPE html>
+<html lang="en">
+    
 
-  <h1>{{ page.title }} Comparisons</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="./images/link-previews/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="Comparisons of YouTube frontends to find one that works for you">
+    <meta property="og:image" content="../images/link-previews/">
+    <meta property="og:title" content="">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title> Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+    <body>
+        
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="menu-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about.html"
+                    
+                    >About</a>
+                </li>
+                <li><a href="./donate.html"
+                    
+                    >Donate</a>
+                </li>
+                <li><a href="./contact.html"
+                    
+                    >Contact</a>
+                </li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare/commits/main" target="_blank" rel="noopener noreferrer">
+                    Changelog</a>
+                </li>
+                <li><button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button></li>
+            </ul>
+        </ul>
+    </div>
+</header>
+        <main>
+            <div class="Chart-list">
+    <button>Other Comparisons</button>
+    <div>
+        <a href="./browsers.html" 
+        
+        >Web Browsers</a>
+        <a href="./music.html"
+        
+        >Music Apps</a>
+        <a href="./operating-systems.html"
+        
+        >Operating Systems</a>
+        <a href="./photos.html"
+        
+        >Photo Apps</a>
+        <a href="./search-engines.html"
+        
+        >Search Engines</a>
+        <a href="./vpns.html"
+        
+        >VPNs</a>
+        <a href="./youtube-frontends.html"
+        
+        style="text-decoration: underline; color: var(--stark);"
+        
+        >Youtube Frontends</a>
+    </div>
+</div>
+              <h1>YouTube Frontend Comparisons</h1>
   <p>
     YouTube Frontends are applications that can be run on-device 
     or on a server. Frontends mimic Youtube's native app or site with 
@@ -42,10 +127,14 @@ description: Comparisons of YouTube frontends to find one that works for you
     <tbody>
       <tr>
         <td>Platforms</td>
-        <th class="engine">{% include link text='Desktop' link='https://freetubeapp.io/#download' %}</th>
-        <th class="engine">{% include link text='Android' link='https://f-droid.org/en/packages/com.github.libretube' %}</th>
-        <th class="engine">{% include link text='Android' link='https://newpipe.net/#download' %}</th>
-        <th>{% include link text='TV' link='https://smarttubeapp.github.io' %}</th>
+        <th class="engine">
+<a href="https://freetubeapp.io/#download" target="_blank" rel="noopener noreferrer">Desktop</a></th>
+        <th class="engine">
+<a href="https://f-droid.org/en/packages/com.github.libretube" target="_blank" rel="noopener noreferrer">Android</a></th>
+        <th class="engine">
+<a href="https://newpipe.net/#download" target="_blank" rel="noopener noreferrer">Android</a></th>
+        <th>
+<a href="https://smarttubeapp.github.io" target="_blank" rel="noopener noreferrer">TV</a></th>
       </tr>
       <tr>
         <th class="left-col"><br />Privacy</th>
@@ -493,3 +582,25 @@ description: Comparisons of YouTube frontends to find one that works for you
       </tr>
     </tbody>
   </table>
+        </main>
+        
+        <footer>
+    <div class="inner-footer">
+        <div class="footer-left">
+            <p>SoftwareCompare</p>
+        </div>
+        <ul class="footer-nav">
+            <ul>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="/images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://x.com/software_comp" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/x-logo.png" alt="Twitter logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://matrix.to/#/#softwarecompare:matrix.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/matrix-logo.svg" alt="Matrix Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+            </ul>
+        </ul>
+    </div>
+</footer>
+        <script src="script.js"></script>
+    </body>
+</html>
