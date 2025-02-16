@@ -372,10 +372,16 @@ header {
   button:focus + div{
     display: block;
   }
+  button:focus-visible + div{
+    display: block;
+  }
   div:hover {
     display: block;
   }
   div:focus {
+    display: block;
+  }
+  div:focus-visible {
     display: block;
   }
   a {
@@ -385,7 +391,7 @@ header {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     font-size: clamp(0.875rem, 2vw, 1.125rem);
-    color: var(--dull-text);
+    color: #ffffff;
   }
   a:focus {
     color: var(--text-color);
