@@ -73,4 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
         chartListDiv.classList.remove('active');
       }
     });
+
+    document.addEventListener('scroll', () => {
+      chartListDiv.classList.remove('active');
+    });
   });
