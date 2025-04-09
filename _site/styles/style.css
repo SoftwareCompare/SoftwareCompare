@@ -138,6 +138,7 @@ header {
   }
   .logo-title h2 {
     font-size: clamp(1.1875rem, 2vw, 1.375rem);
+    white-space: nowrap;
   }
   .inner-header a {
     color: var(--text-color);
@@ -154,9 +155,6 @@ header {
     padding-right: 0.9375rem;
     color: var(--text-color);
   }
-  /* .nav-toggle:focus + .nav ul {
-    display: block;
-  } */
   @media only screen and (max-width: 15rem) {
     .logo-title h2 {
       display: none;
@@ -206,6 +204,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    transition: all 0.3s ease;
   }
   a {
     /* links in top right and dropdown */
@@ -221,7 +220,7 @@ header {
 }
 
 /* Desktop styles */
-@media (min-width: 38.5rem) {
+@media (min-width: 41rem) {
   .nav-toggle {
     display: none;
   }
@@ -236,10 +235,6 @@ header {
   display: block;
 }
 
-/* Animation for smooth transition */
-.nav ul {
-  transition: all 0.3s ease;
-}
 .nav.open {
   visibility: visible;
   height: fit-content;
@@ -384,49 +379,88 @@ header {
   white-space: nowrap;
   -ms-overflow-style: none;
   margin-top: 0.9rem;
-  button {
-    font-weight: bold;
-    height: 3rem;
-    color: #ffffff;
-    background-color: #077bd3;
-    border-radius: 1rem 0 0 1rem;
-    border-width: 0;
-    cursor: pointer;
-    padding-right: 0.5rem;
-    padding-left: 0.75rem;
-  }
-  div {
-    transition: ease-in-out;
-    position: absolute;
-    top: 7rem;
-    display: none;
-    z-index: 100;
-    background-color: #077bd3;
-    padding-left: 0.5rem;
-    padding-right: 1rem;
-    border-radius: 1rem 0 0 1rem;
-  }
-  button:focus + div,
-  button:focus-visible + div,
-  div:hover,
-  div:focus,
-  div:focus-visible {
-    display: block;
-  }
-  a {
-    display: block;
-    margin: 0.5rem;
-    padding: 0.5rem 0;
-    padding-left: 0.5rem;
-    padding-right: 1.2rem;
-    font-size: clamp(0.875rem, 2vw, 1.125rem);
-    color: #ffffff;
-  }
-  a:hover {
-    background-color: #2b47b5; 
-    text-decoration: none;
-    border-radius: 0.5rem;
-  }
+}
+
+.Chart-list button {
+  font-weight: bold;
+  height: 3rem;
+  color: #ffffff;
+  background-color: #077bd3;
+  border-radius: 1rem 0 0 1rem;
+  border-width: 0;
+  cursor: pointer;
+  padding-right: 0.5rem;
+  padding-left: 0.75rem;
+}
+
+/* Default behavior for when JS is disabled */
+.Chart-list div {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: 100;
+  background-color: #077bd3;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  border-radius: 1rem 0 0 1rem;
+  display: none;
+}
+
+/* Show menu on hover/focus when JS is disabled */
+.Chart-list button:focus + div,
+.Chart-list button:focus-visible + div,
+.Chart-list div:hover,
+.Chart-list div:focus,
+.Chart-list div:focus-visible {
+  display: block;
+}
+
+/* JS-enabled styling will override the above */
+.js-enabled .Chart-list div {
+  right: -300px; /* Off-screen when JS is enabled */
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: block !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.js-enabled .Chart-list div.active {
+  right: 0 !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Remove the hover/focus behavior when JS is enabled */
+.js-enabled .Chart-list button:focus + div,
+.js-enabled .Chart-list button:focus-visible + div {
+  display: block;
+  right: -300px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.js-enabled .Chart-list div:hover:not(.active),
+.js-enabled .Chart-list div:focus:not(.active),
+.js-enabled .Chart-list div:focus-visible:not(.active) {
+  right: -300px;
+  opacity: 0;
+  pointer-events: none !important;
+}
+
+.Chart-list a {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  padding-right: 1.2rem;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  color: #ffffff;
+}
+
+.Chart-list a:hover {
+  background-color: #2b47b5; 
+  text-decoration: none;
+  border-radius: 0.5rem;
 }
 .Chart-list-selected {
   background-color: #ffffff !important; 
@@ -628,7 +662,7 @@ table {
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 38.4rem) {
+@media only screen and (max-width: 41rem) {
   .nav-toggle {
     /* mobile dropdown toggle */
     display: block;
