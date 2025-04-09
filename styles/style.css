@@ -143,20 +143,20 @@ header {
     color: var(--text-color);
     font-size: 0.9375rem !important;
   }
-  .inner-header button {
+  .nav-toggle {
     /* mobile dropdown toggle */
-    display: none;
+    /* display: none; */
     background: none;
     border: none;
     font-size: 1.8125rem;
     cursor: pointer;
-    z-index: 2;
+    z-index: 1000;
     padding-right: 0.9375rem;
     color: var(--text-color);
   }
-  .menu-toggle:focus + .nav ul {
+  /* .nav-toggle:focus + .nav ul {
     display: block;
-  }
+  } */
   @media only screen and (max-width: 15rem) {
     .logo-title h2 {
       display: none;
@@ -214,23 +214,15 @@ header {
     line-height: 1.5625rem;
     border-radius: 0.25rem;
   }
-  .open {
-    display: block;
-  
-  }
   li {
     margin-right: 1.25rem;
   }
   
 }
-/* Hide the checkbox */
-.nav-toggle {
-  display: none;
-}
 
 /* Desktop styles */
-@media (min-width: 769px) {
-  .menu-toggle {
+@media (min-width: 38.5rem) {
+  .nav-toggle {
     display: none;
   }
   
@@ -240,48 +232,25 @@ header {
   }
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .nav ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--background);
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  
-  /* The checkbox hack - when checked, show the menu */
-  .nav-toggle:checked ~ .nav ul {
-    display: block;
-  }
-  
-  /* Stack nav items vertically on mobile */
-  .nav ul li {
-    display: block;
-    margin: 1rem 0;
-  }
+.nav.open {
+  display: block;
 }
 
 /* Animation for smooth transition */
 .nav ul {
   transition: all 0.3s ease;
 }
-
+.nav.open {
+  visibility: visible;
+  height: fit-content;
+}
 /* banner on homepage */
 .homepage-banner {
   display: flex;
   justify-content: center;
-  height: 25rem;
+  height: fit-content;
+  padding-bottom: 2rem;
+  min-height: 23rem;
   width: 100%;
   background-color: var(--banner-color);
   align-items: center;
@@ -659,10 +628,10 @@ table {
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 36.4rem) {
-  .inner-header button {
+@media only screen and (max-width: 38.4rem) {
+  .nav-toggle {
     /* mobile dropdown toggle */
-    display: block !important;
+    display: block;
   }
   .nav {
     position: absolute;
@@ -671,7 +640,7 @@ table {
     justify-content: center;
     visibility: collapse;
     transition: all 0.4s;
-    z-index: 5;
+    z-index: 1000;
     overflow: hidden;
     padding: 0rem;
   }
@@ -682,11 +651,11 @@ table {
   }
 
   .nav ul {
-    background-color: var(--dropdown-color) !important;
+    background-color: var(--dropdown-color);
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    z-index: 5;
+    z-index: 1000;
   }
 
   .nav li {
