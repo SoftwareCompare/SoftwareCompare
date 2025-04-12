@@ -1,12 +1,12 @@
 /* colors for light mode */
 :root {
   --stark: #000000;
-  --background-color: #f1f1f1;
+  --background-color: #effdfd;
   --text-color: #000000;
   --border-color: #000000;
-  --header-gradient: linear-gradient(to bottom, #dddddd, #dddddd);
-  --dropdown-color: #dddddd;
-  --checker-even-bg: #dddddd;
+  --header-gradient: linear-gradient(to bottom, #dfe6eb, #dfe6eb);
+  --dropdown-color: #dfe6eb;
+  --checker-even-bg: #dfe6eb;
   --checker-border: #000000;
   --default-link: #077bd3;
   --check-hover: #0f53ba42;
@@ -15,7 +15,7 @@
   --img-filter: none;
   --dull-text: #262626;
   --highlight: #0F52BA; /* #208DD0, #30B7D2 #38ACEC */
-  --banner-color: #BCD2E8;
+  --banner-color: #bcd9e8;
   --button-color: #73A5C6;
 }
 
@@ -167,6 +167,9 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
+  h1 {
+    font-size: clamp(20px, 5vw, 30px);
+  }
   & > div {
     max-width: 67.5rem;
     width: 100%;
@@ -198,14 +201,13 @@ header {
   top: 1.7rem;
   display: flex;
   justify-content: space-between;
-
+  
 
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    transition: all 0.3s ease;
   }
   a {
     /* links in top right and dropdown */
@@ -232,13 +234,16 @@ header {
 }
 
 .nav.open {
-  display: block;
-}
-
-.nav.open {
+  max-height: fit-content;
   visibility: visible;
   height: fit-content;
 }
+
+/* .nav.open {
+  display: block;
+} */
+
+
 /* banner on homepage */
 .homepage-banner {
   display: flex;
@@ -392,6 +397,7 @@ header {
   cursor: pointer;
   padding-right: 0.5rem;
   padding-left: 0.75rem;
+  
 }
 
 /* Default behavior for when JS is disabled */
@@ -752,6 +758,7 @@ footer {
   }
   .footer-left p {
     margin: 0;
+    text-align: left;
   }
   .inner-footer ul {
     list-style: none;
@@ -785,7 +792,7 @@ footer {
     height: 1.25rem;
   }
   a {
-    filter: brightness(0) invert(85%);
+    filter: brightness(0) invert(90%);
   }
   a:hover{
     filter: brightness(0) invert(1);
