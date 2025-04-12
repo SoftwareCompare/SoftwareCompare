@@ -1,7 +1,7 @@
 /* colors for light mode */
 :root {
   --stark: #000000;
-  --background-color: #effdfd;
+  --background-color: #fefefe;
   --text-color: #000000;
   --border-color: #000000;
   --header-gradient: linear-gradient(to bottom, #dfe6eb, #dfe6eb);
@@ -93,6 +93,17 @@ main {
   max-width: 67.5rem;
   width: 100%;
   margin: 0 auto;
+}
+
+.text-content {
+  max-width: 50rem;
+  margin-top: 1rem;
+  width: 98%;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  h1 {
+    font-size: clamp(30px, 5vw, 40px);
+  }
 }
 
 header {
