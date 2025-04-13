@@ -250,11 +250,6 @@ header {
   height: fit-content;
 }
 
-/* .nav.open {
-  display: block;
-} */
-
-
 /* banner on homepage */
 .homepage-banner {
   display: flex;
@@ -286,6 +281,7 @@ header {
   .button-container {
     display: flex;
     gap: 0.7rem;
+    max-width: calc(100% - 1.025rem);
     /* padding-left: 0.3125rem; */
     a {
       color: #000000;
@@ -303,7 +299,8 @@ header {
       align-items: center;
       height: 3.5rem;
       background-color: var(--button-color);
-      width: 12rem;
+      width: 100%;
+      max-width: 12rem;
       border-radius: 0.5rem;
       font-weight: bold;
     }
