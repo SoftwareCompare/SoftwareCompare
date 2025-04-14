@@ -3,7 +3,7 @@
 An open-source project hosted on softwarecompare.org that compares application features under the category of privacy, conveinence, ethics, etc. This project is licensed under the AGPLv3, so feel free to fork and improve this project yourself.
 
 ## Features
-- Minimal Javascript: Used for tooltips and the mobile dropdown menu, but otherwise, the site works works completely without it
+- Minimal Javascript: Used for certain tooltips and the mobile dropdown menu, but otherwise the site works works completely without it
 - Many checkmarks have links to verify the source where the information originated
 - No tracking
 
