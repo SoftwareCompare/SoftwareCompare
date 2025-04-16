@@ -54,17 +54,17 @@ a {
 }
 
 h1 {
-  padding-left: 0.625rem;
-  font-size: 1.5625rem;
+  /* padding-left: 0.625rem; */
+  font-size: 2.2rem;
 }
 h2 {
-  padding-left: 0.3125rem;
+  /* padding-left: 0.3125rem; */
 }
 h3 {
   padding-left: 0.625rem;
 }
 p {
-  padding-left: 0.625rem;
+  /* padding-left: 0.625rem; */
 }
 
 .code {
@@ -84,7 +84,8 @@ body {
   display: flex;
   margin: 0;
   flex-direction: column;
-  font-family: sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -97,10 +98,9 @@ main {
 
 .text-content {
   max-width: 50rem;
-  margin-top: 1rem;
-  width: 98%;
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+  width: 94%;
   h1 {
     font-size: clamp(30px, 5vw, 40px);
   }
@@ -115,7 +115,7 @@ header {
   border-bottom: 0.0625rem solid var(--header-gradient);
 
   .inner-header {
-    width: 100%;
+    width: 98%;
     max-width: 67.5rem;
     display: flex;
     justify-content: space-between;
@@ -153,7 +153,6 @@ header {
   }
   .inner-header a {
     color: var(--text-color);
-    font-size: 0.9375rem !important;
   }
   .nav-toggle {
     /* mobile dropdown toggle */
@@ -163,7 +162,7 @@ header {
     font-size: 1.8125rem;
     cursor: pointer;
     z-index: 1000;
-    padding-right: 0.9375rem;
+    /* padding-right: 0.9375rem; */
     color: var(--text-color);
   }
   @media only screen and (max-width: 15rem) {
@@ -180,11 +179,15 @@ header {
   position: relative;
   h1 {
     font-size: clamp(20px, 5vw, 30px);
+    padding-left: 0.3125rem;
   }
   & > div {
     max-width: 67.5rem;
     width: 100%;
   }
+}
+.disclaimer {
+  padding-left: 0.3125rem;
 }
 
 /* Dark mode toggle button */
@@ -223,7 +226,7 @@ header {
   a {
     /* links in top right and dropdown */
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.5625rem;
     border-radius: 0.25rem;
   }
@@ -262,11 +265,11 @@ header {
   align-items: center;
 
   div {
-    width: 100%;
+    width: 94%;
     max-width: 67.5rem;
   }
   .homepage-title {
-    font-size: 1.875rem;
+    font-size: clamp(1.5, 5vw, 1.875rem);
     text-align: center;
     padding-top: 1.5625rem;
     padding-bottom: 1.25rem;
@@ -274,6 +277,7 @@ header {
   }
   h1 {
     font-size: 3rem;
+    max-width: 40rem;
   }  
   p {
     font-size: 1.5rem;
@@ -281,10 +285,15 @@ header {
   .button-container {
     display: flex;
     gap: 0.7rem;
-    max-width: calc(100% - 1.025rem);
+    width: 100%;
+    max-width: 100%;
     /* padding-left: 0.3125rem; */
     a {
+      /* margin-left: 0.5125rem; */
+      font-size: 1.1rem;
       color: #000000;
+      flex: 1;
+      max-width: 11rem;
     }
     a:hover {
       text-decoration: none;
@@ -293,14 +302,12 @@ header {
       }
     }
     div {
-      margin-left: 0.5125rem;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 3.5rem;
       background-color: var(--button-color);
       width: 100%;
-      max-width: 12rem;
       border-radius: 0.5rem;
       font-weight: bold;
     }
@@ -592,8 +599,12 @@ table {
     .checker_row th a {
       border-bottom: 0.09rem solid var(--default-link);
       transition: border-color 0.3s;
+      img{
+        padding: 0.1rem;
+        border-radius: 25%;
+      }
     }
-    .checker_row th > a:hover {
+    .checker_row th > a:hover img {
       background-color: var(--check-hover);
     }
     .checker_row:nth-child(odd) td {
@@ -672,6 +683,9 @@ table {
     }
     .checker_row td {
       z-index: 2;
+      flex: 1;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
     }
   }
 }
@@ -747,16 +761,16 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
+  font-size: 0.9rem;
 
   .inner-footer {
     color: white;
-    width: 100%;
+    width: 97%;
     max-width: 67.5rem;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: sans-serif;
     z-index: 5;
   }
   .footer-left {
@@ -787,13 +801,11 @@ footer {
     display: flex;
   }
   .footer-nav li {
-    margin-right: 0.75rem;
+    margin-left: 0.75rem;
   }
   .footer-nav a {
-    /* links in top right and dropdown */
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 1.125rem;
     line-height: 1.5625rem;
   }
   img {
