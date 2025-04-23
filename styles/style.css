@@ -178,8 +178,9 @@ header {
   align-items: center;
   position: relative;
   h1 {
-    font-size: clamp(20px, 5vw, 30px);
+    font-size: clamp(25px, 5vw, 30px);
     padding-left: 0.3125rem;
+    max-width: calc(100% - 11rem);
   }
   & > div {
     max-width: 67.5rem;
@@ -268,13 +269,6 @@ header {
     width: 94%;
     max-width: 67.5rem;
   }
-  .homepage-title {
-    font-size: clamp(1.5, 5vw, 1.875rem);
-    text-align: center;
-    padding-top: 1.5625rem;
-    padding-bottom: 1.25rem;
-    margin-top: 4rem;
-  }
   h1 {
     font-size: 3rem;
     max-width: 40rem;
@@ -312,6 +306,11 @@ header {
       font-weight: bold;
     }
   }
+}
+
+.homepage-title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  text-align: center;
 }
 
 .boxes-wrapper {
@@ -372,21 +371,25 @@ header {
 
 /* privacy counseling section on homepage */
 .privacy-counseling {
-  height: 18.75rem;
+  height: 15rem;
   width: 100%;
+  text-align: center;
   a {
-    color: var(--background-color) !important;
-  }
-  div {
+    margin-top: 1.75rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    color: var(--background-color);
     border-radius: 0.3125rem;
-    display: flex;
     align-items: center;
     justify-content: center;
+    width: 7.25rem;
+    background-color: rgb(230, 144, 11);
   }
-  .counseling-form {
-    height: 2.5rem !important;
-    width: 6.25rem !important;
-    background-color: orange !important;
+  a:hover {
+    text-decoration: none;
+    background-color: orange;
   }
 }
 
@@ -403,11 +406,12 @@ header {
 }
 
 .Chart-list button {
+  font-size: clamp(0.5rem, 4vw, 1rem);
   font-weight: bold;
-  height: 3rem;
+  height: clamp(2.5rem, 17vw, 3rem);
   color: #ffffff;
   background-color: #077bd3;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: clamp(0.66rem, 10vw, 1rem) 0 0 1rem;
   border-width: 0;
   cursor: pointer;
   padding-right: 0.5rem;
