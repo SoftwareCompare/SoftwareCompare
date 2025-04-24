@@ -189,7 +189,7 @@ titledesc: Find a VPN that works for you
         </a>
       </th>
       <th>
-        <a href="https://mullvad.net/en/help/multihop-WireGuard" target="_blank" rel="noopener noreferrer">
+        <a href="https://mullvad.net/en/help/multihop-wireguard" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
         </a>
       </th>
@@ -216,7 +216,7 @@ titledesc: Find a VPN that works for you
         </a>
       </th>
       <th>
-        <a href="https://mullvad.net/en/help/multihop-WireGuard" target="_blank" rel="noopener noreferrer">
+        <a href="https://mullvad.net/en/help/multihop-wireguard" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
         </a>
       </th>
@@ -460,8 +460,7 @@ titledesc: Find a VPN that works for you
     <tr class="checker_row">
       <td>No-Log Policy</td>
       <th>
-        <a href="https://www.ivpn.net/knowledgebase/privacy/do-you-store-any-logs-that-could-be-used-to-identify-a-customer"
-          target="_blank" rel="noopener noreferrer">
+        <a href="https://www.ivpn.net/knowledgebase/privacy/do-you-store-any-logs-that-could-be-used-to-identify-a-customer" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
         </a>
       </th>
@@ -474,7 +473,7 @@ titledesc: Find a VPN that works for you
         <div>
           <img src="../images/dash.webp" alt="dash">
           <span>
-            <a href="https://www.mysteriumvpn.com/blog/no-log-vpn#DecentralizationTheGameChanger">
+            <a href="https://www.mysteriumvpn.com/blog/no-log-vpn#DecentralizationTheGameChanger" target="_blank" rel="noopener noreferrer">
               Servers run by volunteers, so logging is possible
             </a>
           </span>
@@ -550,7 +549,7 @@ titledesc: Find a VPN that works for you
         <div>
           <img src="../images/dash.webp" alt="dash">
           <span>
-            <a href="https://skynet.certik.com/projects/mysterium">
+            <a href="https://skynet.certik.com/projects/mysterium" target="_blank" rel="noopener noreferrer">
               Smart contract audited</a>, but not all code
           </span>
         </div>
@@ -746,7 +745,7 @@ titledesc: Find a VPN that works for you
       </th>
       {% include cross %}
       {% include dash tooltip="Only on Windows and Android" link="https://nordvpn.com/features/split-tunneling" %}
-      {% include dash tooltip="Can disable per-site" link="https://support.apple.com/en-us/102022?cid=mc-ols-icloud-article_ht213548-ios_ui-05232023" %}
+      {% include dash tooltip="Can be disabled per-site" link="https://support.apple.com/en-us/102022?cid=mc-ols-icloud-article_ht213548-ios_ui-05232023" %}
       {% capture inner %}{% include link text='Only on Windows and Android'
       link="https://protonvpn.com/support/protonvpn-split-tunneling" %}{% endcapture %}
       {% include dash tooltip=inner %}
@@ -1027,13 +1026,13 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Kill Switch</td>
-      <th>-</th>
+      {% include dash tooltip="Only on Android through system settings" %}
       {% include check link="https://protonvpn.com/features/kill-switch" %}
       {% include check %}
     </tr>
     <tr class="checker_row">
       <td>Auto Connect</td>
-      <th>-</th>
+      {% include check %}
       {% include check link="https://protonvpn.com/support/always-on-vpn" %}
       {% include check %}
     </tr>
@@ -1220,7 +1219,7 @@ titledesc: Find a VPN that works for you
       <td>Choose Location</td>
       {% include check tooltip="Users can select exit countries in settings" %}
       {% include cross %}
-      {% include check tooltip="https://windscribe.com/status" %}
+      {% include check link="https://windscribe.com/status" %}
     </tr>
     <tr class="checker_row">
       <td>Torrenting Support</td>
