@@ -3,12 +3,13 @@
     - link
     - tooltip
     - alt
+    - edge
 {% endcomment %}
 {% if include.tooltip and include.link %}
 <th>
     <div>
         <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
-        <span><a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.tooltip }}</a></span>
+        <span{{ if include.edge }} class="edge"{{ endif }}><a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.tooltip }}</a></span>
     </div>
 </th>
 {% elsif include.link %}
@@ -22,7 +23,7 @@
 <th>
     <div>
         <img src="../images/check.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="check" {% endif %}>
-        <span>{{ include.tooltip }}</span>
+        <span{{ if include.edge }} class="edge"{{ endif }}>{{ include.tooltip }}</span>
     </div>
 </th>
 

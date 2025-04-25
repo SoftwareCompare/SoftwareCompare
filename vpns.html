@@ -201,9 +201,7 @@ titledesc: Find a VPN that works for you
         </a>
       </th>
 
-      {% capture inner %}{% include link text='Available with Tor over VPN'
-      link='https://protonvpn.com/features/tor-over-vpn' %}{% endcapture %}
-      {% include check tooltip=inner %}
+      {% include check tooltip='Available with Tor over VPN' link='https://protonvpn.com/features/tor-over-vpn' %}
       {% include check link='https://safing.io/blog/2020/01/22/how-the-spn-compares-to-tor' %}
       {% include check link='https://surfshark.com/features/multihop' %}
     </tr>
@@ -523,7 +521,7 @@ titledesc: Find a VPN that works for you
       <th>
         <div>
           <img src="../images/check.webp" alt="check">
-          <span><a href="https://github.com/ProtonVPN/ios-mac-app/blob/develop/LICENSE" target="_blank"
+          <span class="edge"><a href="https://github.com/ProtonVPN/ios-mac-app/blob/develop/LICENSE" target="_blank"
               rel="noopener noreferrer">GPLv3</a></span>
         </div>
       </th>
@@ -712,7 +710,7 @@ titledesc: Find a VPN that works for you
       {% include cross %}
       {% include check %}
       {% include cross %}
-      {% include dash tooltip="Supports Windows and Linux with other platforms planned" link="https://protonvpn.com/support/custom-dns" %}
+      {% include dash tooltip="Supports Windows and Linux with other platforms planned" link="https://protonvpn.com/support/custom-dns" edge="" %}
       {% include cross %}
       {% include check link="https://support.surfshark.com/hc/en-us/articles/13560798718610-How-to-set-custom-DNS-on-any-device" %}
     </tr>

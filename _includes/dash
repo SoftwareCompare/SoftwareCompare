@@ -8,7 +8,7 @@
 <th>
     <div>
         <img src="../images/dash.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="dash" {% endif %}>
-        <span><a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.tooltip }}</a></span>
+        <span{{ if include.edge }} class="edge"{{ endif }}><a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.tooltip }}</a></span>
     </div>
 </th>
 {% elsif include.link %}
@@ -22,7 +22,7 @@
 <th>
     <div>
         <img src="../images/dash.webp" {% if include.alt %} alt="{{ include.alt}}" {% else %} alt="dash" {% endif %}>
-        <span>{{ include.tooltip }}</span>
+        <span{{ if include.edge }} class="edge"{{ endif }}>{{ include.tooltip }}</span>
     </div>
 </th>
 

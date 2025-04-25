@@ -160,11 +160,12 @@ header {
     /* display: none; */
     background: none;
     border: none;
-    font-size: 1.8125rem;
+    font-size: 2.2rem;
     cursor: pointer;
     z-index: 1000;
-    /* padding-right: 0.9375rem; */
     color: var(--text-color);
+    padding-right: 0.5rem;
+    margin-right: 0;
   }
   @media only screen and (max-width: 15rem) {
     .logo-title h2 {
@@ -501,6 +502,7 @@ table {
   height: 100%;
   border-collapse: collapse;
   margin-bottom: 5rem;
+  margin-top: 1rem;
 
   a {
     color: var(--text-color);
@@ -623,7 +625,7 @@ table {
     .edge,
     .checker_row th:last-child span,
     .checker_row th:nth-last-child(2) span {
-      transform: translateX(-3.4375rem);
+      transform: translateX(-4.9rem);
     }
     .checker_row {
       position: relative;
