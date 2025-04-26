@@ -1,0 +1,33 @@
+{% comment %}
+    Parameters
+    - description
+    - titledesc
+    - link-preview
+{% endcomment %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.titledesc | default: 'Software Compare' }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="https://yourdomain.com/images/link-previews/{{ page.link-preview }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:image" content="../images/link-previews/{{ page.link-preview }}">
+    <meta property="og:title" content="{{ page.titledesc }}">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title>{{ page.title }}{% if page.layout == "comparison" %} Comparisons{% endif %}{% if page.layout != "homepage" %} - {% endif %}Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>

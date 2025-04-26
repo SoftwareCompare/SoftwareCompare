@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find a search engine that works for you">
+    <meta name="twitter:description" content="Comparisons of search engines to find one that works for you">
+    <meta name="twitter:image" content="https://yourdomain.com/images/link-previews/search-engine-comparison-photo.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="Comparisons of search engines to find one that works for you">
+    <meta property="og:image" content="../images/link-previews/search-engine-comparison-photo.webp">
+    <meta property="og:title" content="Find a search engine that works for you">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title>Search Engine Comparisons - Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+    <body>
+        
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="nav-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about"
+                    
+                    >About</a>
+                </li>
+                <li><a href="./donate"
+                    
+                    >Donate</a>
+                </li>
+                <li><a href="./contact"
+                    
+                    >Contact</a>
+                </li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare/commits/main" target="_blank" rel="noopener noreferrer">
+                    Changelog</a>
+                </li>
+                <li><button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button></li>
+            </ul>
+        </ul>
+    </div>
+</header>
+        <div class="page-title">
+            <div>
+                <h1>Search Engine Comparisons</h1>
+            </div>
+            <div class="Chart-list">
+    <button>Other Comparisons</button>
+    <div>
+        <a href="./browsers" 
+        
+        >Web Browsers</a>
+        <a href="./music-apps"
+        
+        >Music Apps</a>
+        <a href="./operating-systems"
+        
+        >Operating Systems</a>
+        <a href="./photo-apps"
+        
+        >Photo Apps</a>
+        <a href="./search-engines"
+        
+        class="Chart-list-selected"
+        
+        >Search Engines</a>
+        <a href="./vpns"
+        
+        >VPNs</a>
+        <a href="./youtube-frontends"
+        
+        >Youtube Frontends</a>
+    </div>
+</div>
+        </div>
+        <main>
+              <table>
+    <thead>
+      <tr>
+        <td></td>
+        <th>
+          <a href="https://www.bing.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/bing-logo.webp" alt="Bing Logo"><br />
+            Bing
+          </a>
+        </th>
+        <th>
+          <a href="https://search.brave.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/brave-search-logo.webp" alt="Brave Search Logo"><br />
+            Brave
+          </a>
+        </th>
+        <th>
+          <a href="https://www.duckduckgo.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/duckduckgo-logo.webp" alt="DDG Logo"><br />
+            Duckduckgo
+          </a>
+        </th>
+        <th>
+          <a href="https://www.ecosia.org" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/ecosia-logo.webp" alt="Ecosia Logo"><br />
+            Ecosia
+          </a>
+        </th>
+        <th>
+          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/google-logo.webp" alt="Google Logo"><br />
+            Google
+          </a>
+        </th>
+        <th>
+          <a href="https://presearch.io" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/presearch-logo.png" alt="Presearch Logo"><br />
+            Presearch
+          </a>
+        </th>
+        <th>
+          <a href="https://prieco.net" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/prieco-logo.png" alt="PriEco Logo"><br />
+            PriEco
+          </a>
+        </th>
+        <th>
+          <a href="https://github.com/searxng/searxng" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/searxng-logo.png" alt="SearXNG Logo"><br />
+            SearXNG
+          </a>
+        </th>
+        <th>
+          <a href="https://www.qwant.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/qwant-logo.webp" alt="Qwant Logo"><br />
+            Qwant
+          </a>
+        </th>
+        <th>
+          <a href="https://www.startpage.com" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/startpage-logo.png" alt="Startpage Logo"><br />
+            Startpage
+          </a>
+        </th>
+        <th>
+          <a href="https://github.com/benbusby/whoogle-search" target="_blank" rel="noopener noreferrer">
+            <img src="../images/logos/whoogle-logo.webp" alt="Whoogle Logo"><br />
+            Whoogle
+          </a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="left-col"><br />Privacy</th>
+      </tr>
+      <tr class="checker_row">
+        <td>
+          <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
+            Open Source
+          </a>
+        </td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://www.reddit.com/r/presearch/comments/l97pj0/comment/glh3lvc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank" rel="noopener noreferrer">
+                Might in the future
+              </a>
+            </span>
+          </div>
+        </th>
+        
+
+<th>
+    <a href="https://codeberg.org/JojoYou/PriEco" target="_blank" rel="noopener noreferrer">
+        <img src="../images/check.webp"  alt="check" >
+    </a>
+</th>
+
+
+        
+
+<th>
+    <a href="https://github.com/searxng/searxng" target="_blank" rel="noopener noreferrer">
+        <img src="../images/check.webp"  alt="check" >
+    </a>
+</th>
+
+
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        
+
+<th>
+    <a href="https://github.com/benbusby/whoogle-search" target="_blank" rel="noopener noreferrer">
+        <img src="../images/check.webp"  alt="check" >
+    </a>
+</th>
+
+
+      </tr>
+      <tr class="checker_row">
+        <td>Optional Javascript</td>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>Only main results and no images on page</span>
+          </div>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>Only main results</span>
+          </div>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        
+
+<th>
+    <a href='https://techcrunch.com/2025/01/17/google-begins-requiring-javascript-for-google-search' target="_blank" rel="noopener noreferrer">
+        <img src="../images/cross.webp"  alt="cross" >
+    </a>
+</th>
+
+
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Access with Tor</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Onion Address</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="http://priecovk7jsuh3tvkh62c6j4oep3l5bldigpzmay26rdpqz357t5dmad.onion" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        
+
+<th>
+    <a href="https://searx.space/#" target="_blank" rel="noopener noreferrer">
+        <img src="../images/check.webp"  alt="check" >
+    </a>
+</th>
+
+
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="http://startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#onion-instances" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Link Redirect Support</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Alternate Frontend Redirect Support</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span class="edge">Depends on<br />instance</span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr>
+        <th class="left-col"><br />Tracking</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Doesn't log iP addresses</td>
+        <th>
+          <a href="https://www.zdnet.com/article/bing-data-retention-reduced-to-six-months" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://search.brave.com/help/privacy-policy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://duckduckgo.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.ecosia.org/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://policies.google.com/privacy?hl=en#footnote-ip" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://presearch.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://prieco.net/web/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://docs.searxng.org/admin/installation-searxng.html#installation-basic" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://about.qwant.com/en/legal/confidentialite" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.startpage.com/en/how-startpage-works?t=device" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#install" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Doesn't log device data</td>
+        <th>
+          <a href="https://support.microsoft.com/en-us/windows/how-microsoft-stores-and-maintains-your-search-history-8742470a-9fb5-c05b-a2ad-5521cace2641" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://search.brave.com/help/privacy-policy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://duckduckgo.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.ecosia.org/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://policies.google.com/privacy?hl=en#infocollect" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div>
+            <img src="../images/dash.webp" alt="dash">
+            <span>
+              <a href="https://presearch.com/privacy" target="_blank" rel="noopener noreferrer">
+                Anonymized
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://prieco.net/web/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://docs.searxng.org/admin/installation-searxng.html#installation-basic" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://about.qwant.com/en/legal/confidentialite" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.startpage.com/en/privacy-policy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#install" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Doesn't log Searches</td>
+        <th>
+          <a href="https://www.zdnet.com/article/bing-data-retention-reduced-to-six-months" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://search.brave.com/help/privacy-policy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://duckduckgo.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.ecosia.org/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="cross">
+          </a>
+        </th>
+        <th>
+          <a href="https://policies.google.com/privacy?hl=en#infocollect" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="cross">
+          </a>
+        </th>
+        <th>
+          <a href="https://presearch.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://prieco.net/web/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://docs.searxng.org/admin/installation-searxng.html#installation-basic" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://about.qwant.com/en/legal/confidentialite" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.startpage.com/en/how-startpage-works?t=device" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#install" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>No Tracking Cookies</td>
+        <th>
+          <a href="https://support.microsoft.com/en-us/topic/third-party-cookie-inventory-81ca0c3d-c122-415c-874c-55610e017a6a" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://search.brave.com/help/anonymous-cookies" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://duckduckgo.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://www.ecosia.org/privacy" target="_blank" rel="noopener noreferrer">
+                Uses Google and Bing cookies
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://policies.google.com/privacy?hl=en#footnote-cookies" target="_blank" rel="noopener noreferrer">
+            <img src="../images/cross.webp" alt="cross">
+          </a>
+        </th>
+        <th>
+          <a href="https://presearch.com/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://prieco.net/web/privacy" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://docs.searxng.org/admin/installation-searxng.html#installation-basic" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="dash">
+            <span class="edge">
+              <a href="https://about.qwant.com/en/legal/confidentialite" target="_blank" rel="noopener noreferrer">
+                Only if user consents
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://www.startpage.com/en/privacy-policy/?t=dark#section-2" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="yellow dash">
+            <span>
+              Depends on instance,
+              <a href="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#install" target="_blank" rel="noopener noreferrer">
+                self-host to avoid trust
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <th class="left-col"><br />Indepence/Trust</th>
+      </tr>
+      <tr class="checker_row">
+        <td>
+          <div>
+            Copyleft License
+            <span>
+              <a href="https://www.gnu.org/licenses/copyleft.en.html" target="_blank" rel="noopener noreferrer">
+                Copyleft licenses</a> are a type of open-source license that aim to ensure software remains free and open.This is done through requiring any derivative works to use the same license.
+            </span>
+          </div>
+        </td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              <a href="https://codeberg.org/JojoYou/PriEco/src/branch/master/LICENCE.md" target="_blank" rel="noopener noreferrer">
+                AGPLv3
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              <a href="https://github.com/searxng/searxng/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
+                AGPLv3
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://github.com/benbusby/whoogle-search/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                MIT License
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Independent Index</td>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>Bing</span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>Bing</span>
+          </div>
+        </th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+        <div><img src="../images/cross.webp" alt="cross">
+          <span>Google</span>
+        </div>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="cross">
+            <span class="edge">
+              <a href="https://prieco.net" target="_blank" rel="noopener noreferrer">
+                Early in development
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="cross">
+            <span class="edge">Aggregates<br />many<br />indexes</span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span class="edge">Bing</span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>Google</span>
+          </div>
+          </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span class="edge">Google</span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Decentralized on a Blockchain</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Decentralized on instances</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Self Hostable</td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/dash.webp" alt="cross">
+            <span class="edge">Possible, but<br />lacks documentation</span>
+          </div>
+        </th>
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+      </tr>
+      <tr>
+        <th class="left-col"><br />Convenience</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Dark Mode</td>
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+      </tr>
+      <tr class="checker_row">
+        <td>Rerank Sites</td>
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <a href="https://brave.com/blog/search-rerank" target="_blank" rel="noopener noreferrer">
+        <img src="../images/check.webp"  alt="check" >
+    </a>
+</th>
+
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+      </tr>
+      <tr class="checker_row">
+        <td>
+          <div>
+            Supports Bangs
+            <span>
+              <a href="https://duckduckgo.com/bangs" target="_blank" rel="noopener noreferrer">
+                Bangs</a> are a feature created by Duckduckgo. They allow a user to type a shortcut into their search engine and get results from another site instead.
+            </span>
+          </div>
+        </td>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span>Chosen site's results show as SearXNG results</span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/check.webp" alt="check"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Multi-bang Support</td>
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+      </tr>
+      <tr class="checker_row">
+        <td>Ad-free Option</td>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>Only with ad blocker</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span>
+              <a href="https://account.brave.com/?intent=checkout&product=search" target="_blank" rel="noopener noreferrer">
+              With Brave Premium
+            </span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span>Can be disabled in settings</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>Only with ad blocker</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>Only with ad blocker</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>Only with ad blocker</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>Sponsored shopping, but no obtrusive ads</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span>No ads</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span class="edge">Only with ad blocker</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/cross.webp" alt="cross">
+            <span>Only with ad blocker</span>
+          </div>
+        </th>
+        <th>
+          <div>
+            <img src="../images/check.webp" alt="check">
+            <span>No ads</span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Ai Answers</td>
+        <th>
+          <a href="https://blogs.bing.com/search/October-2024/The-next-step-in-Bing-generative-search?form=MG0AUO" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://brave.com/blog/answer-with-ai" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://spreadprivacy.com/duckassist-launch" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div>
+            <img src="../images/dash.webp" alt="dash">
+            <span>
+              <a href="https://rewards.bing.com/welcome" target="_blank" rel="noopener noreferrer">
+                Chatbot only
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <a href="https://blog.google/products/search/generative-ai-google-search-may-2024" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <div>
+            <img src="../images/dash.webp" alt="dash">
+            <span>
+              <a href="https://news.presearch.io/pregpt-mvp-revolutionizing-ai-chatbots-with-decentralized-compute-power-and-privacy-c4603adeeb4f" target="_blank" rel="noopener noreferrer">
+                $2 a month and chatbot only</a>
+            </span>
+          </div>
+        </th>
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+      </tr>
+      <tr class="checker_row">
+        <td>Torrent Search</td>
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src="../images/check.webp"  alt="check" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+        
+
+<th>
+    <img src='../images/cross.webp'  alt="cross" >
+</th>
+
+      </tr>
+      <tr>
+        <th class="left-col"><br />Ethics</th>
+      </tr>
+      <tr class="checker_row">
+        <td>Pays Users</td>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              <a href="https://rewards.bing.com/welcome" target="_blank" rel="noopener noreferrer">
+                Earn points that can be redeemed for gift cards
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>Planned</span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>Hard to withdrawl</span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Donates to Charity</td>
+        <th>
+          <a href="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <a href="https://duckduckgo.com/donations" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://ecosia.helpscoutdocs.com/article/30-how-does-ecosia-use-profits-from-ad-income-to-finance-tree-planting" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/dash.webp" alt="cross">
+            <span class="edge">planned, but currently runs off donations 
+              <a href="https://codeberg.org/JojoYou/PriEco/src/branch/master#donate" target="_blank" rel="noopener noreferrer">
+                Donate Here
+              </a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="cross">
+            <span class="edge">No source of income</span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/dash.webp" alt="cross">
+            <span class="edge">
+              <a href="https://siecledigital.fr/2020/05/05/qwant-causes-ferme" target="_blank" rel="noopener noreferrer">
+                Allowed users to contribute ad revenue to causes for less than a year
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/dash.webp" alt="dash">
+            <span class="edge">
+              Runs off donations 
+              <a href="https://ko-fi.com/benbusby" target="_blank" rel="noopener noreferrer">
+                Donate Here
+              </a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr class="checker_row">
+        <td>Carbon Neutral</td>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              Duckduckgo is <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
+              carbon negative</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span class="edge">
+              Ecosia is <a href="https://www.ecosia.org" target="_blank" rel="noopener noreferrer">
+              carbon negative</a>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://finance.yahoo.com/news/ai-destroyed-google-promise-carbon-214145116.html" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span class="edge">
+              <a href="https://contabo.com/en-us/sustainability" target="_blank" rel="noopener noreferrer">
+                Hosted on Contabo
+              </a>  
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Carbon Negative</td>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>
+              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span>
+              Duckduckgo is <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
+              carbon negative
+            </span>
+          </div>
+        </th>
+        <th>
+          <div><img src="../images/check.webp" alt="check">
+            <span class="edge">
+                Ecosia is <a href="https://www.ecosia.org" target="_blank" rel="noopener noreferrer">
+                carbon negative
+              </a>
+            </span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th>
+          <div><img src="../images/cross.webp" alt="cross">
+            <span>planned</span>
+          </div>
+        </th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+        <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+    </tbody>
+  </table>
+        </main>
+        
+        <footer>
+    <div class="inner-footer">
+        <div class="footer-left">
+            <p>Software Compare™ <a style="margin-left: 0.5rem;" href="./privacy-policy">Privacy&nbsp;Policy</a></p>
+            <!-- <p>privacy</p> -->
+        </div>
+        <ul class="footer-nav">
+            <ul>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="/images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://matrix.to/#/#softwarecompare:matrix.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/matrix-logo.svg" alt="Matrix Logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+            </ul>
+        </ul>
+    </div>
+</footer>
+        <script src="script.js"></script>
+    </body>
+</html>

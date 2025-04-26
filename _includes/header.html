@@ -1,0 +1,42 @@
+
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="nav-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about"
+                    {% if page.title contains "About" %}
+                    style="color: var(--stark); font-weight: bold;"
+                    {% endif %}
+                    >About</a>
+                </li>
+                <li><a href="./donate"
+                    {% if page.title contains "Donate" %}
+                    style="color: var(--stark); font-weight: bold;"
+                    {% endif %}
+                    >Donate</a>
+                </li>
+                <li><a href="./contact"
+                    {% if page.title contains "Contact" %}
+                    style="color: var(--stark); font-weight: bold;"
+                    {% endif %}
+                    >Contact</a>
+                </li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare/commits/main" target="_blank" rel="noopener noreferrer">
+                    Changelog</a>
+                </li>
+                <li><button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button></li>
+            </ul>
+        </ul>
+    </div>
+</header>

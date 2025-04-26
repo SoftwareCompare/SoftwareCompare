@@ -7,6 +7,9 @@ An open-source project hosted on softwarecompare.org that compares application f
 - Many checkmarks have links to verify the source where the information originated
 - No tracking
 
+## Development
+If you would like to view the most current updates, visit the test site [here](https://softwarecompare-test.pages.dev/). 
+
 ## Donations
 
 Brave Creators
@@ -24,8 +27,8 @@ XMRchat
 Monero
 - 4A8xBr1jMhV84wdVRHCwCs1293quJrwC8jAtJkrqKzDKJZhw33V2g26YDe7wbiuQy7KkaEY8B6YYoBdB3auTfXZiUwLLj5q
 
-ZCash
-- t1U6ktoAEw3KzkgqC49YmHyLhVfH7t6BCfX
+Shielded ZCash
+- u1r9afz4kjllvf49edxquh2x9r2eh2ne9q29wa9a9h5jsy8z9thgc3dlrpphxg930vpy2722gw2ke977ed47r4mmhfhts342zuqu5mh008
 
 Litecoin MWEB
 - ltcmweb1qq09xjylkspy5yx034ktr5r7fu7axkjha295r4tuk7ffxzqxkrk09cq6q6hyeve46954h540rxdwuufnpjrsun7jj452rqalgdme4wsjdnqm2h4wz

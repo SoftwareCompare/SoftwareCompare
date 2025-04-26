@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find software that's best for you">
+    <meta name="twitter:description" content="Objective comparisons of software to help you find the best applications for you">
+    <meta name="twitter:image" content="https://yourdomain.com/images/link-previews/browser-comparison-photo.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="Objective comparisons of software to help you find the best applications for you">
+    <meta property="og:image" content="../images/link-previews/browser-comparison-photo.webp">
+    <meta property="og:title" content="Find software that's best for you">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title>Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+    <body>
+        
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="nav-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about"
+                    
+                    >About</a>
+                </li>
+                <li><a href="./donate"
+                    
+                    >Donate</a>
+                </li>
+                <li><a href="./contact"
+                    
+                    >Contact</a>
+                </li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare/commits/main" target="_blank" rel="noopener noreferrer">
+                    Changelog</a>
+                </li>
+                <li><button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button></li>
+            </ul>
+        </ul>
+    </div>
+</header>
+        <div class="homepage-banner">
+            <div>
+                <h1>
+                    Data-Driven Comparisons of Software Applications
+                </h1>
+                <p>
+                    Compare features of different programs to find software that works for you.
+                </p>
+                <div class="button-container">
+                    <a href="#comparison-charts">
+                        <div>Comparison Charts</div>
+                    </a>
+                    <a href="#privacy-counseling">
+                        <div>Privacy Counseling</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <main class="text-content">
+            <h2 id="comparison-charts" class="homepage-title" style="margin-top: 4rem;">Comparison Charts</h2>
+<div class="boxes-wrapper">
+    <div class="comparison-boxes">
+        <a class="comparison-box" href="./browsers">
+            <h2>Browsers</h2>
+            <p>Compare desktop, iOS and<br />Android browsers</p>
+        </a>
+        <a class="comparison-box" href="./music-apps">
+            <h2>Music</h2>
+            <p>Find the best free or paid<br />music app</p>
+        </a>
+        <a class="comparison-box" href="./operating-systems">
+            <h2>Operating Systems</h2>
+            <p>Comparison of mobile<br />operating systems</p>
+        </a>
+        <a class="comparison-box" href="./photo-apps">
+            <h2>Photo Apps</h2>
+            <p>Comparison of Photo Apps</p>
+        </a>
+        <a class="comparison-box" href="./search-engines">
+            <h2>Search Engines</h2>
+            <p>Comparison of Search Engines</p>
+        </a>
+        <a class="comparison-box" href="./vpns">
+            <h2>VPNs</h2>
+            <p>Comparison of VPNs</p>
+        </a>
+        <a class="comparison-box" href="./youtube-frontends">
+            <h2>Youtube Frontends</h2>
+            <p>Comparison of Youtube frontends</p>
+        </a>
+        <br /><br />
+    </div>
+
+    
+</div>
+<h2 id="privacy-counseling" class="homepage-title">Book a privacy Counseling Appointment</h2>
+<div class="privacy-counseling">
+    <p>If you are interested in scheduling a one-on-one session for advice on increasing your privacy or
+        changing the software you use, you can fill out this form here:
+
+        <a href="https://blocksurvey.io/software-compare-privacy-counseling-cxhQpggiR9a0QVEsboXpwg?v=o" target="_blank" rel="noopener noreferrer">
+            Apply Here
+        </a>
+
+        <!-- <a href="./counseling.html" target="_blank" rel="noopener noreferrer">
+            Learn More
+        </a> -->
+    </p>
+</div>
+        </main>
+        <footer>
+    <div class="inner-footer">
+        <div class="footer-left">
+            <p>Software Compare™ <a style="margin-left: 0.5rem;" href="./privacy-policy">Privacy&nbsp;Policy</a></p>
+            <!-- <p>privacy</p> -->
+        </div>
+        <ul class="footer-nav">
+            <ul>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="/images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://matrix.to/#/#softwarecompare:matrix.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/matrix-logo.svg" alt="Matrix Logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+            </ul>
+        </ul>
+    </div>
+</footer>
+        <script src="script.js"></script>
+    </body>
+</html>

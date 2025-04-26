@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div class="homepage-banner">
+            <div>
+                <h1>
+                    Data-Driven Comparisons of Software Applications
+                </h1>
+                <p>
+                    Compare features of different programs to find software that works for you.
+                </p>
+                <div class="button-container">
+                    <a href="#comparison-charts">
+                        <div>Comparison Charts</div>
+                    </a>
+                    <a href="#privacy-counseling">
+                        <div>Privacy Counseling</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <main class="text-content">
+            {{ content }}
+        </main>
+        {% include footer.html %}
+        <script src="script.js"></script>
+    </body>
+</html>

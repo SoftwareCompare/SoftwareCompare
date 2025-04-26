@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div class="page-title">
+            <div>
+                <h1>{{ page.title }} Comparisons</h1>
+            </div>
+            {% include chart-list.html %}
+        </div>
+        <main>
+            {{ content }}
+        </main>
+        
+        {% include footer.html %}
+        <script src="script.js"></script>
+    </body>
+</html>

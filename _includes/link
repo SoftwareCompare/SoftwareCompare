@@ -1,0 +1,5 @@
+{% comment %}
+    - text
+    - link
+{% endcomment %}
+<a href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.text }}</a>
