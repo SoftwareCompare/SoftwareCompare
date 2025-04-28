@@ -116,7 +116,7 @@ header {
   border-bottom: 0.0625rem solid var(--header-gradient);
 
   .inner-header {
-    width: 98%;
+    width: 100%;
     max-width: 67.5rem;
     display: flex;
     justify-content: space-between;
@@ -128,6 +128,9 @@ header {
     display: flex;
     align-items: center;
     z-index: 2;
+    & > a {
+      margin-left: 0.35rem;
+    }
   }
   h2 {
     color: var(--stark);
@@ -165,7 +168,7 @@ header {
     z-index: 1000;
     color: var(--text-color);
     padding-right: 0.5rem;
-    margin-right: 0;
+    margin-right: 0.25rem;
   }
   @media only screen and (max-width: 15rem) {
     .logo-title h2 {
@@ -758,6 +761,117 @@ table {
     .checker_row th:nth-last-child(2) span{
       transform: translateX(-3.4375rem);
     }
+  }
+}
+
+/* .donation {
+  background-color: #435865;
+  p {
+    opacity: 0;
+    transform: scale(0.95);
+    height: 0;
+    overflow: hidden;
+    transition: 
+      opacity 0.3s ease,
+      height 0.3s ease;
+  }
+  &:hover p {
+    opacity: 1;
+    height: auto;
+    transform: scale(1);
+  }
+} */
+
+/* Base styling for the donation container */
+.donation-dropdown {
+  background-color: #0f4e70;
+  border-radius: 0.8rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0rem;
+  margin-bottom: 2rem;
+  max-width: 18rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+
+  &:hover {
+    max-width: 35rem !important;
+    /* margin-bottom: 0rem; */
+  }
+
+  img {
+    height: 1rem;
+  }
+
+  h3 {
+    cursor: pointer;
+  }
+
+  .code {
+    word-break: break-all;
+    padding-right: 0.5rem;
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+    transition:  0.5s ease-in-out;
+    overflow: hidden;
+  }
+
+  .code img {
+    max-width: 100%;
+    /* max-width: none; */
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+    /* transition: all 2s ease-in-out; Add transition for the image opacity */
+  }
+
+  &:hover .code,
+  &:focus .code,
+  &.active .code {
+  opacity: 1;
+  max-height: 40rem; /* Adjust based on your content height */
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  }
+
+  &:focus,
+  &.active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.07rem);
+  }
+
+  h3::after {
+    content: " ▼";
+    font-size: 0.8rem;
+    opacity: 0.6;
+    transition: transform 3s ease;
+  }
+
+  &:hover h3::after,
+  &:focus h3::after,
+  &.active h3::after {
+    transform: rotate(180deg);
+  }
+}
+
+.donation-button {
+  background-color: #0f4e70;
+  border-radius: 0.8rem;
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0rem;
+  max-width: fit-content;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  img {
+    height: 1rem;
   }
 }
 
