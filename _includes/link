@@ -3,5 +3,4 @@
     - link
     - color
 {% endcomment %}
-<a {{ if include.color}}style="color:{{ include.color }};"{{ end if }}
-    href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.text }}</a>
+<a {% if color %}style="color:{{ include.color }};"{% endif %} href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.text }}</a>
