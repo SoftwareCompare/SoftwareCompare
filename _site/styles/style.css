@@ -198,11 +198,11 @@ header {
 
 /* Dark mode toggle button */
 #theme-toggle {
-  padding: 0.5rem;
+  display: none;
   border: none;
   background: transparent;
   cursor: pointer;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: none;
@@ -211,7 +211,15 @@ header {
   cursor: pointer;
   img {
     filter: var(--toggle-filter);
+    display: none;
     vertical-align: middle;
+    
+  }
+}
+
+.js-enabled #theme-toggle {
+  img {
+    display: list-item;
     height: 1.6rem !important;
   }
 }
@@ -239,7 +247,16 @@ header {
   li {
     margin-right: 1.25rem;
   }
-  
+  li:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.js-enabled .nav {
+  li:last-child {
+    margin-right: 1.25rem;
+  }
 }
 
 /* Desktop styles */
@@ -532,8 +549,8 @@ table {
 
   thead {
     /*top bar on table */
-    position: sticky;
     top: 0;
+    position: sticky;
     z-index: 13;
     background-color: var(--background-color);
 

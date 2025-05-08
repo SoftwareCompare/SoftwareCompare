@@ -78,3 +78,34 @@ document.addEventListener('DOMContentLoaded', function() {
       chartListDiv.classList.remove('active');
     });
   });
+
+
+  function addDragIconsToTable() {
+    const tables = document.querySelectorAll('table');
+
+    tables.forEach(table => {
+      const thead = table.querySelector('thead');
+      if (!thead || !thead.rows.length) return;
+      
+      const colCount = thead.rows[0].cells.length;
+      const newRow = document.createElement('tr');
+      
+      for (let i = 0; i < colCount; i++) {
+        const newCell = document.createElement('td');
+        if (i == 0) {
+          newCell.innerHTML = 'Manage';
+        } 
+        else { // hide manage button if no applications are hidden
+          const dragIcon = document.createElement('div');
+          newCell.innerHTML = 'X';
+        }
+        newRow.appendChild(newCell);
+      }
+      const newThead = document.createElement('thead');
+      newThead.appendChild(newRow);
+
+      table.insertBefore(newThead, thead);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', addDragIconsToTable);
