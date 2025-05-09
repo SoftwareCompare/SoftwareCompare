@@ -370,11 +370,11 @@ document.addEventListener('DOMContentLoaded', function() {
         user-select: none;
         padding: 2px 6px 0rem 6px;
         display: inline-block;
-        background-color:rgba(233, 233, 233, 0.43);
+        background-color:rgba(138, 138, 138, 0.16);
         border-radius: 4px;
       }
       .drag-handle:hover {
-        background-color:rgba(218, 218, 218, 0.76); #good
+        background-color:rgba(132, 132, 132, 0.56); #good
       }
       .drag-handle.dragging {
         opacity: 0.5;
