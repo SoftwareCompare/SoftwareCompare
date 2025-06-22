@@ -639,7 +639,7 @@ titledesc: Find a browser that works for you
       </tr> -->
       <tr class="checker_row">
         <td>Containers</td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        {% include dash tooltip="Currently in development" link="https://github.com/brave/brave-browser/issues/46349" %}
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -905,10 +905,10 @@ titledesc: Find a browser that works for you
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
       <tr>
-        <th class="left-col" ><br />Trust</th>
+        <th class="left-col" ><br />Maintains Openness</th>
       </tr>
-      <tr class="checker_row grayrow">
-        <td>
+      <tr class="checker_row grayrow" style="z-index: 100;">
+        <td  style="z-index: 100;">
           <div>
           Copyleft License
           <span><a href="https://www.gnu.org/licenses/copyleft.en.html">
@@ -981,6 +981,15 @@ titledesc: Find a browser that works for you
             </span>
           </div>
         </th>
+      </tr>
+      <tr class="checker_row grayrow" style="z-index: 99;">
+        <td  style="z-index: 99;">
+        <div style="z-index: 99;">
+        No CLA
+        <span style="z-index: 99;">A Client License Agreement is an agreement that contributors have to sign in order to contribute to a project. This agreement gives the licensee the rights to relicense the project as well as sublicense the software under different licenses.
+        </span>
+        </div>
+        </td>
       </tr>
       <tr>
         <th class="left-col"><br />Freedom</th>
@@ -1083,6 +1092,19 @@ titledesc: Find a browser that works for you
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Tab Groups</td>
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+        {% include cross %}
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+        {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
+        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include check link="https://discussions.apple.com/thread/253721389?answerId=256978468022#256978468022" %}
+        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
       </tr>
       <tr class="checker_row">
         <td>Website Translation</td>
@@ -1536,11 +1558,16 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>On-device Website Translation</td>
+        {% include check link="https://github.com/brave/brave-core/pull/25391" %}
+        {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
+        {% include cross %}
         
       </tr>
       <tr class="checker_row">
         <td>Private Website Translation</td>
-        
+        {% include check link="https://github.com/brave/brave-core/pull/25391" %}
+        {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
+        {% include cross %}
       </tr>
       <tr class="checker_row">
         <td>Individual Script Blocking</td>

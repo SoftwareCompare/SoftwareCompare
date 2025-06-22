@@ -79,6 +79,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  function handleDragStart(e) {
+    // Store the column index being dragged
+    draggedColumn = parseInt(e.target.dataset.columnIndex);
+    e.target.classList.add('dragging');
+    
+    activeTable = e.target.closest('table');
+
+    // Set data for drag operation
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', draggedColumn);
+    
+    // Add visual indication to the entire column
+    highlightColumn(activeTable, draggedColumn, 'dragging-column');
+  }
 
   function addDragIconsToTable() {
     const tables = document.querySelectorAll('table');
@@ -137,7 +151,76 @@ document.addEventListener('DOMContentLoaded', function() {
   let activeTable = null;
   let lastMouseX = 0;
 
-  function handleGlobalDragOver(e) {
+  function updateColumnPositions(table, draggedIndex, hoverIndex, mouseX) {
+    if (!table || draggedIndex === hoverIndex) return;
+    
+    // Save original positions if not already saved
+    if (Object.keys(originalPositions).length === 0) {
+      saveOriginalPositions(table);
+    }
+    
+    const rows = table.querySelectorAll('tr');
+    
+    // Get the cells for position calculation
+    const firstRow = rows[0];
+    if (firstRow.cells.length <= Math.max(draggedIndex, hoverIndex)) return;
+    
+    const draggedRect = firstRow.cells[draggedIndex].getBoundingClientRect();
+    const hoverRect = firstRow.cells[hoverIndex].getBoundingClientRect();
+    
+    // Calculate direction of movement
+    const movingRight = draggedIndex < hoverIndex;
+    
+    // Apply transition class to all cells if not already applied
+    rows.forEach(row => {
+      Array.from(row.cells).forEach(cell => {
+        if (!cell.classList.contains('table-cell-transition')) {
+          cell.classList.add('table-cell-transition');
+        }
+      });
+    });
+    
+    // Apply transforms based on drag position
+    rows.forEach(row => {
+      if (row.cells.length <= Math.max(draggedIndex, hoverIndex)) return;
+      
+      // Get difference from mouse position to determine intermediate positions
+      const mousePosition = mouseX;
+      const dragCellCenter = draggedRect.left + (draggedRect.width / 2);
+      const hoverCellCenter = hoverRect.left + (hoverRect.width / 2);
+      
+      // Calculate how far along the drag is between the columns
+      let dragProgress = (mousePosition - dragCellCenter) / (hoverCellCenter - dragCellCenter);
+      dragProgress = Math.max(0, Math.min(1, dragProgress)); // Clamp between 0 and 1
+      
+      // Apply transforms to all affected columns
+      for (let i = 0; i < row.cells.length; i++) {
+        const cell = row.cells[i];
+        let transform = 'translateX(0)';
+        
+        // Skip the first column
+        if (i === 0) continue;
+        
+        if (i === draggedIndex) {
+          // The dragged column moves toward the hover position
+          const moveDistance = (hoverIndex - draggedIndex) * draggedRect.width * dragProgress;
+          transform = `translateX(${moveDistance}px)`;
+        } 
+        else if ((movingRight && i > draggedIndex && i <= hoverIndex) || 
+                (!movingRight && i < draggedIndex && i >= hoverIndex)) {
+          // Columns between dragged and hover move in opposite direction
+          const moveDistance = movingRight ? -draggedRect.width : draggedRect.width;
+          // Scale the movement based on how close the mouse is
+          const scaledMove = moveDistance * dragProgress;
+          transform = `translateX(${scaledMove}px)`;
+        }
+        
+        cell.style.transform = transform;
+      }
+    });
+  }
+
+  function handleGlobalDragOver(e) { // If statement is causing a problem by only processing 
     if (e.preventDefault) {
       e.preventDefault();
     }
@@ -251,21 +334,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Track the column being dragged
   let draggedColumn = null;
   let originalPositions = {};
-  
-  function handleDragStart(e) {
-    // Store the column index being dragged
-    draggedColumn = parseInt(e.target.dataset.columnIndex);
-    e.target.classList.add('dragging');
-    
-    activeTable = e.target.closest('table');
-
-    // Set data for drag operation
-    e.dataTransfer.effectAllowed = 'move';
-    e.dataTransfer.setData('text/plain', draggedColumn);
-    
-    // Add visual indication to the entire column
-    highlightColumn(activeTable, draggedColumn, 'dragging-column');
-  }
   
   function handleDragOver(e) {
     if (e.preventDefault) {
@@ -414,75 +482,6 @@ document.addEventListener('DOMContentLoaded', function() {
     rows.forEach(row => {
       if (row.cells.length > columnIndex) {
         row.cells[columnIndex].classList.remove(className);
-      }
-    });
-  }
-  
-  function updateColumnPositions(table, draggedIndex, hoverIndex, mouseX) {
-    if (!table || draggedIndex === hoverIndex) return;
-    
-    // Save original positions if not already saved
-    if (Object.keys(originalPositions).length === 0) {
-      saveOriginalPositions(table);
-    }
-    
-    const rows = table.querySelectorAll('tr');
-    
-    // Get the cells for position calculation
-    const firstRow = rows[0];
-    if (firstRow.cells.length <= Math.max(draggedIndex, hoverIndex)) return;
-    
-    const draggedRect = firstRow.cells[draggedIndex].getBoundingClientRect();
-    const hoverRect = firstRow.cells[hoverIndex].getBoundingClientRect();
-    
-    // Calculate direction of movement
-    const movingRight = draggedIndex < hoverIndex;
-    
-    // Apply transition class to all cells if not already applied
-    rows.forEach(row => {
-      Array.from(row.cells).forEach(cell => {
-        if (!cell.classList.contains('table-cell-transition')) {
-          cell.classList.add('table-cell-transition');
-        }
-      });
-    });
-    
-    // Apply transforms based on drag position
-    rows.forEach(row => {
-      if (row.cells.length <= Math.max(draggedIndex, hoverIndex)) return;
-      
-      // Get difference from mouse position to determine intermediate positions
-      const mousePosition = mouseX;
-      const dragCellCenter = draggedRect.left + (draggedRect.width / 2);
-      const hoverCellCenter = hoverRect.left + (hoverRect.width / 2);
-      
-      // Calculate how far along the drag is between the columns
-      let dragProgress = (mousePosition - dragCellCenter) / (hoverCellCenter - dragCellCenter);
-      dragProgress = Math.max(0, Math.min(1, dragProgress)); // Clamp between 0 and 1
-      
-      // Apply transforms to all affected columns
-      for (let i = 0; i < row.cells.length; i++) {
-        const cell = row.cells[i];
-        let transform = 'translateX(0)';
-        
-        // Skip the first column
-        if (i === 0) continue;
-        
-        if (i === draggedIndex) {
-          // The dragged column moves toward the hover position
-          const moveDistance = (hoverIndex - draggedIndex) * draggedRect.width * dragProgress;
-          transform = `translateX(${moveDistance}px)`;
-        } 
-        else if ((movingRight && i > draggedIndex && i <= hoverIndex) || 
-                (!movingRight && i < draggedIndex && i >= hoverIndex)) {
-          // Columns between dragged and hover move in opposite direction
-          const moveDistance = movingRight ? -draggedRect.width : draggedRect.width;
-          // Scale the movement based on how close the mouse is
-          const scaledMove = moveDistance * dragProgress;
-          transform = `translateX(${scaledMove}px)`;
-        }
-        
-        cell.style.transform = transform;
       }
     });
   }
