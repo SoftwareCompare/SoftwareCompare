@@ -2,13 +2,14 @@
 layout: comparison
 title: Browser
 permalink: browsers
-link-preview: browser-comparison-photo.webp
+link-preview: ./images/link-previews/browser-comparison.png
 description: Comparisons of browsers to find one that works for you
 titledesc: Find a browser that works for you
 ---
 
   <p class="disclaimer">Charts do not include features that require installing an extension.<br /><br /></p>
   <table>
+    
     <thead>
       <tr>
         <td id="Desktop"><a href="#Desktop">
@@ -638,7 +639,7 @@ titledesc: Find a browser that works for you
       </tr> -->
       <tr class="checker_row">
         <td>Containers</td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        {% include dash tooltip="Currently in development" link="https://github.com/brave/brave-browser/issues/46349" %}
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -903,11 +904,11 @@ titledesc: Find a browser that works for you
         <th><img src="../images/check.webp" alt="check mark"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
-      <tr>
-        <th class="left-col" ><br />Trust</th>
+      <!-- <tr>
+        <th class="left-col" ><br />Maintains Openness</th>
       </tr>
-      <tr class="checker_row grayrow">
-        <td>
+      <tr class="checker_row grayrow" style="z-index: 100;">
+        <td  style="z-index: 100;">
           <div>
           Copyleft License
           <span><a href="https://www.gnu.org/licenses/copyleft.en.html">
@@ -981,6 +982,15 @@ titledesc: Find a browser that works for you
           </div>
         </th>
       </tr>
+      <tr class="checker_row grayrow" style="z-index: 99;">
+        <td  style="z-index: 99;">
+        <div style="z-index: 99;">
+        No CLA
+        <span style="z-index: 99;">A <a href="https://en.wikipedia.org/wiki/Contributor_License_Agreement" target="_blank" rel="noopener noreferrer">Client License Agreement</a > is an agreement that contributors have to sign in order to contribute to a project. This agreement gives the licensee the rights to relicense the project as well as sublicense the software under different licenses.
+        </span>
+        </div>
+        </td>
+      </tr> -->
       <tr>
         <th class="left-col"><br />Freedom</th>
       </tr>
@@ -1082,6 +1092,19 @@ titledesc: Find a browser that works for you
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
+      </tr>
+      <tr class="checker_row">
+        <td>Tab Groups</td>
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+        {% include cross %}
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+        {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
+        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include check link="https://discussions.apple.com/thread/253721389?answerId=256978468022#256978468022" %}
+        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
       </tr>
       <tr class="checker_row">
         <td>Website Translation</td>
@@ -1534,14 +1557,44 @@ titledesc: Find a browser that works for you
         </th>
       </tr>
       <tr class="checker_row">
+        <td>On-device Website Translation</td>
+        {% include check link="https://github.com/brave/brave-core/pull/25391" %}
+        {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross link="https://www.apple.com/legal/privacy/data/en/safari" %}
+      </tr>
+      <tr class="checker_row">
+        <td>Private Website Translation</td>
+        {% include check link="https://github.com/brave/brave-core/pull/25391" %}
+        {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
+      </tr>
+      <tr class="checker_row">
         <td>Individual Script Blocking</td>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Script Blocking</td>
         <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check %}
       </tr>
       <tr class="checker_row">
         <td>Delete Data When Site Closes</td>
@@ -1737,8 +1790,8 @@ titledesc: Find a browser that works for you
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
       </tr>
-      <tr>
-        <th class="left-col" ><br />Trust</th>
+      <!-- <tr>
+        <th class="left-col" ><br />Maintains Openness</th>
       </tr>
       <tr class="checker_row grayrow">
         <td>
@@ -1788,7 +1841,7 @@ titledesc: Find a browser that works for you
           </div>
         </th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-      </tr>
+      </tr> -->
       <tr>
         <th class="left-col"><br />Freedom</th>
       </tr>
@@ -1837,23 +1890,33 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Reader View</td>
-        <th><img src="../images/check.webp" alt="check"></th>
+        {% include check %}
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
+        {% include check %}
+        {% include check %}
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
+        {% include check %}
+      </tr>
+      <tr class="checker_row">
+        <td>Website Translation</td>
+        {% include check %}
+        {% include check %}
+        {% include cross %}
+        {% include check %}
+        {% include cross %}
+        {% include cross %}
+        {% include check %}
       </tr>
       <tr class="checker_row">
         <td>Bottom Bar</td>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
+        {% include check %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
         <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/check.webp" alt="check"></th>
+        {% include check %}
       </tr>
       <tr class="checker_row">
         <td>Browser Sync</td>
@@ -2401,8 +2464,8 @@ titledesc: Find a browser that works for you
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/check.webp" alt="check"></th>
       </tr>
-      <tr>
-        <th class="left-col" ><br />Trust</th>
+      <!-- <tr>
+        <th class="left-col" ><br />Maintains Openness</th>
       </tr>
       <tr class="checker_row grayrow">
         <td>
@@ -2460,7 +2523,7 @@ titledesc: Find a browser that works for you
             </span>
           </div>
         </th>
-      </tr>
+      </tr> -->
       <tr>
         <th class="left-col"><br />Freedom</th>
       </tr>
