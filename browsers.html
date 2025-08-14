@@ -814,6 +814,19 @@ titledesc: Find a browser that works for you
         </th>
       </tr>
       <tr class="checker_row">
+        <td>Insecure Site Warning</td>
+        {% include dash tooltip="Not by default" %}
+        {% include dash tooltip="Not by default" %}
+        {% include cross %}
+        {% include dash tooltip="Not by default" %}
+        {% include dash tooltip="Not by default" %}
+        {% include check %}
+        {% include check %}
+        {% include cross %}
+        {% include check %}
+        {% include dash tooltip="Not by default" %}
+      </tr>
+      <tr class="checker_row">
         <td>Tor Enabled</td>
         <th><img src="../images/cross.webp" alt="cross"></th>
         <th><img src="../images/cross.webp" alt="cross"></th>
@@ -1588,7 +1601,7 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Script Blocking</td>
-        <th><img src="../images/check.webp" alt="check"></th>
+        {% include check %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1603,12 +1616,12 @@ titledesc: Find a browser that works for you
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
       </tr>
       <tr>
         <th class="left-col"><br />Security</th>
