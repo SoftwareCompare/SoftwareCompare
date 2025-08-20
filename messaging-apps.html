@@ -1,0 +1,395 @@
+---
+layout: comparison
+title: Messaging App
+permalink: messaging-apps
+link-preview: ./images/link-previews/music-app-comparison.webp
+description: Comparisons of messaging apps to find one that works for you
+titledesc: Find a messaging app that works for you
+---
+
+<table>
+    <thead>
+        <tr>
+        <td>
+        </td>
+        <th>
+            {% include link 
+                text='<img src="../images/logos/briar-logo.png" alt="Briar Logo"><br />
+                Briar' 
+                link="https://briarproject.org" 
+            %}
+        </th>
+        <th>
+            {% include link    
+                text='<img src="../images/logos/facebook-messenger-logo.png" alt="Facebook Messenger Logo"><br />
+                Facebook'
+                link='https://www.messenger.com'
+            %}
+        </th>
+        <th>
+            {% include link
+                text='<img src="../images/logos/imessage-logo.png" alt="iMessage Logo"><br />
+                iMessage' 
+                link='https://apps.apple.com/us/app/messages/id1146560473'
+            %}
+        </th>
+        <th>
+            {% include link
+                text='<img src="../images/logos/session-logo.png" alt="Session Logo"><br />
+                Session'
+                link='https://getsession.org'
+            %}
+        </th>
+        <th>
+            {% include link
+                text='<img src="../images/logos/signal-logo.png" alt="Signal Logo"><br />
+                Signal'
+                link='https://signal.org'
+            %}
+        </th>
+        <th>
+            {% include link
+                text='<img src="../images/logos/simplex-logo.png" alt="SimpleX Logo"><br />
+                SimpleX'
+                link='https://simplex.chat'
+            %}
+        </th>
+        <th>
+            {% include link
+                text='<img src="../images/logos/threema-logo.webp" alt="Threema Logo"><br />
+                Threema'
+                link='https://threema.com'
+            %}
+        </th>
+        <th>
+            {% include link
+                text='<img src="../images/logos/whatsapp-logo.webp" alt="WhatsApp Logo"><br />
+                WhatsApp'
+                link='https://www.whatsapp.com'
+            %}
+        </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Platform</td>
+            <th>Android</th>
+            <th>
+                {% include link text='Mac, Windows' link='https://www.messenger.com/desktop' %}
+                &
+                {% include link text='Mobile' link="https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en_US" %}
+            </th>
+            <th>{% include link text="Apple Devices" link="https://apps.apple.com/us/app/messages/id1146560473" %}</th>
+            <th>{% include link text="Desktop & Mobile" link="https://getsession.org/download" %}</th>
+            <th>{% include link text="Desktop & Mobile" link="https://signal.org/download" %}</th>
+            <th>{% include link text="Desktop & Mobile" link="https://simplex.chat/downloads" %}</th>
+            <th>{% include link text="Desktop, Mobile & Web" link="https://threema.com/en/download/threema-private" %}</th>
+            <th>{% include link text="MacOS, Windows, Mobile & Web" link="https://www.whatsapp.com/download" %}</th>
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+            <th class="left-col">Privacy</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                {% include link text="Open Source" link="https://www.ibm.com/topics/open-source" %}
+            </td>
+            {% include check link="https://code.briarproject.org/briar/briar" %}
+            {% include cross %}
+            {% include cross %}
+            {% include check link="https://github.com/session-foundation" %}
+            {% include check link="https://github.com/signalapp" %}
+            {% include check link="https://github.com/simplex-chat/simplex-chat" %}
+            {% include check link="https://github.com/threema-ch" %}
+            {% include cross %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                End-to-End Encrypted
+            </td>
+            {% include check %}
+            {% include check link="https://www.facebook.com/help/messenger-app/786613221989782" %}
+            {% include check link="https://support.apple.com/guide/security/imessage-security-overview-secd9764312f/web" %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Perfect Forward Secrecy
+            </td>
+            {% include check link="https://nixfaq.org/2021/01/briar-epitome-of-anonymity-and-security-in-im-messengers.html" %}
+            {% include check %}
+            {% include check %}
+            {% include cross link="https://getsession.org/faq#session-pfs" %}
+            {% include check link="https://signal.org/blog/asynchronous-security" %}
+            {% include check link="https://simplex.chat/#forward-secrecy" %}
+            {% include check link="https://threema.com/en/faq/perfect_forward_secrecy" %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Metadata Protection
+            </td>
+            {% include check link="https://briarproject.org/privacy-policy" %}
+            {% include cross link="https://www.facebook.com/privacy/policy" %}
+            {% include cross link="https://support.apple.com/guide/security/how-imessage-sends-and-receives-messages-sec70e68c949/web" %}
+            {% include check link="https://getsession.org/faq#identity-protection" %}
+            {% include check link="https://signal.org/blog/sealed-sender" %}
+            {% include check link="https://simplex.chat/#privacy-of-identity-contacts-metadata" %}
+            {% include check link="https://threema.com/en/faq/privacy_protection" %}
+            {% include cross link="https://www.whatsapp.com/legal/privacy-policy" %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                No Email Required
+            </td>
+            {% include check %}
+            {% include dash tooltip="Requires an email or phone number" %}
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include dash tooltip="Requires an email or phone number" %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                No Phone Number Required
+            </td>
+            {% include check %}
+            {% include dash tooltip="Requires an email or phone number" %}
+            {% include cross %}
+            {% include check %}
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include dash tooltip="Requires an email or phone number" %}
+        </tr>
+        <tr>
+            <th class="left-col">Independence</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Send Over Bluetooth
+            </td>
+            {% include check link="https://briarproject.org/how-it-works" %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+        </tr>
+        <tr>
+            <th class="left-col">Trust</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Decentralized Infrastructure
+            </td>
+            {% include check link="https://briarproject.org/how-it-works" %}
+            {% include cross %}
+            {% include cross %}
+            {% include check link="https://getsession.org/blog/migrating-from-the-oxen-network-to-session-network" %}
+            {% include cross %}
+            {% include check link="https://simplex.chat/#network" %}
+            {% include cross %}
+            {% include cross %}
+        </tr>
+        <tr>
+            <th class="left-col">Convenience</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Voice Calls
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Video Calls
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Send while recipient is offline
+            </td>
+            {% include dash tooltip="App can run in the background, but offline receiving is available with Briar Mailbox" %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Message Reactions
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Message Reply
+            </td>
+            {% include cross %}
+            <th>-</th>
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            <th>-</th>
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Voice Messages
+            </td>
+            {% include cross %}
+            <th>-</th>
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            <th>-</th>
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Typing Indicators
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include cross %}
+            <th>-</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Read Receipts
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include cross %}
+            <th>-</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Unsend Messages
+            </td>
+            {% include cross %}
+            <th>-</th>
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Disappearing Messages
+            </td>
+            {% include check %}
+            <th>-</th>
+            {% include cross %}
+            {% include check %}
+            {% include dash tooltip="Only for new chats" %}
+            {% include check %}
+            <th>-</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Schedule Send
+            </td>
+            {% include cross %}
+            <th>-</th>
+            {% include check %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            <th>-</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Gif Support
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include cross %}
+            <th>-</th>
+            {% include check %}
+        </tr>
+        <tr>
+            <th class="left-col">Ethics</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Supports Charity
+            </td>
+            
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Carbon Neutral
+            </td>
+            {% include dash tooltip="No central servers so energy all goes through user's devices" %}
+            {% include cross tooltip="Committed to reaching net zero by 2030" link="https://sustainability.fb.com/wp-content/uploads/2023/07/Meta-2023-Path-to-Net-Zero.pdf" %}
+            {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross tooltip="Committed to reaching net zero by 2030" link="https://sustainability.fb.com/wp-content/uploads/2023/07/Meta-2023-Path-to-Net-Zero.pdf" %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Carbon Negative
+            </td>
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+        </tr>
+    </tbody>
+</table>

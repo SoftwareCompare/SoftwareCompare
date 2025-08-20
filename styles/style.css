@@ -530,6 +530,7 @@ table {
   }
   a:hover {
     color: var(--text-color);
+    text-decoration: underline;
   }
   td,
   .left-col {
@@ -540,11 +541,16 @@ table {
   }
   tr th {
     font-size: clamp(0.5rem, 2.7vw, 0.75rem);
+    
   }
   th {
     min-width: 0.3125rem;
     width: 10%;
     height: 0.9375rem;
+    a {
+      text-decoration: none;
+    }
+    
   }
 
   thead {
@@ -676,6 +682,9 @@ table {
       overflow-wrap: normal;
       box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.283);
       font-size: clamp(0.5625rem, 2vw, 0.75rem);
+    }
+    span a {
+      text-decoration: underline;
     }
     .checker_row td span {
       min-width: 15.625rem;

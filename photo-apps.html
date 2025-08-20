@@ -219,14 +219,7 @@ titledesc: Find a photo app that works for you
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030</a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
         <th>
           <div><img src="../images/check.webp" alt="check">
             <span><a href="https://ente.io/reliability" target="_blank" rel="noopener noreferrer">
@@ -248,7 +241,7 @@ titledesc: Find a photo app that works for you
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        {% include cross %}
         <th>
           <div><img src="../images/cross.webp" alt="cross">
             <span>
@@ -258,7 +251,7 @@ titledesc: Find a photo app that works for you
             </span>
           </div>
         </th>
-        <th><img src="../images/cross.webp" alt="cross"></th>
+        {% include cross %}
       </tr>
     </tbody>
         </table>

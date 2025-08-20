@@ -2,5 +2,16 @@
     - text
     - link
     - color
+    - underline
 {% endcomment %}
-<a {% if include.color %}style="color:{{ include.color }};"{% endif %} href="{{ include.link }}" target="_blank" rel="noopener noreferrer">{{ include.text }}</a>
+<a 
+    {% if include.underline %}
+    style="
+    text-decoration:underline;
+    "
+    {% endif %}
+    href="{{ include.link }}" target="_blank" rel="noopener noreferrer">
+    {{ include.text }}
+</a>
+
+<!-- style="{% if include.underline %} {% endif %} {% if include.color %}color:{{ include.color }};"{% endif %}  -->
