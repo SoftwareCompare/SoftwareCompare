@@ -22,7 +22,7 @@ titledesc: Find a messaging app that works for you
         <th>
             {% include link    
                 text='<img src="../images/logos/facebook-messenger-logo.png" alt="Facebook Messenger Logo"><br />
-                Facebook'
+                FB Messenger'
                 link='https://www.messenger.com'
             %}
         </th>
@@ -262,7 +262,7 @@ titledesc: Find a messaging app that works for you
                 Message Reply
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include check %}
             {% include check %}
             {% include check %}
             {% include check %}
@@ -275,7 +275,7 @@ titledesc: Find a messaging app that works for you
                 Voice Messages
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include check %}
             {% include check %}
             {% include check %}
             {% include check %}
@@ -294,6 +294,7 @@ titledesc: Find a messaging app that works for you
             {% include check %}
             {% include cross %}
             <th>-</th>
+            {% include check %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -306,17 +307,45 @@ titledesc: Find a messaging app that works for you
             {% include check %}
             {% include cross %}
             <th>-</th>
+            {% include check %}
         </tr>
         <tr class="checker_row">
             <td>
                 Unsend Messages
             </td>
             {% include cross %}
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Edit Messages
+            </td>
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include cross %}
+            {% include check %}
+            {% include check %}
             <th>-</th>
             {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Send polls
+            </td>
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            <th>-</th>
             {% include check %}
         </tr>
         <tr class="checker_row">
@@ -324,24 +353,26 @@ titledesc: Find a messaging app that works for you
                 Disappearing Messages
             </td>
             {% include check %}
-            <th>-</th>
+            {% include cross %}
             {% include cross %}
             {% include check %}
             {% include dash tooltip="Only for new chats" %}
             {% include check %}
             <th>-</th>
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
                 Schedule Send
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include check %}
             {% include cross %}
             {% include cross %}
             {% include cross %}
             <th>-</th>
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>

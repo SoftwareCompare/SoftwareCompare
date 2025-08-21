@@ -540,8 +540,8 @@ table {
     z-index: 0;
   }
   tr th {
-    font-size: clamp(0.5rem, 2.7vw, 0.75rem);
     
+    font-size: clamp(0.25rem, 1.8vw, 0.8125rem);
   }
   th {
     min-width: 0.3125rem;
@@ -613,6 +613,7 @@ table {
     .left-col {
       padding-top: 1.25rem;
       padding-bottom: 0.625rem;
+      font-size: clamp(0.5rem, 2.7vw, 0.75rem);
     }
     .grayrow {
       td {
