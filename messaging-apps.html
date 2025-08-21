@@ -73,7 +73,7 @@ titledesc: Find a messaging app that works for you
     <tbody>
         <tr>
             <td>Platform</td>
-            <th>Android</th>
+            <th>{% include link text="Android" link="https://briarproject.org/download-briar" %}</th>
             <th>
                 {% include link text='Mac, Windows' link='https://www.messenger.com/desktop' %}
                 &
@@ -110,21 +110,21 @@ titledesc: Find a messaging app that works for you
                 End-to-End Encrypted
             </td>
             {% include check %}
-            {% include check link="https://www.facebook.com/help/messenger-app/786613221989782" %}
+            {% include dash tooltip="Group chats do not have end-to-end encryption by default" link="https://www.facebook.com/help/messenger-app/786613221989782" %}
             {% include check link="https://support.apple.com/guide/security/imessage-security-overview-secd9764312f/web" %}
             {% include check %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it" %}
             {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://threema.com/en/faq/why-secure" %}
+            {% include check link="https://faq.whatsapp.com/820124435853543" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Perfect Forward Secrecy
             </td>
             {% include check link="https://nixfaq.org/2021/01/briar-epitome-of-anonymity-and-security-in-im-messengers.html" %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://www.wired.com/2016/11/what-is-perfect-forward-secrecy" %}
+            {% include check link="https://security.apple.com/blog/imessage-pq3" %}
             {% include cross link="https://getsession.org/faq#session-pfs" %}
             {% include check link="https://signal.org/blog/asynchronous-security" %}
             {% include check link="https://simplex.chat/#forward-secrecy" %}
@@ -210,32 +210,32 @@ titledesc: Find a messaging app that works for you
                 Voice Calls
             </td>
             {% include cross %}
+            {% include check link="https://www.facebook.com/help/messenger-app/1673374996287506" %}
             {% include check %}
+            {% include check link="https://getsession.org/faq#calls" %}
             {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://simplex.chat/docs/guide/audio-video-calls" %}
+            {% include check link="https://threema.com/en/features" %}
+            {% include check link="https://faq.whatsapp.com/1153602608602452" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Video Calls
             </td>
             {% include cross %}
+            {% include check link="https://www.facebook.com/help/messenger-app/1673374996287506" %}
             {% include check %}
+            {% include check link="https://getsession.org/faq#calls" %}
             {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://simplex.chat/docs/guide/audio-video-calls" %}
+            {% include check link="https://threema.com/en/features" %}
+            {% include check link="https://faq.whatsapp.com/1862285217468140" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Send while recipient is offline
             </td>
-            {% include dash tooltip="App can run in the background, but offline receiving is available with Briar Mailbox" %}
+            {% include dash tooltip="App can run in the background, but if your contact imessages send  offline receiving is available with Briar Mailbox" %}
             {% include check %}
             {% include check %}
             {% include check %}
@@ -249,13 +249,13 @@ titledesc: Find a messaging app that works for you
                 Message Reactions
             </td>
             {% include cross %}
+            {% include check link="https://www.facebook.com/help/messenger-app/1602676269761759" %}
             {% include check %}
             {% include check %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/360039929972-Message-Reactions" %}
             {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://threema.com/en/faq/agree-disagree-feature" %}
+            {% include check link="https://faq.whatsapp.com/424198503229937" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -265,23 +265,23 @@ titledesc: Find a messaging app that works for you
             {% include check %}
             {% include check %}
             {% include check %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/6851465208986-Reply-to-a-specific-message" %}
             {% include check %}
-            {% include check %}
-            <th>-</th>
-            {% include check %}
+            {% include check link="https://threema.com/en/faq/quote-feature" %}
+            {% include check link="https://faq.whatsapp.com/3240283752856917" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Voice Messages
             </td>
             {% include cross %}
+            {% include check link="https://www.facebook.com/help/messenger-app/377884675632666" %}
             {% include check %}
             {% include check %}
             {% include check %}
-            {% include check %}
-            {% include check %}
-            <th>-</th>
-            {% include check %}
+            {% include check link="https://simplex.chat/#features" %}
+            {% include check link="https://threema.com/en/features" %}
+            {% include check link="https://faq.whatsapp.com/657157755756612" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -291,9 +291,9 @@ titledesc: Find a messaging app that works for you
             {% include check %}
             {% include check %}
             {% include check %}
-            {% include check %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/360020798451-Typing-Indicators" %}
             {% include cross %}
-            <th>-</th>
+            {% include check %}
             {% include check %}
         </tr>
         <tr class="checker_row">
@@ -301,12 +301,12 @@ titledesc: Find a messaging app that works for you
                 Read Receipts
             </td>
             {% include cross %}
+            {% include check link="https://www.facebook.com/help/messenger-app/926389207386625" %}
             {% include check %}
             {% include check %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/360007059812-Read-Receipts" %}
             {% include cross %}
-            <th>-</th>
+            {% include check %}
             {% include check %}
         </tr>
         <tr class="checker_row">
@@ -314,26 +314,26 @@ titledesc: Find a messaging app that works for you
                 Unsend Messages
             </td>
             {% include cross %}
-            {% include cross %}
+            {% include check link="https://www.facebook.com/help/messenger-app/194400311449172" %}
             {% include check %}
             {% include check %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/360050426432-Delete-for-everyone" %}
             {% include check %}
-            {% include check %}
-            {% include check %}
-            {% include check %}
+            {% include check link="https://threema.com/en/faq/editdelete" %}
+            {% include check link="https://faq.whatsapp.com/1370476507114859" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Edit Messages
             </td>
             {% include cross %}
-            {% include check %}
+            {% include check link="https://www.facebook.com/help/messenger-app/349344207784626" %}
             {% include check %}
             {% include cross %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/6255134251546-Edit-Message" %}
             {% include check %}
-            {% include check %}
-            <th>-</th>
-            {% include check %}
+            {% include check link="https://threema.com/en/faq/editdelete" %}
+            {% include check link="https://faq.whatsapp.com/6614640168569481" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -345,21 +345,21 @@ titledesc: Find a messaging app that works for you
             {% include cross %}
             {% include cross %}
             {% include cross %}
-            <th>-</th>
-            {% include check %}
+            {% include check link="https://threema.com/en/faq/poll" %}
+            {% include check link="https://faq.whatsapp.com/796470361614974" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Disappearing Messages
             </td>
             {% include check %}
+            {% include dash tooltip="Only for photos and videos on Android and iOS" link="https://www.facebook.com/help/messenger-app/1692866107948379" %}
             {% include cross %}
+            {% include check link="https://getsession.org/faq#disappearing-messages" %}
+            {% include check link="https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages" %}
+            {% include check link="https://simplex.chat/#features" %}
             {% include cross %}
-            {% include check %}
-            {% include dash tooltip="Only for new chats" %}
-            {% include check %}
-            <th>-</th>
-            {% include cross %}
+            {% include check link="https://faq.whatsapp.com/673193694148537" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -369,9 +369,9 @@ titledesc: Find a messaging app that works for you
             {% include cross %}
             {% include check %}
             {% include cross %}
+            {% include dash tooltip="Only on Android" link="https://support.signal.org/hc/en-us/articles/5365881590682-Schedule-a-Message-on-Signal-Android" %}
             {% include cross %}
             {% include cross %}
-            <th>-</th>
             {% include cross %}
         </tr>
         <tr class="checker_row">
@@ -384,8 +384,8 @@ titledesc: Find a messaging app that works for you
             {% include check %}
             {% include check %}
             {% include cross %}
-            <th>-</th>
-            {% include check %}
+            {% include cross link="https://threema.com/en/faq/gifs" %}
+            {% include check link="https://faq.whatsapp.com/674208810641277" %}
         </tr>
         <tr>
             <th class="left-col">Ethics</th>
