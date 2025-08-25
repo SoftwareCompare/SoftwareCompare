@@ -392,15 +392,22 @@ titledesc: Find a messaging app that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Supports Charity
+                Donates to Charity
             </td>
-            
+            {% include dash tooltip="Briar has no source of income, and instead is funded by grants" link="https://briarproject.org/about" %}
+            {% include cross %}
+            {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+            {% include dash tooltip="Developed by the Session Technology Foundation, a Swiss non-profit. Donate Here" link="https://session.foundation/donate" %}
+            {% include dash tooltip="The Session Foundation is a non-profit that runs off of donations. Donate Here" link="https://signal.org/donate" %}
+            {% include cross tooltip="Backed by VC funding, private investors and donations. Donate Here" link="https://simplex.chat/faq/#how-are-you-funded" %}
+            {% include cross tooltip="Offers special deals for public institutions and 30% off for non-profits" link="https://threema.com/en/faq/nonprofit" %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
                 Carbon Neutral
             </td>
-            {% include dash tooltip="No central servers so energy all goes through user's devices" %}
+            {% include cross tooltip="No central servers so energy all goes through user's devices" %}
             {% include cross tooltip="Committed to reaching net zero by 2030" link="https://sustainability.fb.com/wp-content/uploads/2023/07/Meta-2023-Path-to-Net-Zero.pdf" %}
             {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
             {% include cross %}

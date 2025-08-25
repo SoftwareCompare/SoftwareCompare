@@ -1,3 +1,22 @@
 {
-    "fiveServer.openTerminal": false
+    "fiveServer.openTerminal": false,
+    "cSpell.words": [
+        "Adblocking",
+        "Cloudtube",
+        "Duckduckgo",
+        "Ecosia",
+        "Freetube",
+        "frontends",
+        "Frontends",
+        "Hostable",
+        "Libretube",
+        "Librewolf",
+        "Mullvad",
+        "Newpipe",
+        "Odysee",
+        "Sandboxing",
+        "Sponsorblock",
+        "titledesc",
+        "Ungoogled"
+    ]
 }
