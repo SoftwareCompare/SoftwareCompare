@@ -107,10 +107,10 @@ titledesc: Find a messaging app that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                End-to-End Encrypted
+                Default End-to-End Encryption
             </td>
             {% include check %}
-            {% include dash tooltip="Group chats do not have end-to-end encryption by default" link="https://www.facebook.com/help/messenger-app/786613221989782" %}
+            {% include cross link="https://www.facebook.com/help/messenger-app/786613221989782" %}
             {% include check link="https://support.apple.com/guide/security/imessage-security-overview-secd9764312f/web" %}
             {% include check %}
             {% include check link="https://support.signal.org/hc/en-us/articles/360007320391-Is-it-private-Can-I-trust-it" %}
@@ -118,6 +118,31 @@ titledesc: Find a messaging app that works for you
             {% include check link="https://threema.com/en/faq/why-secure" %}
             {% include check link="https://faq.whatsapp.com/820124435853543" %}
         </tr>
+        <tr class="checker_row">
+            <td>
+                Encryption cannot be disabled
+            </td>
+            {% include check %}
+            {% include cross %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include check %}
+        </tr>
+        <!-- <tr class="checker_row">
+            <td>
+                Default Encrypted Backups
+            </td>
+
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Encrypted Backup Support
+            </td>
+
+        </tr> -->
         <tr class="checker_row">
             <td>
                 Perfect Forward Secrecy
@@ -171,25 +196,38 @@ titledesc: Find a messaging app that works for you
             {% include dash tooltip="Requires an email or phone number" %}
         </tr>
         <tr>
-            <th class="left-col">Independence</th>
-        </tr>
-        <tr class="checker_row">
-            <td>
-                Send Over Bluetooth
-            </td>
-            {% include check link="https://briarproject.org/how-it-works" %}
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-        </tr>
-        <tr>
             <th class="left-col">Trust</th>
         </tr>
         <tr class="checker_row">
+            <td>
+                Independent Security Audit
+            </td>
+            {% include check link="https://briarproject.org/news/2017-beta-released-security-audit" %}
+            {% include cross %}
+            {% include cross %}
+            {% include check link="https://getsession.org/session-code-audit" %}
+            {% include check link="https://community.signalusers.org/t/wiki-overview-of-third-party-security-audits/13243" %}
+            {% include check link="https://simplex.chat/blog/20221108-simplex-chat-v4.2-security-audit-new-website.html" %}
+            {% include check link="https://threema.com/en/faq/code-audit" %}
+            {% include cross %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Transparency Report
+            </td>
+            {% include cross %}
+            {% include check link="https://transparency.meta.com/reports" %}
+            {% include check link="https://www.apple.com/legal/transparency" %}
+            {% include check link="https://session.foundation/transparency-reports" %}
+            {% include check link="https://signal.org/bigbrother" %}
+            {% include check link="https://simplex.chat/transparency" %}
+            {% include check link="https://threema.com/en/transparency-report" %}
+            {% include check link="https://transparency.meta.com/reports" %}
+        </tr>
+        <tr>
+            <th class="left-col">Independence</th>
+        </tr>
+        <tr class="checker_row grayrow">
             <td>
                 Decentralized Infrastructure
             </td>
@@ -199,6 +237,22 @@ titledesc: Find a messaging app that works for you
             {% include check link="https://getsession.org/blog/migrating-from-the-oxen-network-to-session-network" %}
             {% include cross %}
             {% include check link="https://simplex.chat/#network" %}
+            {% include cross %}
+            {% include cross %}
+        </tr>
+        <tr>
+            <th class="left-col">Freedom</th>
+        </tr>
+        <tr class="checker_row grayrow">
+            <td>
+                Send Over Bluetooth
+            </td>
+            {% include check link="https://briarproject.org/how-it-works" %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
             {% include cross %}
             {% include cross %}
         </tr>

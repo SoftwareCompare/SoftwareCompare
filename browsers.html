@@ -660,60 +660,18 @@ titledesc: Find a browser that works for you
         {% include cross %}
       </tr>
       <tr class="checker_row">
-        <td>Profiles</td>
-        <th>
-          <a href="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        <td>
+          Profiles
+        </td>
+        {% include check link="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" %}
+        {% include check link="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" %}
         {% include cross %}
-        <th>
-          <a href="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>
-              <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager" target="_blank" rel="noopener noreferrer">
-                Complicated to set up
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>
-              <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager" target="_blank" rel="noopener noreferrer">
-                Complicated to set up
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>
-              <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager" target="_blank" rel="noopener noreferrer">
-                Complicated to set up
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check link="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435" %}
+        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
+        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
+        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
         {% include check %}
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>
-              <a href="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_starting-the-profile-manager" target="_blank" rel="noopener noreferrer">
-                Complicated to set up
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
         {% include check %}
       </tr>
       <tr>
@@ -728,17 +686,8 @@ titledesc: Find a browser that works for you
         </th>
         {% include check %}
         {% include check %}
-        <th>
-          <a href="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>Not by default</span>
-          </div>
-        </th>
+        {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
+        {% include dash tooltip="Not by default" %}
         {% include check %}
         {% include check %}
         {% include check %}
@@ -748,15 +697,11 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>
           <div>
-            HTTPS by Default
-            <span>HTTPS by default is a feature that automatically upgrades connections to HTTPS, then falls back to HTTP if HTTPS is not available.</span>
+            Always Upgrade HTTPS
+            <span>This feature automatically upgrades connections to HTTPS, then falls back to HTTP if HTTPS is not available.</span>
           </div>
         </td>
-        <th>
-          <a href="https://brave.com/privacy-updates/22-https-by-default" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
         <th>
           <a href="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -775,15 +720,7 @@ titledesc: Find a browser that works for you
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
-        <th>
-          <div><img src="../images/dash.webp" alt="dash">
-            <span>
-              <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
-                Not by default
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include dash tooltip="Not by default" link="https://www.phoronix.com/news/Firefox-129-Released" %}
         <th>
           <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
