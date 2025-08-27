@@ -103,55 +103,25 @@ titledesc: Find a browser that works for you
         </td>
         {% include check link="https://github.com/brave/brave-core" %}
         {% include cross %}
-        <th>
-          <a href="https://github.com/duckduckgo/apple-browsers" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://github.com/duckduckgo" %}
         {% include cross %}
-        <th>
-          <a href="https://hg-edge.mozilla.org/mozilla-central" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://codeberg.org/librewolf/source" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://gitlab.torproject.org/tpo/applications/mullvad-browser" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://hg-edge.mozilla.org/mozilla-central" %}
+        {% include check link="https://codeberg.org/librewolf/source" %}
+        {% include check link="https://gitlab.torproject.org/tpo/applications/mullvad-browser" %}
         {% include cross %}
-        <th>
-          <a href="https://gitlab.torproject.org/tpo/applications/tor-browser" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://github.com/ungoogled-software/ungoogled-chromium" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://gitlab.torproject.org/tpo/applications/tor-browser" %}
+        {% include check link="https://github.com/ungoogled-software/ungoogled-chromium" %}
       </tr>
       <tr class="checker_row">
-        <td>Default Global Privacy Control</td>
-        <th>
-          <a href="https://brave.com/web-standards-at-brave/4-global-privacy-control" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        <td>
+          Default Global Privacy Control
+        </td>
+        {% include check link="https://brave.com/web-standards-at-brave/4-global-privacy-control" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://codeberg.org/librewolf/issues/issues/1840" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://codeberg.org/librewolf/issues/issues/1840" %}
         {% include check %}
         {% include cross %}
         {% include check %}
@@ -215,7 +185,9 @@ titledesc: Find a browser that works for you
         </th>
       </tr>
       <tr class="checker_row">
-        <td>On-device website translation</td>
+        <td>
+          On-device website translation
+        </td>
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -236,21 +208,15 @@ titledesc: Find a browser that works for you
         {% include cross %}
       </tr>
       <tr class="checker_row">
-        <td>Private website translation</td>
+        <td>
+          Private website translation
+        </td>
         {% include check %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/features/translate" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/features/translate" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
+        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
         {% include cross %}
         {% include check %}
         {% include cross %}
@@ -336,18 +302,12 @@ titledesc: Find a browser that works for you
         </th>
       </tr>
       <tr class="checker_row">
-        <td>Redirect AMP Sites</td>
-        <th>
-          <a href="https://support.brave.com/hc/en-us/articles/8611298579981-What-is-Brave-s-De-AMP-feature" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        <td>
+          Redirect AMP Sites
+        </td>
+        {% include check link="https://support.brave.com/hc/en-us/articles/8611298579981-What-is-Brave-s-De-AMP-feature" %}
         {% include cross %}
-        <th>
-          <a href="https://wptavern.com/duckduckgo-and-brave-move-to-bypass-google-amp-pages-by-default" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://wptavern.com/duckduckgo-and-brave-move-to-bypass-google-amp-pages-by-default" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -946,13 +906,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check %}
         {% include check %}
-        <th>
-          <div><img src="../images/dash.webp" alt="dash">
-            <span class="edge">
-              Only Google, Yahoo, Bing, Duckduckgo and Ecosia
-            </span>
-          </div>
-        </th>
+        {% include dash tooltip="Only Google, Yahoo, Bing, Duckduckgo and Ecosia" %}
         {% include check %}
         {% include check %}
       </tr>
@@ -961,11 +915,7 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Cookie Banner Blocking</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/21-blocking-cookie-notices" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
         {% include cross %}
         {% include check %}
         {% include cross %}
@@ -981,56 +931,22 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://www.neowin.net/guides/how-to-disable-video-autoplay-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.neowin.net/guides/how-to-disable-video-autoplay-in-microsoft-edge" %}
         {% include check %}
         {% include check %}
         {% include check %}
-        <th>
-          <a href="https://sigmaos.com/tips/browsers/how-to-disable-autoplay-on-safari" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://sigmaos.com/tips/browsers/how-to-disable-autoplay-on-safari" %}
         {% include check %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
         <td>Vertical Tabs</td>
-        <th>
-          <a href="https://brave.com/blog/vertical-tabs" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/blog/vertical-tabs" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>
-              <a href="https://blog.nightly.mozilla.org/2024/08/07/firefox-sidebar-and-vertical-tabs-try-them-out-in-nightly-firefox-labs-131" target="_blank" rel="noopener noreferrer">
-                Available, but still in development
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>
-              <a href="https://blog.nightly.mozilla.org/2024/08/07/firefox-sidebar-and-vertical-tabs-try-them-out-in-nightly-firefox-labs-131" target="_blank" rel="noopener noreferrer">
-                Available, but still in development
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check link="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" %}
+        {% include check link="https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs" %}
+        {% include check link="https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1043,7 +959,7 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
         {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
-        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+        {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
         {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
         {% include check link="https://discussions.apple.com/thread/253721389?answerId=256978468022#256978468022" %}
         {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
@@ -1064,23 +980,11 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Ai Chatbot</td>
-        <th>
-          <a href="https://brave.com/leo" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/leo" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://learn.microsoft.com/en-us/copilot/edge" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.zdnet.com/article/firefox-now-lets-you-access-your-favorite-ai-chatbot-without-switching-tabs-heres-how" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://learn.microsoft.com/en-us/copilot/edge" %}
+        {% include check link="https://www.zdnet.com/article/firefox-now-lets-you-access-your-favorite-ai-chatbot-without-switching-tabs-heres-how" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1090,7 +994,7 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Reader View</td>
         {% include check %}
-        <th><img src="../images/dash.webp" alt="dash"></th>
+        {% include dash %}
         {% include cross %}
         {% include check %}
         {% include check %}
@@ -1098,7 +1002,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check %}
         {% include check %}
-        <th><img src="../images/dash.webp" alt="dash"></th>
+        {% include dash %}
       </tr>
       <tr class="checker_row">
         <td>Split View</td>
@@ -1142,7 +1046,7 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Built-In Screenshot</td>
         {% include check %}
-        <th><img src="../images/dash.webp" alt="dash"></th>
+        {% include dash %}
         {% include cross %}
         {% include check %}
         {% include check %}
@@ -1150,7 +1054,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include cross %}
         {% include check %}
-        <th><img src="../images/dash.webp" alt="dash"></th>
+        {% include dash %}
       </tr>
       <tr class="checker_row">
         <td>Browser Sync</td>
@@ -1159,12 +1063,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check %}
         {% include check %}
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span>Uses Firefox Sync</span>
-          </div>
-        </th>
+        {% include check tooltip="Uses Firefox Sync" %}
         {% include cross %}
         {% include check %}
         {% include cross %}

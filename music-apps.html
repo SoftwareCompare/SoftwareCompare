@@ -51,20 +51,17 @@ titledesc: Find a music service that works for you
         <th>{% include link text='iOS' link='https://apps.apple.com/us/app/brave-browser-search-engine/id1052879175' %}</th>
         <th>Web</th>
         <th>{% include link text='iOS' link='https://feelthemusi.com' %}</th>
-        <th class="engine">{% include link text='Desktop' link='https://www.spotify.com/de-en/download' %}<br />
+        <th>{% include link text='Desktop' link='https://www.spotify.com/de-en/download' %}<br />
           {% include link text='Web' link='https://open.spotify.com' %}<br />
           {% include link text='Mobile' link='https://www.spotify.com/de-en/download' %}<br />
           {% include link text='TV' link='https://www.spotify.com/us/download' %} &<br />
           {% include link text='Console' link='https://www.spotify.com/us/download' %}
         </th>
 
-        <th class="engine">{% include link text='Web' link='https://music.youtube.com' %}<br />
+        <th>{% include link text='Web' link='https://music.youtube.com' %}<br />
           {% include link text='Watches' link='https://apps.apple.com/us/app/youtube-music/id1017492454?platform=appleWatch' %}<br />
           {% include link text='Mobile' link='https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music&hl=en_US' %}
         </th>
-      </tr>
-      <tr>
-
       </tr>
       <tr>
         <th class="left-col">Privacy</th>
@@ -372,9 +369,9 @@ titledesc: Find a music service that works for you
             Open Source
           </a>
         </td>
-        <th><img src="../images/cross.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="check"></th>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
         {% include cross %}
         {% include cross %}
       </tr>
@@ -395,10 +392,10 @@ titledesc: Find a music service that works for you
             DRM</a> 
           Free
         </td>
-        <th><img src="../images/cross.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="check"></th>
-        <th><img src="../images/cross.webp" alt="check"></th>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
         {% include check %}
       </tr>
       <tr>
@@ -426,7 +423,7 @@ titledesc: Find a music service that works for you
         <td>Lossless Audio</td>
         {% include check %}
         {% include check %}
-        <th><img src="../images/cross.webp" alt="check"></th>
+        {% include cross %}
         {% include check %}
         {% include cross %}
       </tr>

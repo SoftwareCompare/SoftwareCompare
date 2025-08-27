@@ -11,7 +11,6 @@
     "
     {% endif %}
     href="{{ include.link }}" target="_blank" rel="noopener noreferrer">
-    {{ include.text }}
-</a>
+    {{ include.text }}</a>
 
 <!-- style="{% if include.underline %} {% endif %} {% if include.color %}color:{{ include.color }};"{% endif %}  -->

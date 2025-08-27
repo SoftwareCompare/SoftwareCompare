@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" href="http://localhost:4000/images/link-previews/music-app-comparison.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find an email service that works for you">
+    <meta name="twitter:description" content="Comparisons of email services to find one that works for you">
+    <meta name="twitter:image" content="https://softwarecompare.org/images/link-previews/./images/link-previews/music-app-comparison.webp">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./images/swc-logos/software-compare-128px.ico">
+    <meta name="description" content="Comparisons of email services to find one that works for you">
+    <meta property="og:title" content="Find an email service that works for you">
+    <a style="display: none" rel="me" href="https://fosstodon.org/@softwarecompare">Mastodon</a>
+  
+    <title>Email Service Comparisons - Software Compare</title>
+    <script>
+      // Get and set theme immediately
+      const theme = localStorage.getItem('theme') || 
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+      }
+    </script>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+    <body>
+        
+<header>
+    <div class="inner-header">
+        <div>
+            <a href="./">
+                <img src="./images/swc-logos/software-compare-logo-transparent.png" alt="SoftwareCompare Logo">
+            </a>
+            <div>
+                <a class="logo-title" href="./">
+                    <h2>Software Compare</h2>
+                </a>
+            </div>
+        </div>
+        <button class="nav-toggle">≡</button>
+        <ul class="nav">
+            <ul>
+                <li><a href="./about"
+                    
+                    >About</a>
+                </li>
+                <li><a href="./donate"
+                    
+                    >Donate</a>
+                </li>
+                <li><a href="./contact"
+                    
+                    >Contact</a>
+                </li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare/commits/main" target="_blank" rel="noopener noreferrer">
+                    Changelog</a>
+                </li>
+                <li><button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button></li>
+            </ul>
+        </ul>
+    </div>
+</header>
+        <div class="page-title">
+            <div>
+                <h1>Email Service Comparisons</h1>
+            </div>
+            <div class="Chart-list">
+    <button>Other Comparisons</button>
+    <div>
+        <a href="./browsers" 
+            
+            >Web Browsers
+        </a>
+        <a href="./email-services"
+            
+            class="Chart-list-selected"
+            
+            >Email Services
+        </a>
+        <a href="./messaging-apps"
+            
+            >Messaging Apps
+        </a>
+        <a href="./music-apps"
+            
+            >Music Apps
+        </a>
+        <a href="./operating-systems"
+            
+            >Operating Systems
+        </a>
+        <a href="./photo-apps"
+            
+            >Photo Apps
+        </a>
+        <a href="./search-engines"
+            
+            >Search Engines
+        </a>
+        <a href="./vpns"
+            
+            >VPNs
+        </a>
+        <a href="./youtube-frontends"
+            
+            >Youtube Frontends
+        </a>
+    </div>
+</div>
+        </div>
+        <main>
+            <table>
+    <thead>
+        <tr>
+        <td id="paid-services"><a href="#paid-services">
+            <h2>Free Services</h2>
+            </a>
+        </td>
+        <th>
+            
+<a 
+    
+    href="https://mail.google.com/mail" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/gmail-logo.png" alt="Gmail Logo"><br />
+                Gmail</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://www.icloud.com/mail" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/icloud-mail-logo.webp" alt="iCloud mail Logo"><br />
+                iCloud</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://outlook.live.com/mail/0/" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/outlook-logo.webp" alt="Outlook Logo"><br />
+                Outlook</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://proton.me/mail" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/protonmail-logo.png" alt="Proton Mail Logo"><br />
+                Proton</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://tuta.com" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/tuta-mail-logo.webp" alt="Tuta Mail Logo"><br />
+                Tuta</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://mail.yahoo.com" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/yahoo-mail-logo.png" alt="Yahoo Mail Logo"><br />
+                Yahoo</a>
+
+<!-- style="   -->
+        </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Platform</td>
+            <th>
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    iOS,
+                </a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Android</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://apps.apple.com/us/app/messages/id1146560473" target="_blank" rel="noopener noreferrer">
+    Apple<br />Devices</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    MacOS</a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    Windows</a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    Mobile</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://proton.me/mail/download" target="_blank" rel="noopener noreferrer">
+    Desktop,<br />Mobile,<br />& Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://tuta.com/#download" target="_blank" rel="noopener noreferrer">
+    Desktop,<br />Mobile,<br />& Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    iOS,</a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Android</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+        </tr>
+        <tr>
+            <th class="left-col">Privacy</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                
+<a 
+    
+    href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
+    Open Source</a>
+
+<!-- style="   -->
+                App
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                
+<a 
+    
+    href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
+    Open Source</a>
+
+<!-- style="   -->
+                Server
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Default End-to-End Encryption
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Encryption cannot be disabled
+            </td>
+        </tr>
+        <!-- <tr class="checker_row">
+            <td>
+                Default Encrypted Backups
+            </td>
+
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Encrypted Backup Support
+            </td>
+
+        </tr> -->
+        <tr class="checker_row">
+            <td>
+                Perfect Forward Secrecy
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Metadata Protection
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                No Email Required
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                No Phone Number Required
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Trust</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Independent Security Audit
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Transparency Report
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Independence</th>
+        </tr>
+        <tr class="checker_row grayrow">
+            <td>
+                Decentralized Infrastructure
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Freedom</th>
+        </tr>
+        <tr class="checker_row grayrow">
+            <td>
+                Send Over Bluetooth
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Convenience</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Message Reply
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Unsend Messages
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Edit Messages
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Schedule Send
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Ethics</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Donates to Charity
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Carbon Neutral
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Carbon Negative
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table>
+    <thead>
+        <tr>
+        <td id="paid-services"><a href="#paid-services">
+            <h2>Paid Services</h2>
+            </a>
+        </td>
+        <th>
+            
+<a 
+    
+    href="https://mail.google.com/mail" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/gmail-logo.png" alt="Gmail Logo"><br />
+                Gmail</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://www.fastmail.com/" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/fastmail-logo.png" alt="Fastmail Logo"><br />
+                Fastmail</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://www.icloud.com/mail" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/icloud-mail-logo.webp" alt="iCloud mail Logo"><br />
+                iCloud</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://mailbox.org" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/mailboxorg-logo.svg" alt="mailbox.org Logo"><br />
+                mailbox.org</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://outlook.live.com/mail/0/" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/outlook-logo.webp" alt="Outlook Logo"><br />
+                Outlook</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://proton.me/mail" target="_blank" rel="noopener noreferrer">
+    <img style="border-radius: 0;" src="../images/logos/protonmail-logo.png" alt="Proton Mail Logo"><br />
+                Proton</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://www.startmail.com" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/startmail-logo.jpeg" alt="StartMail Logo"><br />
+                StartMail</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://tuta.com" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/tuta-mail-logo.webp" alt="Tuta Mail Logo"><br />
+                Tuta</a>
+
+<!-- style="   -->
+        </th>
+        <th>
+            
+<a 
+    
+    href="https://mail.yahoo.com" target="_blank" rel="noopener noreferrer">
+    <img src="../images/logos/yahoo-mail-logo.png" alt="Yahoo Mail Logo"><br />
+                Yahoo</a>
+
+<!-- style="   -->
+        </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Platform</td>
+            <th>
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    iOS,
+                </a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Android</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    iOS</a>
+
+<!-- style="   -->,<br />
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Android</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://apps.apple.com/us/app/messages/id1146560473" target="_blank" rel="noopener noreferrer">
+    Apple<br />Devices</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://getsession.org/download" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    MacOS</a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    Windows</a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    Mobile</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://signal.org/download" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://proton.me/mail/download" target="_blank" rel="noopener noreferrer">
+    Desktop,<br />Mobile,<br />& Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://getsession.org/download" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://tuta.com/#download" target="_blank" rel="noopener noreferrer">
+    Desktop,<br />Mobile,<br />& Web</a>
+
+<!-- style="   -->
+            </th>
+            <th>
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    iOS,</a>
+
+<!-- style="   --><br />
+                
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Android</a>
+
+<!-- style="   --><br />
+                & 
+<a 
+    
+    href="https://briarproject.org/download-briar" target="_blank" rel="noopener noreferrer">
+    Web</a>
+
+<!-- style="   -->
+            </th>
+        </tr>
+        <tr>
+            <th class="left-col">Privacy</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                
+<a 
+    
+    href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
+    Open Source</a>
+
+<!-- style="   -->
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Default End-to-End Encryption
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Encryption cannot be disabled
+            </td>
+        </tr>
+        <!-- <tr class="checker_row">
+            <td>
+                Default Encrypted Backups
+            </td>
+
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Encrypted Backup Support
+            </td>
+
+        </tr> -->
+        <tr class="checker_row">
+            <td>
+                Perfect Forward Secrecy
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Metadata Protection
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                No Email Required
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                No Phone Number Required
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Trust</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Independent Security Audit
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Transparency Report
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Independence</th>
+        </tr>
+        <tr class="checker_row grayrow">
+            <td>
+                Decentralized Infrastructure
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Freedom</th>
+        </tr>
+        <tr class="checker_row grayrow">
+            <td>
+                Send Over Bluetooth
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Convenience</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Message Reply
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Unsend Messages
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Edit Messages
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Schedule Send
+            </td>
+        </tr>
+        <tr>
+            <th class="left-col">Ethics</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Donates to Charity
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Carbon Neutral
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Carbon Negative
+            </td>
+        </tr>
+    </tbody>
+</table>
+        </main>
+        
+        <footer>
+    <div class="inner-footer">
+        <div class="footer-left">
+            <p>Software Compare™ <a style="margin-left: 0.5rem;" href="./privacy-policy">Privacy&nbsp;Policy</a></p>
+            <!-- <p>privacy</p> -->
+        </div>
+        <ul class="footer-nav">
+            <ul>
+                <li><a href="mailto:contact@softwarecompare.org"><img src="/images/social-media-icons/email-icon.png" alt="Email Icon"></a></li>
+                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/github-logo.png" alt="Github Logo"></a></li>
+                <li><a href="https://matrix.to/#/#softwarecompare:matrix.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/matrix-logo.svg" alt="Matrix Logo"></a></li>
+                <li><a href="https://fosstodon.org/@softwarecompare" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/mastodon-logo.png" alt="Mastodon Logo"></a></li>
+                <li><a href="https://bsky.app/profile/softwarecompare.org" target="_blank" rel="noopener noreferrer"><img src="/images/social-media-icons/bluesky-logo.png" alt="Bluesky Logo"></a></li>
+            </ul>
+        </ul>
+    </div>
+</footer>
+        <script src="script.js"></script>
+    </body>
+</html>
