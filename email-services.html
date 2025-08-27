@@ -62,31 +62,30 @@ titledesc: Find an email service that works for you
         <tr>
             <td>Platform</td>
             <th>
-                {% include link text="iOS,
-                " link="https://briarproject.org/download-briar" %}<br />
-                {% include link text="Android" link="https://briarproject.org/download-briar" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="iOS" link="https://apps.apple.com/us/app/gmail-email-by-google/id422689480" %}<br />
+                {% include link text="Android" link="https://play.google.com/store/apps/details?id=com.google.android.gm&hl=en_US" %}<br />
+                & {% include link text="Web" link="https://workspace.google.com/intl/en-US/gmail/" %}
             </th>
             <th>
-                {% include link text="Apple<br />Devices" link="https://apps.apple.com/us/app/messages/id1146560473" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="Apple<br />Devices" link="https://apps.apple.com/us/app/mail/id1108187098" %}<br />
+                & {% include link text="Web" link="https://www.icloud.com/mail" %}
             </th>
             <th>
-                {% include link text="MacOS" link="https://signal.org/download" %}<br />
-                {% include link text="Windows" link="https://signal.org/download" %}<br />
-                {% include link text="Mobile" link="https://signal.org/download" %}<br />
-                & {% include link text="Web" link="https://signal.org/download" %}
+                {% include link text="MacOS" link="https://apps.apple.com/us/app/microsoft-outlook/id985367838?mt=12" %}<br />
+                {% include link text="Windows" link="https://apps.microsoft.com/detail/9nrx63209r7b?hl=en-US&gl=US" %}<br />
+                {% include link text="Mobile" link="https://apps.apple.com/us/app/microsoft-outlook/id951937596" %}<br />
+                & {% include link text="Web" link="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" %}
             </th>
             <th>
-                {% include link text="Desktop,<br />Mobile,<br />& Web" link="https://proton.me/mail/download" %}
+                {% include link text="Desktop<br />Mobile<br />& Web" link="https://proton.me/mail/download" %}
             </th>
             <th>
-                {% include link text="Desktop,<br />Mobile,<br />& Web" link="https://tuta.com/#download" %}
+                {% include link text="Desktop<br />Mobile<br />& Web" link="https://tuta.com/#download" %}
             </th>
             <th>
-                {% include link text="iOS," link="https://briarproject.org/download-briar" %}<br />
-                {% include link text="Android" link="https://briarproject.org/download-briar" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="iOS" link="https://apps.apple.com/us/app/yahoo-mail/id577586159?mt=8" %}<br />
+                {% include link text="Android" link="https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.mail" %}<br />
+                & {% include link text="Web" link="https://mail.yahoo.com" %}
             </th>
         </tr>
         <tr>
@@ -97,43 +96,53 @@ titledesc: Find an email service that works for you
                 {% include link text="Open Source" link="https://www.ibm.com/topics/open-source" %}
                 App
             </td>
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include check link="https://github.com/ProtonMail" %}
+            {% include check link="https://github.com/tutao/tutanota" %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
                 {% include link text="Open Source" link="https://www.ibm.com/topics/open-source" %}
                 Server
             </td>
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
-                Default End-to-End Encryption
+                End-to-End Encryption Support
             </td>
         </tr>
         <tr class="checker_row">
             <td>
-                Encryption cannot be disabled
+                PGP Support
             </td>
-        </tr>
-        <!-- <tr class="checker_row">
-            <td>
-                Default Encrypted Backups
-            </td>
-
         </tr>
         <tr class="checker_row">
             <td>
-                Encrypted Backup Support
+                Password Protected Message Support
             </td>
-
-        </tr> -->
+        </tr>
         <tr class="checker_row">
             <td>
-                Perfect Forward Secrecy
+                Subject Line Encryption
             </td>
         </tr>
         <tr class="checker_row">
             <td>
                 Metadata Protection
+            </td>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Ad & Tracker Blocker
             </td>
         </tr>
         <tr class="checker_row">
@@ -147,40 +156,55 @@ titledesc: Find an email service that works for you
             </td>
         </tr>
         <tr>
+            <th class="left-col">Security</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Key Verification
+            </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check link="https://proton.me/support/key-transparency" %}
+            {% include check link="https://tuta.com/blog/key-verification" %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Forward Secrecy
+            </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include cross %}
+            {% include cross tooltip="Planned to be supported sometime in the future" link="https://tuta.com/security" %}
+        </tr>
+        <tr>
             <th class="left-col">Trust</th>
         </tr>
         <tr class="checker_row">
             <td>
                 Independent Security Audit
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check link="https://proton.me/blog/openpgpjs-protonmail-security-audit" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Transparency Report
             </td>
-        </tr>
-        <tr>
-            <th class="left-col">Independence</th>
-        </tr>
-        <tr class="checker_row grayrow">
-            <td>
-                Decentralized Infrastructure
-            </td>
-        </tr>
-        <tr>
-            <th class="left-col">Freedom</th>
-        </tr>
-        <tr class="checker_row grayrow">
-            <td>
-                Send Over Bluetooth
-            </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check link="https://proton.me/legal/transparency" %}
         </tr>
         <tr>
             <th class="left-col">Convenience</th>
         </tr>
         <tr class="checker_row">
             <td>
-                Message Reply
+                Auto-Clear Trash
             </td>
         </tr>
         <tr class="checker_row">
@@ -296,42 +320,41 @@ titledesc: Find an email service that works for you
         <tr>
             <td>Platform</td>
             <th>
-                {% include link text="iOS,
-                " link="https://briarproject.org/download-briar" %}<br />
-                {% include link text="Android" link="https://briarproject.org/download-briar" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="iOS" link="https://apps.apple.com/us/app/gmail-email-by-google/id422689480" %}<br />
+                {% include link text="Android" link="https://play.google.com/store/apps/details?id=com.google.android.gm&hl=en_US" %}<br />
+                & {% include link text="Web" link="https://workspace.google.com/intl/en-US/gmail/" %}
             </th>
             <th>
-                {% include link text="iOS" link="https://briarproject.org/download-briar" %},<br />
-                {% include link text="Android" link="https://briarproject.org/download-briar" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="iOS" link="https://apps.apple.com/us/app/fastmail-email-calendar/id931370077" %}<br />
+                {% include link text="Android" link="https://play.google.com/store/apps/details?id=com.fastmail.app" %}<br />
+                & {% include link text="Web" link="https://www.fastmail.com" %}
             </th>
             <th>
-                {% include link text="Apple<br />Devices" link="https://apps.apple.com/us/app/messages/id1146560473" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="Apple<br />Devices" link="https://apps.apple.com/us/app/mail/id1108187098" %}<br />
+                & {% include link text="Web" link="https://www.icloud.com/mail" %}
             </th>
             <th>
-                {% include link text="Web" link="https://getsession.org/download" %}
+                {% include link text="Web" link="https://mailbox.org" %}
             </th>
             <th>
-                {% include link text="MacOS" link="https://signal.org/download" %}<br />
-                {% include link text="Windows" link="https://signal.org/download" %}<br />
-                {% include link text="Mobile" link="https://signal.org/download" %}<br />
-                & {% include link text="Web" link="https://signal.org/download" %}
+                {% include link text="MacOS" link="https://apps.apple.com/us/app/microsoft-outlook/id985367838?mt=12" %}<br />
+                {% include link text="Windows" link="https://apps.microsoft.com/detail/9nrx63209r7b?hl=en-US&gl=US" %}<br />
+                {% include link text="Mobile" link="https://apps.apple.com/us/app/microsoft-outlook/id951937596" %}<br />
+                & {% include link text="Web" link="https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" %}
             </th>
             <th>
-                {% include link text="Desktop,<br />Mobile,<br />& Web" link="https://proton.me/mail/download" %}
+                {% include link text="Desktop<br />Mobile<br />& Web" link="https://proton.me/mail/download" %}
             </th>
             <th>
-                {% include link text="Web" link="https://getsession.org/download" %}
+                {% include link text="Web" link="https://www.startmail.com" %}
             </th>
             <th>
-                {% include link text="Desktop,<br />Mobile,<br />& Web" link="https://tuta.com/#download" %}
+                {% include link text="Desktop<br />Mobile<br />& Web" link="https://tuta.com/#download" %}
             </th>
             <th>
-                {% include link text="iOS," link="https://briarproject.org/download-briar" %}<br />
-                {% include link text="Android" link="https://briarproject.org/download-briar" %}<br />
-                & {% include link text="Web" link="https://briarproject.org/download-briar" %}
+                {% include link text="iOS" link="https://apps.apple.com/us/app/yahoo-mail/id577586159?mt=8" %}<br />
+                {% include link text="Android" link="https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.mail" %}<br />
+                & {% include link text="Web" link="https://mail.yahoo.com" %}
             </th>
         </tr>
         <tr>
