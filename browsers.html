@@ -237,7 +237,7 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include dash tooltip="No LLM built into browser" %}
         {% include dash tooltip="No LLM built into browser" %}
-        {% include dash tooltip="No LLM built into browser" %}
+        {% include dash tooltip="No LLM built into browser" edge="" %}
         {% include dash tooltip="No LLM built into browser" %}
         {% include dash tooltip="No LLM built into browser" %}
       </tr>
@@ -604,8 +604,8 @@ titledesc: Find a browser that works for you
         <td>
           <div>
             Containers
-            <span>{% include link text="Containers" link="" %}
-
+            <span>
+            Containers, also known as {% include link text="Multi-Account Containers" link="https://support.mozilla.org/en-US/kb/containers" %} is a feature that allows the user to groups tabs into different containers, each categorized by a certain color and symbol. Each containers holds its own set of cookies and data, and does not allow that information to leak outside of the container.
             </span>
           </div>
         </td>
@@ -613,23 +613,11 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>only with<br />extension</span>
-          </div>
-        </th>
+        {% include dash tooltip="only with extension" %}
         {% include check %}
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>only with<br />extension</span>
-          </div>
-        </th>
+        {% include dash tooltip="only with extension" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>only with<br />extension</span>
-          </div>
-        </th>
+        {% include dash tooltip="only with extension" %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
@@ -651,12 +639,10 @@ titledesc: Find a browser that works for you
         <th class="left-col" ><br />Networking</th>
       </tr>
       <tr class="checker_row">
-        <td>HTTPS Upgrading</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/22-https-by-default" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        <td>
+          HTTPS Upgrading
+        </td>
+        {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
         {% include check %}
         {% include check %}
         {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
@@ -714,11 +700,7 @@ titledesc: Find a browser that works for you
             <img src="../images/check.webp" alt="check">
           </a>
         </th>
-        <th>
-          <a href="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
       </tr>
       <tr class="checker_row">
         <td>Insecure Site Warning</td>

@@ -3,6 +3,7 @@
     - link
     - tooltip
     - alt
+    - edge
 {% endcomment %}
 {% if include.tooltip and include.link %}
 <th>
