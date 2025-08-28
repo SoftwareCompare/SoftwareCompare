@@ -608,6 +608,7 @@ table {
       position: relative;
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0);
+      isolation: isolate;
     }
     .engine a {
       color: var(--text-color);
@@ -689,8 +690,10 @@ table {
     }
     .checker_row:hover {
       z-index: 500;
+      /* position: relative !important; Override sticky on hover */
+      z-index: 500;
     }
-    .checker_row:hover span {
+    .checker_row:hover td {
       z-index: 500;
     }
     span a {
@@ -714,9 +717,6 @@ table {
     .checker_row div:focus-within td span {
       /* when tooltip is hovered */
       visibility: visible;
-    }
-    td:has(div) {
-      z-index: 8 !important;
     }
     .checker_row img {
       height: clamp(0.75rem, 3vw, 1.0625rem);
