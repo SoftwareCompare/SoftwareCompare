@@ -114,6 +114,7 @@ header {
   justify-content: center;
   background-image: var(--header-gradient);
   border-bottom: 0.0625rem solid var(--header-gradient);
+  z-index: 1000;
 
   .inner-header {
     width: 100%;
@@ -425,6 +426,7 @@ header {
   white-space: nowrap;
   -ms-overflow-style: none;
   margin-top: 0.9rem;
+  z-index: 999;
 }
 
 .Chart-list button {
@@ -446,7 +448,6 @@ header {
   position: absolute;
   top: 3rem;
   right: 0;
-  z-index: 100;
   background-color: #077bd3;
   padding-left: 0.5rem;
   padding-right: 1rem;
@@ -557,7 +558,7 @@ table {
     /*top bar on table */
     top: 0;
     position: sticky;
-    z-index: 13;
+    z-index: 998;
     background-color: var(--background-color);
 
     td h2::before {
@@ -683,6 +684,9 @@ table {
       overflow-wrap: normal;
       box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.283);
       font-size: clamp(0.5625rem, 2vw, 0.75rem);
+    }
+    .checker_row td span {
+      text-align: left;
     }
     span a {
       text-decoration: underline;

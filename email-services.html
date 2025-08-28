@@ -119,21 +119,44 @@ titledesc: Find an email service that works for you
             <td>
                 End-to-End Encryption Support
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check %}
+            {% include check %}
         </tr>
         <tr class="checker_row">
             <td>
-                PGP Support
+                Default PGP
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check %}
+            <th>-</th>
+            <th>-</th>
         </tr>
         <tr class="checker_row">
             <td>
                 Password Protected Message Support
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check %}
+            {% include check %}
+            <th>-</th>
         </tr>
         <tr class="checker_row">
             <td>
                 Subject Line Encryption
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include check %}
+            <th>-</th>
         </tr>
         <tr class="checker_row">
             <td>
@@ -149,11 +172,17 @@ titledesc: Find an email service that works for you
             <td>
                 No Email Required
             </td>
+            {% include check %}
+            {% include cross %}
+            {% include check %}
         </tr>
         <tr class="checker_row">
             <td>
                 No Phone Number Required
             </td>
+            {% include cross %}
+            {% include cross %}
+            {% include check %}
         </tr>
         <tr>
             <th class="left-col">Security</th>
@@ -189,6 +218,7 @@ titledesc: Find an email service that works for you
             <th>-</th>
             <th>-</th>
             {% include check link="https://proton.me/blog/openpgpjs-protonmail-security-audit" %}
+            {% include cross tooltip="Only internal security reviews" link="https://github.com/tutao/tutanota/issues/2787" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -198,6 +228,7 @@ titledesc: Find an email service that works for you
             <th>-</th>
             <th>-</th>
             {% include check link="https://proton.me/legal/transparency" %}
+            {% include check link="https://tuta.com/blog/transparency-report" %}
         </tr>
         <tr>
             <th class="left-col">Convenience</th>
