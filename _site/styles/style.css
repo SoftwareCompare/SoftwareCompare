@@ -606,6 +606,8 @@ table {
       font-size: clamp(0.5rem, 2.2vw, 0.75rem);
       padding-left: 0.3125rem;
       position: relative;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
     }
     .engine a {
       color: var(--text-color);
@@ -678,7 +680,7 @@ table {
       position: absolute;
       visibility: hidden;
       text-align: center;
-      z-index: 100;
+      z-index: 900;
       left: 0;
       white-space: normal;
       overflow-wrap: normal;
@@ -687,7 +689,6 @@ table {
     }
     .checker_row:hover {
       z-index: 500;
-      position: relative;
     }
     .checker_row:hover span {
       z-index: 500;
