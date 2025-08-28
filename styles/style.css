@@ -605,7 +605,7 @@ table {
       height: 1.5625rem;
       font-size: clamp(0.5rem, 2.2vw, 0.75rem);
       padding-left: 0.3125rem;
-      z-index: 5;
+      position: relative;
     }
     .engine a {
       color: var(--text-color);
@@ -678,15 +678,19 @@ table {
       position: absolute;
       visibility: hidden;
       text-align: center;
-      z-index: 10;
+      z-index: 100;
       left: 0;
       white-space: normal;
       overflow-wrap: normal;
       box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.283);
       font-size: clamp(0.5625rem, 2vw, 0.75rem);
     }
-    .checker_row td span {
-      text-align: left;
+    .checker_row:hover {
+      z-index: 500;
+      position: relative;
+    }
+    .checker_row:hover span {
+      z-index: 500;
     }
     span a {
       text-decoration: underline;
@@ -694,6 +698,7 @@ table {
     .checker_row td span {
       min-width: 15.625rem;
       max-width: 25rem;
+      text-align: left;
     }
     .checker_row div:hover span,
     .checker_row div:active span,
@@ -723,10 +728,10 @@ table {
       text-decoration: underline;
     }
     .checker_row td {
-      z-index: 2;
       flex: 1;
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
+      position: relative;
     }
   }
 }
