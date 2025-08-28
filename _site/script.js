@@ -54,30 +54,30 @@ for (let i = 0; i < checkboxes.length; i++) {
     });
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.body.classList.add('js-enabled');
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('js-enabled');
     
-//     const chartListButton = document.querySelector('.Chart-list button');
-//     const chartListDiv = document.querySelector('.Chart-list div');
+    const chartListButton = document.querySelector('.Chart-list button');
+    const chartListDiv = document.querySelector('.Chart-list div');
     
-//     // Toggle menu on button click
-//     chartListButton.addEventListener('click', function(event) {
-//       event.preventDefault();
-//       event.stopPropagation();
-//       chartListDiv.classList.toggle('active');
-//     });
+    // Toggle menu on button click
+    chartListButton.addEventListener('click', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      chartListDiv.classList.toggle('active');
+    });
     
-//     // Close menu when clicking outside
-//     document.addEventListener('click', function(event) {
-//       if (!chartListDiv.contains(event.target) && !chartListButton.contains(event.target)) {
-//         chartListDiv.classList.remove('active');
-//       }
-//     });
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!chartListDiv.contains(event.target) && !chartListButton.contains(event.target)) {
+        chartListDiv.classList.remove('active');
+      }
+    });
 
-//     document.addEventListener('scroll', () => {
-//       chartListDiv.classList.remove('active');
-//     });
-//   });
+    document.addEventListener('scroll', () => {
+      chartListDiv.classList.remove('active');
+    });
+  });
 
 //   function handleDragStart(e) {
 //     // Store the column index being dragged
