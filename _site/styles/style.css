@@ -541,7 +541,6 @@ table {
     z-index: 0;
   }
   tr th {
-    
     font-size: clamp(0.25rem, 1.8vw, 0.8125rem);
   }
   th {
@@ -605,6 +604,7 @@ table {
       height: 1.5625rem;
       font-size: clamp(0.5rem, 2.2vw, 0.75rem);
       padding-left: 0.3125rem;
+      left: 0;
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0);
       isolation: isolate;
@@ -629,7 +629,7 @@ table {
     .checker_row div {
       border-bottom: 0.1rem dotted var(--checker-border);
       transition: border-color 0.3s;
-      /* position: relative; */
+      position: relative;
       display: inline-block;
       max-width: 12.5rem;
     }
@@ -690,7 +690,7 @@ table {
     .checker_row:hover {
       z-index: 500;
     }
-    .checker_row:hover td {
+    .checker_row:hover span {
       z-index: 500;
     }
     span a {
@@ -729,6 +729,7 @@ table {
       flex: 1;
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
+      position: relative;
     }
   }
 }
