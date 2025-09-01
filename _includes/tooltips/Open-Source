@@ -1,0 +1,6 @@
+<td>
+    <div>
+        Open Source
+        <span>{% include link text="Open Source Software" link="https://www.ibm.com/topics/open-source" %} refers to computer programs that make their code freely available to the public. This allows for the code to be analyzed for any security flaws and malicious code. The code can also be "forked" and turned into a new application if anyone wishes to do so.</span>
+    </div>
+</td>

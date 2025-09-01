@@ -85,11 +85,9 @@ titledesc: Find a search engine that works for you
         <th class="left-col"><br />Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td>
-          <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
-            Open Source
-          </a>
-        </td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -111,7 +109,9 @@ titledesc: Find a search engine that works for you
         {% include check link="https://github.com/benbusby/whoogle-search" %}
       </tr>
       <tr class="checker_row">
-        <td>Optional Javascript</td>
+        {% include 
+          tooltips/Optional-JavaScript
+        %}
         <th>
           <div><img src="../images/dash.webp" alt="yellow dash">
             <span>Only main results and no images on page</span>
@@ -888,11 +888,7 @@ titledesc: Find a search engine that works for you
       </tr>
       <tr class="checker_row">
         <td>Donates to Charity</td>
-        <th>
-          <a href="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
         {% include cross %}
         <th>
           <a href="https://duckduckgo.com/donations" target="_blank" rel="noopener noreferrer">
@@ -943,18 +939,12 @@ titledesc: Find a search engine that works for you
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
                 Plans to by 2030
               </a>, but 
               <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
                 emissions have been increasing
-              </a>
-            </span>
-          </div>
-        </th>
+              </a>' %}
         {% include cross %}
         <th>
           <div><img src="../images/check.webp" alt="check">
@@ -985,16 +975,7 @@ titledesc: Find a search engine that works for you
           </div>
         </th>
         {% include cross tooltip='<a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">Plans to by 2030</a>, but <a href="https://finance.yahoo.com/news/ai-destroyed-google-promise-carbon-214145116.html" target="_blank" rel="noopener noreferrer"> emissions have been increasing</a>' %}
-        {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span class="edge">
-              <a href="https://contabo.com/en-us/sustainability" target="_blank" rel="noopener noreferrer">
-                Hosted on Contabo
-              </a>  
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Hosted on Contabo" link="https://contabo.com/en-us/sustainability" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1002,43 +983,18 @@ titledesc: Find a search engine that works for you
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
                 Plans to by 2030
               </a>, but 
               <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
                 emissions have been increasing
-              </a>
-            </span>
-          </div>
-        </th>
+              </a>' %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              Duckduckgo is <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
-              carbon negative
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span class="edge">
-                Ecosia is <a href="https://www.ecosia.org" target="_blank" rel="noopener noreferrer">
-                carbon negative
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+        {% include check tooltip="Ecosia is carbon negative" link="https://www.ecosia.org" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>planned</span>
-          </div>
-        </th>
+        {% include cross tooltip="planned" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}

@@ -260,19 +260,6 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>
-        Perfect Forward Secrecy
-      </td>
-      {% include check link="https://www.ivpn.net/knowledgebase/privacy/does-ivpn-offer-perfect-forward-secrecy-pfs" %}
-      {% include check link="https://mullvad.net/en/why-mullvad-vpn" %}
-      {% include cross %}
-      {% include check link="https://nordvpn.com/blog/perfect-forward-secrecy" %}
-      {% include cross tooltip="Not outlined in whitepaper" link="https://www.apple.com/privacy/docs/iCloud_Private_Relay_Overview_Dec2021.PDF" %}
-      {% include check link="https://protonvpn.com/features/forward-secrecy" %}
-      {% include cross %}
-      {% include check link="https://surfshark.com/features/stealth-vpn" %}
-    </tr>
-    <tr class="checker_row">
-      <td>
         Hide VPN Use on Network
       </td>
       {% include cross %}
@@ -309,7 +296,9 @@ titledesc: Find a VPN that works for you
       {% include check %}
     </tr>
     <tr class="checker_row">
-      <td>No Email Required</td>
+      {% include 
+        tooltips/No-Email-Required 
+      %}
       <th>
         <a href="https://www.ivpn.net/en/pricing" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
@@ -332,7 +321,9 @@ titledesc: Find a VPN that works for you
       {% include cross link='https://order.surfshark.com/?frequency=24&slug=vpn' %}
     </tr>
     <tr class="checker_row">
-      <td>No Phone Number Required</td>
+      {% include
+        tooltips/No-Phone-Number-Required
+      %}
       <th>
         <a href="https://www.ivpn.net/en/pricing" target="_blank" rel="noopener noreferrer">
           <img src="../images/check.webp" alt="check">
@@ -353,6 +344,71 @@ titledesc: Find a VPN that works for you
       {% include check link='https://account.proton.me/vpn/signup' %}
       {% include check link='https://account.safing.io/account/sign_up' %}
       {% include check link='https://order.surfshark.com/?frequency=24&slug=vpn' %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Security</th>
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <div>
+        Perfect Forward Secrecy
+        <span>{% include link text="Perfect Forward Secrecy" link="https://www.expressvpn.com/blog/perfect-forward-secrecy" %} is a security feature in which each session or connection uses a unique encryption key. This design ensures that if a key is compromised, only that particular session is affected, not every session.</span>
+        </div>
+      </td>
+      {% include check link="https://www.ivpn.net/knowledgebase/privacy/does-ivpn-offer-perfect-forward-secrecy-pfs" %}
+      {% include check link="https://mullvad.net/en/why-mullvad-vpn" %}
+      {% include cross %}
+      {% include check link="https://nordvpn.com/blog/perfect-forward-secrecy" %}
+      {% include cross tooltip="Not outlined in whitepaper" link="https://www.apple.com/privacy/docs/iCloud_Private_Relay_Overview_Dec2021.PDF" %}
+      {% include check link="https://protonvpn.com/features/forward-secrecy" %}
+      {% include cross %}
+      {% include check link="https://surfshark.com/features/stealth-vpn" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Secure Protocol</td>
+      <th>
+        <div>
+          <img src="../images/check.webp" alt="check">
+          <span>
+            <a href="https://www.ivpn.net/knowledgebase/general/what-vpn-protocols-do-you-offer" target="_blank"
+              rel="noopener noreferrer">
+              OpenVPN and WireGuard on all platforms, with iOS additionally offering IPSec with IKEv2 connections
+            </a>
+          </span>
+        </div>
+      </th>
+      <th>
+        <div>
+          <img src="../images/check.webp" alt="check">
+          <span>
+            <a href="https://mullvad.net/en/servers" target="_blank" rel="noopener noreferrer">
+              WireGuard and OpenVPN</a>
+            <a href="https://mullvad.net/en/blog/removing-openvpn-15th-january-2026" target="_blank"
+              rel="noopener noreferrer">
+              (Will be removed on 15th January 2026 to focus on WireGuard)
+            </a>
+          </span>
+        </div>
+      </th>
+      {% include check tooltip="WireGuard" link="https://help.mysteriumvpn.com/en/articles/8954864-what-vpn-protocols-does-the-app-support" %}
+      {% include check tooltip="OpenVPN, NordLynx(built off Wireguard) and IKEv2/IPsec" link="https://nordvpn.com/features/next-generation-encryption" %}
+      {% include check tooltip="QUIC protocol" link="https://www.wired.com/story/how-apple-icloud-private-relay-works" %}
+      {% include check tooltip="OpenVPN, WireGuard and Stealth" link="https://protonvpn.com/features/strong-protocols" %}
+      {% include check %}
+      {% include check tooltip="WireGuard, IKEv2, and OpenVPN" link="https://surfshark.com/features/surfshark-vpn-protocols" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Quantum Resistant Encryption
+      </td>
+      {% include check link="https://www.ivpn.net/knowledgebase/general/quantum-resistance-faq" %}
+      {% include check link="https://mullvad.net/en/why-mullvad-vpn" %}
+      {% include cross link="https://www.wireguard.com/known-limitations/#post-quantum-secrecy" %}
+      {% include cross link="https://nordvpn.com/features/next-generation-encryption" %}
+      {% include cross link="https://ieeexplore.ieee.org/document/10619916" %}
+      {% include cross link="https://protonmail.uservoice.com/forums/932836-proton-vpn/suggestions/47587832-use-quantum-resistant-cryptogtaphic-algorithm" %}
+      {% include cross %}
+      {% include check link="https://www.techradar.com/pro/vpn/post-quantum-encryption-standards-are-here-a-new-era-for-vpn-security-begins" %}
     </tr>
     <tr>
       <th class="left-col"><br />Tracking/Analytics</th>
@@ -387,29 +443,12 @@ titledesc: Find a VPN that works for you
     </tr>
     <th class="left-col"><br />Trust</th>
     <tr class="checker_row">
-      <td>
-        Independent Third Party Audit
-      </td>
-      <th>
-        <a href="https://www.ivpn.net/en/blog/tags/audit" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/blog/the-report-for-the-2024-security-audit-of-the-app-is-now-available"
-          target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <div>
-          <img src="../images/dash.webp" alt="dash">
-          <span>
-            <a href="https://skynet.certik.com/projects/mysterium" target="_blank" rel="noopener noreferrer">
-              Smart contract audited</a>, but not all code
-          </span>
-        </div>
-      </th>
+      {% include 
+        tooltips/Independent-Security-Audit 
+      %}
+      {% include check link="https://www.ivpn.net/en/blog/tags/audit" %}
+      {% include check link="https://mullvad.net/en/blog/the-report-for-the-2024-security-audit-of-the-app-is-now-available" %}
+      {% include dash tooltip="Smart contract audited, not all code" link="https://skynet.certik.com/projects/mysterium" %}
       {% include check link="https://nordvpn.com/blog/nordvpn-audit" %}
       {% include cross %}
       {% include check link="https://protonvpn.com/blog/open-source" %}
@@ -417,14 +456,10 @@ titledesc: Find a VPN that works for you
       {% include check link="https://surfshark.com/trust-center" %}
     </tr>
     <tr class="checker_row">
-      <td>
-        Transparency Report
-      </td>
-      <th>
-        <a href="https://www.ivpn.net/en/transparency-report" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include 
+        tooltips/Transparency-Report 
+      %}
+      {% include check link="https://www.ivpn.net/en/transparency-report" %}
       {% include cross %}
       {% include cross %}
       {% include check link="https://nordvpn.com/blog/nordvpn-introduces-transparency-reports" %}
@@ -531,72 +566,6 @@ titledesc: Find a VPN that works for you
       {% include check tooltip="GPLv3" link="https://github.com/safing/portmaster/blob/develop/LICENSE" %}
       {% include cross tooltip="Proprietary" %}
     </tr> -->
-    <tr>
-      <th class="left-col"><br />Security</th>
-    </tr>
-    <tr class="checker_row">
-      <td>Default Secure Protocol</td>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span>
-            <a href="https://www.ivpn.net/knowledgebase/general/what-vpn-protocols-do-you-offer" target="_blank"
-              rel="noopener noreferrer">
-              OpenVPN and WireGuard on all platforms, with iOS additionally offering IPSec with IKEv2 connections
-            </a>
-          </span>
-        </div>
-      </th>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span>
-            <a href="https://mullvad.net/en/servers" target="_blank" rel="noopener noreferrer">
-              WireGuard and OpenVPN</a>
-            <a href="https://mullvad.net/en/blog/removing-openvpn-15th-january-2026" target="_blank"
-              rel="noopener noreferrer">
-              (Will be removed on 15th January 2026 to focus on WireGuard)
-            </a>
-          </span>
-        </div>
-      </th>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span>
-            <a href="https://help.mysteriumvpn.com/en/articles/8954864-what-vpn-protocols-does-the-app-support"
-              target="_blank" rel="noopener noreferrer">
-              WireGuard
-            </a>
-          </span>
-        </div>
-      </th>
-      {% include check tooltip="OpenVPN, NordLynx(built off Wireguard) and IKEv2/IPsec" link="https://nordvpn.com/features/next-generation-encryption" %}
-      {% include check tooltip="QUIC protocol" link="https://www.wired.com/story/how-apple-icloud-private-relay-works" %}
-      {% include check tooltip="OpenVPN, WireGuard and Stealth" link="https://protonvpn.com/features/strong-protocols" %}
-      {% include check %}
-      {% include check tooltip="WireGuard, IKEv2, and OpenVPN" link="https://surfshark.com/features/surfshark-vpn-protocols" %}
-    </tr>
-    <tr class="checker_row">
-      <td>Quantum Resistant Encryption</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/general/quantum-resistance-faq" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/why-mullvad-vpn" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      {% include cross link="https://www.wireguard.com/known-limitations/#post-quantum-secrecy" %}
-      {% include cross link="https://nordvpn.com/features/next-generation-encryption" %}
-      {% include cross link="https://ieeexplore.ieee.org/document/10619916" %}
-      {% include cross link="https://protonmail.uservoice.com/forums/932836-proton-vpn/suggestions/47587832-use-quantum-resistant-cryptogtaphic-algorithm" %}
-      {% include cross %}
-      {% include check link="https://www.techradar.com/pro/vpn/post-quantum-encryption-standards-are-here-a-new-era-for-vpn-security-begins" %}
-    </tr>
     <tr>
       <th class="left-col"><br />Freedom</th>
     </tr>
@@ -792,27 +761,14 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Donates to Charity</td>
-      <th>
-        <a href="https://www.ivpn.net/en/supported-projects" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/blog/mullvad-becomes-highest-level-of-tor-member-shallot" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://www.ivpn.net/en/supported-projects" %}
+      {% include check link="https://mullvad.net/en/blog/mullvad-becomes-highest-level-of-tor-member-shallot" %}
       {% include cross %}
       {% include dash tooltip="Provides discounts and free vpns to nonprofits and eligible individuals" link="https://nordvpn.org" %}
       {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
       {% include check link="https://proton.me/blog/2024-lifetime-fundraiser-results" %}
       {% include cross %}
-      <th>
-        <a href="https://surfshark.com/corporate-social-responsibility" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://surfshark.com/corporate-social-responsibility" %}
     </tr>
     <tr class="checker_row">
       <td>Carbon Neutral</td>
@@ -893,21 +849,9 @@ titledesc: Find a VPN that works for you
         <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
           Open Source</a> Apps
       </td>
-      <th>
-        <a href="https://orbot.app/en/code" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://github.com/ProtonVPN" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://github.com/windscribe" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://orbot.app/en/code" %}
+      {% include check link="https://github.com/ProtonVPN" %}
+      {% include check link="https://github.com/windscribe" %}
     </tr>
     <tr class="checker_row">
       <td>Kill Switch</td>
@@ -946,7 +890,12 @@ titledesc: Find a VPN that works for you
       {% include check link="https://windscribe.com/features/robert" %}
     </tr>
     <tr class="checker_row">
-      <td>Perfect Forward Secrecy</td>
+      <td>
+        <div>
+        Perfect Forward Secrecy
+        <span>{% include link text="Perfect Forward Secrecy" link="https://www.expressvpn.com/blog/perfect-forward-secrecy" %} is a security feature in which each session or connection uses a unique encryption key. This design ensures that if a key is compromised, only that particular session is affected, not every session.</span>
+        </div>
+      </td>
       {% include check %}
       {% include check link="https://protonvpn.com/features/forward-secrecy" %}
       {% include check link="https://windscribe.com/features/strongest-encryption" %}
@@ -970,13 +919,17 @@ titledesc: Find a VPN that works for you
       {% include check %}
     </tr>
     <tr class="checker_row">
-      <td>No Email Required</td>
+      {% include 
+        tooltips/No-Email-Required 
+      %}
       {% include check %}
       {% include check link="https://account.proton.me/vpn/signup" %}
       {% include check link="https://windscribe.com/signup" %}
     </tr>
     <tr class="checker_row">
-      <td>No Phone Number Required</td>
+      {% include
+        tooltips/No-Phone-Number-Required
+      %}
       {% include check %}
       {% include check link="https://account.proton.me/vpn/signup" %}
       {% include check link="https://windscribe.com/signup" %}
@@ -1013,17 +966,17 @@ titledesc: Find a VPN that works for you
       {% include check tooltip="GPLv2" link="https://github.com/Windscribe/Desktop-App/blob/master/LICENSE" %}
     </tr> -->
     <tr class="checker_row">
-      <td>
-        Independent Third Party Audit
-      </td>
+      {% include 
+        tooltips/Independent-Security-Audit 
+      %}
       {% include cross %}
       {% include check link="https://protonvpn.com/blog/open-source" %}
       {% include check link="https://windscribe.com/blog/freshscribe-next-generation-vpn-infrastructure-2" %}
     </tr>
     <tr class="checker_row">
-      <td>
-        Transparency Report
-      </td>
+      {% include 
+        tooltips/Transparency-Report 
+      %}
       {% include cross %}
       {% include check link="https://protonvpn.com/blog/transparency-report" %}
       {% include check link="https://windscribe.com/transparency" %}

@@ -60,7 +60,9 @@ titledesc: Find a Youtube frontend that works for you
         <th class="left-col"><br />Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td><a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">Open Source</a></td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         {% include check link="https://github.com/FreeTubeApp/FreeTube" %}
         {% include check link="https://github.com/libre-tube/LibreTube" %}
         {% include check link="https://github.com/TeamNewPipe/NewPipe" %}
@@ -224,17 +226,17 @@ titledesc: Find a Youtube frontend that works for you
         <th class="left-col"><br />Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td>
-          {% include link text="
-            Open Source" link="https://www.ibm.com/topics/open-source" 
-          %}
-        </td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         {% include check link="https://git.sr.ht/~cadence/cloudtube" %}
         {% include check link="https://github.com/iv-org/invidious" %}
         {% include check link="https://github.com/TeamPiped/Piped" %}
       </tr>
       <tr class="checker_row">
-        <td>Javascript Optional</td>
+        {% include 
+          tooltips/Optional-JavaScript
+        %}
         {% include check %}
         {% include check tooltip="Disabling Javascript disables comments" %}
         {% include cross %}

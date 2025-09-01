@@ -117,46 +117,47 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
+                Default End-to-End Encryption
+            </td>
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
+            {% include check tooltip="PGP does not encrypt subject lines" %}
+            {% include check tooltip="Encryption only works for messages sent between Tuta users" %}
+            {% include cross %}
+        </tr>
+        <tr class="checker_row">
+            <td>
                 End-to-End Encryption Support
             </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            {% include check %}
-            {% include check %}
+            {% include cross tooltip="Only with enterprise accounts and third-party tools like Mailvelope" link="https://www.cloudwards.net/how-to-encrypt-your-emails/#One" %}
+            {% include check link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Three" %}
+            {% include check link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Two" %}
+            {% include check tooltip="PGP does not encrypt subject lines" %}
+            {% include check tooltip="Encryption only works for messages sent between Tuta users" %}
+            {% include cross tooltip="Only using third-party tools like Mailvelope" link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Four" %}
         </tr>
         <tr class="checker_row">
             <td>
-                Default PGP
+                Default E2E Encryption between providers
             </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include cross %}
+            {% include cross %}
+            {% include cross %}
             {% include check %}
-            <th>-</th>
-            <th>-</th>
+            {% include cross %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
-                Password Protected Message Support
+                Encrypted Password Protected Emails
             </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include cross tooltip="Password protected emails not  encrypted" link="https://support.google.com/mail/answer/7674059?hl=en&co=GENIE.Platform%3DDesktop" %}
+            {% include cross %}
+            {% include cross %}
             {% include check %}
-            {% include check %}
-            <th>-</th>
-        </tr>
-        <tr class="checker_row">
-            <td>
-                Subject Line Encryption
-            </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            {% include check %}
-            <th>-</th>
+            {% include check link="https://tuta.com/support#encrypted-emails-external" %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -165,8 +166,14 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Ad & Tracker Blocker
+                Tracker Blocker
             </td>
+            {% include cross %}
+            {% include dash tooltip='Not by default, has to be enabled Mail > Preferences > Privacy, and check the box for "Protect Mail Activity"' link="https://www.wired.com/story/apple-mail-blocks-email-tracking-heres-what-it-means/" %}
+            {% include cross %}
+            {% include check link="https://proton.me/support/email-tracker-protection" %}
+            {% include cross tooltip="Blocks remote content by default, so trackers only show if you allow remote content" %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -174,6 +181,9 @@ titledesc: Find an email service that works for you
             </td>
             {% include check %}
             {% include cross %}
+            {% include check %}
+            {% include cross %}
+            {% include check %}
             {% include check %}
         </tr>
         <tr class="checker_row">
@@ -183,6 +193,9 @@ titledesc: Find an email service that works for you
             {% include cross %}
             {% include cross %}
             {% include check %}
+            {% include check %}
+            {% include check %}
+            {% include cross %}
         </tr>
         <tr>
             <th class="left-col">Security</th>
@@ -199,26 +212,28 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Forward Secrecy
+                Perfect Forward Secrecy
             </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include check link="https://en.wikipedia.org/wiki/Forward_secrecy#Use" %}
+            {% include cross %}
+            {% include check link="https://www.bitdefender.com/en-us/blog/hotforsecurity/microsoft-announces-encryption-in-outlook-com-onedrive" %}
             {% include cross %}
             {% include cross tooltip="Planned to be supported sometime in the future" link="https://tuta.com/security" %}
+            {% include cross link="https://threatpost.com/critics-cut-deep-on-yahoo-mail-encryption-rollout/103534" %}
         </tr>
         <tr>
             <th class="left-col">Trust</th>
         </tr>
         <tr class="checker_row">
-            <td>
-                Independent Security Audit
-            </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include 
+                tooltips/Independent-Security-Audit 
+            %}
+            {% include check link="https://workspace.google.com/learn-more/security/security-whitepaper/page-5" %}
+            {% include cross %}
+            {% include cross %}
             {% include check link="https://proton.me/blog/openpgpjs-protonmail-security-audit" %}
             {% include cross tooltip="Only internal security reviews" link="https://github.com/tutao/tutanota/issues/2787" %}
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -229,6 +244,7 @@ titledesc: Find an email service that works for you
             {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/reports/government-requests/customer-data" %}
             {% include check link="https://proton.me/legal/transparency" %}
             {% include check link="https://tuta.com/blog/transparency-report" %}
+            {% include check link="https://www.yahooinc.com/transparency/index.html" %}
         </tr>
         <tr>
             <th class="left-col">Convenience</th>
@@ -237,6 +253,10 @@ titledesc: Find an email service that works for you
             <td>
                 Auto-Clear Trash
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -261,33 +281,43 @@ titledesc: Find an email service that works for you
                 Donates to Charity
             </td>
             {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+            {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
+            {% include check link="https://proton.me/blog/2024-lifetime-fundraiser-results" %}
+            {% include cross tooltip="Offers the business plan free and other discounts for non-profits organizations" link="https://tuta.com/blog/secure-email-for-non-profit" %}
+            {% include check link="https://www.opensecrets.org/political-action-committees-pacs/yahoo-inc/C00380535/donors/2018" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Carbon Neutral
             </td>
             {% include cross tooltip='<a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">Plans to by 2030</a>, but <a href="https://finance.yahoo.com/news/ai-destroyed-google-promise-carbon-214145116.html" target="_blank" rel="noopener noreferrer"> emissions have been increasing</a>' %}
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
+            {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>' %}
+            {% include cross link="https://www.reddit.com/r/ProtonMail/comments/axoo99/comment/ehwnw92/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
+            {% include check tooltip="Servers are powered by 100% green energy" link="https://tuta.com/sustainability" %}
+            {% include cross link="https://www.yahooinc.com/press/good-loop-and-yahoo-partner-to-help-advertisers-minimize-carbon-emissions-and-proactively-address-sustainability-concerns" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Carbon Negative
             </td>
             {% include cross %}
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include cross %}
+            {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030
+              </a>, but 
+              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing
+              </a>' %}
+            {% include cross %}
+            {% include cross tooltip="Company has been attending Fridays for the Future protests" link="https://tuta.com/sustainability" %}
+            {% include cross %}
         </tr>
     </tbody>
 </table>

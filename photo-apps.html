@@ -51,17 +51,11 @@ titledesc: Find a photo app that works for you
         <th class="left-col"><br />Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td>
-          <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
-            Open Source
-          </a>
-        </td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         {% include cross %}
-        <th>
-          <a href="https://github.com/ente-io/ente" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://github.com/ente-io/ente" %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
@@ -71,11 +65,7 @@ titledesc: Find a photo app that works for you
           </a>
         </td>
         {% include cross %}
-        <th>
-          <a href="https://ente.io/architecture" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://ente.io/architecture" %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
@@ -85,21 +75,13 @@ titledesc: Find a photo app that works for you
           </a>
         </td>
         {% include check %}
-        <th>
-          <a href="https://ente.io/architecture" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://ente.io/architecture" %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
         <td>On-Device Machine Learning</td>
         {% include check %}
-        <th>
-          <a href="https://ente.io/ml" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://ente.io/ml" %}
         {% include cross %}
       </tr>
       <tr>
@@ -107,27 +89,15 @@ titledesc: Find a photo app that works for you
       </tr>
       <tr class="checker_row">
         <td>Doesn't log iP addresses</td>
-        <th>
-          <a href="https://www.apple.com/legal/privacy/data/en/apple-id" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://ente.io/architecture" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.apple.com/legal/privacy/data/en/apple-id" %}
+        {% include check link="https://ente.io/architecture" %}
         {% include cross %}
         </tr>
     <th class="left-col"><br />Independence</th>
       <tr class="checker_row">
         <td>Self Hostable</td>
         {% include cross %}
-        <th>
-          <a href="https://help.ente.io/self-hosting" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://help.ente.io/self-hosting" %}
         {% include cross %}
       </tr>
     <!-- <th class="left-col"><br />Maintains Openness</th>
@@ -142,15 +112,7 @@ titledesc: Find a photo app that works for you
           </div>
         </td>
         {% include cross %}
-        <th>
-            <div><img src="../images/check.webp" alt="check">
-              <span>
-                <a href="https://github.com/ente-io/ente?tab=AGPL-3.0-1-ov-file#readme" target="_blank" rel="noopener noreferrer">
-                  AGPLv3
-                </a>
-              </span>
-            </div>
-        </th>
+        {% include check tooltip="AGPLv3" link="https://github.com/ente-io/ente?tab=AGPL-3.0-1-ov-file#readme" %}
         {% include cross %}
       </tr> -->
       <tr>
@@ -159,11 +121,7 @@ titledesc: Find a photo app that works for you
       <tr class="checker_row">
         <td>Dark Mode</td>
         {% include check %}
-        <th>
-          <a href="https://ente.io/features" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://ente.io/features" %}
         {% include check %}
       </tr>
       <tr class="checker_row">
@@ -175,21 +133,13 @@ titledesc: Find a photo app that works for you
       <tr class="checker_row">
         <td>Facial Recognition</td>
         {% include check %}
-        <th>
-          <a href="https://ente.io/ml" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://ente.io/ml" %}
         {% include check %}
       </tr>
       <tr class="checker_row">
         <td>Search with Descriptions</td>
         {% include check %}
-        <th>
-          <a href="https://ente.io/ml" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://ente.io/ml" %}
         {% include check %}
       </tr>
       <tr>
@@ -197,60 +147,19 @@ titledesc: Find a photo app that works for you
       </tr>
       <tr class="checker_row">
         <td>Donates to Charity</td>
-        <th>
-          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://ente.io/blog/update-march-2022" target="_blank" rel="noopener noreferrer">
-                Donates 1% to<br />stripe climate
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-      </tr>
+        {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+        {% include check tooltip="Donates 1% to stripe climate" link="https://ente.io/blog/update-march-2022" %}
+        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
       <tr class="checker_row">
         <td>Carbon Neutral</td>
         {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://ente.io/reliability" target="_blank" rel="noopener noreferrer">
-              Hosted on Scaleway</a> with <a href="https://www.scaleway.com/en/environmental-leadership" target="_blank" rel="noopener noreferrer">
-                renewable energy
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip='<a href="https://ente.io/reliability" target="_blank" rel="noopener noreferrer">Hosted on Scaleway</a> with <a href="https://www.scaleway.com/en/environmental-leadership" target="_blank" rel="noopener noreferrer">renewable energy</a>' %}
+        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://ente.io/blog/update-march-2022" target="_blank" rel="noopener noreferrer">
-                Donates 1% to stripe climate
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Donates 1% to stripe climate" link="https://ente.io/blog/update-march-2022" %}
         {% include cross %}
       </tr>
     </tbody>

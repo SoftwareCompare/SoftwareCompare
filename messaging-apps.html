@@ -90,9 +90,9 @@ titledesc: Find a messaging app that works for you
             <th class="left-col">Privacy</th>
         </tr>
         <tr class="checker_row">
-            <td>
-                {% include link text="Open Source" link="https://www.ibm.com/topics/open-source" %}
-            </td>
+            {% include 
+                tooltips/Open-Source 
+            %}
             {% include check link="https://code.briarproject.org/briar/briar" %}
             {% include cross %}
             {% include cross %}
@@ -104,7 +104,10 @@ titledesc: Find a messaging app that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Default End-to-End Encryption
+                <div>
+                    Default E2E Encryption
+                    <span>E2E encryption, short for end‑to‑end encryption, is a feature that ensures a user’s messages cannot be read by the messaging provider. It works by having the sender encrypt the message on their device and then sending it to the recipient, who possesses the key needed to decrypt and read the message. This technique guarantees that the content remains unreadable during transit.</span>
+                </div>    
             </td>
             {% include check %}
             {% include cross link="https://www.facebook.com/help/messenger-app/786613221989782" %}
@@ -117,7 +120,10 @@ titledesc: Find a messaging app that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Encryption cannot be disabled
+                <div>
+                    Encryption cannot be disabled
+                    <span>In order to ensure that data is not leaked from the messenger, the application should not allow the user to disable encryption.</span>
+                </div>
             </td>
             {% include check %}
             {% include cross %}
@@ -142,20 +148,10 @@ titledesc: Find a messaging app that works for you
         </tr> -->
         <tr class="checker_row">
             <td>
-                Perfect Forward Secrecy
-            </td>
-            {% include check link="https://nixfaq.org/2021/01/briar-epitome-of-anonymity-and-security-in-im-messengers.html" %}
-            {% include check link="https://www.wired.com/2016/11/what-is-perfect-forward-secrecy" %}
-            {% include check link="https://security.apple.com/blog/imessage-pq3" %}
-            {% include cross link="https://getsession.org/faq#session-pfs" %}
-            {% include check link="https://signal.org/blog/asynchronous-security" %}
-            {% include check link="https://simplex.chat/#forward-secrecy" %}
-            {% include check link="https://threema.com/en/faq/perfect_forward_secrecy" %}
-            {% include check %}
-        </tr>
-        <tr class="checker_row">
-            <td>
-                Metadata Protection
+                <div>
+                    Metadata Protection
+                    <span>Metadata is the information of everything that surrounds the message, such as when it was sent, who it was sent to, where it was sent from, etc. This information can be used to track and profile you, so some messengers encrypt certain parts of metadata to avoid collecting it at all.</span>
+                </div>
             </td>
             {% include check link="https://briarproject.org/privacy-policy" %}
             {% include cross link="https://www.facebook.com/privacy/policy" %}
@@ -167,9 +163,9 @@ titledesc: Find a messaging app that works for you
             {% include cross link="https://www.whatsapp.com/legal/privacy-policy" %}
         </tr>
         <tr class="checker_row">
-            <td>
-                No Email Required
-            </td>
+            {% include 
+                tooltips/No-Email-Required 
+            %}
             {% include check %}
             {% include dash tooltip="Requires an email or phone number" %}
             {% include cross %}
@@ -180,9 +176,9 @@ titledesc: Find a messaging app that works for you
             {% include dash tooltip="Requires an email or phone number" %}
         </tr>
         <tr class="checker_row">
-            <td>
-                No Phone Number Required
-            </td>
+            {% include
+                tooltips/No-Phone-Number-Required
+            %}
             {% include check %}
             {% include dash tooltip="Requires an email or phone number" %}
             {% include cross %}
@@ -193,12 +189,31 @@ titledesc: Find a messaging app that works for you
             {% include dash tooltip="Requires an email or phone number" %}
         </tr>
         <tr>
-            <th class="left-col">Trust</th>
+            <th class="left-col">Security</th>
         </tr>
         <tr class="checker_row">
             <td>
-                Independent Security Audit
+                <div>
+                    Perfect Forward Secrecy
+                    <span>Perfect Forward Secrecy is a security feature that ensures that the compromise of a single encryption key does not lead to the decryption of past or future messages.</span>
+                </div>
             </td>
+            {% include check link="https://nixfaq.org/2021/01/briar-epitome-of-anonymity-and-security-in-im-messengers.html" %}
+            {% include check link="https://www.wired.com/2016/11/what-is-perfect-forward-secrecy" %}
+            {% include check link="https://security.apple.com/blog/imessage-pq3" %}
+            {% include cross link="https://getsession.org/faq#session-pfs" %}
+            {% include check link="https://signal.org/blog/asynchronous-security" %}
+            {% include check link="https://simplex.chat/#forward-secrecy" %}
+            {% include check link="https://threema.com/en/faq/perfect_forward_secrecy" %}
+            {% include check %}
+        </tr>
+        <tr>
+            <th class="left-col">Trust</th>
+        </tr>
+        <tr class="checker_row">
+            {% include 
+                tooltips/Independent-Security-Audit 
+            %}
             {% include check link="https://briarproject.org/news/2017-beta-released-security-audit" %}
             {% include cross %}
             {% include cross %}
@@ -209,9 +224,9 @@ titledesc: Find a messaging app that works for you
             {% include cross %}
         </tr>
         <tr class="checker_row">
-            <td>
-                Transparency Report
-            </td>
+            {% include 
+                tooltips/Transparency-Report 
+            %}
             {% include cross %}
             {% include check link="https://transparency.meta.com/reports" %}
             {% include check link="https://www.apple.com/legal/transparency" %}
@@ -226,7 +241,10 @@ titledesc: Find a messaging app that works for you
         </tr>
         <tr class="checker_row grayrow">
             <td>
-                Decentralized Infrastructure
+                <div>
+                    Decentralized Infrastructure
+                    <span>Decentralized infrastructure is important because it eliminates single points of failure. If one server goes down, the service remains available as long as other servers are operational. This makes the system more resilient to government takedowns, natural disasters, and companies deciding to stop running their servers.</span>
+                </div>
             </td>
             {% include check link="https://briarproject.org/how-it-works" %}
             {% include cross %}
@@ -242,7 +260,10 @@ titledesc: Find a messaging app that works for you
         </tr>
         <tr class="checker_row grayrow">
             <td>
-                Send Over Bluetooth
+                <div>
+                    Send Over Bluetooth
+                    <span>Sending messages over Bluetooth is an important feature because it lets users communicate even when connectivity is weak or deliberately unavailable—such as in remote areas, crowded events, political protests, or during natural disasters.</span>
+                </div>
             </td>
             {% include check link="https://briarproject.org/how-it-works" %}
             {% include cross %}

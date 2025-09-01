@@ -95,12 +95,9 @@ titledesc: Find a browser that works for you
         <th class="left-col">Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td>
-          <div>
-            Open Source
-            <span>{% include link text="Open Source Software" link="https://www.ibm.com/topics/open-source" %} refers to computer programs that make their code freely available to the public. This allows for the code to be analyzed for any security flaws and malicious code. The code can also be "forked" and turned into a new application if anyone wishes to do so.</span>
-          </div>
-        </td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         {% include check link="https://github.com/brave/brave-core" %}
         {% include cross %}
         {% include check link="https://github.com/duckduckgo" %}
@@ -120,7 +117,6 @@ titledesc: Find a browser that works for you
             {% include link text="Europe," link="https://gdpr-info.eu" %}
             and potentially 
             {% include link text="Bermuda" link="https://www.privacy.bm/post/global-privacy-control-interoperability-in-action" %}
-
             </span>
           </div>
         </td>
@@ -136,57 +132,19 @@ titledesc: Find a browser that works for you
         {% include cross %}
       </tr>
       <tr class="checker_row">
-        <td>Default Private Search</td>
+        <td>
+          Default Private Search
+        </td>
         {% include check tooltip="Brave Search" %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Duckduckgo</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Bing</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Duckduckgo</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>
-              <a href="https://mullvad.net/en/browser/hard-facts#search" target="_blank" rel="noopener noreferrer">
-                Duckduckgo
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span class="edge">Google</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Duckduckgo</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>No default<br />search<br />engine</span>
-          </div>
-        </th>
+        {% include cross tooltip="Google" %}
+        {% include check tooltip="Duckduckgo" %}
+        {% include cross tooltip="Bing" %}
+        {% include cross tooltip="Google" %}
+        {% include check tooltip="Duckduckgo" %}
+        {% include check tooltip="Duckduckgo" link="https://mullvad.net/en/browser/hard-facts#search" %}
+        {% include cross tooltip="Google" %}
+        {% include check tooltip="Duckduckgo" %}
+        {% include check tooltip="No default search engine" %}
       </tr>
       <tr class="checker_row">
         <td>
@@ -196,16 +154,8 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/features/translate" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/features/translate" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
+        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -258,52 +208,16 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Localhost Resource Permission</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
         {% include cross %}
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://brave.com/privacy-updates/27-localhost-permission" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
       </tr>
       <tr class="checker_row">
         <td>
@@ -965,6 +879,19 @@ titledesc: Find a browser that works for you
         {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
       </tr>
       <tr class="checker_row">
+        <td>Progressive Web Apps</td>
+        {% include check %}
+        {% include check link="https://developer.chrome.com/blog/getting-started-pwa" %}
+        {% include cross %}
+        {% include check link="https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/ux" %}
+        {% include dash tooltip="Currently an experimental feature" %}
+        {% include dash tooltip="Currently an experimental feature" %}
+        {% include dash tooltip="Currently an experimental feature" %}
+        {% include check link="https://support.apple.com/en-us/104996" %}
+        {% include dash tooltip="Currently an experimental feature" %}
+        {% include check link="https://developer.chrome.com/blog/getting-started-pwa" %}
+      </tr>
+      <tr class="checker_row">
         <td>Website Translation</td>
         {% include check %}
         {% include check %}
@@ -1292,11 +1219,9 @@ titledesc: Find a browser that works for you
         <th class="left-col">Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td>
-          <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
-            Open Source
-          </a>
-        </td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         <th>
           <a href="https://github.com/brave/brave-core" target="_blank" rel="noopener noreferrer">
             <img src="../images/check.webp" alt="check">
@@ -1970,11 +1895,9 @@ titledesc: Find a browser that works for you
         <th class="left-col">Privacy</th>
       </tr>
       <tr class="checker_row">
-        <td>
-          <a href="https://www.ibm.com/topics/open-source" target="_blank" rel="noopener noreferrer">
-            Open Source
-          </a>
-        </td>
+        {% include 
+          tooltips/Open-Source 
+        %}
         {% include check link="https://github.com/brave/brave-core" %}
         {% include cross %}
         {% include check link="https://github.com/duckduckgo/android" %}
@@ -2015,29 +1938,13 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Default Private Search</td>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Brave Search</span>
-          </div>
-        </th>
+        {% include check tooltip="Brave Search" %}
         {% include cross tooltip="Google" %}
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Duckduckgo</span>
-          </div>
-        </th>
+        {% include check tooltip="Duckduckgo" %}
         {% include cross tooltip="Bing" %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
         {% include cross tooltip="Google" %}
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Duckduckgo</span>
-          </div>
-        </th>
+        {% include cross tooltip="Google" %}
+        {% include check tooltip="Duckduckgo" %}
       </tr>
       <tr class="checker_row">
         <td>
