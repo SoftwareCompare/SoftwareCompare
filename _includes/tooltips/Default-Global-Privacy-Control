@@ -1,0 +1,10 @@
+<td>
+    <div>
+    Default Global Privacy Control
+    <span>{% include link text="Global Privacy Control" link="https://globalprivacycontrol.org/faq" %} is a specification that can be toggled as a setting in some browsers that tells websites if the user wants their information to be sold or shared. This setting is legally binding in certain areas such as {% include link text="California," link="https://oag.ca.gov/privacy/ccpa/regs" %}
+    {% include link text="Europe," link="https://gdpr-info.eu" %}
+    and potentially 
+    {% include link text="Bermuda" link="https://www.privacy.bm/post/global-privacy-control-interoperability-in-action" %}
+    </span>
+    </div>
+</td>

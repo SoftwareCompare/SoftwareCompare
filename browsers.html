@@ -110,16 +110,9 @@ titledesc: Find a browser that works for you
         {% include check link="https://github.com/ungoogled-software/ungoogled-chromium" %}
       </tr>
       <tr class="checker_row">
-        <td>
-          <div>
-            Default Global Privacy Control
-            <span>{% include link text="Global Privacy Control" link="https://globalprivacycontrol.org/faq" %} is a specification that can be toggled as a setting in some browsers that tells websites if the user wants their information to be sold or shared. This setting is legally binding in certain areas such as {% include link text="California," link="https://oag.ca.gov/privacy/ccpa/regs" %}
-            {% include link text="Europe," link="https://gdpr-info.eu" %}
-            and potentially 
-            {% include link text="Bermuda" link="https://www.privacy.bm/post/global-privacy-control-interoperability-in-action" %}
-            </span>
-          </div>
-        </td>
+        {% include 
+          tooltips/Default-Global-Privacy-Control
+        %}
         {% include check link="https://brave.com/web-standards-at-brave/4-global-privacy-control" %}
         {% include cross %}
         {% include cross %}
@@ -207,19 +200,6 @@ titledesc: Find a browser that works for you
         {% include cross %}
       </tr>
       <tr class="checker_row">
-        <td>Localhost Resource Permission</td>
-        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-      </tr>
-      <tr class="checker_row">
         <td>
           <div>
             Redirect AMP Sites
@@ -278,92 +258,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include cross %}
       </tr>
-      <tr>
-        <th class="left-col" ><br />Blocking</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        <th>
-          <a href="https://brave.com/shields" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        {% include cross %}
-        <th>
-          <a href="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://librewolf.net/docs/features/#privacy" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://mullvad.net/en/browser/hard-facts#extensions" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://support.torproject.org/glossary/noscript" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Adblocking by default</td>
-        <th>
-          <a href="https://brave.com/shields" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        <th>
-          <a href="https://librewolf.net/docs/features/#privacy" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://mullvad.net/en/browser/hard-facts#extensions" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Individual Script Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
+      
       <tr>
         <th class="left-col" ><br />Security</th>
       </tr>
@@ -548,6 +443,74 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
         {% include check %}
+      </tr>
+      <tr class="checker_row">
+        <td>Default Tracker Blocker</td>
+        {% include check link="https://brave.com/shields" %}
+        {% include cross %}
+        <th>
+          <a href="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        <th>
+          <a href="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        {% include check link="https://librewolf.net/docs/features/#privacy" %}
+        <th>
+          <a href="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" target="_blank" rel="noopener noreferrer">
+            <img src="../images/check.webp" alt="check">
+          </a>
+        </th>
+        {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
+        {% include check link="https://support.torproject.org/glossary/noscript" %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Default Adblock</td>
+        {% include check link="https://brave.com/shields" %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check link="https://librewolf.net/docs/features/#privacy" %}
+        {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Individual Script Blocking</td>
+        {% include check %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check %}
+        {% include check %}
+        {% include cross %}
+        {% include check %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Localhost Resource Permission</td>
+        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
       </tr>
       <tr>
         <th class="left-col" ><br />Networking</th>
@@ -1247,35 +1210,9 @@ titledesc: Find a browser that works for you
         {% include cross %}
       </tr>
       <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        <th>
-          <a href="https://brave.com/shields" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        <th>
-          <a href="https://www.intego.com/mac-security-blog/understanding-safaris-new-privacy-report" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Global Privacy Control</td>
+        {% include 
+          tooltips/Default-Global-Privacy-Control
+        %}
         {% include check %}
         {% include cross %}
         {% include check %}
@@ -1286,41 +1223,13 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Default Private Search</td>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Brave Search</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check mark">
-            <span>Duckduckgo</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Bing</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Google</span>
-          </div>
-        </th>
+        {% include check tooltip="Brave Search" %}
+        {% include cross tooltip="Google" %}
+        {% include check tooltip="Duckduckgo" %}
+        {% include cross tooltip="Bing" %}
+        {% include cross tooltip="Google" %}
+        {% include cross tooltip="Google" %}
+        {% include cross tooltip="Google" %}
       </tr>
       <tr class="checker_row">
         <td>On-device Website Translation</td>
@@ -1343,32 +1252,8 @@ titledesc: Find a browser that works for you
         {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
       </tr>
       <tr class="checker_row">
-        <td>Individual Script Blocking</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Script Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
         <td>Delete Data When Site Closes</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/30-shred-button" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/30-shred-button" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1409,19 +1294,51 @@ titledesc: Find a browser that works for you
         <td>Google Safe Browsing</td>
         {% include check %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled completely</span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled Completely" %}
         {% include check %}
         {% include check %}
         {% include check %}
-        <th>
-          <a href="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" %}
+      </tr>
+      <tr class="checker_row">
+        <td>Default Tracker Blocker</td>
+        {% include check link="https://brave.com/shields" %}
+        {% include cross %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
+        {% include check link="https://www.intego.com/mac-security-blog/understanding-safaris-new-privacy-report" %}
+      </tr>
+      <tr class="checker_row">
+        <td>Default Adblock</td>
+        {% include check %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Individual Script Blocking</td>
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Script Blocking</td>
+        {% include check %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check %}
       </tr>
       <tr>
         <th class="left-col"><br />Networking</th>
@@ -1907,27 +1824,9 @@ titledesc: Find a browser that works for you
         {% include check link="https://gitlab.torproject.org/tpo/applications/tor-browser" %}
       </tr>
       <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        {% include check link="https://brave.com/shields" %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Global Privacy Control</td>
+        {% include 
+          tooltips/Default-Global-Privacy-Control
+        %}
         {% include check %}
         {% include cross %}
         {% include cross %}
@@ -1994,16 +1893,6 @@ titledesc: Find a browser that works for you
         </th>
       </tr>
       <tr class="checker_row">
-        <td>Individual Script Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
         <td>Delete Data When Site Closes</td>
         <th>
           <a href="https://brave.com/privacy-updates/25-forgetful-browsing" target="_blank" rel="noopener noreferrer">
@@ -2062,16 +1951,8 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Proxied Google Safe Browsing</td>
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Not proxied</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled completely</span>
-          </div>
-        </th>
+        {% include cross tooltip="Not proxied" %}
+        {% include cross tooltip="Disabled Completely" %}
         {% include cross %}
         {% include check %}
         {% include check %}
@@ -2081,14 +1962,40 @@ titledesc: Find a browser that works for you
         <td>Google Safe Browsing</td>
         {% include check %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled completely</span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled completely" %}
         {% include check %}
         {% include check %}
         {% include check %}
+        {% include check %}
+      </tr>
+      <tr class="checker_row">
+        <td>Default Tracker Blocker</td>
+        {% include check link="https://brave.com/shields" %}
+        {% include cross %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
+        {% include check %}
+      </tr>
+      <tr class="checker_row">
+        <td>Default Adblock</td>
+        {% include check %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include check %}
+        {% include cross %}
+      </tr>
+      <tr class="checker_row">
+        <td>Individual Script Blocking</td>
+        {% include check %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
+        {% include cross %}
         {% include check %}
       </tr>
       <tr>
