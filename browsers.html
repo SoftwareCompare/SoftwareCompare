@@ -230,185 +230,42 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>
-              <a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop#w_bounce-tracking-protection" target="_blank" rel="noopener noreferrer">
-                With Enhanced Tracking Protection Enabled
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <a href="https://librewolf.net/docs/faq/#what-is-enhanced-tracking-protection" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.goincognito.co/mullvad-browser-ultimate-privacy-security-solution" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://getcake.com/apples-intelligent-tracking-prevention-2-0-itp-how-will-this-impact-you" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include dash tooltip="With Enhanced Tracking Protection Enabled" link="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop#w_bounce-tracking-protection" %}
+        {% include check link="https://librewolf.net/docs/faq/#what-is-enhanced-tracking-protection" %}
+        {% include check link="https://www.goincognito.co/mullvad-browser-ultimate-privacy-security-solution" %}
+        {% include check link="https://getcake.com/apples-intelligent-tracking-prevention-2-0-itp-how-will-this-impact-you" %}
         {% include check %}
         {% include cross %}
       </tr>
-      
       <tr>
         <th class="left-col" ><br />Security</th>
       </tr>
       <tr class="checker_row">
         <td>Proxied Google Safe Browsing</td>
-        <th>
-          <a href="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Not proxied</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled<br />Completely</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Not proxied</span>
-          </div>
-        </th>
+        {% include check link="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" %}
+        {% include cross tooltip="Not proxied" %}
+        {% include cross tooltip="Disabled Completely" %}
+        {% include cross tooltip="Not proxied" %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" target="_blank" rel="noopener noreferrer">
-                Disabled Completely
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled Completely" link="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" %}
         {% include check %}
-        <th>
-          <a href="https://www.apple.com/legal/privacy/data/en/safari" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" target="_blank" rel="noopener noreferrer">
-                Disabled Completely
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled Completely" link="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" %}
       </tr>
       <tr class="checker_row">
         <td>Google Safe Browsing</td>
-        <th>
-          <a href="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled<br />Completely</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>Uses their own service</span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled Completely" %}
+        {% include check tooltip="Uses their own service" %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" target="_blank" rel="noopener noreferrer">
-                Disabled Completely
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled Completely" link="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" %}
         {% include check %}
-        <th>
-          <a href="https://www.apple.com/legal/privacy/data/en/safari" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" target="_blank" rel="noopener noreferrer">
-                Disabled Completely
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Disabled Completely" link="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" %}
       </tr>
-      <!-- <tr class="checker_row">
-        <td>Full Site Partitioning</td>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://privacytests.org">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
-      </tr> -->
       <tr class="checker_row">
         <td>
           <div>
@@ -448,27 +305,11 @@ titledesc: Find a browser that works for you
         <td>Default Tracker Blocker</td>
         {% include check link="https://brave.com/shields" %}
         {% include cross %}
-        <th>
-          <a href="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections" %}
+        {% include check link="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" %}
+        {% include check link="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" %}
         {% include check link="https://librewolf.net/docs/features/#privacy" %}
-        <th>
-          <a href="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" %}
         {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
         {% include check link="https://support.torproject.org/glossary/noscript" %}
         {% include cross %}
@@ -538,45 +379,14 @@ titledesc: Find a browser that works for you
           </div>
         </td>
         {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
-        <th>
-          <a href="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div>
-            <img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.searchenginejournal.com/duckduck-go-smarter-encryption/336449" target="_blank" rel="noopener noreferrer">
-                Only upgrades<br />sites on<br />their whitelist</a></span>
-          </div>
-        </th>
-        <th>
-          <a href="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
+        {% include cross tooltip="Only upgrades sites on their whitelist" link="https://www.searchenginejournal.com/duckduck-go-smarter-encryption/336449" %}
+        {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
         {% include dash tooltip="Not by default" link="https://www.phoronix.com/news/Firefox-129-Released" %}
-        <th>
-          <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://developer.apple.com/documentation/safari-release-notes/safari-18_2-release-notes#Security" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.phoronix.com/news/Firefox-129-Released" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
+        {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
+        {% include check link="https://developer.apple.com/documentation/safari-release-notes/safari-18_2-release-notes#Security" %}
+        {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
         {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
       </tr>
       <tr class="checker_row">
@@ -607,11 +417,7 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Tor Mode</td>
-        <th>
-          <a href="https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-Connectivity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-Connectivity" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -620,7 +426,6 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include cross %}
         {% include check %}
-        
         {% include cross %}
       </tr>
       <tr class="checker_row">
@@ -631,11 +436,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check %}
         {% include cross %}
-        <th>
-          <a href="https://winaero.com/enable-encrypted-client-hello-in-microsoft-edge-to-secure-connections" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://winaero.com/enable-encrypted-client-hello-in-microsoft-edge-to-secure-connections" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -651,11 +452,7 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check %}
         {% include cross %}
-        <th>
-          <a href="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include cross link="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" %}
         {% include check %}
         {% include check %}
         {% include check %}
@@ -671,11 +468,7 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" target="_blank" rel="noopener noreferrer">
-            <img src="../images/cross.webp" alt="cross">
-          </a>
-        </th>
+        {% include cross link="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" %}
         {% include cross %}
         {% include cross %}
         {% include check %}
@@ -686,8 +479,8 @@ titledesc: Find a browser that works for you
       <!-- <tr>
         <th class="left-col" ><br />Maintains Openness</th>
       </tr>
-      <tr class="checker_row grayrow" style="z-index: 100;">
-        <td  style="z-index: 100;">
+      <tr class="checker_row grayrow">
+        <td">
           <div>
           Copyleft License
           <span><a href="https://www.gnu.org/licenses/copyleft.en.html">
@@ -695,81 +488,17 @@ titledesc: Find a browser that works for you
           </span>
           </div>
         </td>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://github.com/brave/brave-core/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://github.com/brave/brave-core/blob/master/LICENSE" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://github.com/duckduckgo/apple-browsers/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer">
-                Apache 2.0
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Apache 2.0" link="https://github.com/duckduckgo/apple-browsers/blob/main/LICENSE.md" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://searchfox.org/mozilla-central/source/toolkit/content/license.html" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://gitlab.torproject.org/tpo/applications/tor-browser/-/blob/tor-browser-128.4.0esr-14.5-1/toolkit/content/license.html?ref_type=heads" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://searchfox.org/mozilla-central/source/toolkit/content/license.html" %}
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://gitlab.torproject.org/tpo/applications/tor-browser/-/blob/tor-browser-128.4.0esr-14.5-1/toolkit/content/license.html?ref_type=heads" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" target="_blank" rel="noopener noreferrer">
-              MPL 2.0</a> maintains openness for individual files
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://github.com/ungoogled-software/ungoogled-chromium/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-                BSD 3-Clause
-              </a>
-            </span>
-          </div>
-        </th>
-      </tr>
-      <tr class="checker_row grayrow" style="z-index: 99;">
-        <td  style="z-index: 99;">
-        <div style="z-index: 99;">
-        No CLA
-        <span style="z-index: 99;">A <a href="https://en.wikipedia.org/wiki/Contributor_License_Agreement" target="_blank" rel="noopener noreferrer">Client License Agreement</a > is an agreement that contributors have to sign in order to contribute to a project. This agreement gives the licensee the rights to relicense the project as well as sublicense the software under different licenses.
-        </span>
-        </div>
-        </td>
-      </tr> -->
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
+        {% include cross tooltip="BSD 3-Clause" link="https://github.com/ungoogled-software/ungoogled-chromium/blob/master/LICENSE" %}
+      </tr>-->
       <tr>
         <th class="left-col"><br />Freedom</th>
       </tr>
@@ -963,22 +692,10 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Pays Users</td>
-        <th>
-          <a href="https://brave.com/brave-rewards" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/brave-rewards" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://rewards.bing.com/welcome" target="_blank" rel="noopener noreferrer">
-                Earn cashback through PayPal on select purchases
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -989,107 +706,28 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Donates to Charity</td>
         {% include cross %}
-        <th>
-          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://duckduckgo.com/donations" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
+        {% include check link="https://duckduckgo.com/donations" %}
+        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
         {% include cross %}
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>No source<br />of income</span>
-          </div>
-        </th>
-        <th>
-          <a href="https://mullvad.net/en/blog/mullvad-is-now-continuously-donating-to-qubes-os" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>Operates as a non-profit, 
-              <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">
-                Donate Here
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/dash.webp" alt="cross">
-            <span>No source<br />of income</span>
-          </div>
-        </th>
+        {% include dash tooltip="No source of income" %}
+        {% include check link="https://mullvad.net/en/blog/mullvad-is-now-continuously-donating-to-qubes-os" %}
+        {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+        {% include dash tooltip='Operates as a non-profit, <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">Donate Here</a>' %}
+        {% include dash tooltip="No source of income" %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              Duckduckgo is 
-              <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
-                carbon negative
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>, but 
-              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                emissions have been increasing
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" target="_blank" rel="noopener noreferrer">
-                Committed to reducing emissions
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %} 
+        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030</a>, but <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing</a>' %}
+        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span class="edge">
-              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030</a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
         {% include cross %}
         {% include cross %}
       </tr>
@@ -1097,16 +735,7 @@ titledesc: Find a browser that works for you
         <td>Carbon Negative</td>
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              Duckduckgo is 
-              <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
-                carbon negative
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1185,28 +814,12 @@ titledesc: Find a browser that works for you
         {% include 
           tooltips/Open-Source 
         %}
-        <th>
-          <a href="https://github.com/brave/brave-core" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://github.com/brave/brave-core" %}
         {% include cross %}
-        <th>
-          <a href="https://github.com/duckduckgo/apple-browsers" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://github.com/duckduckgo/apple-browsers" %}
         {% include cross %}
-        <th>
-          <a href="https://github.com/mozilla-mobile/firefox-ios" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://github.com/mozilla-mobile/firefox-ios" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://github.com/mozilla-mobile/firefox-ios" %}
+        {% include check link="https://github.com/mozilla-mobile/firefox-ios" %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
@@ -1267,28 +880,12 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Proxied Google Safe Browsing</td>
         {% include check %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Not proxied</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Disabled completely</span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>Not proxied</span>
-          </div>
-        </th>
+        {% include cross tooltip="Not proxied" %}
+        {% include cross tooltip="Disabled completely" %}
+        {% include cross tooltip="Not proxied" %}
         {% include check %}
         {% include check %}
-        <th>
-          <a href="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" %}
       </tr>
       <tr class="checker_row">
         <td>Google Safe Browsing</td>
@@ -1351,19 +948,11 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include check %}
         {% include check %}
-        <th>
-          <a href="https://forums.macrumors.com/threads/safari-on-ios-15-and-macos-monterey-automatically-upgrades-web-connections-to-https-on-compatible-sites-for-improved-security.2299847" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://forums.macrumors.com/threads/safari-on-ios-15-and-macos-monterey-automatically-upgrades-web-connections-to-https-on-compatible-sites-for-improved-security.2299847" %}
       </tr>
       <tr class="checker_row">
         <td>Always Upgrade HTTPS</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/29-https-by-default-ios" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/29-https-by-default-ios" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1385,7 +974,7 @@ titledesc: Find a browser that works for you
         <td>
           <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
             ECH</a> 
-          enabled
+          Enabled
         </td>
         {% include cross %}
         {% include cross %}
@@ -1402,62 +991,13 @@ titledesc: Find a browser that works for you
             DNS over HTTPS
           </a>
         </td>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/check.webp" alt="check">
-            <span><a href="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" target="_blank" rel="noopener noreferrer">
-              Must be enabled system-wide</a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
       </tr>
       <tr class="checker_row">
         <td>
@@ -1485,44 +1025,12 @@ titledesc: Find a browser that works for you
           </span>
           </div>
         </td>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://github.com/brave/brave-core/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://github.com/brave/brave-core/blob/master/LICENSE" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://github.com/duckduckgo/apple-browsers/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer">
-                Apache 2.0
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Apache 2.0" link="https://github.com/duckduckgo/apple-browsers/blob/main/LICENSE.md" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://searchfox.org/mozilla-central/source/toolkit/content/license.html" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://searchfox.org/mozilla-central/source/toolkit/content/license.html" %}
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
         {% include cross %}
       </tr> -->
       <tr>
@@ -1536,24 +1044,14 @@ titledesc: Find a browser that works for you
         {% include check %}
         {% include check %}
         {% include check %}
-        <th>
-          <div><img src="../images/dash.webp" alt="dash">
-            <span>
-              Only Google, Yahoo, Bing, Duckduckgo and Ecosia
-            </span>
-          </div>
-        </th>
+        {% include dash tooltip="Only Google, Yahoo, Bing, Duckduckgo and Ecosia" %}
       </tr>
       <tr>
         <th class="left-col"><br />Convenience</th>
       </tr>
       <tr class="checker_row">
         <td>Cookie Banner Blocking</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/21-blocking-cookie-notices" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
         {% include cross %}
         {% include check %}
         {% include cross %}
@@ -1616,26 +1114,10 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Pays Users</td>
-        <th>
-          <div><img src="../images/dash.webp" alt="cross">
-            <span>
-              <a href="https://brave.com/blog/rewards-ios" target="_blank" rel="noopener noreferrer">
-                Prevented by Apple
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include dash tooltip="Prevented by Apple" link="https://brave.com/blog/rewards-ios" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://rewards.bing.com/welcome" target="_blank" rel="noopener noreferrer">
-                Earn cashback through PayPal on select purchases
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1643,103 +1125,30 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Donates to Charity</td>
         {% include cross %}
-        <th>
-          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://duckduckgo.com/donations" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
+        {% include check link="https://duckduckgo.com/donations" %}
+        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              Duckduckgo is 
-              <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
-                carbon negative
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>, but 
-              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                emissions have been increasing
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" target="_blank" rel="noopener noreferrer">
-                Committed to reducing emissions
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" target="_blank" rel="noopener noreferrer">
-                Committed to reducing emissions
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030</a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}  
+        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                Plans to by 2030</a>, but <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+                emissions have been increasing</a>' %}
+        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+        {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>Duckduckgo is 
-              <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
-                carbon negative
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -1849,56 +1258,17 @@ titledesc: Find a browser that works for you
         <td>
           Works Without Google Play Services
         </td>
-        <th>
-          <div>
-              <img src="../images/dash.webp" alt="dash">
-            <span><a href="https://plexus.techlore.tech/?q=Brave">
-              Breaks Brave Rewards</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div>
-            <img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://plexus.techlore.tech/?q=Chrome">
-                Broken</a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <a href="https://plexus.techlore.tech/?q=Duckduckgo">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://plexus.techlore.tech/?q=Edge">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://plexus.techlore.tech/?q=Firefox">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://plexus.techlore.tech/?q=Firefox+Focus">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://plexus.techlore.tech/?q=Tor+Brow">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include dash tooltip="Breaks Brave Rewards" link="https://plexus.techlore.tech/?q=Brave" %}
+        {% include cross tooltip="Broken" link="https://plexus.techlore.tech/?q=Chrome" %}
+        {% include check link="https://plexus.techlore.tech/?q=Duckduckgo" %}
+        {% include check link="https://plexus.techlore.tech/?q=Edge" %}
+        {% include check link="https://plexus.techlore.tech/?q=Firefox" %}
+        {% include check link="https://plexus.techlore.tech/?q=Firefox+Focus" %}
+        {% include check link="https://plexus.techlore.tech/?q=Tor+Brow" %}
       </tr>
       <tr class="checker_row">
         <td>Delete Data When Site Closes</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/25-forgetful-browsing" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/25-forgetful-browsing" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -2013,11 +1383,7 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Always Upgrade HTTPS</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/22-https-by-default" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
         {% include check %}
         {% include cross %}
         {% include check %}
@@ -2047,16 +1413,8 @@ titledesc: Find a browser that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/dash.webp" alt="cross">
-            <span>
-              if 
-              <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
-                DNS over HTTPS
-              </a>is enabled
-            </span>
-          </div>
-        </th>
+        {% include dash tooltip='If <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+                DNS over HTTPS</a> is enabled' %}
         {% include cross %}
       </tr>
       <tr class="checker_row">
@@ -2095,53 +1453,13 @@ titledesc: Find a browser that works for you
           </span>
           </div>
         </td>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://github.com/brave/brave-core/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://github.com/brave/brave-core/blob/master/LICENSE" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://github.com/duckduckgo/Android/blob/develop/LICENSE" target="_blank" rel="noopener noreferrer">
-                Apache 2.0
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Apache 2.0" link="https://github.com/duckduckgo/Android/blob/develop/LICENSE" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://searchfox.org/mozilla-central/source/toolkit/content/license.html" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                MPL 2.0</a> 
-              maintains openness for individual files
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://searchfox.org/mozilla-central/source/toolkit/content/license.html" %}
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
+        {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
       </tr> -->
       <tr>
         <th class="left-col"><br />Freedom</th>
@@ -2161,17 +1479,9 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Cookie Banner Blocking</td>
-        <th>
-          <a href="https://brave.com/privacy-updates/21-blocking-cookie-notices" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
         {% include cross %}
-        <th>
-          <a href="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cookie-pop-up-protection" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cookie-pop-up-protection" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -2222,22 +1532,10 @@ titledesc: Find a browser that works for you
       </tr>
       <tr class="checker_row">
         <td>Pays Users</td>
-        <th>
-          <a href="https://brave.com/brave-rewards" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://brave.com/brave-rewards" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://rewards.bing.com/welcome" target="_blank" rel="noopener noreferrer">
-                Earn cashback through PayPal on select purchases
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -2245,86 +1543,25 @@ titledesc: Find a browser that works for you
       <tr class="checker_row">
         <td>Donates to Charity</td>
         {% include cross %}
-        <th>
-          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://duckduckgo.com/donations" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
+        {% include check link="https://duckduckgo.com/donations" %}
+        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div>
-            <img src="../images/dash.webp" alt="dash">
-            <span>Operates as a non-profit, 
-              <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">
-                Donate Here
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include dash tooltip='Operates as a non-profit, <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">Donate Here</a>' %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
-                plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              Duckduckgo is 
-              <a href="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" target="_blank" rel="noopener noreferrer">
-                carbon negative
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
+        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
                 Plans to by 2030
               </a>, but 
               <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                emissions have been increasing
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" target="_blank" rel="noopener noreferrer">
-                committed to reducing emissions
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" target="_blank" rel="noopener noreferrer">
-                Committed to reducing emissions
-              </a>
-            </span>
-          </div>
-        </th>
+                emissions have been increasing</a>' %}
+        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
         {% include cross %}
       </tr>
       <tr class="checker_row">

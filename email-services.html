@@ -430,6 +430,12 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
+                Third-Party Email Client Support
+            </td>
+            <th>-</th>
+        </tr>
+        <tr class="checker_row">
+            <td>
                 Newsletter Unsubscribe Button
             </td>
             {% include check link="https://support.google.com/mail/answer/15433283" %}
@@ -644,7 +650,7 @@ titledesc: Find an email service that works for you
             {% include check link="https://mailbox.org/en/education-and-public-authorities#security" %}
             {% include cross %}
             {% include check tooltip="PGP does not encrypt subject lines" %}
-            {% include check link="https://www.startmail.com/encrypted-email" %}
+            {% include cross tooltip="Has to be enabled" link="https://support.startmail.com/hc/en-us/articles/360006843058-Encrypting-and-decrypting-messages#h_d0acf825-75f5-4ff2-820f-44c0e585ee60" %}
             {% include check tooltip="Encryption only works for messages sent between Tuta users" %}
             {% include cross %}
         </tr>
@@ -709,7 +715,7 @@ titledesc: Find an email service that works for you
                 Tracker Blocker
             </td>
             {% include cross tooltip="Requires 3rd-Party extensions like Gblock" link="https://www.gblock.app" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.com" %}
             {% include dash tooltip='Not by default, has to be enabled Mail > Preferences > Privacy, and check the box for "Protect Mail Activity"' link="https://www.wired.com/story/apple-mail-blocks-email-tracking-heres-what-it-means" %}
             <th>-</th>
             {% include cross %}
@@ -723,7 +729,7 @@ titledesc: Find an email service that works for you
                 Remote Content Blocker
             </td>
             {% include check tooltip="Not by default" link="https://support.google.com/mail/answer/145919" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.help/hc/en-us/articles/1500000278102-Blocking-remote-images" %}
             {% include check tooltip="Not by default" link="https://discussions.apple.com/thread/255164537?sortBy=rank" %}
             <th>-</th>
             {% include check tooltip="Not by default" link="https://learn.microsoft.com/en-us/answers/questions/4545349/how-to-disable-loading-remote-content-images-in-ou?forum=outlook_com-all&referrer=answers" %}
@@ -742,7 +748,7 @@ titledesc: Find an email service that works for you
             {% include check link="https://mailbox.org/en/security" %}
             {% include cross %}
             {% include check link="https://proton.me/blog/improved-protection-email-trackers" %}
-            <th>-</th>
+            {% include check link="https://www.startmail.com/privacy" %}
             {% include cross %}
             {% include cross link="https://legal.yahoo.com/us/en/yahoo/privacy/topics/ipaddress/index.html" %}
         </tr>
@@ -779,17 +785,24 @@ titledesc: Find an email service that works for you
                 Email Aliases
             </td>
             <th>-</th>
+            {% include check link="https://www.fastmail.com" %}
             <th>-</th>
             <th>-</th>
             <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include check link="https://proton.me/support/creating-aliases" %}
             {% include check link="https://www.startmail.com/features" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Pay With Monero
             </td>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            {% include cross link="https://mail.startmail.com/signup" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -800,6 +813,8 @@ titledesc: Find an email service that works for you
             <th>-</th>
             {% include check link="https://mailbox.org/en/security" %}
             <th>-</th>
+            <th>-</th>
+            {% include cross link="https://mail.startmail.com/signup" %}
         </tr>
         <tr class="checker_row">
             <td>
@@ -811,7 +826,7 @@ titledesc: Find an email service that works for you
             <th>-</th>
             {% include check %}
             {% include cross %}
-            <th>-</th>
+            {% include cross link="https://www.startmail.com/privacy" %}
             {% include check %}
             {% include check %}
         </tr>
@@ -825,7 +840,7 @@ titledesc: Find an email service that works for you
             <th>-</th>
             {% include check %}
             {% include check %}
-            <th>-</th>
+            {% include check %}
             {% include check %}
             {% include cross %}
         </tr>
@@ -837,12 +852,12 @@ titledesc: Find an email service that works for you
                 Quantum-Resistant Encryption
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include cross %}
             <th>-</th>
             {% include cross %}
             {% include cross tooltip="Actively working on quantum resistant encryption" link="https://www.reddit.com/r/ProtonMail/comments/1kt3o1g/comment/mtshjz7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
-            <th>-</th>
+            {% include cross tooltip="Will receive quantum encryption when PGP adopts it" link="https://www.reddit.com/r/ProtonMail/comments/1kt3o1g/comment/mtshjz7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
             {% include check link="https://tuta.com/blog/post-quantum-cryptography" %}
             {% include cross %}
         </tr>
@@ -856,7 +871,7 @@ titledesc: Find an email service that works for you
             <th>-</th>
             {% include dash tooltip="Only with S/MIME encryption enabled" %}
             {% include check link="https://proton.me/support/key-transparency" %}
-            <th>-</th>
+            {% include check link="https://support.startmail.com/hc/en-us/articles/360007328297-PGP-Signing" %}
             {% include check link="https://tuta.com/blog/key-verification" %}
             {% include cross %}
         </tr>
@@ -870,7 +885,7 @@ titledesc: Find an email service that works for you
             {% include check link="https://mailbox.org/en/education-and-public-authorities#security" %}
             {% include check link="https://www.bitdefender.com/en-us/blog/hotforsecurity/microsoft-announces-encryption-in-outlook-com-onedrive" %}
             {% include cross %}
-            <th>-</th>
+            {% include check link="https://www.startmail.com/whitepaper" %}
             {% include cross tooltip="Planned to be supported sometime in the future" link="https://tuta.com/security" %}
             {% include cross link="https://threatpost.com/critics-cut-deep-on-yahoo-mail-encryption-rollout/103534" %}
         </tr>
@@ -879,12 +894,12 @@ titledesc: Find an email service that works for you
                 Phishing Protection
             </td>
             {% include check link="https://support.google.com/mail/answer/8253" %}
-            <th>-</th>
+            {% include cross tooltip="Requires SaneBox" link="https://www.fastmail.com/blog/the-new-phishing-how-to-spot-email-scams-in-2025" %}
             {% include cross link="https://support.apple.com/en-us/102568" %}
             {% include check link="https://mailbox.org/en/security" %}
             {% include check link="https://support.microsoft.com/en-us/office/phishing-and-suspicious-behavior-in-outlook-0d882ea5-eedc-4bed-aebc-079ffa1105a3" %}
             {% include check link="https://proton.me/support/report-phishing" %}
-            <th>-</th>
+            {% include check link="https://support.startmail.com/hc/en-us/articles/360007455737-Email-spoofing-and-phishing" %}
             {% include check link="https://tuta.com/blog/how-to-prevent-phishing#how-we-stop-malicious-emails-in-tuta" %}
             {% include check link="https://help.yahoo.com/kb/account/additional-security-features-yahoo-mail-sln29297.html" %}
         </tr>
@@ -898,7 +913,7 @@ titledesc: Find an email service that works for you
             <th>-</th>
             {% include cross %}
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://tuta.com/blog/hidden-features#extra-features-for-email-headers" %}
             {% include cross %}
         </tr>
@@ -912,10 +927,10 @@ titledesc: Find an email service that works for you
             {% include cross link="https://policies.google.com/privacy#infocollect" %}
             <th>-</th>
             {% include check link="https://www.apple.com/legal/privacy/en-ww" %}
-            <th>-</th>
+            {% include dash tooltip="Stored anonymously and deleted after 4-7 days" link="https://mailbox.org/en/data-protection" %}
             {% include cross link="https://www.microsoft.com/en-us/privacy/privacystatement" %}
             {% include check link="https://proton.me/legal/privacy" %}
-            <th>-</th>
+            {% include dash tooltip="Stored for 7 days" link="https://www.startmail.com/privacy" %}
             {% include check link="https://tuta.com/security" %}
             {% include cross link="https://legal.yahoo.com/us/en/yahoo/privacy/topics/ipaddress/index.html" %}
         </tr>
@@ -926,10 +941,10 @@ titledesc: Find an email service that works for you
             {% include cross link="https://static.googleusercontent.com/media/services.google.com/en//blog_resources/google_privacy_booklet.pdf#page=9" %}
             <th>-</th>
             {% include check link="https://www.apple.com/legal/privacy/en-ww" %}
-            <th>-</th>
+            {% include check link="https://mailbox.org/en/data-protection" %}
             {% include cross link="https://www.microsoft.com/en-us/privacy/privacystatement" %}
             {% include check link="https://proton.me/legal/privacy" %}
-            <th>-</th>
+            {% include check link="https://www.startmail.com/privacy" %}
             {% include check link="https://tuta.com/security" %}
             {% include cross link="https://legal.yahoo.com/us/en/yahoo/privacy/topics/cookies/index.html" %}
         </tr>
@@ -940,10 +955,10 @@ titledesc: Find an email service that works for you
             {% include check link="https://policies.google.com/privacy#infosharing" %}
             <th>-</th>
             {% include dash tooltip="Third parties required to respect data according to Apple's privacy policy" link="https://www.apple.com/legal/privacy/en-ww" %}
-            <th>-</th>
+            {% include check link="https://mailbox.org/en/data-protection" %}
             {% include cross link="https://www.microsoft.com/en-us/privacy/privacystatement" %}
             {% include check link="https://proton.me/legal/privacy" %}
-            <th>-</th>
+            {% include check link="https://www.startmail.com/privacy" %}
             {% include check link="https://tuta.com/security" %}
             {% include cross link="https://legal.yahoo.com/us/en/yahoo/privacy/topics/thirdparties/index.html" %}
         </tr>
@@ -955,12 +970,12 @@ titledesc: Find an email service that works for you
                 Independent Security Audit
             </td>
             {% include check link="https://workspace.google.com/learn-more/security/security-whitepaper/page-5" %}
-            <th>-</th>
+            {% include cross tooltip="Only internal audits" link="https://www.fastmail.com/features/security" %}
             {% include cross %}
-            <th>-</th>
+            {% include check link="https://mailbox.org/en/post/mailbox-org-received-the-bsi-it-security-label" %}
             {% include cross %}
             {% include check link="https://proton.me/blog/openpgpjs-protonmail-security-audit" %}
-            <th>-</th>
+            {% include cross %}
             {% include cross tooltip="Only internal security reviews" link="https://github.com/tutao/tutanota/issues/2787" %}
             {% include cross %}
         </tr>
@@ -969,12 +984,12 @@ titledesc: Find an email service that works for you
                 Transparency Report
             </td>
             {% include check link="https://transparencyreport.google.com" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.com/policies/transparency-report" %}
             {% include check link="https://www.apple.com/legal/transparency" %}
             {% include check link="https://mailbox.org/en/company#transparency-report" %}
             {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/reports/government-requests/customer-data" %}
             {% include check link="https://proton.me/legal/transparency" %}
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://tuta.com/blog/transparency-report" %}
             {% include check link="https://www.yahooinc.com/transparency/index.html" %}
         </tr>
@@ -986,12 +1001,12 @@ titledesc: Find an email service that works for you
                 Auto-Clear Trash
             </td>
             {% include check tooltip="After 30 days" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.help/hc/en-us/articles/9662440846735-Auto-purge" %}
             {% include check tooltip="After 30 days" link="https://support.apple.com/guide/icloud/delete-email-mm6b1a7ab7/icloud" %}
-            <th>-</th>
+            {% include check link="https://userforum-en.mailbox.org/topic/2381-trash-auto-delete-configuration" %}
             {% include check link="https://support.microsoft.com/en-us/office/empty-the-deleted-items-folder-in-outlook-9196f9a0-7c10-4802-9afa-269a7dcfd11f" %}
-            {% include cross tooltip="After 30 days" link="https://proton.me/support/auto-delete-unwanted-messages" %}
-            <th>-</th>
+            {% include check tooltip="After 30 days" link="https://proton.me/support/auto-delete-unwanted-messages" %}
+            {% include cross link="https://support.startmail.com/hc/en-us/articles/360007447618-Empty-trash" %}
             {% include check tooltip="After 30 days" link="https://tuta.com/support/howto#trash" %}
             {% include check tooltip="After 7 days" link="https://help.yahoo.com/kb/empty-trash-folder-yahoo-mail-sln16024.html" %}
         </tr>
@@ -1000,12 +1015,12 @@ titledesc: Find an email service that works for you
                 Unsend Emails
             </td>
             {% include check link="https://support.google.com/mail/answer/2819488" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.com/features/undo-send" %}
             {% include check link="https://support.apple.com/guide/iphone/unsend-email-with-undo-send-iph0e7288015" %}
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://tuta.com/blog/how-to-unsend-email#how-to-unsend-an-email-in-outlook" %}
             {% include check tooltip="Only on iOS and web" link="https://proton.me/support/undo-send" %}
-            <th>-</th>
+            {% include cross %}
             {% include cross link="https://tuta.com/blog/how-to-unsend-email" %}
             {% include cross %}
         </tr>
@@ -1014,12 +1029,12 @@ titledesc: Find an email service that works for you
                 Spam Filter
             </td>
             {% include check link="https://workspace.google.com/blog/identity-and-security/an-overview-of-gmails-spam-filters" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.help/hc/en-us/articles/360060591413-Spam-filtering" %}
             {% include check link="https://support.apple.com/en-us/102376" %}
-            <th>-</th>
+            {% include check link="https://kb.mailbox.org/en/business/e-mail-article/mailbox-org-spam-filter" %}
             {% include check link="https://mailtrap.io/blog/outlook-spam-filter" %}
             {% include check link="https://proton.me/support/spam-filtering" %}
-            <th>-</th>
+            {% include check link="https://support.startmail.com/hc/en-us/articles/360007365858-Spam" %}
             {% include check link="https://tuta.com/support/howto#spam-rules" %}
             {% include check link="https://help.yahoo.com/kb/SLN28056.html" %}
         </tr>
@@ -1028,12 +1043,12 @@ titledesc: Find an email service that works for you
                 Schedule Send
             </td>
             {% include check link="https://support.google.com/mail/answer/9214606" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.com" %}
             {% include check link="https://appleinsider.com/inside/macos-ventura/tips/how-to-schedule-and-unsend-mail-on-macos-ventura" %}
-            <th>-</th>
+            {% include cross link="https://userforum-en.mailbox.org/topic/2266-schedule-emails-to-send-later" %}
             {% include check link="https://support.microsoft.com/en-us/office/delay-or-schedule-sending-email-messages-in-outlook-026af69f-c287-490a-a72f-6c65793744ba" %}
-            {% include dash tooltip="Custom time and date requires paid account" link="https://proton.me/support/schedule-email-send" %}
-            <th>-</th>
+            {% include check link="https://proton.me/support/schedule-email-send" %}
+            {% include cross %}
             {% include cross %}
             {% include dash tooltip="Only for the mobile app" link="https://help.yahoo.com/kb/compose-reply-scheduled-email-yahoo-mail-sln36352.html" %}
         </tr>
@@ -1042,26 +1057,54 @@ titledesc: Find an email service that works for you
                 Auto-Reply
             </td>
             {% include check link="https://support.google.com/mail/answer/25922" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.help/hc/en-us/articles/360060591233-Set-up-auto-reply-or-vacation-response" %}
             {% include check link="https://support.apple.com/guide/icloud/set-up-an-automatic-reply-mm6b1a04d1/icloud" %}
-            <th>-</th>
+            {% include check link="https://kb.mailbox.org/en/private/e-mail-article/to-set-up-a-vacation-notification" %}
             {% include check link="https://support.microsoft.com/en-us/office/send-automatic-replies-out-of-office-from-outlook-9742f476-5348-4f9f-997f-5e208513bd67" %}
             {% include check link="https://proton.me/support/auto-reply" %}
-            <th>-</th>
+            {% include check link="https://support.startmail.com/hc/en-us/articles/13916291758749-Auto-reply" %}
             {% include check link="https://tuta.com/support/howto#settings-mail" %}
             {% include check link="https://help.yahoo.com/kb/vacation-response-sln28068.html" %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Custom Domain
+            </td>
+            {% include check link="https://support.google.com/business/answer/9270657" %}
+            {% include check link="https://www.fastmail.com/pricing" %}
+            {% include check link="https://support.apple.com/en-us/102540" %}
+            {% include check link="https://kb.mailbox.org/en/private/custom-domains" %}
+            {% include check link="https://support.microsoft.com/en-us/office/add-a-custom-domain-name-071780ac-46bb-4758-b30d-39ad0aeccf42" %}
+            {% include check link="https://proton.me/support/custom-domain" %}
+            {% include check link="https://support.startmail.com/hc/en-us/articles/16174638984989-Add-Domains" %}
+            {% include check link="https://tuta.com/blog/own-domain-email" %}
+            {% include cross link="https://www.reddit.com/r/yahoo/comments/12qi014/custom_email_domain" %}
+        </tr>
+        <tr class="checker_row">
+            <td>
+                Third-Party Email Client Support
+            </td>
+            {% include check link="https://support.google.com/a/answer/9003945" %}
+            {% include check link="https://www.fastmail.com/pricing" %}
+            {% include check link="https://support.apple.com/en-us/102525" %}
+            {% include check link="https://kb.mailbox.org/en/private/e-mail-article/setup-with-mozilla-thunderbird" %}
+            {% include check link="https://support.microsoft.com/en-us/office/modern-authentication-methods-now-needed-to-continue-syncing-outlook-email-in-non-microsoft-email-apps-c5d65390-9676-4763-b41f-d7986499a90d" %}
+            {% include check tooltip="Requires Proton Mail Bridge" link="https://proton.me/mail/bridge" %}
+            {% include check link="https://support.startmail.com/hc/en-us/articles/25429257135261-Email-Clients" %}
+            {% include cross tooltip="Only offers first-party apps" link="https://tuta.com/support/howto#imap" %}
+            {% include check link="https://help.yahoo.com/kb/SLN15241.html" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Newsletter Unsubscribe Button
             </td>
             {% include check link="https://support.google.com/mail/answer/15433283" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.help/hc/en-us/articles/6905792637967-Unsubscribe" %}
             {% include check %}
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://learn.microsoft.com/en-us/answers/questions/4656191/unsubscribe-from-mailing-list-directly-from-outloo?forum=outlook_com-all&referrer=answers" %}
             {% include check link="https://proton.me/support/auto-reply" %}
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://tuta.com/blog/unsubscribe-from-emails#how-to-unsubscribe-from-a-newsletter-in-tuta-mail" %}
             {% include check link="https://help.yahoo.com/kb/SLN28056.html#cont3" %}
         </tr>
@@ -1073,12 +1116,12 @@ titledesc: Find an email service that works for you
                 Donates to Charity
             </td>
             {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
-            <th>-</th>
+            {% include check link="https://mailbox.org/en/company" %}
             {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
             {% include check link="https://proton.me/blog/2024-lifetime-fundraiser-results" %}
-            <th>-</th>
+            {% include cross %}
             {% include cross tooltip="Offers the business plan free and other discounts for non-profits organizations" link="https://tuta.com/blog/secure-email-for-non-profit" %}
             {% include check link="https://www.opensecrets.org/political-action-committees-pacs/yahoo-inc/C00380535/donors/2018" %}
         </tr>
@@ -1087,7 +1130,7 @@ titledesc: Find an email service that works for you
                 Carbon Neutral
             </td>
             {% include cross tooltip='<a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">Plans to by 2030</a>, but <a href="https://finance.yahoo.com/news/ai-destroyed-google-promise-carbon-214145116.html" target="_blank" rel="noopener noreferrer"> emissions have been increasing</a>' %}
-            <th>-</th>
+            {% include cross %}
             {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
             {% include check link="https://mailbox.org/en/company" %}
             {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
@@ -1097,7 +1140,7 @@ titledesc: Find an email service that works for you
                 emissions have been increasing
               </a>' %}
             {% include cross link="https://www.reddit.com/r/ProtonMail/comments/axoo99/comment/ehwnw92/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
-            <th>-</th>
+            {% include cross %}
             {% include check tooltip="Servers are powered by 100% green energy" link="https://tuta.com/sustainability" %}
             {% include cross link="https://www.yahooinc.com/press/good-loop-and-yahoo-partner-to-help-advertisers-minimize-carbon-emissions-and-proactively-address-sustainability-concerns" %}
         </tr>
@@ -1106,7 +1149,7 @@ titledesc: Find an email service that works for you
                 Carbon Negative
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include cross %}
             {% include cross %}
             {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
@@ -1116,7 +1159,7 @@ titledesc: Find an email service that works for you
                 emissions have been increasing
               </a>' %}
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include cross tooltip="Company has been attending Fridays for the Future protests" link="https://tuta.com/sustainability" %}
             {% include cross %}
         </tr>
