@@ -299,21 +299,9 @@ titledesc: Find a VPN that works for you
       {% include 
         tooltips/No-Email-Required 
       %}
-      <th>
-        <a href="https://www.ivpn.net/en/pricing" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/account/create" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://app.mysteriumvpn.com/login" target="_blank" rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
+      {% include check link="https://www.ivpn.net/en/pricing" %}
+      {% include check link="https://mullvad.net/en/account/create" %}
+      {% include cross link="https://app.mysteriumvpn.com/login" %}
       {% include cross link='https://nordaccount.com/signup' %}
       {% include cross link='https://support.apple.com/en-us/108647' %}
       {% include check link='https://account.proton.me/vpn/signup' %}
@@ -324,21 +312,9 @@ titledesc: Find a VPN that works for you
       {% include
         tooltips/No-Phone-Number-Required
       %}
-      <th>
-        <a href="https://www.ivpn.net/en/pricing" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/account/create" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://app.mysteriumvpn.com/login" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://www.ivpn.net/en/pricing" %}
+      {% include check link="https://mullvad.net/en/account/create" %}
+      {% include check link="https://app.mysteriumvpn.com/login" %}
       {% include check link='https://nordaccount.com/signup' %}
       {% include cross link='https://support.apple.com/en-us/108647' %}
       {% include check link='https://account.proton.me/vpn/signup' %}
@@ -366,30 +342,10 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Default Secure Protocol</td>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span>
-            <a href="https://www.ivpn.net/knowledgebase/general/what-vpn-protocols-do-you-offer" target="_blank"
-              rel="noopener noreferrer">
-              OpenVPN and WireGuard on all platforms, with iOS additionally offering IPSec with IKEv2 connections
-            </a>
-          </span>
-        </div>
-      </th>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span>
-            <a href="https://mullvad.net/en/servers" target="_blank" rel="noopener noreferrer">
-              WireGuard and OpenVPN</a>
-            <a href="https://mullvad.net/en/blog/removing-openvpn-15th-january-2026" target="_blank"
-              rel="noopener noreferrer">
-              (Will be removed on 15th January 2026 to focus on WireGuard)
-            </a>
-          </span>
-        </div>
-      </th>
+      {% include check tooltip="OpenVPN and WireGuard on all platforms, with iOS additionally offering IPSec with IKEv2 connections" link="https://www.ivpn.net/knowledgebase/general/what-vpn-protocols-do-you-offer" %}
+      {% include check tooltip='<a href="https://mullvad.net/en/servers" target="_blank" rel="noopener noreferrer">
+              WireGuard and OpenVPN</a><a href="https://mullvad.net/en/blog/removing-openvpn-15th-january-2026" target="_blank"
+              rel="noopener noreferrer">(Will be removed on 15th January 2026 to focus on WireGuard)</a>' %}
       {% include check tooltip="WireGuard" link="https://help.mysteriumvpn.com/en/articles/8954864-what-vpn-protocols-does-the-app-support" %}
       {% include check tooltip="OpenVPN, NordLynx(built off Wireguard) and IKEv2/IPsec" link="https://nordvpn.com/features/next-generation-encryption" %}
       {% include check tooltip="QUIC protocol" link="https://www.wired.com/story/how-apple-icloud-private-relay-works" %}
@@ -415,26 +371,9 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row grayrow">
       <td>No-Log Policy</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/privacy/do-you-store-any-logs-that-could-be-used-to-identify-a-customer" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/help/no-logging-data-policy" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <div>
-          <img src="../images/dash.webp" alt="dash">
-          <span>
-            <a href="https://www.mysteriumvpn.com/blog/no-log-vpn#DecentralizationTheGameChanger" target="_blank" rel="noopener noreferrer">
-              Servers run by volunteers, so logging is possible
-            </a>
-          </span>
-        </div>
-      </th>
+      {% include check link="https://www.ivpn.net/knowledgebase/privacy/do-you-store-any-logs-that-could-be-used-to-identify-a-customer" %}
+      {% include check link="https://mullvad.net/en/help/no-logging-data-policy" %}
+      {% include dash tooltip="Servers run by volunteers, so logging is possible" link="https://www.mysteriumvpn.com/blog/no-log-vpn#DecentralizationTheGameChanger" %}
       {% include check link="https://nordvpn.com/features/strict-no-logs-policy" alt="NordVPN has a no-log policy" %}
       {% include cross tooltip="Takes minimal logs that can not be tied to your browsing activity" link="https://www.apple.com/icloud/docs/iCloud_Private_Relay_Overview_Dec2021.pdf#page=9" %}
       {% include check link="https://protonvpn.com/features/no-logs-policy" %}
@@ -472,46 +411,21 @@ titledesc: Find a VPN that works for you
       <td>
         Warrant Canary
       </td>
-      <th>
-        <a href="https://www.ivpn.net/resources/canary.txt" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://www.ivpn.net/resources/canary.txt" %}
       {% include cross %}
-      <th>
-        <div>
-          <img src="../images/dash.webp" alt="dash">
-          <span>
-            Company does not have access to logs, so Warrant Canary is not necessary
-          </span>
-        </div>
-      </th>
+      {% include cross %}
       {% include check link="https://nordvpn.com/blog/nordvpn-introduces-transparency-reports" %}
       {% include cross %}
       {% include check link="https://protonvpn.com/blog/transparency-report" %}
       {% include cross %}
-      <th>
-        <a href="https://surfshark.com/warrant-canary" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://surfshark.com/warrant-canary" %}
     </tr>
     <!-- <tr class="checker_row">
       <td>
         Diskless Servers
       </td>
-      <th>
-        <a href="https://www.reddit.com/r/IVPN/comments/ju8b5d/comment/gcdepog/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
-          target="_blank" rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/blog/2023/9/20/we-have-successfully-completed-our-migration-to-ram-only-vpn-infrastructure"
-          target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include cross link="https://www.reddit.com/r/IVPN/comments/ju8b5d/comment/gcdepog/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
+      {% include check link="https://mullvad.net/en/blog/2023/9/20/we-have-successfully-completed-our-migration-to-ram-only-vpn-infrastructure" %}
       {% include cross %}
       {% include check link="https://nordvpn.com/blog/security-plan" %}
       {% include cross %}
@@ -533,36 +447,12 @@ titledesc: Find a VPN that works for you
           </span>
         </div>
       </td>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span><a href="https://github.com/ivpn/desktop-app/blob/master/LICENSE.md" target="_blank"
-              rel="noopener noreferrer">GPLv3</a></span>
-        </div>
-      </th>
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span><a href="https://github.com/mullvad/mullvadvpn-app/blob/main/LICENSE.md" target="_blank"
-              rel="noopener noreferrer">GPLv3</a></span>
-        </div>
-      </th>
-      <th>
-        <div>
-          <img src="../images/cross.webp" alt="cross">
-          <span><a href="https://github.com/mysteriumnetwork/mysterium-vpn-desktop/blob/master/LICENSE" target="_blank"
-              rel="noopener noreferrer">MIT License</a></span>
-        </div>
-      </th>
+      {% include check tooltip="GPLv3" link="https://github.com/ivpn/desktop-app/blob/master/LICENSE.md" %}
+      {% include check tooltip="GPLv3" link="https://github.com/mullvad/mullvadvpn-app/blob/main/LICENSE.md" %}
+      {% include cross tooltip="MIT License" link="https://github.com/mysteriumnetwork/mysterium-vpn-desktop/blob/master/LICENSE" %}
       {% include cross tooltip="Proprietary" %}
       {% include cross tooltip="Proprietary" %}
-      <th>
-        <div>
-          <img src="../images/check.webp" alt="check">
-          <span class="edge"><a href="https://github.com/ProtonVPN/ios-mac-app/blob/develop/LICENSE" target="_blank"
-              rel="noopener noreferrer">GPLv3</a></span>
-        </div>
-      </th>
+      {% include check tooltip="GPLv3" link="https://github.com/ProtonVPN/ios-mac-app/blob/develop/LICENSE" %}
       {% include check tooltip="GPLv3" link="https://github.com/safing/portmaster/blob/develop/LICENSE" %}
       {% include cross tooltip="Proprietary" %}
     </tr> -->
@@ -571,16 +461,8 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Custom DNS Support</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/general/custom-dns" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/why-mullvad-vpn" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://www.ivpn.net/knowledgebase/general/custom-dns" %}
+      {% include check link="https://mullvad.net/en/why-mullvad-vpn" %}
       {% include cross %}
       {% include check %}
       {% include cross %}
@@ -593,28 +475,8 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Split Tunneling</td>
-      <th>
-        <div>
-          <img src="../images/dash.webp" alt="dash">
-          <span>
-            <a href="https://www.ivpn.net/knowledgebase/general/split-tunnel-faq" target="_blank"
-              rel="noopener noreferrer">
-              Only on Windows, MacOS and Linux
-            </a>
-          </span>
-        </div>
-      </th>
-      <th>
-        <div>
-          <img src="../images/dash.webp" alt="dash">
-          <span>
-            <a href="https://mullvad.net/en/help/split-tunneling-with-the-mullvad-app" target="_blank"
-              rel="noopener noreferrer">
-              Not on iOS
-            </a>
-          </span>
-        </div>
-      </th>
+      {% include dash tooltip="Only on Windows, MacOS and Linux" link="https://www.ivpn.net/knowledgebase/general/split-tunnel-faq" %}
+      {% include dash tooltip="Not on iOS" link="https://mullvad.net/en/help/split-tunneling-with-the-mullvad-app" %}
       {% include cross %}
       {% include dash tooltip="Only on Windows and Android" link="https://nordvpn.com/features/split-tunneling" %}
       {% include dash tooltip="Can be disabled per-site" link="https://support.apple.com/en-us/102022?cid=mc-ols-icloud-article_ht213548-ios_ui-05232023" %}
@@ -637,12 +499,7 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Residential iP Addresses</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/general/do-you-offer-dedicated-or-static-ip-addresses"
-          target="_blank" rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
+      {% include cross link="https://www.ivpn.net/knowledgebase/general/do-you-offer-dedicated-or-static-ip-addresses" %}
       {% include cross %}
       {% include check link="https://help.mysteriumvpn.com/en/articles/8954867-does-the-vpn-offer-residential-servers" %}
       {% include cross tooltip="Does have dedicated iP support for avoiding iP blocks" %}
@@ -653,24 +510,9 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Streaming Service Support</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/general/can-i-access-hulu-or-netflix-or-bbc-iplayer-using-ivpn"
-          target="_blank" rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/help/watching-netflix-with-split-tunneling" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
-      <th>
-        <a href="https://help.mysteriumvpn.com/en/articles/8954852-does-the-vpn-work-with-streaming-services"
-          target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include cross link="https://www.ivpn.net/knowledgebase/general/can-i-access-hulu-or-netflix-or-bbc-iplayer-using-ivpn" %}
+      {% include cross link="https://mullvad.net/en/help/watching-netflix-with-split-tunneling" %}
+      {% include check link="https://help.mysteriumvpn.com/en/articles/8954852-does-the-vpn-work-with-streaming-services" %}
       {% include check link="https://nordvpn.com/features/streaming" %}
       {% include cross link="https://www.reddit.com/r/MacOSBeta/comments/p9h89v/netflix_and_private_relay" %}
       {% include check link="https://protonvpn.com/streaming" %}
@@ -679,30 +521,14 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Choose Location</td>
-      <th>
-        <a href="https://www.ivpn.net/en/status" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/servers" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://www.ivpn.net/en/status" %}
+      {% include check link="https://mullvad.net/en/servers" %}
       {% include check link="https://www.mysteriumvpn.com/locations" %}
       {% include check link="https://nordvpn.com/servers" %}
       {% include cross link="https://www.macrumors.com/how-to/adjust-icloud-private-relay-settings" %}
-      <th>
-        <a href="https://protonvpn.com/vpn-servers" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://protonvpn.com/vpn-servers" %}
       {% include check link="https://wiki.safing.io/en/Portmaster/Feature" %}
-      <th>
-        <a href="https://surfshark.com/servers" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://surfshark.com/servers" %}
     </tr>
     <tr class="checker_row">
       <td>Torrenting Support</td>
@@ -717,38 +543,19 @@ titledesc: Find a VPN that works for you
     </tr>
     <tr class="checker_row">
       <td>Port Forwarding</td>
-      <th>
-        <a href="https://www.ivpn.net/knowledgebase/general/do-you-support-port-forwarding" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
-      <th>
-        <a href="https://mullvad.net/en/blog/removing-the-support-for-forwarded-ports" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/cross.webp" alt="cross">
-        </a>
-      </th>
+      {% include cross link="https://www.ivpn.net/knowledgebase/general/do-you-support-port-forwarding" %}
+      {% include cross link="https://mullvad.net/en/blog/removing-the-support-for-forwarded-ports" %}
       {% include cross %}
       {% include cross link="https://support.nordvpn.com/hc/en-us/articles/19483392309649-Does-NordVPN-offer-port-forwarding" %}
       {% include cross %}
-      <th>
-        <a href="https://protonvpn.com/support/port-forwarding" target="_blank" rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://protonvpn.com/support/port-forwarding" %}
       {% include cross %}
       {% include cross link="https://surfshark.com/blog/vpn-port-forwarding#vpn-clients-and-vpn-port-forwarding" %}
     </tr>
     <tr class="checker_row">
       <td>Tailscale Support</td>
       {% include cross %}
-      <th>
-        <a href="https://mullvad.net/en/blog/tailscale-has-partnered-with-mullvad" target="_blank"
-          rel="noopener noreferrer">
-          <img src="../images/check.webp" alt="check">
-        </a>
-      </th>
+      {% include check link="https://mullvad.net/en/blog/tailscale-has-partnered-with-mullvad" %}
       {% include cross %}
       {% include cross %}
       {% include cross %}
@@ -794,7 +601,6 @@ titledesc: Find a VPN that works for you
     </tr>
   </tbody>
 </table>
-
 
 <table>
   <thead>

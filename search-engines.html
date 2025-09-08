@@ -93,15 +93,7 @@ titledesc: Find a search engine that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.reddit.com/r/presearch/comments/l97pj0/comment/glh3lvc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank" rel="noopener noreferrer">
-                Might in the future
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Might in the future" link="https://www.reddit.com/r/presearch/comments/l97pj0/comment/glh3lvc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
         {% include check link="https://codeberg.org/JojoYou/PriEco" %}
         {% include check link="https://github.com/searxng/searxng" %}
         {% include cross %}
@@ -112,17 +104,9 @@ titledesc: Find a search engine that works for you
         {% include 
           tooltips/Optional-JavaScript
         %}
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>Only main results and no images on page</span>
-          </div>
-        </th>
+        {% include dash tooltip="Only main results and no images on page" %}
         {% include check %}
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash">
-            <span>Only main results</span>
-          </div>
-        </th>
+        {% include dash tooltip="Only main results" %}
         {% include check %}
         {% include cross link='https://techcrunch.com/2025/01/17/google-begins-requiring-javascript-for-google-search' %}
         {% include cross %}
@@ -149,36 +133,16 @@ titledesc: Find a search engine that works for you
       <tr class="checker_row">
         <td>Onion Address</td>
         {% include cross %}
-        <th>
-          <a href="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion" %}
+        {% include check link="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <a href="http://priecovk7jsuh3tvkh62c6j4oep3l5bldigpzmay26rdpqz357t5dmad.onion" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="http://priecovk7jsuh3tvkh62c6j4oep3l5bldigpzmay26rdpqz357t5dmad.onion" %}
         {% include check link="https://searx.space/#" %}
         {% include cross %}
-        <th>
-          <a href="http://startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#onion-instances" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="http://startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion" %}
+        {% include check link="https://github.com/benbusby/whoogle-search?tab=readme-ov-file#onion-instances" %}
       </tr>
       <tr class="checker_row">
         <td>Link Redirect Support</td>
@@ -203,11 +167,7 @@ titledesc: Find a search engine that works for you
         {% include cross %}
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span class="edge">Depends on<br />instance</span>
-          </div>
-        </th>
+        {% include check tooltip="Depends on instance" %}
         {% include cross %}
         {% include cross %}
         {% include check %}

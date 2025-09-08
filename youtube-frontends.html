@@ -85,26 +85,10 @@ titledesc: Find a Youtube frontend that works for you
           <span><a href="https://www.gnu.org/licenses/copyleft.en.html" target="_blank" rel="noopener noreferrer">Copyleft licenses</a> are a type of<br />open-source license that aim<br />to ensure software remains free<br />and open through requiring any<br />derivative works to use the same license.</span>
           </div>
         </td>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/FreeTubeApp/FreeTube/blob/development/LICENSE" target="_blank" rel="noopener noreferrer">AGPLv3</a></span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/libre-tube/LibreTube/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/TeamNewPipe/NewPipe/blob/dev/LICENSE" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span><a href="https://github.com/yuliskov/SmartTube/blob/master/LICENSE.md" target="_blank" rel="noopener noreferrer">GPLv3</a></span>
-          </div>
-        </th>
+        {% include check tooltip="AGPLv3" link="https://github.com/FreeTubeApp/FreeTube/blob/development/LICENSE" %}
+        {% include check tooltip="GPLv3" link="https://github.com/libre-tube/LibreTube/blob/master/LICENSE" %}
+        {% include check tooltip="GPLv3" link="https://github.com/TeamNewPipe/NewPipe/blob/dev/LICENSE" %}
+        {% include check tooltip="GPLv3" link="https://github.com/yuliskov/SmartTube/blob/master/LICENSE.md" %}
       </tr> -->
       <tr>
         <th class="left-col"><br />Freedom</th>
@@ -259,33 +243,9 @@ titledesc: Find a Youtube frontend that works for you
             </span>
           </div>
         </td>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://tube.cadence.moe/licenses" target="_blank" rel="noopener noreferrer">
-                AGPLv3
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://github.com/iv-org/invidious/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-                AGPLv3
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span>
-              <a href="https://github.com/TeamPiped/Piped/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
-              AGPLv3
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include check tooltip="AGPLv3" link="https://tube.cadence.moe/licenses" %}
+        {% include check tooltip="AGPLv3" link="https://github.com/iv-org/invidious/blob/master/LICENSE" %}
+        {% include check tooltip="AGPLv3" link="https://github.com/TeamPiped/Piped/blob/master/LICENSE" %}
       </tr> -->
       <tr class="checker_row">
         <td>Self Hostable</td>

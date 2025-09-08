@@ -70,16 +70,8 @@ titledesc: Find a music service that works for you
         {% include 
           tooltips/Open-Source 
         %}
-        <th>
-          <a href="https://github.com/brave/brave-core" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://codeberg.org/Hyperpipe/Hyperpipe" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://github.com/brave/brave-core" %}
+        {% include check link="https://codeberg.org/Hyperpipe/Hyperpipe" %}
         {% include cross %}
         {% include cross %}
         {% include cross %}
@@ -90,11 +82,7 @@ titledesc: Find a music service that works for you
         {% include check %}
         {% include check %}
         {% include cross %}
-        <th>
-          <div><img src="../images/check.webp" alt="check">
-            <span class="edge">Only on<br />web</span>
-          </div>
-        </th>
+        {% include check tooltip="Only on web" %}
       </tr>
       <!-- <tr>
         <th class="left-col"><br />Maintains Openness</th>
@@ -212,22 +200,10 @@ titledesc: Find a music service that works for you
       <tr class="checker_row">
         <td>Donates to Charity</td>
         {% include cross %}
-        <th>
-          <div><img src="../images/dash.webp" alt="cross">
-            <span>No source<br />of income</span>
-          </div>
-        </th>
+        {% include dash tooltip="No source of income" %}
         {% include cross %}
-        <th>
-          <a href="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include check link="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward" %}
+        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
       </tr>
       <tr class="checker_row">
         <td>Pays Artists</td>
@@ -240,27 +216,10 @@ titledesc: Find a music service that works for you
       <tr class="checker_row">
         <td>Carbon Neutral</td>
         {% include cross %}
-
         {% include cross %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.lifeatspotify.com/diversity-equity-impact/climate-action" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2030" link="https://www.lifeatspotify.com/diversity-equity-impact/climate-action" %}
+        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>
@@ -452,40 +411,11 @@ titledesc: Find a music service that works for you
       </tr>
       <tr class="checker_row">
         <td>Donates to Charity</td>
-        <th>
-          <div><img src="../images/dash.webp" alt="yellow dash"
-             >
-            <span>
-              <a href="https://www.npr.org/2023/01/19/1149993013/amazon-amazonsmile-charity-donation-program" target="_blank" rel="noopener noreferrer">
-                Stopped in 2023
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <a href="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <a href="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
-        <th>
-          <div><img src="../images/dash.webp" alt="cross">
-            <span>
-              <a href="https://www.vulture.com/2016/02/tidal-to-donate-15-million-to-charities.html" target="_blank" rel="noopener noreferrer">
-                in 2016
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <a href="https://www.google.org/billion-commitment-to-create-more-opportunity" target="_blank" rel="noopener noreferrer">
-            <img src="../images/check.webp" alt="check">
-          </a>
-        </th>
+        {% include dash tooltip="Stopped in 2023" link="https://www.npr.org/2023/01/19/1149993013/amazon-amazonsmile-charity-donation-program" %}
+        {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+        {% include check link="https://www.lifeatspotify.com/diversity-equity-impact/social-impact#paying-it-forward" %}
+        {% include dash tooltip="In 2016" link="https://www.vulture.com/2016/02/tidal-to-donate-15-million-to-charities.html" %}
+        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
       </tr>
       <tr class="checker_row">
         <td>Pays Artists</td>
@@ -497,43 +427,11 @@ titledesc: Find a music service that works for you
       </tr>
       <tr class="checker_row">
         <td>Carbon Neutral</td>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.aboutamazon.com/planet/climate-pledge" target="_blank" rel="noopener noreferrer">
-                Plans to by 2040
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.apple.com/environment" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://www.lifeatspotify.com/diversity-equity-impact/climate-action" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2040" link="https://www.aboutamazon.com/planet/climate-pledge" %}
+        {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
+        {% include cross tooltip="Plans to by 2030" link="https://www.lifeatspotify.com/diversity-equity-impact/climate-action" %}
         {% include cross %}
-        <th>
-          <div><img src="../images/cross.webp" alt="cross">
-            <span>
-              <a href="https://sustainability.google/operating-sustainably/net-zero-carbon" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>
-            </span>
-          </div>
-        </th>
+        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
       </tr>
       <tr class="checker_row">
         <td>Carbon Negative</td>

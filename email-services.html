@@ -717,10 +717,10 @@ titledesc: Find an email service that works for you
             {% include cross tooltip="Requires 3rd-Party extensions like Gblock" link="https://www.gblock.app" %}
             {% include check link="https://www.fastmail.com" %}
             {% include dash tooltip='Not by default, has to be enabled Mail > Preferences > Privacy, and check the box for "Protect Mail Activity"' link="https://www.wired.com/story/apple-mail-blocks-email-tracking-heres-what-it-means" %}
-            <th>-</th>
+            {% include cross %}
             {% include cross %}
             {% include check link="https://proton.me/support/email-tracker-protection" %}
-            <th>-</th>
+            {% include check link="https://www.startmail.com/features" %}
             {% include cross tooltip="Blocks remote content by default, so trackers only show if you allow remote content" %}
             {% include cross %}
         </tr>
@@ -731,10 +731,10 @@ titledesc: Find an email service that works for you
             {% include check tooltip="Not by default" link="https://support.google.com/mail/answer/145919" %}
             {% include check link="https://www.fastmail.help/hc/en-us/articles/1500000278102-Blocking-remote-images" %}
             {% include check tooltip="Not by default" link="https://discussions.apple.com/thread/255164537?sortBy=rank" %}
-            <th>-</th>
+            {% include cross %}
             {% include check tooltip="Not by default" link="https://learn.microsoft.com/en-us/answers/questions/4545349/how-to-disable-loading-remote-content-images-in-ou?forum=outlook_com-all&referrer=answers" %}
-            {% include check  tooltip="Not by default " link="https://proton.me/support/email-tracker-protection" %}
-            <th>-</th>
+            {% include check tooltip="Not by default " link="https://proton.me/support/email-tracker-protection" %}
+            {% include check link="https://www.startmail.com/features" %}
             {% include check link="https://tuta.com/support/howto#view-image" %}
             {% include check link="https://help.yahoo.com/kb/SLN5043.html" %}
         </tr>
@@ -743,7 +743,7 @@ titledesc: Find an email service that works for you
                 IP Address Protection
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.com/blog/fastmail-keeps-you-safe-from-spy-pixels" %}
             {% include dash tooltip="Not available in all regions and has to be enabled in settings" link="https://support.apple.com/guide/icloud/use-mail-privacy-protection-mm90f7d05c96/icloud" %}
             {% include check link="https://mailbox.org/en/security" %}
             {% include cross %}
@@ -757,12 +757,12 @@ titledesc: Find an email service that works for you
                 Tracking Link Protection
             </td>
             {% include cross tooltip="Requires 3rd-Party extensions like Gblock" link="https://www.gblock.app" %}
-            <th>-</th>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
+            {% include cross %}
             {% include cross %}
             {% include check link="https://proton.me/blog/tracking-links-protection" %}
-            <th>-</th>
+            {% include cross %}
             {% include cross link="https://www.reddit.com/r/tutanota/comments/w2f443/comment/igr9odp/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
             {% include cross %}
         </tr>
@@ -796,34 +796,38 @@ titledesc: Find an email service that works for you
             <td>
                 Pay With Monero
             </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include cross %}
+            {% include cross link="https://www.fastmail.help/hc/en-us/articles/360058752494-Payments" %}
+            {% include cross %}
+            {% include cross link="https://register.mailbox.org" %}
+            {% include cross %}
+            {% include cross link="https://proton.me/support/payment-options" %}
             {% include cross link="https://mail.startmail.com/signup" %}
+            {% include check tooltip="Proxystore supports buying Tuta gift cards with Monero" link="https://tuta.com/support/payment#cryptocurrency" %}
+            {% include cross link="https://help.yahoo.com/kb/SLN6951.html" %}
         </tr>
         <tr class="checker_row">
             <td>
                 Pay With Cash
             </td>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
+            {% include cross %}
+            {% include cross link="https://www.fastmail.help/hc/en-us/articles/360058752494-Payments" %}
+            {% include cross %}
             {% include check link="https://mailbox.org/en/security" %}
-            <th>-</th>
-            <th>-</th>
+            {% include cross %}
+            {% include check link="https://proton.me/support/payment-options#cash" %}
             {% include cross link="https://mail.startmail.com/signup" %}
+            {% include check tooltip="Proxystore supports buying Tuta gift cards with cash" link="https://tuta.com/support/payment#cryptocurrency" %}
+            {% include cross link="https://help.yahoo.com/kb/SLN6951.html" %}
         </tr>
         <tr class="checker_row">
             <td>
                 No Email Required
             </td>
             {% include check %}
-            <th>-</th>
+            {% include check %}
             {% include cross %}
-            <th>-</th>
+            {% include check %}
             {% include check %}
             {% include cross %}
             {% include cross link="https://www.startmail.com/privacy" %}
@@ -835,9 +839,9 @@ titledesc: Find an email service that works for you
                 No Phone Number Required
             </td>
             {% include cross %}
-            <th>-</th>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
+            {% include check %}
             {% include check %}
             {% include check %}
             {% include check %}
@@ -854,7 +858,7 @@ titledesc: Find an email service that works for you
             {% include cross %}
             {% include cross %}
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include cross %}
             {% include cross tooltip="Actively working on quantum resistant encryption" link="https://www.reddit.com/r/ProtonMail/comments/1kt3o1g/comment/mtshjz7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
             {% include cross tooltip="Will receive quantum encryption when PGP adopts it" link="https://www.reddit.com/r/ProtonMail/comments/1kt3o1g/comment/mtshjz7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" %}
@@ -866,9 +870,9 @@ titledesc: Find an email service that works for you
                 Key Verification
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include dash tooltip="Only with S/MIME encryption enabled" %}
-            <th>-</th>
+            {% include check link="https://mailbox.org/en/security" %}
             {% include dash tooltip="Only with S/MIME encryption enabled" %}
             {% include check link="https://proton.me/support/key-transparency" %}
             {% include check link="https://support.startmail.com/hc/en-us/articles/360007328297-PGP-Signing" %}
@@ -880,7 +884,7 @@ titledesc: Find an email service that works for you
                 Perfect Forward Secrecy
             </td>
             {% include check link="https://en.wikipedia.org/wiki/Forward_secrecy#Use" %}
-            <th>-</th>
+            {% include check link="https://www.fastmail.com/blog/fastmail-uses-perfect-forward-secrecy-with-httpstls-connections" %}
             {% include cross %}
             {% include check link="https://mailbox.org/en/education-and-public-authorities#security" %}
             {% include check link="https://www.bitdefender.com/en-us/blog/hotforsecurity/microsoft-announces-encryption-in-outlook-com-onedrive" %}
@@ -908,9 +912,9 @@ titledesc: Find an email service that works for you
                 Warn About Suspicious Email Headers
             </td>
             {% include cross %}
-            <th>-</th>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
+            {% include cross %}
             {% include cross %}
             {% include cross %}
             {% include cross %}
