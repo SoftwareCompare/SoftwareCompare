@@ -117,7 +117,7 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Default E2E Encryption
+                Default E2E Encryption on same provider
             </td>
             {% include cross %}
             {% include cross %}
@@ -128,7 +128,7 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                E2E Encryption Support
+                PGP Support
             </td>
             {% include cross tooltip="Only with enterprise accounts and third-party tools like Mailvelope" link="https://www.cloudwards.net/how-to-encrypt-your-emails/#One" %}
             {% include check link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Three" %}
@@ -139,17 +139,6 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Default E2E Encryption between providers
-            </td>
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-            {% include check %}
-            {% include cross %}
-            {% include cross %}
-        </tr>
-        <tr class="checker_row">
-            <td>
                 Encrypted Password Protected Emails
             </td>
             {% include cross tooltip="Password protected emails not  encrypted" link="https://support.google.com/mail/answer/7674059?hl=en&co=GENIE.Platform%3DDesktop" %}
@@ -157,17 +146,6 @@ titledesc: Find an email service that works for you
             {% include cross %}
             {% include check link="https://proton.me/support/password-protected-emails" %}
             {% include check link="https://tuta.com/support#encrypted-emails-external" %}
-            {% include cross %}
-        </tr>
-        <tr class="checker_row">
-            <td>
-                Metadata Protection
-            </td>
-            {% include cross %}
-            {% include cross %}
-            {% include cross %}
-            {% include cross link="https://proton.me/mail/privacy-policy" %}
-            {% include cross link="https://en.wikipedia.org/wiki/Tuta_(email)#Encryption" %}
             {% include cross %}
         </tr>
         <tr class="checker_row">
@@ -268,7 +246,7 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Key Verification
+                Key Transparency
             </td>
             {% include cross %}
             {% include dash tooltip="Only with S/MIME encryption enabled" %}
@@ -642,7 +620,7 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Default E2E Encryption
+                Default E2E Encryption on same provider
             </td>
             {% include cross %}
             {% include cross %}
@@ -656,58 +634,30 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                E2E Encryption Support
+                PGP Support
             </td>
             {% include cross tooltip="Only with enterprise accounts and third-party tools like Mailvelope" link="https://www.cloudwards.net/how-to-encrypt-your-emails/#One" %}
-            <th>-</th>
+            {% include cross link="https://www.fastmail.com/blog/why-we-dont-offer-pgp" %}
             {% include check link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Three" %}
             {% include check link="https://mailbox.org/en/education-and-public-authorities#security" %}
             {% include check link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Two" %}
             {% include check tooltip="PGP does not encrypt subject lines" %}
             {% include check link="https://www.startmail.com/features" %}
-            {% include check tooltip="Encryption only works for messages sent between Tuta users" %}
+            {% include cross tooltip="Encryption only works for messages sent between Tuta users" %}
             {% include cross tooltip="Only using third-party tools like Mailvelope" link="https://www.cloudwards.net/how-to-encrypt-your-emails/#Four" %}
-        </tr>
-        <tr class="checker_row">
-            <td>
-                Default E2E Encryption between providers
-            </td>
-            {% include cross %}
-            <th>-</th>
-            {% include cross %}
-            {% include check link="https://mailbox.org/en/education-and-public-authorities#security" %}
-            {% include cross %}
-            {% include check %}
-            {% include cross tooltip="Has to be enabled" link="https://support.startmail.com/hc/en-us/articles/360006843058-Encrypting-and-decrypting-messages#h_d0acf825-75f5-4ff2-820f-44c0e585ee60" %}
-            {% include cross %}
-            {% include cross %}
         </tr>
         <tr class="checker_row">
             <td>
                 Encrypted Password Protected Emails
             </td>
             {% include cross tooltip="Password protected emails not  encrypted" link="https://support.google.com/mail/answer/7674059?hl=en&co=GENIE.Platform%3DDesktop" %}
-            <th>-</th>
+            {% include cross %}
             {% include cross %}
             <th>-</th>
             {% include cross %}
             {% include check link="https://proton.me/support/password-protected-emails" %}
             {% include check link="https://support.startmail.com/hc/en-us/articles/360006695898-Password-protected-messages" %}
             {% include check link="https://tuta.com/support#encrypted-emails-external" %}
-            {% include cross %}
-        </tr>
-        <tr class="checker_row">
-            <td>
-                Metadata Protection
-            </td>
-            {% include cross %}
-            <th>-</th>
-            {% include cross %}
-            <th>-</th>
-            {% include cross %}
-            {% include cross link="https://proton.me/mail/privacy-policy" %}
-            <th>-</th>
-            {% include cross link="https://en.wikipedia.org/wiki/Tuta_(email)#Encryption" %}
             {% include cross %}
         </tr>
         <tr class="checker_row">
@@ -771,7 +721,7 @@ titledesc: Find an email service that works for you
                 Hide When You Read Email
             </td>
             {% include cross %}
-            <th>-</th>
+            {% include cross %}
             {% include dash tooltip="Not available in all regions and has to be enabled in settings" link="https://support.apple.com/guide/icloud/use-mail-privacy-protection-mm90f7d05c96/icloud" %}
             <th>-</th>
             {% include cross %}
@@ -784,7 +734,7 @@ titledesc: Find an email service that works for you
             <td>
                 Email Aliases
             </td>
-            <th>-</th>
+            {% include cross %}
             {% include check link="https://www.fastmail.com" %}
             <th>-</th>
             <th>-</th>
@@ -867,7 +817,7 @@ titledesc: Find an email service that works for you
         </tr>
         <tr class="checker_row">
             <td>
-                Key Verification
+                Key Transparency
             </td>
             {% include cross %}
             {% include cross %}
