@@ -5,3 +5,4 @@ exclude:
   - "Build"
   - "Build/**"
   - "**/vcpkg/**"
+permalink: /blog/:title
