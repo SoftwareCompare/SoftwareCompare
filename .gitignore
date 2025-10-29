@@ -2,3 +2,7 @@
 .DS_Store
 **/*.DS_Store
 .vscode
+_site/
+.jekyll-cache/   
+.jekyll-metadata
+Gemfile.lock
