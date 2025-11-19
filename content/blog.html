@@ -12,7 +12,7 @@ titledesc: Software Compare - Blog
   {% for post in site.posts offset: 1 %}
     <li class="blog-container">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.coverimage }}
+      <a href="{{ post.url }}"><img src="{{ post.coverimage }}"></a><br />
       {{ post.author }} -
       {{ post.date | date: '%b %-d, %Y' }}<br /><br />
       {{ post.brief }}<br />

@@ -2,6 +2,7 @@
 layout: post
 author: David Collini
 permalink: /blog/introduction-to-git
+coverimage: /images/blog/intro-to-git/Git-Preview-Image.jpg
 brief: Git is an essential tool for all developers, yet it may be intimidating to beginners. Here's where you can learn the basics of git.
 # published: false
 ---
