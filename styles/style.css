@@ -984,7 +984,7 @@ footer {
 }
 
 .blog-banner {
-  background-color: #000;
+  background-color: var(--banner-color);
   
   img {
     width: 40rem;
