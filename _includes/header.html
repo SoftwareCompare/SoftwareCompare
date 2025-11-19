@@ -16,24 +16,27 @@
             <ul>
                 <li><a href="/about"
                     {% if page.title contains "About" %}
-                    style="color: var(--stark); font-weight: bold;"
+                    style="color: var(--stark);"
                     {% endif %}
                     >About</a>
                 </li>
                 <li><a href="/donate"
                     {% if page.title contains "Donate" %}
-                    style="color: var(--stark); font-weight: bold;"
+                    style="color: var(--stark);"
                     {% endif %}
                     >Donate</a>
                 </li>
                 <li><a href="/contact"
                     {% if page.title contains "Contact" %}
-                    style="color: var(--stark); font-weight: bold;"
+                    style="color: var(--stark);"
                     {% endif %}
                     >Contact</a>
                 </li>
-                <li><a href="https://github.com/SoftwareCompare/SoftwareCompare/commits/main" target="_blank" rel="noopener noreferrer">
-                    Changelog</a>
+                <li><a href="/blog"
+                    {% if page.title contains "Blog" %}
+                    style="color: var(--stark);"
+                    {% endif %}
+                    >Blog</a>
                 </li>
                 <li><button id="theme-toggle"><img src="/images/dark-mode-icon.svg" alt="Theme Toggle"></button></li>
             </ul>

@@ -1,16 +1,22 @@
 ---
-layout: text-page
+layout: blog-homepage
 title: Blog
 permalink: blog
 description: Software Compare Blog
 titledesc: Software Compare - Blog
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
+<!-- Top article is in the layout -->
+
+<ul class="blogs-container">
+  {% for post in site.posts offset: 1 %}
+    <li class="blog-container">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+      {{ post.coverimage }}
+      {{ post.author }} -
+      {{ post.date | date: '%b %-d, %Y' }}<br /><br />
+      {{ post.brief }}<br />
+      <a href="{{ post.url }}">Continue Reading</a>
     </li>
   {% endfor %}
 </ul>

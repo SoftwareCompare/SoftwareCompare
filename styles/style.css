@@ -98,13 +98,17 @@ main {
 }
 
 .text-content {
-  max-width: 50rem;
+  max-width: 45rem;
   margin-top: 0.8rem;
   margin-bottom: 3rem;
   width: 94%;
   h1 {
     font-size: clamp(30px, 5vw, 40px);
   }
+  h1, h2, h3 {
+    font-family: "Bagnard", Georgia, Times, serif;
+  }
+  line-height: 1.8;
 }
 
 header {
@@ -976,5 +980,53 @@ footer {
   }
   a:hover{
     filter: brightness(0) invert(1);
+  }
+}
+
+.blog-banner {
+  background-color: #000;
+  
+  img {
+    width: 40rem;
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    display: flex;
+  flex-direction: row;
+    max-width: 40rem;
+    padding: 1rem;
+    max-width: 60rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  flex-direction: row;
+
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none; 
+}
+
+.blog-container {
+  width: 19rem;
+  min-width: 19rem;
+  margin: 1rem;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  a {
+    text-decoration: none;
   }
 }

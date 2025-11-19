@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+
+            {% for post in site.posts limit: 1 %}
+                <div class="blog-banner">
+                    <li>
+                        <a href="{{ post.url }}">
+                        <img src="{{ post.coverimage }}">
+                        </a>
+                        <a href="{{ post.url }}">
+                        <h2>{{ post.title }}</h2>
+                        </a>
+                        {{ post.brief }}<br />
+                        <a href="{{ post.url }}">Continue Reading</a><br /><br />
+                        {{ post.author }} -
+                        {{ post.date | date: '%b %-d, %Y' }}<br /><br />
+                        
+                    </li>
+                </div>
+            {% endfor %}
+
+        <main>
+            {{ content }}
+        </main>
+        
+        {% include footer.html %}
+        <script src="/script.js"></script>
+    </body>
+</html>
