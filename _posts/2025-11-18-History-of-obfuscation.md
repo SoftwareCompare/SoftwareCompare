@@ -2,6 +2,7 @@
 layout: post
 author: David Collini
 permalink: /blog/history-of-obfuscation
+coverimage: /images/blog/history-of-obfuscation/obfuscation-cover-image.jpg
 brief: Obfuscation is an essential technology for accessing the internet in highly censored regions. This dynamic has given the technology a long and interesting history.
 ---
 
