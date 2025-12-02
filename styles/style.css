@@ -108,7 +108,14 @@ main {
   h1, h2, h3 {
     font-family: "Bagnard", Georgia, Times, serif;
   }
+  img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
   line-height: 1.8;
+  
+
 }
 
 header {
