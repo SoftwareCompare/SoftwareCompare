@@ -1,0 +1,6 @@
+<td>
+    <div>
+    Tracker Blocker
+    <span>Emails may include trackers such as {% include link text="tracking pixels" link="https://en.ryte.com/wiki/Tracking_Pixel/" %}, that can log your operating system, type of device, screen resolution and more. This feature blocks them.</span>
+    </div>
+</td>

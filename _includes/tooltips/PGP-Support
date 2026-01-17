@@ -1,0 +1,6 @@
+<td>
+    <div>
+    PGP Support
+    <span>{% include link text="PGP" link="https://www.geeksforgeeks.org/computer-networks/pgp-authentication-and-confidentiality/" %} is an encryption software used to send encrypted messages through email, ensuring only you and the recipient can read it. PGP is not perfect, as it does not support encrypting subject lines.</span>
+    </div>
+</td>
