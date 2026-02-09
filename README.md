@@ -13,7 +13,7 @@ An open-source project hosted on softwarecompare.org that compares application f
 
 2. Clone this repository
 
-3. Run 'make serve' in the cloned directory
+3. Run `make serve` in the cloned directory
 
 ## Development
 If you would like to view the most current updates, visit the test site [here](https://softwarecompare-test.pages.dev/).
