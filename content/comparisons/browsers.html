@@ -7,476 +7,477 @@ description: Comparisons of browsers to find one that works for you
 titledesc: Find a browser that works for you
 ---
 
-  <p class="disclaimer">Charts do not include features that require installing an extension.<br /><br /></p>
-  <table>
-    <thead>
-      <tr>
-        <td id="Desktop"><a href="#Desktop">
-          <h2>Desktop</h2></a>
-        </td>
-        <th>
-          {% include link
-            text='<img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
-            Brave'
-            link='https://brave.com' %}
-        </th>
-        <th>
-          {% include link
-            text='<img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
-            Chrome'
-            link='https://google.com/chrome' %}
-        </th>
-        <th>
-          {% include link
-            text='<img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
-            Duckduckgo'
-            link='https://duckduckgo.com' %}
-        </th>
-        <th>
-          {% include link
-            text='<img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
-            Edge'
-            link='https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1' %}
-        </th>
-        <th>
-          {% include link
-            text='<img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
-            Firefox'
-            link='https://www.firefox.com' %}
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/librewolf-logo.webp" alt="Librewolf Logo"><br />
-            Librewolf'
-            link='https://librewolf.net' %}
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/mullvad-browser-logo.webp" alt="Mullvad Browser Logo"><br />
-            Mullvad'
-            link='https://mullvad.net/en/browser' %}
-          </a>
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/safari-logo.png" alt="Safari Logo"><br />
-            Safari'
-            link='https://www.apple.com/safari' %}
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/tor-browser-logo.png" alt="Tor Browser Logo"><br />
-            Tor' 
-            link='https://www.torproject.org' %}
-        </th>
-        <th>
-          {% include link 
-          text='<img src="../images/logos/ungoogled-chromium-logo.webp" alt="Ungoogled Chromium Logo"><br />
-            Ungoogled'
-            link='https://ungoogled-software.github.io' %}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="left-col" style="height: 40px;">Engine<br /></td>
-        <th>Chromium</th>
-        <th>Chromium</th>
-        <th>Webkit<br />Blink</th>
-        <th>Chromium</th>
-        <th>Gecko</th>
-        <th>Gecko</th>
-        <th>Gecko</th>
-        <th>Webkit</th>
-        <th>Gecko</th>
-        <th>Chromium</th>
-      </tr>
-      <tr>
-        <th class="left-col">Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Open-Source 
-        %}
-        {% include check link="https://github.com/brave/brave-core" %}
-        {% include cross %}
-        {% include check link="https://github.com/duckduckgo" %}
-        {% include cross %}
-        {% include check link="https://hg-edge.mozilla.org/mozilla-central" %}
-        {% include check link="https://codeberg.org/librewolf/source" %}
-        {% include check link="https://gitlab.torproject.org/tpo/applications/mullvad-browser" %}
-        {% include cross %}
-        {% include check link="https://gitlab.torproject.org/tpo/applications/tor-browser" %}
-        {% include check link="https://github.com/ungoogled-software/ungoogled-chromium" %}
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Default-Global-Privacy-Control
-        %}
-        {% include check link="https://brave.com/web-standards-at-brave/4-global-privacy-control" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://codeberg.org/librewolf/issues/issues/1840" %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Default Private Search
-        </td>
-        {% include check tooltip="Brave Search" %}
-        {% include cross tooltip="Google" %}
-        {% include check tooltip="Duckduckgo" %}
-        {% include cross tooltip="Bing" %}
-        {% include cross tooltip="Google" %}
-        {% include check tooltip="Duckduckgo" %}
-        {% include check tooltip="Duckduckgo" link="https://mullvad.net/en/browser/hard-facts#search" %}
-        {% include cross tooltip="Google" %}
-        {% include check tooltip="Duckduckgo" %}
-        {% include check tooltip="No default search engine" %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          On-device website translation
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
-        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Private website translation
-        </td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
-        {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Local Ai Model Support
-        </td>
-        {% include check link="https://brave.com/blog/byom-nightly" %}
-        {% include dash tooltip="No LLM built into browser" %}
-        {% include dash tooltip="No LLM built into browser" %}
-        {% include cross %}
-        {% include cross %}
-        {% include dash tooltip="No LLM built into browser" %}
-        {% include dash tooltip="No LLM built into browser" %}
-        {% include dash tooltip="No LLM built into browser" edge="" %}
-        {% include dash tooltip="No LLM built into browser" %}
-        {% include dash tooltip="No LLM built into browser" %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Delete Data When Site Closes
-        </td>
-        {% include check link="https://brave.com/privacy-updates/25-forgetful-browsing" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <div>
-            Redirect AMP Sites
-            <span>{% include link text="AMP, or Accelerated Mobile Pages" link="https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages" %} is an HTML framework created by Google that is built for mobile browsers and intended to help webpages load faster. Many AMP sites are hosted on Google but designed to look like they're not, giving Google more control over the web and a better ability to track you.
-            </span>
-          </div>
-        </td>
-        {% include check link="https://support.brave.com/hc/en-us/articles/8611298579981-What-is-Brave-s-De-AMP-feature" %}
-        {% include cross %}
-        {% include check link="https://wptavern.com/duckduckgo-and-brave-move-to-bypass-google-amp-pages-by-default" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <div>
-            Prevent Bounce Tracking
-            <span>{% include link text="Bounce Tracking" link="https://brave.com/glossary/bounce-tracking" %} is a form of tracking where a tracking website is inserted between the site you're on and the link you're trying to visit. Browsers that prevent bounce tracking will skip this tracking site and take you directly to the destination site..
-            </span>
-          </div>
-        </td>
-        {% include check link="https://brave.com/privacy-updates/11-debouncing" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include dash tooltip="With Enhanced Tracking Protection Enabled" link="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop#w_bounce-tracking-protection" %}
-        {% include check link="https://librewolf.net/docs/faq/#what-is-enhanced-tracking-protection" %}
-        {% include check link="https://www.goincognito.co/mullvad-browser-ultimate-privacy-security-solution" %}
-        {% include check link="https://getcake.com/apples-intelligent-tracking-prevention-2-0-itp-how-will-this-impact-you" %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr>
-        <th class="left-col" ><br />Security</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Proxied Google Safe Browsing</td>
-        {% include check link="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" %}
-        {% include cross tooltip="Not proxied" %}
-        {% include cross tooltip="Disabled Completely" %}
-        {% include cross tooltip="Not proxied" %}
-        {% include check %}
-        {% include cross tooltip="Disabled Completely" link="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" %}
-        {% include check %}
-        {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
-        {% include check %}
-        {% include cross tooltip="Disabled Completely" link="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Google Safe Browsing</td>
-        {% include check link="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" %}
-        {% include check %}
-        {% include cross tooltip="Disabled Completely" %}
-        {% include check tooltip="Uses their own service" %}
-        {% include check %}
-        {% include cross tooltip="Disabled Completely" link="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" %}
-        {% include check %}
-        {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
-        {% include check %}
-        {% include cross tooltip="Disabled Completely" link="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <div>
-            Containers
-            <span>
+<p class="disclaimer">Charts do not include features that require installing an extension.<br /><br /></p>
+<table>
+  <thead>
+    <tr>
+      <td id="Desktop"><a href="#Desktop">
+          <h2>Desktop</h2>
+        </a>
+      </td>
+      <th>
+        {% include link
+        text='<img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
+        Brave'
+        link='https://brave.com' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
+        Chrome'
+        link='https://google.com/chrome' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
+        Duckduckgo'
+        link='https://duckduckgo.com' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
+        Edge'
+        link='https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
+        Firefox'
+        link='https://www.firefox.com' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/librewolf-logo.webp" alt="Librewolf Logo"><br />
+        Librewolf'
+        link='https://librewolf.net' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/mullvad-browser-logo.webp" alt="Mullvad Browser Logo"><br />
+        Mullvad'
+        link='https://mullvad.net/en/browser' %}
+        </a>
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/safari-logo.png" alt="Safari Logo"><br />
+        Safari'
+        link='https://www.apple.com/safari' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/tor-browser-logo.png" alt="Tor Browser Logo"><br />
+        Tor'
+        link='https://www.torproject.org' %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/ungoogled-chromium-logo.webp" alt="Ungoogled Chromium Logo"><br />
+        Ungoogled'
+        link='https://ungoogled-software.github.io' %}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="left-col" style="height: 40px;">Engine<br /></td>
+      <th>Chromium</th>
+      <th>Chromium</th>
+      <th>Webkit<br />Blink</th>
+      <th>Chromium</th>
+      <th>Gecko</th>
+      <th>Gecko</th>
+      <th>Gecko</th>
+      <th>Webkit</th>
+      <th>Gecko</th>
+      <th>Chromium</th>
+    </tr>
+    <tr>
+      <th class="left-col">Privacy</th>
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Open-Source
+      %}
+      {% include check link="https://github.com/brave/brave-core" %}
+      {% include cross %}
+      {% include check link="https://github.com/duckduckgo" %}
+      {% include cross %}
+      {% include check link="https://hg-edge.mozilla.org/mozilla-central" %}
+      {% include check link="https://codeberg.org/librewolf/source" %}
+      {% include check link="https://gitlab.torproject.org/tpo/applications/mullvad-browser" %}
+      {% include cross %}
+      {% include check link="https://gitlab.torproject.org/tpo/applications/tor-browser" %}
+      {% include check link="https://github.com/ungoogled-software/ungoogled-chromium" %}
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Default-Global-Privacy-Control
+      %}
+      {% include check link="https://brave.com/web-standards-at-brave/4-global-privacy-control" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://codeberg.org/librewolf/issues/issues/1840" %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Default Private Search
+      </td>
+      {% include check tooltip="Brave Search" %}
+      {% include cross tooltip="Google" %}
+      {% include check tooltip="Duckduckgo" %}
+      {% include cross tooltip="Bing" %}
+      {% include cross tooltip="Google" %}
+      {% include check tooltip="Duckduckgo" %}
+      {% include check tooltip="Duckduckgo" link="https://mullvad.net/en/browser/hard-facts#search" %}
+      {% include cross tooltip="Google" %}
+      {% include check tooltip="Duckduckgo" %}
+      {% include check tooltip="No default search engine" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        On-device website translation
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
+      {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Private website translation
+      </td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
+      {% include check link="https://www.mozilla.org/en-US/firefox/features/translate" %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Local Ai Model Support
+      </td>
+      {% include check link="https://brave.com/blog/byom-nightly" %}
+      {% include dash tooltip="No LLM built into browser" %}
+      {% include dash tooltip="No LLM built into browser" %}
+      {% include cross %}
+      {% include cross %}
+      {% include dash tooltip="No LLM built into browser" %}
+      {% include dash tooltip="No LLM built into browser" %}
+      {% include dash tooltip="No LLM built into browser" edge="" %}
+      {% include dash tooltip="No LLM built into browser" %}
+      {% include dash tooltip="No LLM built into browser" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Delete Data When Site Closes
+      </td>
+      {% include check link="https://brave.com/privacy-updates/25-forgetful-browsing" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <div>
+          Redirect AMP Sites
+          <span>{% include link text="AMP, or Accelerated Mobile Pages" link="https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages" %} is an HTML framework created by Google that is built for mobile browsers and intended to help webpages load faster. Many AMP sites are hosted on Google but designed to look like they're not, giving Google more control over the web and a better ability to track you.
+          </span>
+        </div>
+      </td>
+      {% include check link="https://support.brave.com/hc/en-us/articles/8611298579981-What-is-Brave-s-De-AMP-feature" %}
+      {% include cross %}
+      {% include check link="https://wptavern.com/duckduckgo-and-brave-move-to-bypass-google-amp-pages-by-default" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <div>
+          Prevent Bounce Tracking
+          <span>{% include link text="Bounce Tracking" link="https://brave.com/glossary/bounce-tracking" %} is a form of tracking where a tracking website is inserted between the site you're on and the link you're trying to visit. Browsers that prevent bounce tracking will skip this tracking site and take you directly to the destination site..
+          </span>
+        </div>
+      </td>
+      {% include check link="https://brave.com/privacy-updates/11-debouncing" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include dash tooltip="With Enhanced Tracking Protection Enabled" link="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop#w_bounce-tracking-protection" %}
+      {% include check link="https://librewolf.net/docs/faq/#what-is-enhanced-tracking-protection" %}
+      {% include check link="https://www.goincognito.co/mullvad-browser-ultimate-privacy-security-solution" %}
+      {% include check link="https://getcake.com/apples-intelligent-tracking-prevention-2-0-itp-how-will-this-impact-you" %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Security</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Proxied Google Safe Browsing</td>
+      {% include check link="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" %}
+      {% include cross tooltip="Not proxied" %}
+      {% include cross tooltip="Disabled Completely" %}
+      {% include cross tooltip="Not proxied" %}
+      {% include check %}
+      {% include cross tooltip="Disabled Completely" link="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" %}
+      {% include check %}
+      {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
+      {% include check %}
+      {% include cross tooltip="Disabled Completely" link="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Google Safe Browsing</td>
+      {% include check link="https://support.brave.com/hc/en-us/articles/15222663599629-Safe-Browsing-in-Brave" %}
+      {% include check %}
+      {% include cross tooltip="Disabled Completely" %}
+      {% include check tooltip="Uses their own service" %}
+      {% include check %}
+      {% include cross tooltip="Disabled Completely" link="https://librewolf.net/docs/faq/#why-do-you-disable-google-safe-browsing" %}
+      {% include check %}
+      {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
+      {% include check %}
+      {% include cross tooltip="Disabled Completely" link="https://ungoogled-software.github.io/ungoogled-chromium-wiki/faq#why-is-safe-browsing-disabled" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <div>
+          Containers
+          <span>
             Containers, also known as {% include link text="Multi-Account Containers" link="https://support.mozilla.org/en-US/kb/containers" %} is a feature that allows the user to groups tabs into different containers, each categorized by a certain color and symbol. Each containers holds its own set of cookies and data, and does not allow that information to leak outside of the container.
-            </span>
-          </div>
-        </td>
-        {% include dash tooltip="Currently in development" link="https://github.com/brave/brave-browser/issues/46349" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include dash tooltip="only with extension" %}
-        {% include check %}
-        {% include dash tooltip="only with extension" %}
-        {% include cross %}
-        {% include dash tooltip="only with extension" %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Profiles
-        </td>
-        {% include check link="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" %}
-        {% include check link="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" %}
-        {% include cross %}
-        {% include check link="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435" %}
-        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
-        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
-        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
-        {% include check %}
-        {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        {% include check link="https://brave.com/shields" %}
-        {% include cross %}
-        {% include check link="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections" %}
-        {% include check link="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" %}
-        {% include check link="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" %}
-        {% include check link="https://librewolf.net/docs/features/#privacy" %}
-        {% include check link="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" %}
-        {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
-        {% include check link="https://support.torproject.org/glossary/noscript" %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        {% include check link="https://brave.com/shields" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://librewolf.net/docs/features/#privacy" %}
-        {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Individual Script Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Localhost Resource Permission</td>
-        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-        {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
-      </tr>
-      <tr>
-        <th class="left-col" ><br />Networking</th>
-      </tr>
-      <tr class="checker_row">
-        <td>
-          HTTPS Upgrading
-        </td>
-        {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
-        {% include check %}
-        {% include check %}
-        {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
-        {% include dash tooltip="Not by default" %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <div>
-            Always Upgrade HTTPS
-            <span>This feature automatically upgrades connections to HTTPS, then falls back to HTTP if HTTPS is not available.</span>
-          </div>
-        </td>
-        {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
-        {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
-        {% include cross tooltip="Only upgrades sites on their whitelist" link="https://www.searchenginejournal.com/duckduck-go-smarter-encryption/336449" %}
-        {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
-        {% include dash tooltip="Not by default" link="https://www.phoronix.com/news/Firefox-129-Released" %}
-        {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
-        {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
-        {% include check link="https://developer.apple.com/documentation/safari-release-notes/safari-18_2-release-notes#Security" %}
-        {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
-        {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Insecure Site Warning</td>
-        {% include dash tooltip="Not by default" %}
-        {% include dash tooltip="Not by default" %}
-        {% include cross %}
-        {% include dash tooltip="Not by default" %}
-        {% include dash tooltip="Not by default" %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include dash tooltip="Not by default" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Tor Enabled</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Tor Mode</td>
-        {% include check link="https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-Connectivity" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
-            ECH</a> enabled
-        </td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check link="https://winaero.com/enable-encrypted-client-hello-in-microsoft-edge-to-secure-connections" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Supports <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+          </span>
+        </div>
+      </td>
+      {% include dash tooltip="Currently in development" link="https://github.com/brave/brave-browser/issues/46349" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include dash tooltip="only with extension" %}
+      {% include check %}
+      {% include dash tooltip="only with extension" %}
+      {% include cross %}
+      {% include dash tooltip="only with extension" %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Profiles
+      </td>
+      {% include check link="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" %}
+      {% include check link="https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop" %}
+      {% include cross %}
+      {% include check link="https://support.microsoft.com/en-us/topic/sign-in-and-create-multiple-profiles-in-microsoft-edge-df94e622-2061-49ae-ad1d-6f0e43ce6435" %}
+      {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
+      {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
+      {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
+      {% include check %}
+      {% include check tooltip="Might be unintuitive for unfamiliar users" link="https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles" %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Tracker Blocker</td>
+      {% include check link="https://brave.com/shields" %}
+      {% include cross %}
+      {% include check link="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections" %}
+      {% include check link="https://learn.microsoft.com/th-th/microsoft-edge/web-platform/tracking-prevention" %}
+      {% include check link="https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track" %}
+      {% include check link="https://librewolf.net/docs/features/#privacy" %}
+      {% include check link="https://www.techrepublic.com/article/safari-for-ios-14-and-macos-11-how-to-prevent-websites-from-tracking-your-moves-online" %}
+      {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
+      {% include check link="https://support.torproject.org/glossary/noscript" %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Adblock</td>
+      {% include check link="https://brave.com/shields" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://librewolf.net/docs/features/#privacy" %}
+      {% include check link="https://mullvad.net/en/browser/hard-facts#extensions" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Individual Script Blocking</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Localhost Resource Permission</td>
+      {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include check link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+      {% include cross link="https://brave.com/privacy-updates/27-localhost-permission" %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Networking</th>
+    </tr>
+    <tr class="checker_row">
+      <td>
+        HTTPS Upgrading
+      </td>
+      {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
+      {% include check %}
+      {% include check %}
+      {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
+      {% include dash tooltip="Not by default" %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <div>
+          Always Upgrade HTTPS
+          <span>This feature automatically upgrades connections to HTTPS, then falls back to HTTP if HTTPS is not available.</span>
+        </div>
+      </td>
+      {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
+      {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
+      {% include cross tooltip="Only upgrades sites on their whitelist" link="https://www.searchenginejournal.com/duckduck-go-smarter-encryption/336449" %}
+      {% include check link="https://www.bleepingcomputer.com/news/security/microsoft-edge-to-add-automatic-https-option-for-all-domains" %}
+      {% include dash tooltip="Not by default" link="https://www.phoronix.com/news/Firefox-129-Released" %}
+      {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
+      {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
+      {% include check link="https://developer.apple.com/documentation/safari-release-notes/safari-18_2-release-notes#Security" %}
+      {% include check link="https://www.phoronix.com/news/Firefox-129-Released" %}
+      {% include check link="https://www.bleepingcomputer.com/news/google/google-chrome-now-auto-upgrades-to-secure-connections-for-all-users" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Insecure Site Warning</td>
+      {% include dash tooltip="Not by default" %}
+      {% include dash tooltip="Not by default" %}
+      {% include cross %}
+      {% include dash tooltip="Not by default" %}
+      {% include dash tooltip="Not by default" %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include dash tooltip="Not by default" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Tor Enabled</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Tor Mode</td>
+      {% include check link="https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor-Connectivity" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
+          ECH</a> enabled
+      </td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check link="https://winaero.com/enable-encrypted-client-hello-in-microsoft-edge-to-secure-connections" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Supports <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
           DNS over HTTPS</a>
-        </td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include cross link="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
-            DNS over HTTPS</a> enabled
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross link="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <!-- <tr>
+      </td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include cross link="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+          DNS over HTTPS</a> enabled
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross link="https://www.howtogeek.com/660157/how-to-enable-dns-over-https-in-microsoft-edge" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <!-- <tr>
         <th class="left-col" ><br />Maintains Openness</th>
       </tr>
       <tr class="checker_row grayrow">
@@ -499,521 +500,522 @@ titledesc: Find a browser that works for you
         {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
         {% include cross tooltip="BSD 3-Clause" link="https://github.com/ungoogled-software/ungoogled-chromium/blob/master/LICENSE" %}
       </tr>-->
-      <tr>
-        <th class="left-col"><br />Freedom</th>
-      </tr>
-      <tr class="checker_row grayrow">
-        <td>Change Search Engine</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include dash tooltip="Only Google, Yahoo, Bing, Duckduckgo and Ecosia" %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Convenience</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Cookie Banner Blocking</td>
-        {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Autoplay Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://www.neowin.net/guides/how-to-disable-video-autoplay-in-microsoft-edge" %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check link="https://sigmaos.com/tips/browsers/how-to-disable-autoplay-on-safari" %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Vertical Tabs</td>
-        {% include check link="https://brave.com/blog/vertical-tabs" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" %}
-        {% include check link="https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs" %}
-        {% include check link="https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Tab Groups</td>
-        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
-        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
-        {% include cross %}
-        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
-        {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
-        {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
-        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
-        {% include check link="https://discussions.apple.com/thread/253721389?answerId=256978468022#256978468022" %}
-        {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
-        {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Progressive Web Apps</td>
-        {% include check %}
-        {% include check link="https://developer.chrome.com/blog/getting-started-pwa" %}
-        {% include cross %}
-        {% include check link="https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/ux" %}
-        {% include dash tooltip="Currently an experimental feature" %}
-        {% include dash tooltip="Currently an experimental feature" %}
-        {% include dash tooltip="Currently an experimental feature" %}
-        {% include check link="https://support.apple.com/en-us/104996" %}
-        {% include dash tooltip="Currently an experimental feature" %}
-        {% include check link="https://developer.chrome.com/blog/getting-started-pwa" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Website Translation</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Ai Chatbot</td>
-        {% include check link="https://brave.com/leo" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://learn.microsoft.com/en-us/copilot/edge" %}
-        {% include check link="https://www.zdnet.com/article/firefox-now-lets-you-access-your-favorite-ai-chatbot-without-switching-tabs-heres-how" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Reader View</td>
-        {% include check %}
-        {% include dash %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include dash %}
-      </tr>
-      <tr class="checker_row">
-        <td>Split View</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>PDF Editing</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Workspaces</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Built-In Screenshot</td>
-        {% include check %}
-        {% include dash %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include dash %}
-      </tr>
-      <tr class="checker_row">
-        <td>Browser Sync</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check tooltip="Uses Firefox Sync" %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr>
-        <th class="left-col" ><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Users</td>
-        {% include check link="https://brave.com/brave-rewards" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        {% include cross %}
-        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
-        {% include check link="https://duckduckgo.com/donations" %}
-        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
-        {% include cross %}
-        {% include dash tooltip="No source of income" %}
-        {% include check link="https://mullvad.net/en/blog/mullvad-is-now-continuously-donating-to-qubes-os" %}
-        {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
-        {% include dash tooltip='Operates as a non-profit, <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">Donate Here</a>' %}
-        {% include dash tooltip="No source of income" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        {% include cross %}
-        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %} 
-        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
-        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030</a>, but <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                emissions have been increasing</a>' %}
-        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        {% include cross %}
-        {% include cross %}
-        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-    </tbody>
-  </table>
-  <table>
-    <thead>
-      <tr>
-        <td id="ios"><a href="#ios">
-          <h2>iOS</h2></a>
-        </td>
-        <th>
-          <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
-            Brave
-          </a>
-        </th>
-        <th>
-          <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
-            Chrome
-          </a>
-        </th>
-        <th>
-          <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
-            Duckduckgo
-          </a>
-        </th>
-        <th>
-          <a href="https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
-            Edge
-          </a>
-        </th>
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
-              Firefox
-            </a>
-        </th>
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/firefox-focus-logo.png" alt="Firefox Focus Logo"><br />
-              Focus
-          </a>
-        </th>
-        <th>
-          <a href="https://www.apple.com/safari" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/safari-logo.png" alt="Safari Logo"><br />
-            Safari
-          </a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="height: 40px;">Engine</td>
-        <th>WebKit</th>
-        <th>Webkit</th>
-        <th>WebKit</th>
-        <th>WebKit</th>
-        <th>WebKit</th>
-        <th>WebKit</th>
-        <th>WebKit</th>
-      </tr>
-      <tr>
-        <th class="left-col">Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Open-Source 
-        %}
-        {% include check link="https://github.com/brave/brave-core" %}
-        {% include cross %}
-        {% include check link="https://github.com/duckduckgo/apple-browsers" %}
-        {% include cross %}
-        {% include check link="https://github.com/mozilla-mobile/firefox-ios" %}
-        {% include check link="https://github.com/mozilla-mobile/firefox-ios" %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Default-Global-Privacy-Control
-        %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Private Search</td>
-        {% include check tooltip="Brave Search" %}
-        {% include cross tooltip="Google" %}
-        {% include check tooltip="Duckduckgo" %}
-        {% include cross tooltip="Bing" %}
-        {% include cross tooltip="Google" %}
-        {% include cross tooltip="Google" %}
-        {% include cross tooltip="Google" %}
-      </tr>
-      <tr class="checker_row">
-        <td>On-device Website Translation</td>
-        {% include check link="https://github.com/brave/brave-core/pull/25391" %}
-        {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross link="https://www.apple.com/legal/privacy/data/en/safari" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Private Website Translation</td>
-        {% include check link="https://github.com/brave/brave-core/pull/25391" %}
-        {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Delete Data When Site Closes</td>
-        {% include check link="https://brave.com/privacy-updates/30-shred-button" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Security</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Proxied Google Safe Browsing</td>
-        {% include check %}
-        {% include cross tooltip="Not proxied" %}
-        {% include cross tooltip="Disabled completely" %}
-        {% include cross tooltip="Not proxied" %}
-        {% include check %}
-        {% include check %}
-        {% include check link="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Google Safe Browsing</td>
-        {% include check %}
-        {% include check %}
-        {% include cross tooltip="Disabled Completely" %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check link="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        {% include check link="https://brave.com/shields" %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check link="https://www.intego.com/mac-security-blog/understanding-safaris-new-privacy-report" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Individual Script Blocking</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Script Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Networking</th>
-      </tr>
-      <tr class="checker_row">
-        <td>HTTPS Upgrading</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check link="https://forums.macrumors.com/threads/safari-on-ios-15-and-macos-monterey-automatically-upgrades-web-connections-to-https-on-compatible-sites-for-improved-security.2299847" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Always Upgrade HTTPS</td>
-        {% include check link="https://brave.com/privacy-updates/29-https-by-default-ios" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Tor Enabled</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
-            ECH</a> 
-          Enabled
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Supports 
-          <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
-            DNS over HTTPS
-          </a>
-        </td>
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-        {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
-            DNS over HTTPS</a> 
-          enabled
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <!-- <tr>
+    <tr>
+      <th class="left-col"><br />Freedom</th>
+    </tr>
+    <tr class="checker_row grayrow">
+      <td>Change Search Engine</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include dash tooltip="Only Google, Yahoo, Bing, Duckduckgo and Ecosia" %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Convenience</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Cookie Banner Blocking</td>
+      {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Autoplay Blocking</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://www.neowin.net/guides/how-to-disable-video-autoplay-in-microsoft-edge" %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check link="https://sigmaos.com/tips/browsers/how-to-disable-autoplay-on-safari" %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Vertical Tabs</td>
+      {% include check link="https://brave.com/blog/vertical-tabs" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://www.howtogeek.com/697986/how-to-enable-and-use-vertical-tabs-in-microsoft-edge" %}
+      {% include check link="https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs" %}
+      {% include check link="https://support.mozilla.org/en-US/kb/use-sidebar-access-tools-and-vertical-tabs" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Tab Groups</td>
+      {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+      {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+      {% include cross %}
+      {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+      {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
+      {% include check link="https://support.mozilla.org/en-US/kb/tab-groups" %}
+      {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+      {% include check link="https://discussions.apple.com/thread/253721389?answerId=256978468022#256978468022" %}
+      {% include dash link="https://support.mozilla.org/en-US/kb/tab-groups" tooltip="enable in about:config" %}
+      {% include check link="https://blog.google/products/chrome/manage-tabs-with-google-chrome" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Progressive Web Apps</td>
+      {% include check %}
+      {% include check link="https://developer.chrome.com/blog/getting-started-pwa" %}
+      {% include cross %}
+      {% include check link="https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/ux" %}
+      {% include dash tooltip="Currently an experimental feature" %}
+      {% include dash tooltip="Currently an experimental feature" %}
+      {% include dash tooltip="Currently an experimental feature" %}
+      {% include check link="https://support.apple.com/en-us/104996" %}
+      {% include dash tooltip="Currently an experimental feature" %}
+      {% include check link="https://developer.chrome.com/blog/getting-started-pwa" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Website Translation</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Ai Chatbot</td>
+      {% include check link="https://brave.com/leo" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://learn.microsoft.com/en-us/copilot/edge" %}
+      {% include check link="https://www.zdnet.com/article/firefox-now-lets-you-access-your-favorite-ai-chatbot-without-switching-tabs-heres-how" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Reader View</td>
+      {% include check %}
+      {% include dash %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include dash %}
+    </tr>
+    <tr class="checker_row">
+      <td>Split View</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>PDF Editing</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Workspaces</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Built-In Screenshot</td>
+      {% include check %}
+      {% include dash %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include dash %}
+    </tr>
+    <tr class="checker_row">
+      <td>Browser Sync</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check tooltip="Uses Firefox Sync" %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Ethics</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Pays Users</td>
+      {% include check link="https://brave.com/brave-rewards" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Donates to Charity</td>
+      {% include cross %}
+      {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
+      {% include check link="https://duckduckgo.com/donations" %}
+      {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
+      {% include cross %}
+      {% include dash tooltip="No source of income" %}
+      {% include check link="https://mullvad.net/en/blog/mullvad-is-now-continuously-donating-to-qubes-os" %}
+      {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+      {% include dash tooltip='Operates as a non-profit, <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">Donate Here</a>' %}
+      {% include dash tooltip="No source of income" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Carbon Neutral</td>
+      {% include cross %}
+      {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
+      {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+      {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        Plans to by 2030</a>, but <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        emissions have been increasing</a>' %}
+      {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Carbon Negative</td>
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <td id="ios"><a href="#ios">
+          <h2>iOS</h2>
+        </a>
+      </td>
+      <th>
+        <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
+          Brave
+        </a>
+      </th>
+      <th>
+        <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
+          Chrome
+        </a>
+      </th>
+      <th>
+        <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
+          Duckduckgo
+        </a>
+      </th>
+      <th>
+        <a href="https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
+          Edge
+        </a>
+      </th>
+      <th>
+        <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
+          Firefox
+        </a>
+      </th>
+      <th>
+        <a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/firefox-focus-logo.png" alt="Firefox Focus Logo"><br />
+          Focus
+        </a>
+      </th>
+      <th>
+        <a href="https://www.apple.com/safari" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/safari-logo.png" alt="Safari Logo"><br />
+          Safari
+        </a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="height: 40px;">Engine</td>
+      <th>WebKit</th>
+      <th>Webkit</th>
+      <th>WebKit</th>
+      <th>WebKit</th>
+      <th>WebKit</th>
+      <th>WebKit</th>
+      <th>WebKit</th>
+    </tr>
+    <tr>
+      <th class="left-col">Privacy</th>
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Open-Source
+      %}
+      {% include check link="https://github.com/brave/brave-core" %}
+      {% include cross %}
+      {% include check link="https://github.com/duckduckgo/apple-browsers" %}
+      {% include cross %}
+      {% include check link="https://github.com/mozilla-mobile/firefox-ios" %}
+      {% include check link="https://github.com/mozilla-mobile/firefox-ios" %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Default-Global-Privacy-Control
+      %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Private Search</td>
+      {% include check tooltip="Brave Search" %}
+      {% include cross tooltip="Google" %}
+      {% include check tooltip="Duckduckgo" %}
+      {% include cross tooltip="Bing" %}
+      {% include cross tooltip="Google" %}
+      {% include cross tooltip="Google" %}
+      {% include cross tooltip="Google" %}
+    </tr>
+    <tr class="checker_row">
+      <td>On-device Website Translation</td>
+      {% include check link="https://github.com/brave/brave-core/pull/25391" %}
+      {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross link="https://www.apple.com/legal/privacy/data/en/safari" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Private Website Translation</td>
+      {% include check link="https://github.com/brave/brave-core/pull/25391" %}
+      {% include cross link="https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DiOS" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://www.apple.com/legal/privacy/data/en/safari" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Delete Data When Site Closes</td>
+      {% include check link="https://brave.com/privacy-updates/30-shred-button" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Security</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Proxied Google Safe Browsing</td>
+      {% include check %}
+      {% include cross tooltip="Not proxied" %}
+      {% include cross tooltip="Disabled completely" %}
+      {% include cross tooltip="Not proxied" %}
+      {% include check %}
+      {% include check %}
+      {% include check link="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Google Safe Browsing</td>
+      {% include check %}
+      {% include check %}
+      {% include cross tooltip="Disabled Completely" %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check link="https://www.zdnet.com/article/apple-will-proxy-safe-browsing-traffic-on-ios-14-5-to-hide-user-ips-from-google" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Tracker Blocker</td>
+      {% include check link="https://brave.com/shields" %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check link="https://www.intego.com/mac-security-blog/understanding-safaris-new-privacy-report" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Adblock</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Individual Script Blocking</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Script Blocking</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Networking</th>
+    </tr>
+    <tr class="checker_row">
+      <td>HTTPS Upgrading</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check link="https://forums.macrumors.com/threads/safari-on-ios-15-and-macos-monterey-automatically-upgrades-web-connections-to-https-on-compatible-sites-for-improved-security.2299847" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Always Upgrade HTTPS</td>
+      {% include check link="https://brave.com/privacy-updates/29-https-by-default-ios" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Tor Enabled</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
+          ECH</a>
+        Enabled
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Supports
+        <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+          DNS over HTTPS
+        </a>
+      </td>
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+      {% include check tooltip="Must be enabled system-wide" link="https://rodneylab.com/how-to-enable-encrypted-dns-on-iphone-ios-14" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+          DNS over HTTPS</a>
+        enabled
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <!-- <tr>
         <th class="left-col" ><br />Maintains Openness</th>
       </tr>
       <tr class="checker_row grayrow">
@@ -1033,415 +1035,416 @@ titledesc: Find a browser that works for you
         {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
         {% include cross %}
       </tr> -->
-      <tr>
-        <th class="left-col"><br />Freedom</th>
-      </tr>
-      <tr class="checker_row grayrow">
-        <td>Change Search Engine</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include dash tooltip="Only Google, Yahoo, Bing, Duckduckgo and Ecosia" %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Convenience</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Cookie Banner Blocking</td>
-        {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Autoplay Blocking</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Reader View</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Website Translation</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Bottom Bar</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Browser Sync</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Users</td>
-        {% include dash tooltip="Prevented by Apple" link="https://brave.com/blog/rewards-ios" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        {% include cross %}
-        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
-        {% include check link="https://duckduckgo.com/donations" %}
-        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        {% include cross %}
-        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}  
-        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
-        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030</a>, but <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                emissions have been increasing</a>' %}
-        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
-        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
-        {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        {% include cross %}
-        {% include cross %}
-        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-    </tbody>
-  </table>
-  <table>
-    <thead>
-      <tr>
-        <td id="Android"><a href="#Android">
-          <h2>Android</h2></a>
-        </td>
-        <th>
-          <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
-            Brave
-          </a>
-        </th>
-        <th>
-          <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
-            Chrome
-          </a>
-        </th>
-        <th>
-          <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
-            Duckduckgo
-          </a>
-        </th>
-        <th>
-          <a href="https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
-            Edge
-          </a>
-        </th>
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
-            Firefox
-          </a>
-        </th>
-        <th>
-          <a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/firefox-focus-logo.png" alt="Firefox Focus Logo"><br />
-            Focus
-          </a>
-        </th>
-        <th>
-          <a href="https://www.torproject.org" target="_blank" rel="noopener noreferrer">
-            <img src="../images/logos/tor-browser-logo.png" alt="Tor Browser Logo"><br />
-            Tor
-          </a>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="height: 40px;">Engine</td>
-        <th>Chromium</th>
-        <th>Chromium</th>
-        <th>Blink</th>
-        <th>Chromium</th>
-        <th>Gecko</th>
-        <th>Gecko</th>
-        <th>Gecko</th>
-      </tr>
-      <tr>
-        <th class="left-col">Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Open-Source 
-        %}
-        {% include check link="https://github.com/brave/brave-core" %}
-        {% include cross %}
-        {% include check link="https://github.com/duckduckgo/android" %}
-        {% include cross %}
-        {% include check link="https://hg.mozilla.org/mozilla-central" %}
-        {% include check link="https://hg.mozilla.org/mozilla-central" %}
-        {% include check link="https://gitlab.torproject.org/tpo/applications/tor-browser" %}
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Default-Global-Privacy-Control
-        %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Private Search</td>
-        {% include check tooltip="Brave Search" %}
-        {% include cross tooltip="Google" %}
-        {% include check tooltip="Duckduckgo" %}
-        {% include cross tooltip="Bing" %}
-        {% include cross tooltip="Google" %}
-        {% include cross tooltip="Google" %}
-        {% include check tooltip="Duckduckgo" %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          Works Without Google Play Services
-        </td>
-        {% include dash tooltip="Breaks Brave Rewards" link="https://plexus.techlore.tech/?q=Brave" %}
-        {% include cross tooltip="Broken" link="https://plexus.techlore.tech/?q=Chrome" %}
-        {% include check link="https://plexus.techlore.tech/?q=Duckduckgo" %}
-        {% include check link="https://plexus.techlore.tech/?q=Edge" %}
-        {% include check link="https://plexus.techlore.tech/?q=Firefox" %}
-        {% include check link="https://plexus.techlore.tech/?q=Firefox+Focus" %}
-        {% include check link="https://plexus.techlore.tech/?q=Tor+Brow" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Delete Data When Site Closes</td>
-        {% include check link="https://brave.com/privacy-updates/25-forgetful-browsing" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Security</th>
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://www.chromium.org/Home/chromium-security/site-isolation" target="_blank" rel="noopener noreferrer">
-            Site Isolation
-          </a>
-        </td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://madaidans-insecurities.github.io/firefox-chromium.html#sandboxing" target="_blank" rel="noopener noreferrer">
-            Internal Sandboxing
-          </a>
-        </td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Per-Site JIT Toggle</a>
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Proxied Google Safe Browsing</td>
-        {% include check %}
-        {% include cross tooltip="Not proxied" %}
-        {% include cross tooltip="Disabled Completely" %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Google Safe Browsing</td>
-        {% include check %}
-        {% include check %}
-        {% include cross tooltip="Disabled completely" %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Tracker Blocker</td>
-        {% include check link="https://brave.com/shields" %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Default Adblock</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Individual Script Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Networking</th>
-      </tr>
-      <tr class="checker_row">
-        <td>HTTPS Upgrading</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Always Upgrade HTTPS</td>
-        {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Tor Enabled</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
-            ECH
-          </a> 
-          enabled
-        </td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include dash tooltip='If <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
-                DNS over HTTPS</a> is enabled' %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Supports <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+    <tr>
+      <th class="left-col"><br />Freedom</th>
+    </tr>
+    <tr class="checker_row grayrow">
+      <td>Change Search Engine</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include dash tooltip="Only Google, Yahoo, Bing, Duckduckgo and Ecosia" %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Convenience</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Cookie Banner Blocking</td>
+      {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Autoplay Blocking</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Reader View</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Website Translation</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Bottom Bar</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Browser Sync</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Ethics</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Pays Users</td>
+      {% include dash tooltip="Prevented by Apple" link="https://brave.com/blog/rewards-ios" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Donates to Charity</td>
+      {% include cross %}
+      {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
+      {% include check link="https://duckduckgo.com/donations" %}
+      {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check link="https://www.apple.com/newsroom/2021/12/apple-marks-a-year-of-giving-in-the-communities-it-calls-home" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Carbon Neutral</td>
+      {% include cross %}
+      {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
+      {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+      {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        Plans to by 2030</a>, but <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        emissions have been increasing</a>' %}
+      {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+      {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+      {% include cross tooltip="Plans to by 2030" link="https://www.apple.com/environment" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Carbon Negative</td>
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <td id="Android"><a href="#Android">
+          <h2>Android</h2>
+        </a>
+      </td>
+      <th>
+        <a href="https://brave.com" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/brave-logo.webp" alt="Brave Logo"><br />
+          Brave
+        </a>
+      </th>
+      <th>
+        <a href="https://google.com/chrome" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/chrome-logo.webp" alt="Chrome Logo"><br />
+          Chrome
+        </a>
+      </th>
+      <th>
+        <a href="https://duckduckgo.com" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/duckduckgo-logo.webp" alt="Duckduckgo Logo"><br />
+          Duckduckgo
+        </a>
+      </th>
+      <th>
+        <a href="https://www.microsoft.com/en-us/edge/?form=MA13FJ&ch=1" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/edge-logo.webp" alt="Edge Logo"><br />
+          Edge
+        </a>
+      </th>
+      <th>
+        <a href="https://www.mozilla.org/en-US/firefox/new" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/firefox-logo.webp" alt="Firefox Logo"><br />
+          Firefox
+        </a>
+      </th>
+      <th>
+        <a href="https://www.mozilla.org/en-US/firefox/browsers/mobile/focus" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/firefox-focus-logo.png" alt="Firefox Focus Logo"><br />
+          Focus
+        </a>
+      </th>
+      <th>
+        <a href="https://www.torproject.org" target="_blank" rel="noopener noreferrer">
+          <img src="../images/logos/tor-browser-logo.png" alt="Tor Browser Logo"><br />
+          Tor
+        </a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="height: 40px;">Engine</td>
+      <th>Chromium</th>
+      <th>Chromium</th>
+      <th>Blink</th>
+      <th>Chromium</th>
+      <th>Gecko</th>
+      <th>Gecko</th>
+      <th>Gecko</th>
+    </tr>
+    <tr>
+      <th class="left-col">Privacy</th>
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Open-Source
+      %}
+      {% include check link="https://github.com/brave/brave-core" %}
+      {% include cross %}
+      {% include check link="https://github.com/duckduckgo/android" %}
+      {% include cross %}
+      {% include check link="https://hg.mozilla.org/mozilla-central" %}
+      {% include check link="https://hg.mozilla.org/mozilla-central" %}
+      {% include check link="https://gitlab.torproject.org/tpo/applications/tor-browser" %}
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Default-Global-Privacy-Control
+      %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Private Search</td>
+      {% include check tooltip="Brave Search" %}
+      {% include cross tooltip="Google" %}
+      {% include check tooltip="Duckduckgo" %}
+      {% include cross tooltip="Bing" %}
+      {% include cross tooltip="Google" %}
+      {% include cross tooltip="Google" %}
+      {% include check tooltip="Duckduckgo" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        Works Without Google Play Services
+      </td>
+      {% include dash tooltip="Breaks Brave Rewards" link="https://plexus.techlore.tech/?q=Brave" %}
+      {% include cross tooltip="Broken" link="https://plexus.techlore.tech/?q=Chrome" %}
+      {% include check link="https://plexus.techlore.tech/?q=Duckduckgo" %}
+      {% include check link="https://plexus.techlore.tech/?q=Edge" %}
+      {% include check link="https://plexus.techlore.tech/?q=Firefox" %}
+      {% include check link="https://plexus.techlore.tech/?q=Firefox+Focus" %}
+      {% include check link="https://plexus.techlore.tech/?q=Tor+Brow" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Delete Data When Site Closes</td>
+      {% include check link="https://brave.com/privacy-updates/25-forgetful-browsing" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Security</th>
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://www.chromium.org/Home/chromium-security/site-isolation" target="_blank" rel="noopener noreferrer">
+          Site Isolation
+        </a>
+      </td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://madaidans-insecurities.github.io/firefox-chromium.html#sandboxing" target="_blank" rel="noopener noreferrer">
+          Internal Sandboxing
+        </a>
+      </td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Per-Site JIT Toggle</a>
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Proxied Google Safe Browsing</td>
+      {% include check %}
+      {% include cross tooltip="Not proxied" %}
+      {% include cross tooltip="Disabled Completely" %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Google Safe Browsing</td>
+      {% include check %}
+      {% include check %}
+      {% include cross tooltip="Disabled completely" %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Tracker Blocker</td>
+      {% include check link="https://brave.com/shields" %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Default Adblock</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Individual Script Blocking</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Networking</th>
+    </tr>
+    <tr class="checker_row">
+      <td>HTTPS Upgrading</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Always Upgrade HTTPS</td>
+      {% include check link="https://brave.com/privacy-updates/22-https-by-default" %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Tor Enabled</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        <a href="https://blog.cloudflare.com/announcing-encrypted-client-hello" target="_blank" rel="noopener noreferrer">
+          ECH
+        </a>
+        enabled
+      </td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include dash tooltip='If <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+        DNS over HTTPS</a> is enabled' %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Supports <a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
           DNS over HTTPS</a>
-        </td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
+      </td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td><a href="https://www.eff.org/deeplinks/2019/09/encrypted-dns-could-help-close-biggest-privacy-gap-internet-why-are-some-groups" target="_blank" rel="noopener noreferrer">
           DNS over HTTPS</a> enabled
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <!-- <tr>
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <!-- <tr>
         <th class="left-col" ><br />Maintains Openness</th>
       </tr>
       <tr class="checker_row grayrow">
@@ -1461,118 +1464,118 @@ titledesc: Find a browser that works for you
         {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
         {% include check tooltip="MPL 2.0 maintains openness for individual files" link="https://codeberg.org/librewolf/source/src/branch/main/LICENSE" %}
       </tr> -->
-      <tr>
-        <th class="left-col"><br />Freedom</th>
-      </tr>
-      <tr class="checker_row grayrow">
-        <td>Change Search Engine</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Convenience</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Cookie Banner Blocking</td>
-        {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
-        {% include cross %}
-        {% include check link="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cookie-pop-up-protection" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Autoplay Blocking</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Reader View</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Bottom Bar</td>
-        {% include check link="https://github.com/brave/brave-core/pull/28302" %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Browser Sync</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Ethics</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Pays Users</td>
-        {% include check link="https://brave.com/brave-rewards" %}
-        {% include cross %}
-        {% include cross %}
-        {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Donates to Charity</td>
-        {% include cross %}
-        {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
-        {% include check link="https://duckduckgo.com/donations" %}
-        {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
-        {% include cross %}
-        {% include cross %}
-        {% include dash tooltip='Operates as a non-profit, <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">Donate Here</a>' %}
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Neutral</td>
-        {% include cross %}
-        {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
-        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
-        {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                Plans to by 2030
-              </a>, but 
-              <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
-                emissions have been increasing</a>' %}
-        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
-        {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Carbon Negative</td>
-        {% include cross %}
-        {% include cross %}
-        {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-    </tbody>
-  </table>
+    <tr>
+      <th class="left-col"><br />Freedom</th>
+    </tr>
+    <tr class="checker_row grayrow">
+      <td>Change Search Engine</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Convenience</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Cookie Banner Blocking</td>
+      {% include check link="https://brave.com/privacy-updates/21-blocking-cookie-notices" %}
+      {% include cross %}
+      {% include check link="https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections/#cookie-pop-up-protection" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Autoplay Blocking</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Reader View</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Bottom Bar</td>
+      {% include check link="https://github.com/brave/brave-core/pull/28302" %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Browser Sync</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Ethics</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Pays Users</td>
+      {% include check link="https://brave.com/brave-rewards" %}
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Earn cashback through PayPal on select purchases" link="https://rewards.bing.com/welcome" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Donates to Charity</td>
+      {% include cross %}
+      {% include check link="https://www.google.org/billion-commitment-to-create-more-opportunity" %}
+      {% include check link="https://duckduckgo.com/donations" %}
+      {% include check link="https://www.microsoft.com/en-us/corporate-responsibility/philanthropies/employee-engagement" %}
+      {% include cross %}
+      {% include cross %}
+      {% include dash tooltip='Operates as a non-profit, <a href="https://donate.torproject.org" target="_blank" rel="noopener noreferrer">Donate Here</a>' %}
+    </tr>
+    <tr class="checker_row">
+      <td>Carbon Neutral</td>
+      {% include cross %}
+      {% include cross tooltip="Plans to by 2030" link="https://sustainability.google/operating-sustainably/net-zero-carbon" %}
+      {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+      {% include cross tooltip='<a href="https://blogs.microsoft.com/blog/2020/01/16/microsoft-will-be-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        Plans to by 2030
+      </a>, but
+      <a href="https://www.kuow.org/stories/microsoft-s-carbon-emissions-surge-despite-goal-of-becoming-carbon-negative-by-2030" target="_blank" rel="noopener noreferrer">
+        emissions have been increasing</a>' %}
+      {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+      {% include cross tooltip="Committed to reducing emissions" link="https://blog.mozilla.org/en/mozilla/mozillas-climate-commitments" %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Carbon Negative</td>
+      {% include cross %}
+      {% include cross %}
+      {% include check tooltip="Duckduckgo is carbon negative" link="https://spreadprivacy.com/duckduckgo-goes-carbon-negative" %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+  </tbody>
+</table>

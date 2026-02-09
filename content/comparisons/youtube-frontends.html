@@ -7,75 +7,76 @@ description: Comparisons of YouTube frontends to find one that works for you
 titledesc: Find a Youtube frontend that works for you
 ---
 
-  <p class="disclaimer">
-    YouTube Frontends are applications that can be run on-device 
-    or on a server. Frontends mimic Youtube's native app or site with 
-    more privacy, no ads, and sometimes new features.<br /><br />
-  </p>
-  <table>
-    <thead>
-      <tr>
-        <td id="Applications"><a href="#Applications">
-          <h2>Applications</h2></a>
-        </td>
-        <th>
-          {% include link 
-            text='<img style="border-radius: 0;" src="../images/logos/freetube-logo.png" alt="Freetube Logo"><br />
-            Freetube'
-            link="https://FreeTubeApp.io"
-          %}
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/libretube-logo.webp" alt="Libretube Logo"><br />
-            Libretube'
-            link="https://libretube.dev"
-          %}
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/newpipe-logo.webp" alt="Newpipe Logo"><br />
-            NewPipe'
-            link="https://newpipe.net"
-          %}
-        </th>
-        <th>
-          {% include link 
-            text='<img src="../images/logos/smarttube-logo.png" alt="SmartTube Logo"><br />
-            SmartTube'
-            link="https://smarttubeapp.github.io"
-          %}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Platforms</td>
-        <th>{% include link text='Desktop' link='https://freetubeapp.io/#download' %}</th>
-        <th>{% include link text='Android' link='https://f-droid.org/en/packages/com.github.libretube' %}</th>
-        <th>{% include link text='Android' link='https://newpipe.net/#download' %}</th>
-        <th>{% include link text='TV' link='https://smarttubeapp.github.io' %}</th>
-      </tr>
-      <tr>
-        <th class="left-col"><br />Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Open-Source 
+<p class="disclaimer">
+  YouTube Frontends are applications that can be run on-device
+  or on a server. Frontends mimic Youtube's native app or site with
+  more privacy, no ads, and sometimes new features.<br /><br />
+</p>
+<table>
+  <thead>
+    <tr>
+      <td id="Applications"><a href="#Applications">
+          <h2>Applications</h2>
+        </a>
+      </td>
+      <th>
+        {% include link
+        text='<img style="border-radius: 0;" src="../images/logos/freetube-logo.png" alt="Freetube Logo"><br />
+        Freetube'
+        link="https://FreeTubeApp.io"
         %}
-        {% include check link="https://github.com/FreeTubeApp/FreeTube" %}
-        {% include check link="https://github.com/libre-tube/LibreTube" %}
-        {% include check link="https://github.com/TeamNewPipe/NewPipe" %}
-        {% include check link="https://github.com/yuliskov/SmartTube" %}
-      </tr>
-      <tr class="checker_row">
-        <td>No ip leak to Youtube</td>
-        {% include cross %}
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <!-- <tr>
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/libretube-logo.webp" alt="Libretube Logo"><br />
+        Libretube'
+        link="https://libretube.dev"
+        %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/newpipe-logo.webp" alt="Newpipe Logo"><br />
+        NewPipe'
+        link="https://newpipe.net"
+        %}
+      </th>
+      <th>
+        {% include link
+        text='<img src="../images/logos/smarttube-logo.png" alt="SmartTube Logo"><br />
+        SmartTube'
+        link="https://smarttubeapp.github.io"
+        %}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Platforms</td>
+      <th>{% include link text='Desktop' link='https://freetubeapp.io/#download' %}</th>
+      <th>{% include link text='Android' link='https://f-droid.org/en/packages/com.github.libretube' %}</th>
+      <th>{% include link text='Android' link='https://newpipe.net/#download' %}</th>
+      <th>{% include link text='TV' link='https://smarttubeapp.github.io' %}</th>
+    </tr>
+    <tr>
+      <th class="left-col"><br />Privacy</th>
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Open-Source
+      %}
+      {% include check link="https://github.com/FreeTubeApp/FreeTube" %}
+      {% include check link="https://github.com/libre-tube/LibreTube" %}
+      {% include check link="https://github.com/TeamNewPipe/NewPipe" %}
+      {% include check link="https://github.com/yuliskov/SmartTube" %}
+    </tr>
+    <tr class="checker_row">
+      <td>No ip leak to Youtube</td>
+      {% include cross %}
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <!-- <tr>
         <th class="left-col"><br />Maintains Openness</th>
       </tr>
       <tr class="checker_row">
@@ -90,151 +91,152 @@ titledesc: Find a Youtube frontend that works for you
         {% include check tooltip="GPLv3" link="https://github.com/TeamNewPipe/NewPipe/blob/dev/LICENSE" %}
         {% include check tooltip="GPLv3" link="https://github.com/yuliskov/SmartTube/blob/master/LICENSE.md" %}
       </tr> -->
-      <tr>
-        <th class="left-col"><br />Freedom</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Watch on <a href="https://odysee.com" target="_blank" rel="noopener noreferrer">Odysee</a> button</td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Convenience</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Subscriptions</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td><a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener noreferrer">Sponsorblock</a></td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Import/Export</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>DeArrow</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Multi-Account</td>
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          {% include link text="
-            Return Dislikes" link="https://github.com/Anarios/return-youtube-dislike" 
-          %}
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Block Channels</td>
-        {% include check link="https://github.com/FreeTubeApp/FreeTube/pull/4202" %}
-        {% include cross link="https://github.com/libre-tube/LibreTube/issues/1173#issuecomment-1235741040" %}
-        {% include cross link="https://github.com/TeamNewPipe/NewPipe/issues/1815" %}
-        {% include cross link="https://github.com/yuliskov/SmartTube/issues/3978" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Mute words</td>
-        {% include check link="https://github.com/FreeTubeApp/FreeTube/pull/4202" %}
-        {% include cross %}
-        {% include cross link="https://github.com/TeamNewPipe/NewPipe/issues/1815" %}
-        {% include cross link="https://github.com/yuliskov/SmartTube/issues/3978" %}
-      </tr>
-      <tr class="checker_row">
-        <td>Download Videos</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-        {% include cross %}
-      </tr>
-    </tbody>
-  </table>
-  <p class="disclaimer">
-    <strong>
-      *Web frontends on popular instances are prone to breakage, so I 
-      recommend using a less popular instance, self hosting or using 
-      an application.<br /><br />
-    </strong>
-  </p>
-  <table>
-    <thead>
-      <tr>
-        <td id="Web"><a href="#Web">
-          <h2>Web</h2></a>
-        </td>
-        <th>
-          {% include link text='<img src="../images/logos/cloudtube-logo.webp" alt="Cloudtube Logo"><br />
-            CloudTube'
-            link="https://tube.cadence.moe"
-          %}
-        </th>
-        <th>
-          {% include link text='<img src="../images/logos/invidious-logo.webp" alt="Invidious Logo"><br />
-            Invidious'
-            link="https://invidious.io"
-          %}
-        </th>
-        <th>
-          {% include link text='<img src="../images/logos/piped-logo.svg" alt="Piped Logo"><br />
-            Piped'
-            link="https://github.com/TeamPiped/Piped/wiki/Instances" 
-          %}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th class="left-col"><br />Privacy</th>
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Open-Source 
+    <tr>
+      <th class="left-col"><br />Freedom</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Watch on <a href="https://odysee.com" target="_blank" rel="noopener noreferrer">Odysee</a> button</td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Convenience</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Subscriptions</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td><a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener noreferrer">Sponsorblock</a></td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Import/Export</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>DeArrow</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Multi-Account</td>
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        {% include link text="
+        Return Dislikes" link="https://github.com/Anarios/return-youtube-dislike"
         %}
-        {% include check link="https://git.sr.ht/~cadence/cloudtube" %}
-        {% include check link="https://github.com/iv-org/invidious" %}
-        {% include check link="https://github.com/TeamPiped/Piped" %}
-      </tr>
-      <tr class="checker_row">
-        {% include 
-          tooltips/Optional-JavaScript
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Block Channels</td>
+      {% include check link="https://github.com/FreeTubeApp/FreeTube/pull/4202" %}
+      {% include cross link="https://github.com/libre-tube/LibreTube/issues/1173#issuecomment-1235741040" %}
+      {% include cross link="https://github.com/TeamNewPipe/NewPipe/issues/1815" %}
+      {% include cross link="https://github.com/yuliskov/SmartTube/issues/3978" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Mute words</td>
+      {% include check link="https://github.com/FreeTubeApp/FreeTube/pull/4202" %}
+      {% include cross %}
+      {% include cross link="https://github.com/TeamNewPipe/NewPipe/issues/1815" %}
+      {% include cross link="https://github.com/yuliskov/SmartTube/issues/3978" %}
+    </tr>
+    <tr class="checker_row">
+      <td>Download Videos</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+      {% include cross %}
+    </tr>
+  </tbody>
+</table>
+<p class="disclaimer">
+  <strong>
+    *Web frontends on popular instances are prone to breakage, so I
+    recommend using a less popular instance, self hosting or using
+    an application.<br /><br />
+  </strong>
+</p>
+<table>
+  <thead>
+    <tr>
+      <td id="Web"><a href="#Web">
+          <h2>Web</h2>
+        </a>
+      </td>
+      <th>
+        {% include link text='<img src="../images/logos/cloudtube-logo.webp" alt="Cloudtube Logo"><br />
+        CloudTube'
+        link="https://tube.cadence.moe"
         %}
-        {% include check %}
-        {% include check tooltip="Disabling Javascript disables comments" %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>No ip leak to Youtube</td>
-        {% include cross link="https://tube.cadence.moe/privacy" %}
-        {% include dash tooltip="Depends on instance: usually disabled by default" %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Independence</th>
-      </tr>
-        <!-- <tr class="checker_row">
+      </th>
+      <th>
+        {% include link text='<img src="../images/logos/invidious-logo.webp" alt="Invidious Logo"><br />
+        Invidious'
+        link="https://invidious.io"
+        %}
+      </th>
+      <th>
+        {% include link text='<img src="../images/logos/piped-logo.svg" alt="Piped Logo"><br />
+        Piped'
+        link="https://github.com/TeamPiped/Piped/wiki/Instances"
+        %}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="left-col"><br />Privacy</th>
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Open-Source
+      %}
+      {% include check link="https://git.sr.ht/~cadence/cloudtube" %}
+      {% include check link="https://github.com/iv-org/invidious" %}
+      {% include check link="https://github.com/TeamPiped/Piped" %}
+    </tr>
+    <tr class="checker_row">
+      {% include
+      tooltips/Optional-JavaScript
+      %}
+      {% include check %}
+      {% include check tooltip="Disabling Javascript disables comments" %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>No ip leak to Youtube</td>
+      {% include cross link="https://tube.cadence.moe/privacy" %}
+      {% include dash tooltip="Depends on instance: usually disabled by default" %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Independence</th>
+    </tr>
+    <!-- <tr class="checker_row">
         <td>
           <div>
             Copyleft License
@@ -247,125 +249,125 @@ titledesc: Find a Youtube frontend that works for you
         {% include check tooltip="AGPLv3" link="https://github.com/iv-org/invidious/blob/master/LICENSE" %}
         {% include check tooltip="AGPLv3" link="https://github.com/TeamPiped/Piped/blob/master/LICENSE" %}
       </tr> -->
-      <tr class="checker_row">
-        <td>Self Hostable</td>
-        {% include check link="https://git.sr.ht/~cadence/tube-docs/tree/main/item/docs/cloudtube/Installing%20CloudTube.md" %}
-        {% include check link="https://docs.invidious.io/installation" %}
-        {% include check link="https://docs.piped.video/docs/self-hosting" %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Freedom</th>
-      </tr>
-      <tr class="checker_row grayrow">
-        <td>
-          Watch on <a href="https://odysee.com" target="_blank" rel="noopener noreferrer">
+    <tr class="checker_row">
+      <td>Self Hostable</td>
+      {% include check link="https://git.sr.ht/~cadence/tube-docs/tree/main/item/docs/cloudtube/Installing%20CloudTube.md" %}
+      {% include check link="https://docs.invidious.io/installation" %}
+      {% include check link="https://docs.piped.video/docs/self-hosting" %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Freedom</th>
+    </tr>
+    <tr class="checker_row grayrow">
+      <td>
+        Watch on <a href="https://odysee.com" target="_blank" rel="noopener noreferrer">
           Odysee</a> button
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include dash tooltip="Currently broken" link="https://github.com/TeamPiped/Piped/issues/3059" %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Convenience</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Subscriptions</td>
-        {% include check %}
-        {% include check tooltip="Requires account" %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Comments</td>
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Built in <a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener noreferrer">
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include dash tooltip="Currently broken" link="https://github.com/TeamPiped/Piped/issues/3059" %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Convenience</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Subscriptions</td>
+      {% include check %}
+      {% include check tooltip="Requires account" %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Comments</td>
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Built in <a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noopener noreferrer">
           Sponsorblock</a>
-        </td>
-        {% include cross tooltip="With extension" link="https://github.com/ajayyy/SponsorBlock" %}
-        {% include cross tooltip="With extension" link="https://github.com/ajayyy/SponsorBlock" %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Subscriptions RSS</td>
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Per Channel RSS</td>
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Account Sync</td>
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Import/Export</td>
-        {% include check %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>DeArrow</td>
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Custom playlists</td>
-        {% include cross %}
-        {% include check %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Watch History</td>
-        {% include check %}
-        {% include check tooltip="Requires account" %}
-        {% include check tooltip="Stored locally" %}
-      </tr>
-      <tr class="checker_row">
-        <td>
-          {% include link text="
-            Return Dislikes" link="https://github.com/Anarios/return-youtube-dislike" 
-          %}
-        </td>
-        {% include cross %}
-        {% include cross %}
-        {% include check %}
-      </tr>
-      <tr class="checker_row">
-        <td>Block Channels</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Mute words</td>
-        {% include check %}
-        {% include cross %}
-        {% include cross %}
-      </tr>
-      <tr class="checker_row">
-        <td>Download Videos</td>
-        {% include check %}
-        {% include check tooltip="Depends on instance" %}
-        {% include check %}
-      </tr>
-      <tr>
-        <th class="left-col"><br />Usability</th>
-      </tr>
-      <tr class="checker_row">
-        <td>Supports ancient browsers</td>
-        {% include check %}
-        {% include check %}
-        {% include check tooltip="Not abandoned browsers" link="https://github.com/davidcollini/YouTube-Frontend-Comparison/pull/4#issuecomment-1279854489" %}
-      </tr>
-    </tbody>
-  </table>
+      </td>
+      {% include cross tooltip="With extension" link="https://github.com/ajayyy/SponsorBlock" %}
+      {% include cross tooltip="With extension" link="https://github.com/ajayyy/SponsorBlock" %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Subscriptions RSS</td>
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Per Channel RSS</td>
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Account Sync</td>
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Import/Export</td>
+      {% include check %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>DeArrow</td>
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Custom playlists</td>
+      {% include cross %}
+      {% include check %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Watch History</td>
+      {% include check %}
+      {% include check tooltip="Requires account" %}
+      {% include check tooltip="Stored locally" %}
+    </tr>
+    <tr class="checker_row">
+      <td>
+        {% include link text="
+        Return Dislikes" link="https://github.com/Anarios/return-youtube-dislike"
+        %}
+      </td>
+      {% include cross %}
+      {% include cross %}
+      {% include check %}
+    </tr>
+    <tr class="checker_row">
+      <td>Block Channels</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Mute words</td>
+      {% include check %}
+      {% include cross %}
+      {% include cross %}
+    </tr>
+    <tr class="checker_row">
+      <td>Download Videos</td>
+      {% include check %}
+      {% include check tooltip="Depends on instance" %}
+      {% include check %}
+    </tr>
+    <tr>
+      <th class="left-col"><br />Usability</th>
+    </tr>
+    <tr class="checker_row">
+      <td>Supports ancient browsers</td>
+      {% include check %}
+      {% include check %}
+      {% include check tooltip="Not abandoned browsers" link="https://github.com/davidcollini/YouTube-Frontend-Comparison/pull/4#issuecomment-1279854489" %}
+    </tr>
+  </tbody>
+</table>

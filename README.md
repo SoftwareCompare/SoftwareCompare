@@ -7,8 +7,16 @@ An open-source project hosted on softwarecompare.org that compares application f
 - Many checkmarks have links to verify the source where the information originated
 - No tracking
 
+## Running
+
+1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
+
+2. Clone this repository
+
+3. Run 'make serve' in the cloned directory
+
 ## Development
-If you would like to view the most current updates, visit the test site [here](https://softwarecompare-test.pages.dev/). 
+If you would like to view the most current updates, visit the test site [here](https://softwarecompare-test.pages.dev/).
 
 ## Donations
 

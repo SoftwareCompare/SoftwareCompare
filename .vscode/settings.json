@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.html": "liquid",
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.autoIndent": "full",
+  "[liquid]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "html.format.wrapLineLength": 0,
+  "html.format.wrapAttributes": "preserve",
+}
