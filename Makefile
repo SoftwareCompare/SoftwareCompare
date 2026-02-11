@@ -1,2 +1,2 @@
-serve:
+start:
 	bundle exec jekyll serve --livereload
